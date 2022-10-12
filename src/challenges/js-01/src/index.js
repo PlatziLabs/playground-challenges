@@ -1,5 +1,5 @@
 import "./styles.css";
-import { runCode } from "./exercise";
+import { multiplyElements } from "./exercise";
 
 (() => {
   const array = [1, 2, 3, 4];
@@ -14,13 +14,12 @@ import { runCode } from "./exercise";
     <p><pre><code id="rta"></code></pre></p>
   `;
 
-  const rtaBtn = document.getElementById("btn");
+  const btnElement = document.getElementById("btn");
   const rtaElement = document.getElementById("rta");
 
-  rtaBtn.addEventListener("click", () => {
-    const rta = runCode(array);
+  btnElement.addEventListener("click", () => {
     try {
-      rtaElement.innerHTML = rta;
+      rtaElement.innerHTML = multiplyElements(array);
     } catch (error) {
       rtaElement.innerHTML = error;
     }
