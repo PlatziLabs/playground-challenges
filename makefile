@@ -1,2 +1,3 @@
 create:
-	rsync -av ./src/templates/vanilla-js/ ./src/challenges/js-03/ --exclude='node_modules'
+	rsync -av ./src/templates/vanilla-js/ ./src/challenges/$(name)/ --exclude='node_modules'
+	cd ./src/challenges/$(name)/
