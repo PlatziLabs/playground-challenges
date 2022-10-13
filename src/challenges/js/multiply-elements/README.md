@@ -5,7 +5,7 @@ La solución debería tener un input y output como los siguientes:
 Input
 
 ```js
-solution([2, 4, 5, 6, 8]);
+multiplyElements([2, 4, 5, 6, 8]);
 ```
 
 Output
