@@ -5,7 +5,6 @@ export function solution(json1 = {
   age: 12,
   color: "Blanco"
 }) {
-  // Tu código aquí 👈
   return {
     ...json1,
     ...json2
