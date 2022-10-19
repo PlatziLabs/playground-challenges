@@ -1,5 +1,5 @@
 import "./styles.css";
-import { so, solutionlution } from "./exercise";
+import { solution } from "./exercise";
 
 (() => {
   const json1 = {
