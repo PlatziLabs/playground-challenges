@@ -1,3 +1,5 @@
-export function solution() {
-  // Tu código aquí 👈
+import { getData } from "./api";
+
+export async function solution() {
+  return getData().then(movies => movies);
 }
