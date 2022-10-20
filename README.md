@@ -132,7 +132,11 @@ document.getElementById("app").innerHTML = `
 <p>Rta: ${rta}</p>`;
 ```
 
-### 8. Crear la solución al reto
+### 8. Enviar PR del reto
+
+Aquí puedes enviar el primer PR hacia la rama `master` en donde ya esta el reto sin la solución.
+
+### 9. Crear la solución al reto
 
 
 Una parte importate es mostrarle al estudiante después de 3 intentos cuál era la solución al problema en caso de que no lo logré.
@@ -166,3 +170,8 @@ export function runCode() {
 
 
 ![Playground](https://i.imgur.com/4Q1SKU7.png)
+
+
+### 10. Enviar PR de la solución al reto
+
+Aquí puedes enviar el segundo PR hacia la rama `solution` en donde el reto con la solución.
