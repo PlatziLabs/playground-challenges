@@ -1,3 +1,3 @@
 export function sortDesc(array) {
-  // Tu código aquí 👈
+  return array.sort((a, b) => b - a);
 }
