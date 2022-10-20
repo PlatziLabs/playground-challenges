@@ -1,3 +1,9 @@
-export function mergeArrays(arrayA, arrayB) {
-  // Tu código aquí 👈
+export function sumWithClosure(firstNum) {
+  return function (secondNum) {
+    if (secondNum) {
+      return secondNum + firstNum;
+    }
+
+    return firstNum;
+  };
 }

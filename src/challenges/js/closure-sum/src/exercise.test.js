@@ -1,31 +1,30 @@
-import { mergeArrays } from "./exercise";
+import { sumWithClosure } from "./exercise";
 
 describe("tests", () => {
-  it("should return [1,2,3,4]", () => {
-    const arrayA = [1, 2];
-    const arrayB = [3, 4];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([1, 2, 3, 4]);
+  it("should return 5", () => {
+    const firstNum = 2;
+    const secondNum = 3;
+    const rta = sumWithClosure(firstNum)(secondNum);
+    expect(rta).toEqual(5);
   });
 
-  it("should return [1,2,3,4,5]", () => {
-    const arrayA = [1, 2];
-    const arrayB = [3, 4, 5];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([1, 2, 3, 4, 5]);
+  it("should return 113", () => {
+    const firstNum = 35;
+    const secondNum = 78;
+    const rta = sumWithClosure(firstNum)(secondNum);
+    expect(rta).toEqual(113);
   });
 
-  it("should return [3,4,5]", () => {
-    const arrayA = [];
-    const arrayB = [3, 4, 5];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([3, 4, 5]);
+  it("should return 3245", () => {
+    const firstNum = 0;
+    const secondNum = 3245;
+    const rta = sumWithClosure(firstNum)(secondNum);
+    expect(rta).toEqual(3245);
   });
 
-  it("should return []", () => {
-    const arrayA = [];
-    const arrayB = [];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([]);
+  it("should return 20", () => {
+    const firstNum = 20;
+    const rta = sumWithClosure(firstNum)();
+    expect(rta).toEqual(20);
   });
 });
