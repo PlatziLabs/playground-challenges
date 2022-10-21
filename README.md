@@ -76,12 +76,7 @@ El reto debe estar dentro de la carpeta `/src`, está carpeta es importante y to
 - El archivo `index.js` e `index.html` estarán ocultos
 - Todos los archivos que terminen en `.test.js` no serán visibles para el estudiante.
 
-Por ejemplo, en este reto hay 5 archivos, pero el estudiante solo va a visualizar los siguientes archivos:
-
-- exercise.js
-- tasks.js
-
-Teniendo esto en cuenta podrías crear tu repo en el archivo `exercise.js` el cual tendrá el código base que quieres que el estudiante vea en el Coding Playground, ejemplo:
+Teniendo esto en cuenta podrías crear tu reto en el archivo `exercise.js` el cual tendrá el código base que quieres que el estudiante vea en el Coding Playground, ejemplo:
 
 ```js
 // src/exercise.test.js
