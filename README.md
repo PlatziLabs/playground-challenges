@@ -1,9 +1,14 @@
-# Playground Challenges
+# Platzi Challenges
 
-> El Playground: Code Runner es una herramienta que nos permite ejecutar código desde la plataforma haciendo que el estudiante ponga en práctica sus conocimientos a través de ejercicios de los cuales tiene feedback automático.
+Monorepo para gestionar los retos que salen en el Coding Playground.
 
+# ¿Qué es el Coding Playground?
+
+**Coding Playground** es una herramienta que nos permite ejecutar código desde la plataforma haciendo que el estudiante ponga en práctica sus conocimientos a través de ejercicios de los cuales tiene feedback automático.
 
 ![Playground](https://i.imgur.com/gb5cL8z.png)
+
+Una de las características más importantes es el feedback automático, es decir que el estudiante tenga las herramientas para saber si su solución es incorrecta o correcta de forma instantánea, para eso el **Coding Playground** válida la respuesta por medio de pruebas unitarias.
 
 
 ## Agregar ejercicios de Vanilla JS
@@ -13,7 +18,7 @@
 
 ### 2. Crear nuevo reto a partir del template
 
-> Antes debes verficiar el el nombre que vayas a elegir para tu proyecto no este creado
+Primero debes verificar el nombre que vayas a elegir para tu proyecto, no este creado.
 
 ```sh
 make create-js name=pascal
@@ -23,8 +28,7 @@ npm run dev
 
 ### 3. Reconcer la estructura
 
-Cuando entres al código del proyecto verás una estructura de carpetas, como la siguiente.
-
+Cuando crees el proyecto, el código del reto que verás una estructura de carpetas, como la siguiente.
 
 ```sh
 .
@@ -42,12 +46,11 @@ Cuando entres al código del proyecto verás una estructura de carpetas, como la
   └── styles.css
 ```
 
-No debes cambiar la estructura, ya que el Playground asume que manejas este orden para leer los archivos.
-
+No debes cambiar la estructura, ya que el **Coding Playground** asume que manejas este orden para leer los archivos.
 
 ### 4. Agregar descripción
 
-Debes crear la descripción de lo que se espera que el estudiante logre en este reto, eso debe estar en el archivo `README.md` y será mostrado en la vista de “Guía” en el Playground, el archivo debe estar en formato Markdown
+Debes crear la descripción de lo que se espera que el estudiante logre en este reto, eso debe estar en el archivo `README.md` y será mostrado en la vista de “Guía” en el Coding Playground, el archivo debe estar en formato Markdown.
 
 ```md
 En este desafío tienes un array de números, usando la función map debes retornar todos los números del array multiplicados por dos.
@@ -70,7 +73,7 @@ Output
 
 ### 5. Crear el código base
 
-El reto debe estar dentro de la carpeta `/src`, está carpeta es importante y todos los archivos que pongas allí serán los que el estudiante verá en el Playground, pero hay unas excepciones:
+El reto debe estar dentro de la carpeta `/src`, está carpeta es importante y todos los archivos que pongas allí serán los que el estudiante verá en el Coding Playground, pero hay unas excepciones:
 
 - El archivo `index.js` e `index.html` estarán ocultos
 - Todos los archivos que terminen en `.test.js` no serán visibles para el estudiante.
@@ -80,11 +83,16 @@ Por ejemplo, en este reto hay 5 archivos, pero el estudiante solo va a visualiza
 - exercise.js
 - tasks.js
 
+Teniendo esto en cuenta podrías crear tu repo en el archivo `exercise.js` el cual tendrá el código base que quieres que el estudiante vea en el Coding Playground, ejemplo:
 
+```js
+// src/exercise.test.js
+export function multiplyElements(array) {
+  // Tu código aquí 👈
+}
+```
 
-Teniendo esto en cuenta podrías crear tu repo en el archivo exercise.js el cual tendrá el código base que quieres que el estudiante vea en el playground, ejemplo:
-
-![Playground](https://i.imgur.com/sS5wXHS.png)
+![Playground](https://i.imgur.com/WU480V4.png)
 
 ### 6. Crear las pruebas del reto
 
@@ -93,20 +101,26 @@ Ahora puedes crear un archivo que contenga las pruebas, por ejemplo `exercise.te
 ```js
 // src/exercise.test.js
 
-import { runCode } from './challenge';
+import { multiplyElements } from "./exercise";
 
-it("should return [1,2,3,4]", () => {
-  const arrayA = [1, 2];
-  const arrayB = [3, 4];
-  const rta = runCode(arrayA, arrayB);
-  expect(rta).toEqual([1, 2, 3, 4]);
-});
+describe("tests", () => {
+  it("should return [2,4,6]", () => {
+    const array = [1, 2, 3];
+    const rta = multiplyElements(array);
+    expect(rta).toEqual([2, 4, 6]);
+  });
 
-it("should return [1,2,3,4,5]", () => {
-  const arrayA = [1, 2];
-  const arrayB = [3, 4, 5];
-  const rta = runCode(arrayA, arrayB);
-  expect(rta).toEqual([1, 2, 3, 4, 5]);
+  it("should return [0, 1, 4]", () => {
+    const array = [0, -1, 2];
+    const rta = multiplyElements(array);
+    expect(rta).toEqual([0, -2, 4]);
+  });
+  it("should return []", () => {
+    const array = [];
+    const rta = multiplyElements(array);
+    expect(rta).toEqual([]);
+  });
+
 });
 ```
 
@@ -114,32 +128,62 @@ it("should return [1,2,3,4,5]", () => {
 
 ### 7. Personalizar el preview del reto
 
-
-La previsualización le permite al estudiante ver el tiempo real una vista HTML en donde se va ejecutando el código y tú debes personalizar esta vista según lo requieras, por eso en el archivo `src/index.js`, por ejemplo, el siguiente código llama a la función runCode que se espera que el estudiante escriba y este HTML se podrá ver como vista previa.
+La previsualización le permite al estudiante ver el tiempo real una vista HTML en donde se va ejecutando el código y tú debes personalizar esta vista según lo requieras, por eso en el archivo `src/index.js`, por ejemplo, el siguiente código llama a la función `multiplyElements` que se espera que el estudiante escriba y este HTML se podrá ver como vista previa.
 
 ```js
 // src/index.js
+import "./styles.css";
+import { multiplyElements } from "./exercise";
 
-import { runCode } from './exercise';
+(() => {
+  const array = [1, 2, 3, 4];
 
-const arrayA = [1, 2, 3, 4];
-const arrayB = [5, 6, 7, 8];
-const rta = runCode(arrayA, arrayB);
+  document.getElementById("app").innerHTML = `
+    <h1>Multiplicar elementos</h1>
+    <p>Array de prueba <code>${JSON.stringify(array)}</code></p>
+    <p>
+      <button id="btn">Run Code</button>
+    </p>
+    <p>Response from <code>runCode</code></p>
+    <p><pre><code id="rta"></code></pre></p>
+  `;
 
-document.getElementById("app").innerHTML = `
-<p>Array A: ${arrayA}</p>
-<p>Array B: ${arrayB}</p>
-<p>Rta: ${rta}</p>`;
+  const btnElement = document.getElementById("btn");
+  const rtaElement = document.getElementById("rta");
+
+  btnElement.addEventListener("click", () => {
+    try {
+      rtaElement.innerHTML = multiplyElements(array);
+    } catch (error) {
+      rtaElement.innerHTML = error;
+    }
+  });
+
+})();
 ```
 
-### 8. Enviar PR del reto
-
-Aquí puedes enviar el primer PR hacia la rama `master` en donde ya esta el reto sin la solución.
-
-### 9. Crear la solución al reto
+![Playground](https://i.imgur.com/pFRSxRq.png)
 
 
-Una parte importate es mostrarle al estudiante después de 3 intentos cuál era la solución al problema en caso de que no lo logré.
+### 8. Elige el título de tu reto
+
+Llega el momento de elegir el nombre y esto está en el archivo `playground.json` en el atributo de `title`.
+
+```json
+{
+  "title": "", 👈
+  "showFiles": false,
+  "template": "vanilla-js"
+}
+```
+
+### 9. Enviar PR del reto
+
+Aquí puedes enviar el primer PR hacia la rama `master` en donde ya está el reto sin la solución.
+
+### 10. Crear la solución al reto
+
+Una parte impórtate es mostrarle al estudiante la solución al reto después de 3 intentos en caso de que no lo logré.
 
 Por eso la solución debe estar en una nueva rama llamada `solution` en esta rama puedes hacer todos los ajustes para dar solución al reto.
 
@@ -172,6 +216,10 @@ export function runCode() {
 ![Playground](https://i.imgur.com/4Q1SKU7.png)
 
 
-### 10. Enviar PR de la solución al reto
+### 11. Enviar PR de la solución al reto
 
-Aquí puedes enviar el segundo PR hacia la rama `solution` en donde el reto con la solución.
+Debes crear la solución al reto en la rama  `solution`, en donde modificas los archivos en donde estará la solución el reto, la solución se envía en un segundo PR, por ejemplo:
+
+```js
+
+```
