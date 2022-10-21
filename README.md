@@ -171,7 +171,7 @@ Llega el momento de elegir el nombre y esto está en el archivo `playground.json
 
 ```json
 {
-  "title": "", 👈
+  "title": "", // 👈
   "showFiles": false,
   "template": "vanilla-js"
 }
@@ -185,41 +185,18 @@ Aquí puedes enviar el primer PR hacia la rama `master` en donde ya está el ret
 
 Una parte impórtate es mostrarle al estudiante la solución al reto después de 3 intentos en caso de que no lo logré.
 
-Por eso la solución debe estar en una nueva rama llamada `solution` en esta rama puedes hacer todos los ajustes para dar solución al reto.
+Por eso la solución debe estar en una nueva rama llamada `solution` en esta rama puedes hacer todos los ajustes para dar solución al reto, ejemplo:
 
 ```js
 // src/exercise.js en la rama solution
 
-import { doTask1, doTask2, doTask3 } from './tasks';
-
-// Nota que las funciones doTask1, doTask2, doTask3 cambiaron 👆🏻
-
-export function runCode() {
-  const strings = [];
-  return doTask1()
-  .then((rta1) => {
-    strings.push(rta1);
-    return doTask2();
-  })
-  .then((rta2) => {
-    strings.push(rta2);
-    return doTask3();
-  })
-  .then((rta3) => {
-    strings.push(rta3);
-    return strings;
-  })
+export function multiplyElements(array) {
+  return array.map(item => item * 2);
 }
-```
 
+```
 
 ![Playground](https://i.imgur.com/4Q1SKU7.png)
 
 
 ### 11. Enviar PR de la solución al reto
-
-Debes crear la solución al reto en la rama  `solution`, en donde modificas los archivos en donde estará la solución el reto, la solución se envía en un segundo PR, por ejemplo:
-
-```js
-
-```
