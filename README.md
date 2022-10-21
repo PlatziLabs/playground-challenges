@@ -196,7 +196,7 @@ export function multiplyElements(array) {
 
 ```
 
-![Playground](https://i.imgur.com/4Q1SKU7.png)
+![Playground](https://i.imgur.com/YjFCvQb.png)
 
 
 ### 11. Enviar PR de la solución al reto
