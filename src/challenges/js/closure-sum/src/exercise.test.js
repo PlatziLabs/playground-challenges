@@ -28,7 +28,7 @@ describe("tests", () => {
     expect(rta).toEqual(20);
   });
 
-  it("should return -20", () => {
+  it("should return -80", () => {
     const firstNum = -48;
     const secondNum = -32
     const rta = sumWithClosure(firstNum)(secondNum);
