@@ -1,3 +1,3 @@
 export function multiplyElements(array) {
-  // Tu código aquí 👈
+   // Tu código aquí 👈
 }

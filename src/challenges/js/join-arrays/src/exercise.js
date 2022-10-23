@@ -1,3 +1,3 @@
 export function mergeArrays(arrayA, arrayB) {
-  // Tu código aquí 👈
+   // Tu código aquí 👈
 }
