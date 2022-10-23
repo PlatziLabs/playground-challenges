@@ -3,7 +3,6 @@ export function sumWithClosure(firstNum) {
     if (secondNum) {
       return secondNum + firstNum;
     }
-
     return firstNum;
   };
 }

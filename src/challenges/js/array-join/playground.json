@@ -1,0 +1,5 @@
+{
+  "title": "Transforma un string y sepáralo por comas, como en un CSV",
+  "showFiles": false,
+  "template": "vanilla-js"
+}
