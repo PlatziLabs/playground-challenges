@@ -6,7 +6,7 @@ Monorepo para gestionar los retos que salen en el Coding Playground.
 
 **Coding Playground** es una herramienta que nos permite ejecutar código desde la plataforma haciendo que el estudiante ponga en práctica sus conocimientos a través de ejercicios de los cuales tiene feedback automático.
 
-![Playground](https://i.imgur.com/gb5cL8z.png)
+![Playground](https://i.imgur.com/XFLH7NJ.png)
 
 Una de las características más importantes es el feedback automático, es decir que el estudiante tenga las herramientas para saber si su solución es incorrecta o correcta de forma instantánea, para eso el **Coding Playground** válida la respuesta por medio de pruebas unitarias.
 
@@ -50,9 +50,6 @@ No debes cambiar la estructura, ya que el **Coding Playground** asume que maneja
 
 ### 4. Agregar descripción
 
-Debes crear la descripción de lo que se espera que el estudiante logre en este reto, eso debe estar en el archivo `README.md` y será mostrado en la vista de “Guía” en el Coding Playground, el archivo debe estar en formato Markdown.
-
-```md
 En este desafío tienes un array de números, usando la función map debes retornar todos los números del array multiplicados por dos.
 
 La solución debería tener un input y output como los siguientes:
@@ -60,14 +57,15 @@ La solución debería tener un input y output como los siguientes:
 Input
 
 ```js
-solution([2, 4, 5, 6, 8]);
+multiplyElements([2, 4, 5, 6, 8]);
 ```
 
 Output
 
-```sh
+```js
 [4,8,10,12, 16]
 ```
+
 
 ![Playground](https://i.imgur.com/gb5cL8z.png)
 
@@ -78,12 +76,7 @@ El reto debe estar dentro de la carpeta `/src`, está carpeta es importante y to
 - El archivo `index.js` e `index.html` estarán ocultos
 - Todos los archivos que terminen en `.test.js` no serán visibles para el estudiante.
 
-Por ejemplo, en este reto hay 5 archivos, pero el estudiante solo va a visualizar los siguientes archivos:
-
-- exercise.js
-- tasks.js
-
-Teniendo esto en cuenta podrías crear tu repo en el archivo `exercise.js` el cual tendrá el código base que quieres que el estudiante vea en el Coding Playground, ejemplo:
+Teniendo esto en cuenta podrías crear tu reto en el archivo `exercise.js` el cual tendrá el código base que quieres que el estudiante vea en el Coding Playground, ejemplo:
 
 ```js
 // src/exercise.test.js
@@ -124,7 +117,7 @@ describe("tests", () => {
 });
 ```
 
-![Playground](https://i.imgur.com/JheFk4C.png)
+![Playground](https://i.imgur.com/kndkPGk.png)
 
 ### 7. Personalizar el preview del reto
 
@@ -196,7 +189,7 @@ export function multiplyElements(array) {
 
 ```
 
-![Playground](https://i.imgur.com/4Q1SKU7.png)
+![Playground](https://i.imgur.com/XFLH7NJ.png)
 
 
 ### 11. Enviar PR de la solución al reto

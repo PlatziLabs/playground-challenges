@@ -1,3 +1,3 @@
 export function flatArray(array) {
-  return array.flat();
+   // Tu código aquí 👈
 }
