@@ -1,4 +1,4 @@
-En este desafío debes calcular la altura sin decimals de un triángulo escaleno (todos sus lados son distintos) o `false` en caso de que los parámtros recibidos no cumplan los requisitos del triángulo escaleno.
+En este desafío debes calcular la altura sin decimales de un triángulo escaleno (todos sus lados son distintos) o `false` en caso de que los parámetros recibidos no cumplan los requisitos del triángulo escaleno.
 
 Input
 
