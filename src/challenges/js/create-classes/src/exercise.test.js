@@ -8,7 +8,7 @@ describe("tests", () => {
     generos: ["rock", "pop", "post-punk"],
     integrantes: [],
   }
-  beforeEach(async () => {
+  beforeEach(() => {
     banda = new Banda(data)
   });
 
@@ -33,5 +33,6 @@ describe("tests", () => {
     banda.agregarIntegrante(new Integrante({ nombre: "Paul", instrumento: "Bateria" }))
     let segundoBaterista = banda.agregarIntegrante(new Integrante({ nombre: "Roger", instrumento: "Bateria" }))
     expect(segundoBaterista).toBeFalsy();
+    expect(banda.integrantes).toEqual([{ nombre: "Paul", instrumento: "Bateria" }]);
   });
 });
