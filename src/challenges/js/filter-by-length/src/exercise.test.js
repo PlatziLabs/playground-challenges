@@ -1,31 +1,21 @@
-import { mergeArrays } from "./exercise";
+import { filterByLength } from "./exercise";
 
 describe("tests", () => {
-  it("should return [1,2,3,4]", () => {
-    const arrayA = [1, 2];
-    const arrayB = [3, 4];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([1, 2, 3, 4]);
+  it("should return ['amor', 'piedra']", () => {
+    const array = ['amor', 'sol', 'piedra', 'día'];
+    const rta = filterByLength(array);
+    expect(rta).toEqual([ 'amor', 'piedra' ]);
   });
 
-  it("should return [1,2,3,4,5]", () => {
-    const arrayA = [1, 2];
-    const arrayB = [3, 4, 5];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([1, 2, 3, 4, 5]);
+  it("should return a right array", () => {
+    const array = ['a', 'aa', 'aaa', 'aaaa', 'aaaaa'];
+    const rta = filterByLength(array);
+    expect(rta).toEqual([ 'aaaa', 'aaaaa' ]);
   });
 
-  it("should return [3,4,5]", () => {
-    const arrayA = [];
-    const arrayB = [3, 4, 5];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([3, 4, 5]);
-  });
-
-  it("should return []", () => {
-    const arrayA = [];
-    const arrayB = [];
-    const rta = mergeArrays(arrayA, arrayB);
+  it("should return a empty array", () => {
+    const array = [];
+    const rta = filterByLength(array);
     expect(rta).toEqual([]);
   });
 });

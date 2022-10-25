@@ -1,12 +1,15 @@
 import "./styles.css";
-import { filterByLength } from "./exercise";
+import { solution } from "./exercise";
 
 (() => {
-  const array = ['amor', 'sol', 'piedra', 'día'];
+  const usersObj = {
+    123: 'Juanito Alcachofa',
+    456: 'Juanita Alcaparra',
+  };
 
   document.getElementById("app").innerHTML = `
-    <h1>Filter by Length</h1>
-    <p>Words: <code>${JSON.stringify(array)}</code></p>
+    <h1>Object to Array</h1>
+    <p>Objeto original: <code>${JSON.stringify(usersObj)}</code></p>
     <p><button id="btn">Run Code</button><p/>
     <p><pre><code id="rta"></code></pre></p>
   `;
@@ -16,7 +19,7 @@ import { filterByLength } from "./exercise";
 
   runBtn.addEventListener('click', () => {
     try {
-      rtaElement.innerHTML = JSON.stringify(filterByLength(array));
+      rtaElement.innerHTML = JSON.stringify(solution(usersObj));
     } catch (error) {
       rtaElement.innerHTML = error;
     }

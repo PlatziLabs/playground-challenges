@@ -3,11 +3,11 @@ Tienes un array con palabras, tu desafío es retornar un array solo con las que 
 La solución debería tener un input y output como los siguientes:
 
 ```js
-solution(['amor', 'sol', 'piedra', 'día']);
+filterByLength(['amor', 'sol', 'piedra', 'día']);
 ```
 
 Output
 
-```sh
+```js
 [ 'amor', 'piedra' ]
 ```

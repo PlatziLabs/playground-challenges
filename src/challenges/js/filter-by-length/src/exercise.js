@@ -1,3 +1,3 @@
-export function mergeArrays(arrayA, arrayB) {
-  // Tu código aquí 👈
+export function filterByLength(array) {
+  return array.filter(word => word.length >= 4);
 }
