@@ -7,7 +7,7 @@ La solución deberá tener un input y output como la siguiente, en algunos casos
 Input:
 
 ```js
-solution(2)(3);
+sumWithClosure(2)(3);
 ```
 
 Output:
@@ -19,7 +19,7 @@ Output:
 Input:
 
 ```js
-solution(90)();
+sumWithClosure(90)();
 ```
 
 Output:
