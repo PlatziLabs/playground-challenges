@@ -1,5 +1,5 @@
 {
-  "title": "Crea un closure que te ayude a almacenar datos de mascotas",
+  "title": "Crea un closure para guardar datos de mascotas",
   "showFiles": false,
   "template": "vanilla-js"
 }
