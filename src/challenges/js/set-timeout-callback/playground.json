@@ -1,5 +1,5 @@
 {
-  "title": "Calcula el factorial",
+  "title": "Ejecuta un callback con 2s de demora",
   "showFiles": false,
   "template": "vanilla-js"
 }
