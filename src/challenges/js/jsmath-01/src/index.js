@@ -18,8 +18,8 @@ import { solution } from "./exercise";
 
   runBtn.addEventListener('click', () => {
     try {
-      rta1 = solution(...arrayA);
-      rta2 = solution(...arrayB);
+      const rta1 = solution(...arrayA);
+      const rta2 = solution(...arrayB);
       rtaElement.innerHTML = rta1;
       rtaElement.innerHTML += '<br>';
       rtaElement.innerHTML += rta2;
