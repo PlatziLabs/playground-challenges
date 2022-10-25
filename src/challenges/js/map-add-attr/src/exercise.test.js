@@ -1,31 +1,21 @@
-import { mergeArrays } from "./exercise";
+import { addNewAttr } from "./exercise";
 
 describe("tests", () => {
-  it("should return [1,2,3,4]", () => {
-    const arrayA = [1, 2];
-    const arrayB = [3, 4];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([1, 2, 3, 4]);
-  });
-
-  it("should return [1,2,3,4,5]", () => {
-    const arrayA = [1, 2];
-    const arrayB = [3, 4, 5];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([1, 2, 3, 4, 5]);
-  });
-
-  it("should return [3,4,5]", () => {
-    const arrayA = [];
-    const arrayB = [3, 4, 5];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([3, 4, 5]);
-  });
-
-  it("should return []", () => {
-    const arrayA = [];
-    const arrayB = [];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([]);
+  it("should return array with taxes", () => {
+    const array = [
+      {
+        name: "Product 1",
+        price: 1000,
+        stock: 10
+      },
+      {
+        name: "Product 2",
+        price: 2000,
+        stock: 20
+      },
+    ];
+    const rta = addNewAttr(array);
+    expect(rta[0].taxes).toEqual(190);
+    expect(rta[0].taxes).toEqual(380);
   });
 });
