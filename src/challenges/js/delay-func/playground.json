@@ -1,0 +1,5 @@
+{
+  "title": "Crea una función de delay que soporte asincronismo",
+  "showFiles": false,
+  "template": "vanilla-js"
+}

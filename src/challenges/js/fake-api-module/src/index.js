@@ -12,9 +12,9 @@ import { solution } from "./exercise";
   const runBtn = document.getElementById('btn');
   const rtaElement = document.getElementById('rta');
 
-  runBtn.addEventListener('click', () => {
+  runBtn.addEventListener('click', async () => {
     try {
-      rtaElement.innerHTML = JSON.stringify(solution());
+      rtaElement.innerHTML = JSON.stringify(await solution());
     } catch (error) {
       rtaElement.innerHTML = error;
     }

@@ -1,3 +1,3 @@
 export function countWords(array) {
-   // Tu código aquí 👈
+  return array.flatMap(line => line.split(' ')).length;
 }
