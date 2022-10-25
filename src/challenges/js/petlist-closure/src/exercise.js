@@ -1,5 +1,5 @@
 export function createPetList() {
-  let petList = []
+  const petList = []
   return function(pet){
       if(pet){
         petList.push(pet)
