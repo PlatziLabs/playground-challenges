@@ -1,5 +1,5 @@
 {
-  "title": "Calcula el factorial",
+  "title": "Retorna el resultado de tareas asíncronas en orden",
   "showFiles": false,
   "template": "vanilla-js"
 }

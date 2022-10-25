@@ -18,7 +18,7 @@ import { mergeArrays } from "./exercise";
 
   runBtn.addEventListener('click', () => {
     try {
-      rtaElement.innerHTML = mergeArrays(arrayA, arrayB);
+      rtaElement.innerHTML = JSON.stringify(mergeArrays(arrayA, arrayB));
     } catch (error) {
       rtaElement.innerHTML = error;
     }
