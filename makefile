@@ -4,7 +4,7 @@ create-js:
 
 check:
 	ifeq ("$(wildcard $(DIR_TO_CHECK_FOR))", "")
-    @echo "Directory does not exist."
-  else
-    @echo "Skipping download because directory already exists."
-  endif
+		@echo "Directory does not exist."
+	else
+		@echo "Skipping download because directory already exists."
+	endif
