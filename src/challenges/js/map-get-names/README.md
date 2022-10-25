@@ -26,6 +26,6 @@ solution([
 
 Output
 
-```js
+```sh
 ['Nicolas', 'Valentina']
 ```

@@ -16,7 +16,7 @@ import { getNames } from "./exercise";
   ];
 
   document.getElementById("app").innerHTML = `
-    <h1>Get Names</h1>
+    <h1>Get Arrays with names</h1>
     <p>Array: <code>${JSON.stringify(array)}</code></p>
     <p><button id="btn">Run Code</button><p/>
     <p><pre><code id="rta"></code></pre></p>
@@ -27,7 +27,7 @@ import { getNames } from "./exercise";
 
   runBtn.addEventListener('click', () => {
     try {
-      rtaElement.innerHTML = getNames(array);
+      rtaElement.innerHTML = JSON.stringify(getNames(array));
     } catch (error) {
       rtaElement.innerHTML = error;
     }
