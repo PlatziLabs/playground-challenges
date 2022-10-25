@@ -12,7 +12,7 @@ Por ejemplo si aplicamos el 19% de impuestos para un producto con precio de **$1
 La solución debería tener un input y output como los siguientes:
 
 ```js
-solution([
+addNewAttr([
   {
     name: "Product 1",
     price: 1000,
