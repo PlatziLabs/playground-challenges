@@ -6,7 +6,11 @@ import { sumWithClosure } from "./exercise";
   const secondNum = 3;
 
   document.getElementById("app").innerHTML = `
-    <h1>Merge Arrays</h1>
+<<<<<<< HEAD
+    <h1>Sum with closure</h1>
+=======
+    <h1>sum with closure</h1>
+>>>>>>> master
     <p>first num: <code>${firstNum}</code></p>
     <p>second num: <code>${secondNum}</code></p>
     <p><button id="btn">Run Code</button><p/>

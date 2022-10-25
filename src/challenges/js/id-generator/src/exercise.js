@@ -1,3 +1,6 @@
 export function* getId() {
-  // Tu código aquí 👈
+  let lastId = 1;
+  while (true) {
+    yield lastId++;
+  }
 }
