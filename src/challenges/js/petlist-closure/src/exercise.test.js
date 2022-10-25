@@ -1,20 +1,7 @@
 import { createPetList } from "./exercise";
 
 describe("tests", () => {
-  it(`should return [ {
-    type: 'cat',
-    name: 'Michi',
-    age: 3,
-    weight: '2kg',
-    description: 'A nice cat'
-  },
-  {
-    type: 'dog',
-    name: 'firulais',
-    age: 6,
-    weight: '15kg',
-    description: 'A good dog'
-  }]`, () => {
+  it(`should return a pet list using closures`, () => {
     const petList = createPetList();
     petList({
       type: 'cat',
