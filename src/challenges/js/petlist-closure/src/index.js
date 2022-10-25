@@ -1,12 +1,14 @@
 import "./styles.css";
-import { filterByLength } from "./exercise";
+import { createPetList } from "./exercise";
 
 (() => {
-  const array = ['amor', 'sol', 'piedra', 'día'];
+  const cat = "michi"
+  const dog = "firulais"
 
   document.getElementById("app").innerHTML = `
-    <h1>Filter by Length</h1>
-    <p>Words: <code>${JSON.stringify(array)}</code></p>
+    <h1>Add pets to the petlist</h1>
+    <p>Array A: <code>${JSON.stringify(cat)}</code></p>
+    <p>Array B: <code>${JSON.stringify(dog)}</code></p>
     <p><button id="btn">Run Code</button><p/>
     <p><pre><code id="rta"></code></pre></p>
   `;
@@ -16,7 +18,10 @@ import { filterByLength } from "./exercise";
 
   runBtn.addEventListener('click', () => {
     try {
-      rtaElement.innerHTML = JSON.stringify(filterByLength(array));
+      let petList = createPetList()
+      petList(cat)
+      petList(dog)
+      rtaElement.innerHTML = petList().join(" ")
     } catch (error) {
       rtaElement.innerHTML = error;
     }
