@@ -24,7 +24,7 @@ import { solution } from "./exercise";
 
   runBtn.addEventListener('click', () => {
     try {
-      rtaElement.innerHTML = solution(json1, json2);
+      rtaElement.innerHTML = JSON.stringify(solution(json1, json2));
     } catch (error) {
       rtaElement.innerHTML = error;
     }
