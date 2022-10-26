@@ -1,3 +1,9 @@
 export function solution(estudiantes, deathCount, nuevo) {
-  // Tu código aquí 👈
+  for (var i = 0; i < deathCount; i++) {
+    estudiantes.pop();
+  }
+
+  estudiantes.push(nuevo);
+
+  return estudiantes;
 }
