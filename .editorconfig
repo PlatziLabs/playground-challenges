@@ -9,6 +9,10 @@ insert_final_newline = true
 end_of_line = lf
 max_line_length = off
 
+[*.{py,java,r,R}]
+indent_style = space
+indent_size = 4
+
 [CHANGELOG.md]
 indent_size = false
 
