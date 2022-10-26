@@ -1,3 +1,3 @@
 export function filterByLength(array) {
-  // Tu código aquí 👈
+  return array.filter(word => word.length >= 4);
 }
