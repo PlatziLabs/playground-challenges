@@ -1,3 +1,8 @@
 export function sumWithClosure(firstNum) {
-  // Tu código aquí 👈
+  return function (secondNum) {
+    if (secondNum) {
+      return secondNum + firstNum;
+    }
+    return firstNum;
+  };
 }

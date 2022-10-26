@@ -1,3 +1,6 @@
 export function addNewAttr(array) {
-  // Tu código aquí 👈
+  return array.map((item) => ({
+    ...item,
+    taxes: Math.trunc(item.price * 0.19),
+  }));
 }
