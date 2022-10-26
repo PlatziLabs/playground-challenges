@@ -6,7 +6,7 @@ import { solution } from "./exercise";
   const arrayB = [1, "Gallina", "Vaca"];
 
   document.getElementById("app").innerHTML = `
-    <h1>Detecta el Elemento Importor de un Array</h1>
+    <h1>Detecta el Elemento Impostor de un Array</h1>
     <p>Array A: <code>${JSON.stringify(arrayA)}</code></p>
     <p>Array B: <code>${JSON.stringify(arrayB)}</code></p>
     <p><button id="btn">Run Code</button><p/>
