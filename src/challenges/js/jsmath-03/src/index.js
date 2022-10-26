@@ -8,7 +8,7 @@ import { solution } from "./exercise";
   };
 
   document.getElementById("app").innerHTML = `
-    <h1>Object to Array</h1>
+    <h1>Transforma objetos en arrays</h1>
     <p>Objeto original: <code>${JSON.stringify(usersObj)}</code></p>
     <p><button id="btn">Run Code</button><p/>
     <p><pre><code id="rta"></code></pre></p>
