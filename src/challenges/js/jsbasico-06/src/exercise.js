@@ -4,4 +4,5 @@ export function solution(car) {
   } else {
     car.drivingLicense = false;
   }
+  return car;
 }
