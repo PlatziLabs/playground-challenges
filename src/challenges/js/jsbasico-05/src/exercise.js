@@ -4,6 +4,5 @@ export function solution(estudiantes, deathCount, nuevo) {
   }
 
   estudiantes.push(nuevo);
-
   return estudiantes;
 }
