@@ -4,17 +4,20 @@ class Banda {
     this.generos = generos;
     this.integrantes = [];
   }
-  agregarIntegrante(integrante) {
-    if (
-      integrante.instrumento.toLowerCase() === "bateria" &&
-      this.integrantes.some(
-        (integrante) => integrante.instrumento.toLowerCase() === "bateria"
-      )
-    ) {
+  agregarIntegrante(integranteNuevo) {
+    let instrumento = integranteNuevo.instrumento.toLowerCase().trim()
+
+    function tenemosUnBateria(integrantes) {
+      return integrantes.some((element) => {
+        return element.instrumento.toLowerCase().trim() === "bateria"
+      });
+    }
+
+    if (instrumento === "bateria" && tenemosUnBateria(this.integrantes)) {
       return false;
     }
 
-    return this.integrantes.push(integrante);
+    return this.integrantes.push(integranteNuevo);
   }
 }
 
