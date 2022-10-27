@@ -1,3 +1,7 @@
 export function solution(car) {
-  // Tu código aquí 👈
+  if (car.licensePlate) {
+    car.drivingLicense = true;
+  } else {
+    car.drivingLicense = false;
+  }
 }
