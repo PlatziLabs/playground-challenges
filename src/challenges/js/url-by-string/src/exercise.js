@@ -1,3 +1,3 @@
-export function parseToURL(array) {
+export function parseToURL(title) {
   // Tu código aquí 👈
 }
