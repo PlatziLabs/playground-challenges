@@ -33,7 +33,7 @@ describe("tests", () => {
       },
     ];
     const rta = addNewAttr(array);
-    expect(rta[0]?.taxes).toEqual(163);
+    expect(rta[0]?.taxes).toEqual(162);
     expect(rta[1]?.taxes).toEqual(1626);
   });
 });
