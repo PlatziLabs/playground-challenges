@@ -8,12 +8,10 @@ export class Course {
   }
 
   get name() {
-    // Tu código aquí 👈
-    return this._name
+    return this._name;
   }
 
   set name(nuevoNombrecito) {
-    // Tu código aquí 👈
     if (typeof nuevoNombrecito === "string") {
       nuevoNombrecito = nuevoNombrecito.trim()
       if (nuevoNombrecito.length !== 0) {

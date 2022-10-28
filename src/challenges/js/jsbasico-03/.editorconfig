@@ -1,22 +1,14 @@
 root = true
 
-[*.ts, *.js]
+[*]
 indent_style = space
 indent_size = 2
 charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 end_of_line = lf
+# editorconfig-tools is unable to ignore longs strings or urls
 max_line_length = off
-
-[*.{py,java,r,R}]
-indent_style = space
-indent_size = 4
 
 [CHANGELOG.md]
 indent_size = false
-
-
-[makefile]
-indent_style = tab
-indent_size = 4

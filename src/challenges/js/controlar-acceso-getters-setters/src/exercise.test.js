@@ -9,26 +9,26 @@ describe("tests", () => {
     });
   });
 
-  it("Debe validar el nombre del curso incluso en el constructor", () => {
+  it("should validate the course name in the constructor", () => {
     expect(nuevoCurso).toEqual({ _name: "Curso De Programación Básica", classes: [] });
   });
 
-  it("Debe aplicar letra mayúscula inicial en cada palabra", () => {
+  it("should apply capital letter to each word", () => {
     nuevoCurso.name = 'nombre nuevo curso'
     expect(nuevoCurso).toEqual({ _name: "Nombre Nuevo Curso", classes: [] });
   });
 
-  it("No debe cambiar la propiedad name si no es un string valido", () => {
+  it("should keep property name intact if is not a valid string", () => {
     nuevoCurso.name = 2
     expect(nuevoCurso).toEqual({ _name: "Curso De Programación Básica", classes: [] });
   });
 
-  it("No debe cambiar la propiedad name si es un string vacio", () => {
+  it("should keep property name intact if is an empty string", () => {
     nuevoCurso.name = " "
     expect(nuevoCurso).toEqual({ _name: "Curso De Programación Básica", classes: [] });
   });
 
-  it("Debe eliminar espacios al inicio y al final del nombre", () => {
+  it("should return the course title trimming empty spaces at beginning and ending", () => {
     nuevoCurso.name = " curso raro "
     expect(nuevoCurso).toEqual({ _name: "Curso Raro", classes: [] });
   });
