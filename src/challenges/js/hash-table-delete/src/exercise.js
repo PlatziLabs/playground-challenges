@@ -13,7 +13,7 @@ export class Solution extends HashTable {
       for (let i = 0; i < currentBucket.length; i++) {
         if (currentBucket[i][0] === key) {
           let arrDeletedItems = currentBucket.splice(i, 1)
-          return arrDeletedItems;
+          return arrDeletedItems[0];
         }
       }
     }
