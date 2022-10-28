@@ -76,5 +76,9 @@ Input
 Output
 
 ```js
-{"studentName":"Erik Ochoa (profesor de js,python,mongodb)","likes":"0 likes","content":"Mi primer comentario"}
+{
+  "studentName":"Erik Ochoa (profesor de js,python,mongodb)",
+  "likes":"0 likes",
+  "content":"Mi primer comentario"
+}
 ```
