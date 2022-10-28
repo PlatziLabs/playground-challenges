@@ -1,3 +1,3 @@
-export function solution(array) {
+export function checkArray(array) {
   // Tu código aquí 👈
 }

@@ -1,31 +1,15 @@
-import { mergeArrays } from "./exercise";
+import { parseToURL } from "./exercise";
 
 describe("tests", () => {
-  it("should return [1,2,3,4]", () => {
-    const arrayA = [1, 2];
-    const arrayB = [3, 4];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([1, 2, 3, 4]);
-  });
-
-  it("should return [1,2,3,4,5]", () => {
-    const arrayA = [1, 2];
-    const arrayB = [3, 4, 5];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([1, 2, 3, 4, 5]);
-  });
-
-  it("should return [3,4,5]", () => {
-    const arrayA = [];
-    const arrayB = [3, 4, 5];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([3, 4, 5]);
-  });
-
-  it("should return []", () => {
-    const arrayA = [];
-    const arrayB = [];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([]);
+  it("should return right title", () => {
+    expect(parseToURL("La API para nunca parar de aprender")).toEqual(
+      "la-api-para-nunca-parar-de-aprender"
+    );
+    expect(parseToURL("La forma de correr Python")).toEqual(
+      "la-forma-de-correr-python"
+    );
+    expect(parseToURL("Curso de arrays")).toEqual(
+      "curso-de-arrays"
+    );
   });
 });
