@@ -1,3 +1,3 @@
 export function checkArray(array) {
-  // Tu código aquí 👈
+  return numbers.every((item) => item % 2 === 0);
 }
