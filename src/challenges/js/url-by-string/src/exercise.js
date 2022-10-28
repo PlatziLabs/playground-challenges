@@ -1,3 +1,3 @@
-export function parseToURL(array) {
-  // Tu código aquí 👈
+export function parseToURL(title) {
+  return title.split(' ').join('-').toLowerCase();
 }
