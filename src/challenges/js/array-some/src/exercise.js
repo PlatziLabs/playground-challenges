@@ -1,3 +1,3 @@
-export function mergeArrays(arrayA, arrayB) {
-  // Tu código aquí 👈
+export function checkArray(array) {
+  return array.some((item) => item % 2 === 0);
 }
