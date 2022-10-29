@@ -1,4 +1,4 @@
-import { mergeArrays, solution } from "./exercise";
+import { solution } from "./exercise";
 
 describe("tests", () => {
   it("should return 2 cars", () => {

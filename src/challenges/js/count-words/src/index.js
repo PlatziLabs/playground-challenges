@@ -4,9 +4,7 @@ import { countWords } from "./exercise";
 (() => {
   const array = [
     "Beautiful is better than ugly",
-    "Explicit is better than implicit",
-    "Simple is better than complex",
-    "Complex is better than complicated"
+    "Explicit is better than implicit"
   ];
 
   document.getElementById("app").innerHTML = `
