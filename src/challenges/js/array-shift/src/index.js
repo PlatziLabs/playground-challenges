@@ -8,7 +8,7 @@ import { BetterArray } from "./exercise";
   betterArray.unshift("Este item debe desaparecer ❌")
 
   document.getElementById("app").innerHTML = `
-    <h1>Merge Arrays</h1>
+    <h1>Array shift</h1>
     <p>Better array: <code id="arr">${JSON.stringify(betterArray.data)}</code></p>
     <p><button id="btn">Delete first element</button><p/>
     <p><pre><code id="rta">Aquí aparecerá el item que eliminaste 👇</code></pre></p>
