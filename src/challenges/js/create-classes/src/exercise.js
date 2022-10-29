@@ -7,7 +7,7 @@ class Banda {
     this.generos = generos;
     this.integrantes = [];
   }
-  agregarIntegrante(integrante) {
+  agregarIntegrante(integranteNuevo) {
     // Tu código aquí 👈
 
   }
