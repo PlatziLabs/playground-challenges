@@ -1,3 +1,3 @@
-export function mergeArrays(arrayA, arrayB) {
-  // Tu código aquí 👈
+export function calcSum(array) {
+  return array.reduce((count, item) => count + item, 0);
 }

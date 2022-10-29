@@ -1,31 +1,27 @@
-import { mergeArrays } from "./exercise";
+import { checkArray } from "./exercise";
 
 describe("tests", () => {
-  it("should return [1,2,3,4]", () => {
-    const arrayA = [1, 2];
-    const arrayB = [3, 4];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([1, 2, 3, 4]);
+  it("should return true", () => {
+    const array = [1, 2];
+    const rta = checkArray(array);
+    expect(rta).toEqual(true);
   });
 
-  it("should return [1,2,3,4,5]", () => {
-    const arrayA = [1, 2];
-    const arrayB = [3, 4, 5];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([1, 2, 3, 4, 5]);
+  it("should return false", () => {
+    const array = [1, 1];
+    const rta = checkArray(array);
+    expect(rta).toEqual(false);
   });
 
-  it("should return [3,4,5]", () => {
-    const arrayA = [];
-    const arrayB = [3, 4, 5];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([3, 4, 5]);
+  it("should return false with []", () => {
+    const array = [];
+    const rta = checkArray(array);
+    expect(rta).toEqual(false);
   });
 
-  it("should return []", () => {
-    const arrayA = [];
-    const arrayB = [];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([]);
+  it("should return true with big numbers", () => {
+    const array = [2224, 23, 23];
+    const rta = checkArray(array);
+    expect(rta).toEqual(true);
   });
 });
