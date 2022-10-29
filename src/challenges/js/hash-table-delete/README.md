@@ -18,7 +18,7 @@ Ejemplo 👇
 ]
 ```
 
-Si quieres refrescar un poco la memoria con el código que estuvimos creando, puedes verlo dandolé click a la venta `hashTable.js`
+Si quieres refrescar un poco la memoria con el código que estuvimos creando, puedes verlo dandolé click al archivo `hashTable.js` en el playground.
 
 Recibirás un input y output como los siguientes
 
