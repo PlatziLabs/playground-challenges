@@ -6,16 +6,22 @@ Ya pudiste observar como se hacen los métodos de `get` y `set` en anteriores cl
 - En caso de encontrar la key, borrará todo el espacio y lo retornará
 - En caso de no encontrarlo, retornará `undefined`
 - Si en un mismo bucket hay dos valores, se deberá desplazar a los elementos
+
 Ejemplo 👇
+
 ```js
+
 [
   ["Diego", 1990],
   ["Mariana", 1998],
 ]
+
 // Después de ejecutar el método delete("Diego")
+
 [
   ["Mariana", 1998],
 ]
+
 ```
 
 Si quieres refrescar un poco la memoria con el código que estuvimos creando, puedes verlo dandolé click al archivo `hashTable.js` en el playground.

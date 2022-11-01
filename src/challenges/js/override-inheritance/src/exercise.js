@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 class Student {
   constructor({
     name,
@@ -72,4 +73,9 @@ class TeacherStudent extends Student {
 export {
   Student,
   TeacherStudent
+=======
+import { Student, Comment } from "./utilityClasses";
+export class TeacherStudent {
+  // Tu código aquí 👈
+>>>>>>> master
 }
