@@ -2,5 +2,5 @@
   "title": "",
   "showFiles": false,
   "template": "python",
-  "packages": ["pytest"]
+  "packages": []
 }
