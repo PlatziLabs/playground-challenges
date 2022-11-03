@@ -9,8 +9,6 @@ print(my_var)
 
 Teniendo lo anterior en cuenta en este reto debes que crear dos variables.
 
-La primera variable será `name` y debes asignar el valor haciendo uso de la función `input`.
+La primera variable será `name` y debes asignar el valor haciendo uso de la función `input`, luego que tengas el valor debes hacer uso de la función `print` para mostrarlo en la **Terminal.**
 
-La segunda variable será `age` e igualmente debes asignar el valor haciendo uso de la función `input`.
-
-Finalmente, una vez creadas estas variables debes imprimirlas en líneas separadas haciendo uso de `print`.
+La segunda variable será `age` e igualmente debes asignar el valor haciendo uso de la función `input`,  luego que tengas el valor debes hacer uso de la función `print` para mostrarlo en la **Terminal.**
