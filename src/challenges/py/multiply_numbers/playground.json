@@ -1,5 +1,5 @@
 {
-  "title": "",
+  "title": "Multiplica todos los elementos por dos",
   "showFiles": false,
   "template": "python",
   "packages": ["pytest"]
