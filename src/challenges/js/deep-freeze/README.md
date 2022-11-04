@@ -1,4 +1,5 @@
 Dado un objeto como el siguiente:
+
 ```js
 const juan = {
   name: "Juanito",

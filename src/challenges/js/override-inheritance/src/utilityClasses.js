@@ -1,7 +1,4 @@
-Dadas las siguientes clases:
-
-```js
-class Student {
+export class Student {
   constructor({
     name,
     email,
@@ -33,7 +30,7 @@ class Student {
   }
 }
 
-class Comment {
+export class Comment {
   constructor({
     content,
     studentName,
@@ -54,32 +51,3 @@ class Comment {
     return comentario
   }
 }
-```
-
-Tu reto consisten en:
-- Hacer que la clase `TeacherStudent` herede de `Student`
-- Agrega un propiedad de tipo Array llamada `skills` a la clase `TeacherStudent`.
-- Sobrescribir el metodo `publicarComentario` dentro de `TeacherStundent` para agregar el array de skills en su la propiedad `studentRole` de la clase `Comment` como un string de la siguiente manera "profesor de skill1, skill2".
-
-Input
-
-```js
-  const skills = ["js", "python", "mongodb"]
-  const props = {
-    name: "Erik Ochoa",
-    username: "elyager"
-  }
-
-  const profesor = new TeacherStudent(props, skills)
-  profesor.publicarComentario('Mi primer comentario')
-```
-
-Output
-
-```js
-{
-  "studentName":"Erik Ochoa (profesor de js,python,mongodb)",
-  "likes":"0 likes",
-  "content":"Mi primer comentario"
-}
-```
