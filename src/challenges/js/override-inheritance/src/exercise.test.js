@@ -1,5 +1,5 @@
 import { TeacherStudent } from "./exercise";
-import { Student } from "./classes";
+import { Student } from "./Student";
 
 const skills = ["js", "python", "mongodb"]
 const props = {
