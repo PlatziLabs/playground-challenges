@@ -246,7 +246,7 @@ No debes cambiar la estructura, ya que el **Coding Playground** asume que maneja
 
 La descripción se pone en el archivo `README.md` y es lo que aparece en el Tab: Guiá.
 
-![Playground](https://i.imgur.com/5E5yEI5.png)
+![Playground](https://i.imgur.com/49dRrD3.png)
 
 Aquí tienes un ejemplo en donde se usa Markdown para poner el formato.
 
