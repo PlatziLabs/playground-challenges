@@ -55,7 +55,7 @@ No debes cambiar la estructura, ya que el **Coding Playground** asume que maneja
 
 La descripción se pone en el archivo `README.md` y es lo que aparece en el Tab: Guiá.
 
-![Playground](https://i.imgur.com/gb5cL8z.png)
+![Playground](https://i.imgur.com/cEbsRQM.png)
 
 Aquí tienes un ejemplo en donde se usa Markdown para poner el formato.
 
@@ -274,7 +274,8 @@ Teniendo esto en cuenta podrías crear tu reto en el archivo `exercise.js` el cu
 ```py
 // src/exercise.py
 def multiply_numbers(numbers):
-   # Tu código aquí
+    # Tu código aquí 👈
+    return []
 
 response = multiply_numbers([1, 2, 3, 4])
 print(response)
@@ -332,7 +333,7 @@ Por eso la solución debe estar en una nueva rama llamada `solution` en esta ram
 // src/exercise.py en la rama solution
 
 def multiply_numbers(numbers):
-   return list(map(lambda x: x * 2, numbers))
+    return list(map(lambda x: x * 2, numbers))
 
 response = multiply_numbers([1, 2, 3, 4])
 print(response)
