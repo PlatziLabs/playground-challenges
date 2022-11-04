@@ -217,6 +217,12 @@ source env/bin/activate
 pip3 install -r requirements.txt
 ```
 
+Nota: Recuerda cada vez que cambies de ejercicio desactivar en pyenv
+
+```sh
+deactivate
+```
+
 ### 3. Reconcer la estructura
 
 Cuando crees el proyecto, el código del reto que verás una estructura de carpetas, como la siguiente.
@@ -245,14 +251,14 @@ La descripción se pone en el archivo `README.md` y es lo que aparece en el Tab:
 Aquí tienes un ejemplo en donde se usa Markdown para poner el formato.
 
 ````md
-En este desafío tienes un array de números, debes retornar todos los números del array multiplicados por dos usando la función `map` y una `lambda`.
+En este desafío tendrás la función `multiply_numbers` la cual recibe una lista de números, usando la función **map** y una **lambda** debes retornar todos los números de la lista multiplicados por dos.
 
 La solución debería tener un input y output como los siguientes:
 
 Input
 
 ```py
-multiply_elements([2, 4, 5, 6, 8]);
+multiply_numbers([2,4,5,6,8])
 ```
 
 Output
