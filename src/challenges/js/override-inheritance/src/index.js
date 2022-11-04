@@ -13,7 +13,7 @@ import { Student } from "./Student";
   const estudiante = new Student(props)
 
   document.getElementById("app").innerHTML = `
-    <h1>Sobrescribir métodos heredados</h1>
+    <h2>Sobrescribir métodos heredados</h2>
     <p>Estudiante: <code>${JSON.stringify(estudiante, null, 2)}</code></p>
     <p>Mensaje estudiante: <code>${JSON.stringify(estudiante.publicarComentario('Mi primer comentario'), null, 2)}</code></p>
     <p><button id="btn">Run Code</button><p/>
