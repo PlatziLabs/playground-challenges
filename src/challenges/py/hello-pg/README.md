@@ -13,3 +13,5 @@ La función `print` nos permite imprimir texto en la **Terminal**, teniendo esto
 - 30
 
 Recuerda tener cuidado con los espacios y las mayúsculas, para este ejercicio el primer `print` ya está hecho, así que tienes que hacer los que falten.
+
+Una vez tengas la solución al reto puedes validar tu respuesta dando clic en el botón **Correr pruebas**.
