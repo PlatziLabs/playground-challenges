@@ -4,7 +4,7 @@ import { solution } from "./exercise";
 (() => {
   const defaultArray = [27, 36, 45, 54, 63, 72]
   document.getElementById("app").innerHTML = `
-    <h1>Obten el factor multiplicador</h1>
+    <h1>Obtén el factor multiplicador</h1>
     <p>Array de prueba:<code> ${JSON.stringify(defaultArray)} </code></p>
     <p><button id="btn">Run Code</button><p/>
     <p><pre><code id="rta"></code></pre></p>

@@ -1,8 +1,8 @@
 Vamos a tomar como base los números del 3 al 8 para multiplciarlos por un mismo factor desconocido (x) que nos da ciertos resultados.
 
-Entonce, dada una función que recibe un array númerico con los resultados, encuentra el factor multiplicador (x) de los números 3 al 8.
+Entonces, dada una función que recibe un array númerico con los resultados debes encontrar el factor multiplicador (x) para obtener ese resultado multiplicando por los números del 3 al 8.
 
-### Ejemplo
+Ejemplo:
 
 En el siguiente caso el factor sería 9.
 
@@ -14,6 +14,7 @@ En el siguiente caso el factor sería 9.
 7 * x =  63
 8 * x =  72
 ```
+
 Si si un solo factor multiplicador difiere del resto se regresa `false`.
 
 En el siguiente ejemplo la función regresaria `false` porque hay una resultado que tiene como factor multiplicador el **6** en lugar del **9** como el resto.
