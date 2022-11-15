@@ -28,8 +28,8 @@ describe("tests", () => {
       },
       {
         name: "Product 2",
-        price: 2000,
-        stock: 8562
+        price: 8562,
+        stock: 12
       },
     ];
     const rta = addNewAttr(array);
