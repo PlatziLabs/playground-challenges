@@ -1,6 +1,6 @@
-En este desafío tienes que crear una función que reciba un `callback` pero este tiene que ser ejecutado 2s despues.
+En este desafío tienes la función `execCallback` que recibirá un `callback` es decir una función como parámetro, tu reto es ejecutar esa función con un tiempo de demora de 2 segundos.
 
-> Nota: Debes usar la función `setTimeout` con el namespace `window` para poder monitorear su uso en la ejecución de pruebas, ejemplo:
+Para hacer que la función se demore 2 segundos debes usar la función `setTimeout`, pero para ejecutarla debes llamarla mediante el namescpace `window` para poder monitorear su uso en la ejecución de pruebas, ejemplo:
 
 ```js
 window.setTimeout(() => {
@@ -13,11 +13,12 @@ La solución debería tener un input y output como los siguientes:
 Input
 
 ```js
-runCode(() => console.log('Log after 2s'));
+const myFunc = () => console.log('Log after 2s')
+execCallback(myFunc);
 ```
 
 Output
 
 ```js
-// Execute function 2s after
+// Execute myFunc 2s after
 ```
