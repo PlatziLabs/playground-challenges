@@ -1,3 +1,3 @@
-export function runCode(callback) {
+export function execCallback(callback) {
   // Tu código aquí 👈
 }

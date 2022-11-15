@@ -1,4 +1,4 @@
-import { runCode } from "./exercise";
+import { execCallback } from "./exercise";
 
 describe("tests", () => {
   beforeEach(() => {
@@ -11,7 +11,7 @@ describe("tests", () => {
       .mockImplementation((callback) => callback());
     const mockCallback = jest
       .fn((x) => 42 + x);
-    runCode(mockCallback);
+      execCallback(mockCallback);
     expect(mockCallback).toHaveBeenCalledTimes(1);
   });
 
@@ -20,7 +20,7 @@ describe("tests", () => {
       .spyOn(global, "setTimeout")
       .mockImplementation((callback) => callback());
     const mockCallback = jest.fn((x) => 42 + x);
-    runCode(mockCallback);
+    execCallback(mockCallback);
     expect(mockCallback).toHaveBeenCalledTimes(1);
     expect(spyTimeout).toHaveBeenCalledTimes(1);
     expect(spyTimeout).toHaveBeenLastCalledWith(expect.any(Function), 2000);

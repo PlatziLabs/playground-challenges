@@ -1,5 +1,5 @@
 import "./styles.css";
-import { runCode } from "./exercise";
+import { execCallback } from "./exercise";
 
 (() => {
   document.getElementById("app").innerHTML = `
@@ -8,10 +8,17 @@ import { runCode } from "./exercise";
     <pre><code id="code"></code></pre>
   `;
 
+  const rtaElement = document.getElementById('code');
+
   const callback = () => {
-    document.getElementById('code').innerHTML = 'run after 2s';
+    rtaElement.innerHTML = 'run after 2s';
   }
 
-  runCode(callback);
+  try {
+    execCallback(callback);
+  } catch (error) {
+    rtaElement.innerHTML = JSON.stringify(error);
+  }
+
 
 })();
