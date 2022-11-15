@@ -3,7 +3,7 @@ import { solution } from "./exercise";
 
 (() => {
   document.getElementById("app").innerHTML = `
-    <h1>Reduce number to one</h1>
+    <h2>Reduce el número a 1 en la menor cantidad de pasos</h2>
     <input type="number" id="num" />
     <p><button id="btn">Run Code</button><p/>
     <p><pre><code id="rta"></code></pre></p>
