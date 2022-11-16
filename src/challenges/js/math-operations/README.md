@@ -2,7 +2,7 @@ Basado en la solución del desafio anterios para llegar a la solución crea una 
 
 Solución del desafio anterior
 
-```
+```js
 (5-4)  = 1   :   (5+4)  = 9  →  19
 (8-2)  = 6   :   (8+2)  = 10 →  610
 (10-8) = 2   :   (10+8) = 18 →  218

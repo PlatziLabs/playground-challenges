@@ -6,7 +6,7 @@ Ejemplo:
 
 En el siguiente caso el factor sería 9.
 
-```
+```js
 3 * x =  27
 4 * x =  36
 5 * x =  45
@@ -19,7 +19,7 @@ Si si un solo factor multiplicador difiere del resto se regresa `false`.
 
 En el siguiente ejemplo la función regresaria `false` porque hay una resultado que tiene como factor multiplicador el **6** en lugar del **9** como el resto.
 
-```
+```js
 3 * x =  27
 4 * x =  36
 5 * x =  45
