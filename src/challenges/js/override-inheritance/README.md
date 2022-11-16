@@ -4,7 +4,9 @@ Dentro de este reto encuentras las clases **Student** y **Comment** con un códi
 Tu reto consisten en:
 - Hacer que la clase `TeacherStudent` herede de `Student`
 - Agrega un propiedad de tipo Array llamada `skills` a la clase `TeacherStudent`.
-- Sobrescribir el metodo `publicarComentario` dentro de `TeacherStundent` para agregar el array de skills en su la propiedad `studentRole` de la clase `Comment` como un string de la siguiente manera "profesor de skill1, skill2".
+- Sobrescribir el método `publicarComentario` dentro de `TeacherStundent`.
+- Debe agregar el array de skills en su la propiedad `studentRole` de la clase `Comment`.
+- El string debe verse de la siguiente manera "profesor de skill1, skill2".
 
 Input
 
