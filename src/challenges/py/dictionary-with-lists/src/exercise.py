@@ -7,7 +7,10 @@ def dictionary_with_lists(names):
         'count': 0
     }
 
-    # Tu código aquí
+    students["names"] = names
+    students["first_student"] = names[0]
+    students["last_student"] = names[-1]
+    students["count"] = len(names)
 
     return students
 
