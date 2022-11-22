@@ -7,8 +7,8 @@ import { mergeArrays } from "./exercise";
 
   document.getElementById("app").innerHTML = `
     <h2>Merge Arrays</h2>
-    <p>Array A: <code>${JSON.stringify(arrayA)}</code></p>
-    <p>Array B: <code>${JSON.stringify(arrayB)}</code></p>
+    <p>Array A: <code>${JSON.stringify(arrayA, null, 1)}</code></p>
+    <p>Array B: <code>${JSON.stringify(arrayB, null, 1)}</code></p>
     <p><button id="btn">Run Code</button><p/>
     <p><pre><code id="rta"></code></pre></p>
   `;
@@ -18,7 +18,7 @@ import { mergeArrays } from "./exercise";
 
   runBtn.addEventListener('click', () => {
     try {
-      rtaElement.innerHTML = JSON.stringify(mergeArrays(arrayA, arrayB));
+      rtaElement.innerHTML = JSON.stringify(mergeArrays(arrayA, arrayB), null, 1);
     } catch (error) {
       rtaElement.innerHTML = error;
     }
