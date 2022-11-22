@@ -7,7 +7,8 @@ En este desafío tienes un array de objetos que representan datos de personas co
 El reto es retornar un array de strings con los nombres, la solución debería tener un input y output como los siguientes:
 
 ```js
-Input: [
+Input:
+[
   {
     name: 'Nicolas',
     lastName: 'Molina',
@@ -20,6 +21,7 @@ Input: [
   },
 ]
 
-Output:  ['Nicolas', 'Valentina']
+Output:
+['Nicolas', 'Valentina']
 ```
 
