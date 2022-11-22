@@ -5,7 +5,7 @@ import { multiplyElements } from "./exercise";
   const array = [1, 2, 3, 4];
 
   document.getElementById("app").innerHTML = `
-    <h1>Multiplicar elementos</h1>
+    <h2>Multiplicar elementos</h2>
     <p>Array de prueba <code>${JSON.stringify(array)}</code></p>
     <p>
       <button id="btn">Run Code</button>
