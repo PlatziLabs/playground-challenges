@@ -31,9 +31,15 @@ describe("tests", () => {
         price: 8562,
         stock: 12
       },
+      {
+        name: "Product 3",
+        price: 656,
+        stock: 12
+      },
     ];
     const rta = addNewAttr(array);
     expect(rta[0]?.taxes).toEqual(162);
     expect(rta[1]?.taxes).toEqual(1626);
+    expect(rta[2]?.taxes).toEqual(124);
   });
 });
