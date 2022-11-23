@@ -1,26 +1,29 @@
 import "./styles.css";
-import { mergeArrays } from "./exercise";
+import { filterByTerm } from "./exercise";
 
 (() => {
-  const arrayA = [1, 2, 3, 4];
-  const arrayB = [5, 6, 7, 8];
+  const array = ["ana", "santi", "nico", "anastasia"];
 
   document.getElementById("app").innerHTML = `
-    <h1>Merge Arrays</h1>
-    <p>Array A: <code>${JSON.stringify(arrayA)}</code></p>
-    <p>Array B: <code>${JSON.stringify(arrayB)}</code></p>
+    <h2>Filter By Term</h2>
+    <p>Array</p>
+    <p><pre><code>${JSON.stringify(array, null, 1)}</code></pre></p>
+    <p>Term</p>
+    <p><input id="term" value="ana" /></p>
     <p><button id="btn">Run Code</button><p/>
     <p><pre><code id="rta"></code></pre></p>
   `;
 
   const runBtn = document.getElementById('btn');
   const rtaElement = document.getElementById('rta');
+  const termInput = document.getElementById('term');
 
   runBtn.addEventListener('click', () => {
     try {
-      rtaElement.innerHTML = mergeArrays(arrayA, arrayB);
+      const term = termInput.value;
+      rtaElement.innerHTML = JSON.stringify(filterByTerm(array, term), null, 1);
     } catch (error) {
-      rtaElement.innerHTML = error;
+      rtaElement.innerHTML = JSON.stringify(error, null, 1);
     }
   });
 })();

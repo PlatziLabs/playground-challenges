@@ -16,8 +16,9 @@ import { addNewAttr } from "./exercise";
   ];
 
   document.getElementById("app").innerHTML = `
-    <h1>Calc taxes in array</h1>
-    <p>Array: <code>${JSON.stringify(array, null, 1)}</code></p>
+    <h2>Calc taxes in array</h2>
+    <p>Example Array:</p>
+    <p><pre><code>${JSON.stringify(array, null, 1)}</code></pre></p>
     <p><button id="btn">Run Code</button><p/>
     <p><pre><code id="rta"></code></pre></p>
   `;

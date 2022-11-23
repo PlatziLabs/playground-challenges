@@ -5,8 +5,9 @@ import { calcSum } from "./exercise";
   const array = [1, 2, 3, 4];
 
   document.getElementById("app").innerHTML = `
-    <h1>Calc Total</h1>
-    <p>Array: <code>${JSON.stringify(array)}</code></p>
+    <h2>Calc Total</h2>
+    <p>Array</p>
+    <p><pre><code>${JSON.stringify(array)}</code></pre></p>
     <p><button id="btn">Run Code</button><p/>
     <p><pre><code id="rta"></code></pre></p>
   `;
@@ -16,9 +17,9 @@ import { calcSum } from "./exercise";
 
   runBtn.addEventListener('click', () => {
     try {
-      rtaElement.innerHTML = calcSum(array);
+      rtaElement.innerHTML = JSON.stringify(calcSum(array), null, 1);
     } catch (error) {
-      rtaElement.innerHTML = error;
+      rtaElement.innerHTML = JSON.stringify(error, null, 1);
     }
   });
 })();

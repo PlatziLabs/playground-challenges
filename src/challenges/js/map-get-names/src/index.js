@@ -17,7 +17,8 @@ import { getNames } from "./exercise";
 
   document.getElementById("app").innerHTML = `
     <h2>Get Arrays with names</h2>
-    <p>Array: <code>${JSON.stringify(array, null, 1)}</code></p>
+    <p>Example Array:</p>
+    <p><pre><code>${JSON.stringify(array, null, 1)}</code></pre></p>
     <p><button id="btn">Run Code</button><p/>
     <p><pre><code id="rta"></code></pre></p>
   `;
