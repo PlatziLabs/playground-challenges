@@ -1,3 +1,3 @@
-export function calcSum(array) {
+export function calcSum(numbers) {
   // Tu código aquí 👈
 }

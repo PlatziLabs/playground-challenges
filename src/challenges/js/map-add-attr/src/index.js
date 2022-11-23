@@ -14,11 +14,11 @@ import { addNewAttr } from "./exercise";
       stock: 20
     },
   ];
-  const arrayB = [5, 6, 7, 8];
 
   document.getElementById("app").innerHTML = `
-    <h1>Calc taxes in array</h1>
-    <p>Array: <code>${JSON.stringify(array)}</code></p>
+    <h2>Calc taxes in array</h2>
+    <p>Example Array:</p>
+    <p><pre><code>${JSON.stringify(array, null, 1)}</code></pre></p>
     <p><button id="btn">Run Code</button><p/>
     <p><pre><code id="rta"></code></pre></p>
   `;
@@ -28,7 +28,7 @@ import { addNewAttr } from "./exercise";
 
   runBtn.addEventListener('click', () => {
     try {
-      rtaElement.innerHTML = JSON.stringify(addNewAttr(array));
+      rtaElement.innerHTML = JSON.stringify(addNewAttr(array), null, 1);
     } catch (error) {
       rtaElement.innerHTML = error;
     }
