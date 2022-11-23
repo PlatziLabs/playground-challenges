@@ -28,9 +28,10 @@ import { getNames } from "./exercise";
 
   runBtn.addEventListener('click', () => {
     try {
-      rtaElement.innerHTML = JSON.stringify(getNames(array, null, 1));
+      const rta = getNames(array);
+      rtaElement.innerHTML = JSON.stringify(rta, null, 1);
     } catch (error) {
-      rtaElement.innerHTML = error;
+      rtaElement.innerHTML = JSON.stringify();
     }
   });
 })();

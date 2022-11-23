@@ -28,9 +28,10 @@ import { addNewAttr } from "./exercise";
 
   runBtn.addEventListener('click', () => {
     try {
-      rtaElement.innerHTML = JSON.stringify(addNewAttr(array), null, 1);
+      const rta = addNewAttr(array);
+      rtaElement.innerHTML = JSON.stringify(rta, null, 1);
     } catch (error) {
-      rtaElement.innerHTML = error;
+      rtaElement.innerHTML = JSON.stringify(error, null, 1);
     }
   });
 })();

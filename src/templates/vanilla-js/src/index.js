@@ -8,9 +8,9 @@ import { mergeArrays } from "./exercise";
   document.getElementById("app").innerHTML = `
     <h2>Merge Arrays</h2>
     <p>Array A: </p>
-    <p><pre><code>${JSON.stringify(arrayA, null, 1)}</code></pre></p>
+    <p><pre><code>${JSON.stringify(arrayA)}</code></pre></p>
     <p>Array B: </p>
-    <p><pre><code>${JSON.stringify(arrayB, null, 1)}</code></pre></p>
+    <p><pre><code>${JSON.stringify(arrayB)}</code></pre></p>
     <p><button id="btn">Run Code</button><p/>
     <p><pre><code id="rta"></code></pre></p>
   `;
@@ -20,9 +20,10 @@ import { mergeArrays } from "./exercise";
 
   runBtn.addEventListener('click', () => {
     try {
-      rtaElement.innerHTML = JSON.stringify(mergeArrays(arrayA, arrayB), null, 1);
+      const rta = mergeArrays(arrayA, arrayB);
+      rtaElement.innerHTML = JSON.stringify(rta);
     } catch (error) {
-      rtaElement.innerHTML = error;
+      rtaElement.innerHTML = JSON.stringify(error, null, 1);
     }
   });
 })();
