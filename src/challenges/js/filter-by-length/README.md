@@ -1,13 +1,22 @@
-Tienes un array con palabras, tu desafío es retornar un array solo con las que cumplan con la condición de tener 4 o más letras.
+Tienes un array de strings que contienen diferentes palabras, tu reto es retornar un array solo con las que cumplan con la condición de tener 4 o más letras.
 
-La solución debería tener un input y output como los siguientes:
+
+Para solucionarlo vas a encontrar una función llamada `filterByLength` que recibe un parámetro de entrada:
+
+- array: Un array de strigs con palabras
+
+Dentro del cuerpo de la función `filterByLength` debes escribir tu solución.
+
+Ejemplo 1:
 
 ```js
-filterByLength(['amor', 'sol', 'piedra', 'día']);
+Input: ['amor', 'sol', 'piedra', 'día']
+Output: [ 'amor', 'piedra' ]
 ```
 
-Output
+Ejemplo 2:
 
 ```js
-[ 'amor', 'piedra' ]
+Input: ['rosa', 'gol', 'pez', 'día', 'gafas']
+Output: [ 'rosa', 'gafas' ]
 ```

@@ -1,31 +1,15 @@
-import { mergeArrays } from "./exercise";
+import { filterByTerm } from "./exercise";
 
 describe("tests", () => {
-  it("should return [1,2,3,4]", () => {
-    const arrayA = [1, 2];
-    const arrayB = [3, 4];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([1, 2, 3, 4]);
+  it('should return ["ana", "santi", "anastasia"]', () => {
+    const array = ["ana", "santi", "nico", "anastasia"];
+    const rta = filterByTerm(array, "ana");
+    expect(rta).toEqual(["ana", "santi", "anastasia"]);
   });
 
-  it("should return [1,2,3,4,5]", () => {
-    const arrayA = [1, 2];
-    const arrayB = [3, 4, 5];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([1, 2, 3, 4, 5]);
-  });
-
-  it("should return [3,4,5]", () => {
-    const arrayA = [];
-    const arrayB = [3, 4, 5];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([3, 4, 5]);
-  });
-
-  it("should return []", () => {
-    const arrayA = [];
-    const arrayB = [];
-    const rta = mergeArrays(arrayA, arrayB);
+  it('should return []', () => {
+    const array = ["ana", "santi", "nico", "anastasia"];
+    const rta = filterByTerm(array, "xyx");
     expect(rta).toEqual([]);
   });
 });

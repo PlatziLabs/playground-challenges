@@ -1,15 +1,20 @@
-Tienes un array de órdenes de compra con los siguientes atributos:
+Tienes un array de objetos que representan órdenes de compra con los siguientes atributos:
 
 - customerName: string
 - total: number
 - delivered: boolean
 
-Debes retornar la suma total de todas las órdenes de compra.
+Tu reto es retornar la suma total de todas las órdenes de compra, para solucionarlo vas a encontrar una función llamada `calcTotal` que recibe un parámetro de entrada:
 
-La solución debería tener un input y output como los siguientes:
+- orders: Un array con las órdenes de compra
+
+Dentro del cuerpo de la función `calcTotal` debes escribir tu solución.
+
+Ejemplo:
 
 ```js
-solution([
+Input:
+[
   {
     customerName: "Nicolas",
     total: 100,
@@ -20,12 +25,13 @@ solution([
     total: 120,
     delivered: false,
   },
-  ...
-]);
-```
+  {
+    customerName: "Santiago",
+    total: 20,
+    delivered: false,
+  }
+]
 
-Output
-
-```js
-220
+Ouput:
+240
 ```

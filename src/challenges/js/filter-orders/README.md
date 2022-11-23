@@ -1,15 +1,22 @@
-Tienes un array de ordenes de compra con los siguientes atributos:
+Tienes un array de objetos que representan ordenes de compra con los siguientes atributos:
 
 - customerName: string
 - total: number
 - delivered: boolean
 
-Debes filtrar todas las órdenes de compra que cumplan con la condición de tener un total mayor o igual a 100 y además que el estado **delivered** sea "true".
+Tu reto es filtrar todas las órdenes de compra que cumplan con la condición de tener un total mayor o igual a 100 y además que el estado **delivered** sea "true".
 
-La solución debería tener un input y output como los siguientes:
+Para solucionarlo vas a encontrar una función llamada `filterOrders` que recibe un parámetro de entrada:
+
+- array: Un array de objetos
+
+Dentro del cuerpo de la función `filterOrders` debes escribir tu solución.
+
+Ejemplo:
 
 ```js
-solution([
+Input:
+[
   {
     customerName: "Nicolas",
     total: 100,
@@ -20,18 +27,24 @@ solution([
     total: 120,
     delivered: false,
   },
-  ...
-]);
-```
+  {
+    customerName: "Santiago",
+    total: 300,
+    delivered: true,
+  }
+]
 
-Output
-
-```sh
+Output:
 [
   {
     customerName: "Nicolas",
     total: 100,
     delivered: true,
   },
+  {
+    customerName: "Santiago",
+    total: 300,
+    delivered: true,
+  }
 ]
 ```

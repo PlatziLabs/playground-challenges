@@ -1,31 +1,17 @@
-import { mergeArrays } from "./exercise";
+import { checkInString } from "./exercise";
 
 describe("tests", () => {
-  it("should return [1,2,3,4]", () => {
-    const arrayA = [1, 2];
-    const arrayB = [3, 4];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([1, 2, 3, 4]);
+  it("should return true when the term is found", () => {
+    const text = "Ana lava la tina";
+    const term = "ana";
+    const rta = checkInString(text, term);
+    expect(rta).toEqual(true);
   });
 
-  it("should return [1,2,3,4,5]", () => {
-    const arrayA = [1, 2];
-    const arrayB = [3, 4, 5];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([1, 2, 3, 4, 5]);
-  });
-
-  it("should return [3,4,5]", () => {
-    const arrayA = [];
-    const arrayB = [3, 4, 5];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([3, 4, 5]);
-  });
-
-  it("should return []", () => {
-    const arrayA = [];
-    const arrayB = [];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([]);
+  it("should return true when the term is not found", () => {
+    const text = "Ana lava la tina";
+    const term = "nico";
+    const rta = checkInString(text, term);
+    expect(rta).toEqual(false);
   });
 });
