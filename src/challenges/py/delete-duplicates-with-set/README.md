@@ -5,7 +5,7 @@ En este desafío recibirás 4 conjuntos de países diferentes, estos países ser
 - centralAmerica - Países del centro de américa
 - southAmerica- Países del sur de américa
 
-Deberás usar todo lo que aprendiste de sets y conjuntos para poder resolver este desafío
+Tendrás que usar todo lo que aprendiste en este módulo para devolver un conjunto con todos los países del continente en uno solo.
 
 Recibirás un input y output como los siguientes
 
