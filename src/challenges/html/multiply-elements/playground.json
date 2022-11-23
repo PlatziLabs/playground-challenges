@@ -1,6 +1,6 @@
 {
   "title": "Multiplica todos los elementos por dos",
-  "showFiles": false,
+  "showFileExplorer": false,
   "showNavigator": false,
   "showConsole": true,
   "template": "vanilla-js",
