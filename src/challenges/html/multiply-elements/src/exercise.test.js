@@ -1,4 +1,4 @@
-import { multiplyElements } from "./index";
+import { multiplyElements } from "./exercise";
 
 describe("tests", () => {
   it("should return [2,4,6]", () => {
