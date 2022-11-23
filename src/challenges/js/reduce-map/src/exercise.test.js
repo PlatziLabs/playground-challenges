@@ -1,4 +1,4 @@
-import { mergeArrays } from "./exercise";
+import { calcTotal } from "./exercise";
 
 describe("tests", () => {
   it("should return [1,2,3,4]", () => {

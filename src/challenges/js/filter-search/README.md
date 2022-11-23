@@ -1,15 +1,28 @@
-Tu desafío es crear un buscador usando funciones como filter y includes, vas a tener array con palabras e tienes que retornar un array con sola las que cumplan con la condición de tener el parámetro de búsqueda.
+Tu reto es retornar un array solo con las palabras que cumplan con la condición de tener un término de búsqueda dado.
 
-La solución debería tener un input y output como los siguientes:
+Para solucionarlo vas a encontrar una función llamada `filterByTerm` que recibe los siguientes parámetros de entrada:
+
+- array: Un array de strigs con palabras
+- term: Un string con el término a buscar
+
+Dentro del cuerpo de la función `filterByTerm` debes escribir tu solución.
+
+Ejemplo 1:
 
 ```js
-solution(["ana", "santi", "nico", "anastasia"], "an");
-solution(["ana", "santi", "nico", "anastasia"], "xyz");
+Input:
+["ana", "santi", "nico", "anastasia"], "ana"
+
+Ouput:
+["ana", "santi", "anastasia"]
 ```
 
-Output
+Ejemplo 2:
 
-```sh
-["ana", "santi", "anastasia"]
+```js
+Input:
+["ana", "santi", "nico", "anastasia"], "xyz"
+
+Output:
 []
 ```
