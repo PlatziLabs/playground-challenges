@@ -28,7 +28,8 @@ import { filterOrders } from "./exercise";
 
   runBtn.addEventListener('click', () => {
     try {
-      rtaElement.innerHTML = JSON.stringify(filterOrders(array), null, 1);
+      const rta = filterOrders(array);
+      rtaElement.innerHTML = JSON.stringify(rta, null, 1);
     } catch (error) {
       rtaElement.innerHTML = JSON.stringify(error, null, 1);
     }

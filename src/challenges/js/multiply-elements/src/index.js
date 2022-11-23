@@ -7,7 +7,7 @@ import { multiplyElements } from "./exercise";
   document.getElementById("app").innerHTML = `
     <h2>Multiply Elements</h2>
     <p>Array:</p>
-    <p><pre><code>${JSON.stringify(array, null, 1)}</code></pre></p>
+    <p><pre><code>${JSON.stringify(array)}</code></pre></p>
     <p><button id="btn">Run Code</button></p>
     <p><pre><code id="rta"></code></pre></p>
   `;
@@ -17,7 +17,8 @@ import { multiplyElements } from "./exercise";
 
   btnElement.addEventListener("click", () => {
     try {
-      rtaElement.innerHTML = JSON.stringify(multiplyElements(array), null, 1);
+      const rta = multiplyElements(array);
+      rtaElement.innerHTML = JSON.stringify(rta);
     } catch (error) {
       rtaElement.innerHTML = JSON.stringify(error, null, 1);
     }

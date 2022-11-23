@@ -17,7 +17,8 @@ import { calcSum } from "./exercise";
 
   runBtn.addEventListener('click', () => {
     try {
-      rtaElement.innerHTML = JSON.stringify(calcSum(array), null, 1);
+      const rta = calcSum(array);
+      rtaElement.innerHTML = JSON.stringify(rta);
     } catch (error) {
       rtaElement.innerHTML = JSON.stringify(error, null, 1);
     }
