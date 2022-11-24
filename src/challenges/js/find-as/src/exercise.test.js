@@ -1,31 +1,21 @@
-import { mergeArrays } from "./exercise";
+import { findAs } from "./exercise";
 
 describe("tests", () => {
-  it("should return [1,2,3,4]", () => {
-    const arrayA = [1, 2];
-    const arrayB = [3, 4];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([1, 2, 3, 4]);
+  it("should return 'Tienes el AS'", () => {
+    const array = ['diamonds', 'hearts', 'spades', 'AS'];
+    const rta = findAs(array);
+    expect(rta).toEqual('Tienes el AS');
   });
 
-  it("should return [1,2,3,4,5]", () => {
-    const arrayA = [1, 2];
-    const arrayB = [3, 4, 5];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([1, 2, 3, 4, 5]);
+  it("should return 'No, tienes el AS'", () => {
+    const array = ['diamonds', 'hearts', 'spades'];
+    const rta = findAs(array);
+    expect(rta).toEqual('No, tienes el AS');
   });
 
-  it("should return [3,4,5]", () => {
-    const arrayA = [];
-    const arrayB = [3, 4, 5];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([3, 4, 5]);
-  });
-
-  it("should return []", () => {
-    const arrayA = [];
-    const arrayB = [];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([]);
+  it("should return 'No, tienes el AS' with empty array", () => {
+    const array = [];
+    const rta = findAs(array);
+    expect(rta).toEqual('No, tienes el AS');
   });
 });

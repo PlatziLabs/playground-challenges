@@ -1,17 +1,30 @@
-En este desafío vas a recibir el título de un artículo y tú debes transformarlo en un formato de URL en donde normalmente se transforma todo en minúscula y se cambian los espacios por un guion (-), por ejemplo: `Curso de arrays => curso-de-arrays`
+En este desafío vas a recibir el título de un artículo y tú debes transformarlo en un formato de URL en donde normalmente se transforma todo en minúscula y se cambian los espacios por un guion (-).
 
-La solución debería tener un input y output como los siguientes:
+Para solucionarlo vas a encontrar una función llamada `parseToURL` que recibe un parámetro de entrada:
 
-```js
-solution("La forma de correr Python");
-solution("La API para nunca parar de aprender");
-solution("Curso de arrays");
-```
+- title: Un String con el título.
 
-Output
+Dentro del cuerpo de la función `parseToURL` debes escribir tu solución.
+
+Ejemplo 1:
 
 ```js
-"la-forma-de-correr-python"
-"la-api-para-nunca-parar-de-aprender"
-"curso-de-arrays"
+Input: "La forma de correr Python"
+Output: "la-forma-de-correr-python"
 ```
+
+Ejemplo 2:
+
+```js
+Input: "La API para nunca parar de aprender"
+Output: "la-api-para-nunca-parar-de-aprender"
+```
+
+Ejemplo 3:
+
+```js
+Input: "Curso de arrays"
+Output: "curso-de-arrays"
+```
+
+

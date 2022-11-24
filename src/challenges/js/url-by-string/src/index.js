@@ -19,7 +19,7 @@ import { parseToURL } from "./exercise";
       const title = titleElement.value;
       rtaElement.innerHTML = parseToURL(title);
     } catch (error) {
-      rtaElement.innerHTML = error;
+      rtaElement.innerHTML = JSON.stringify(error, null, 1);
     }
   });
 })();

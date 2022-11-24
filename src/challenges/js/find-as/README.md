@@ -1,15 +1,19 @@
-Dado un array de string que son nombres de cartas de poker debes retornar la palabra "AS" si dentro de tu baraja tienes un "AS" y un false si no lo tienes.
+Tu reto es retornar `Tienes el AS` si dentro de array de strings tienes la palabra `AS` y si no tienes el AS entonces deberás retornar un `No, tienes el AS`, para solucionarlo vas a encontrar una función llamada `findAs` que recibe un parámetro de entrada:
 
-La solución debería tener un input y output como los siguientes:
+- numbers: Un array de strigs con nombres de cartas de Poker.
+
+Dentro del cuerpo de la función `findAs` debes escribir tu solución.
+
+Ejemplo 1:
 
 ```js
-solution(['diamonds', 'hearts', 'spades', 'AS']);
-solution(['diamonds', 'hearts', 'spades']);
+Input: ['diamonds', 'hearts', 'spades', 'AS']
+Output: 'Tienes el AS'
 ```
 
-Output
+Ejemplo 2:
 
 ```js
-"AS"
-false
+Input: ['diamonds', 'hearts', 'spades']
+Output:'No, tienes el AS'
 ```

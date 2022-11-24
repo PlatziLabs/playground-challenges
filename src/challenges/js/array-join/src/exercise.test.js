@@ -1,31 +1,21 @@
-import { mergeArrays } from "./exercise";
+import { joinString } from "./exercise";
 
 describe("tests", () => {
-  it("should return [1,2,3,4]", () => {
-    const arrayA = [1, 2];
-    const arrayB = [3, 4];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([1, 2, 3, 4]);
+  it("should to join array", () => {
+    const array = ["amor", "sol", "piedra", "día"]
+    const rta = joinString(array);
+    expect(rta).toEqual('amor,sol,piedra,día');
   });
 
-  it("should return [1,2,3,4,5]", () => {
-    const arrayA = [1, 2];
-    const arrayB = [3, 4, 5];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([1, 2, 3, 4, 5]);
-  });
-
-  it("should return [3,4,5]", () => {
-    const arrayA = [];
-    const arrayB = [3, 4, 5];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([3, 4, 5]);
+  it("should to join array", () => {
+    const array = ["a", "b", "c", "d"];
+    const rta = joinString(array);
+    expect(rta).toEqual('a,b,c,d');
   });
 
   it("should return []", () => {
-    const arrayA = [];
-    const arrayB = [];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([]);
+    const array = [];
+    const rta = joinString(array);
+    expect(rta).toEqual('');
   });
 });
