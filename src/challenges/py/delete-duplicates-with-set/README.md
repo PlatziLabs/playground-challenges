@@ -5,7 +5,7 @@ En este desafío recibirás 4 conjuntos de países diferentes, estos países ser
 - centralAmerica - Países del centro de américa
 - southAmerica- Países del sur de américa
 
-Tendrás que usar todo lo que aprendiste en este módulo para devolver un conjunto con todos los países del continente en uno solo.
+Tendrás que devolver un solo conjunto con todos los países del continente.
 
 Recibirás un input y output como los siguientes
 
@@ -23,4 +23,4 @@ Input: {"BOL"}, {"CA"}, {"MX"}, {"COL"}
 Output: {'COL', 'CA', 'BOL', 'MX'}
 ```
 
-> 👀 Recuerda que el orden es determinado por los sets.
+👀 Recuerda que el orden es determinado por los sets.
