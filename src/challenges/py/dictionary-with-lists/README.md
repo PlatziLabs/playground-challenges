@@ -12,6 +12,7 @@ Ejemplo 1
 
 ```py
 Input: ["Pepe", "Luis"]
+
 Output: {
   'school': "Platzi",
   'names': ["Pepe", "Luis"],
@@ -25,6 +26,7 @@ Ejemplo 2
 
 ```py
 Input: ["Pedro", "Pepe", "Luis", "Enrique", "Juan", "Saul"]
+
 Output: {
   'school': "Platzi",
   'names': ["Pedro", "Pepe", "Luis", "Enrique", "Juan", "Saul"],

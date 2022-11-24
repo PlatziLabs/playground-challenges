@@ -1,31 +1,50 @@
-import { mergeArrays } from "./exercise";
+import { filterOrders } from "./exercise";
 
 describe("tests", () => {
-  it("should return [1,2,3,4]", () => {
-    const arrayA = [1, 2];
-    const arrayB = [3, 4];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([1, 2, 3, 4]);
-  });
-
-  it("should return [1,2,3,4,5]", () => {
-    const arrayA = [1, 2];
-    const arrayB = [3, 4, 5];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([1, 2, 3, 4, 5]);
-  });
-
-  it("should return [3,4,5]", () => {
-    const arrayA = [];
-    const arrayB = [3, 4, 5];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([3, 4, 5]);
+  it("should return one order", () => {
+    const array = [
+      {
+        customerName: "Zulema",
+        total: 120,
+        delivered: false,
+      },
+      {
+        customerName: "Nicolas",
+        total: 100,
+        delivered: true,
+      },
+      {
+        customerName: "Santiago",
+        total: 300,
+        delivered: false,
+      }
+    ];
+    const rta = filterOrders(array);
+    expect(rta.length).toEqual(1);
+    expect(rta[0].customerName).toEqual('Nicolas');
+    expect(rta[0].total).toEqual(100);
+    expect(rta[0].delivered).toEqual(true);
   });
 
   it("should return []", () => {
-    const arrayA = [];
-    const arrayB = [];
-    const rta = mergeArrays(arrayA, arrayB);
+    const array = [
+      {
+        customerName: "Nicolas",
+        total: 100,
+        delivered: false,
+      },
+      {
+        customerName: "Zulema",
+        total: 120,
+        delivered: false,
+      },
+      {
+        customerName: "Santiago",
+        total: 300,
+        delivered: false,
+      }
+    ];
+    const rta = filterOrders(array);
     expect(rta).toEqual([]);
   });
 });

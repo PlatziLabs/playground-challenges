@@ -1,14 +1,29 @@
 import "./styles.css";
-import { mergeArrays } from "./exercise";
+import { calcTotal } from "./exercise";
 
 (() => {
-  const arrayA = [1, 2, 3, 4];
-  const arrayB = [5, 6, 7, 8];
+  const array = [
+    {
+      customerName: "Nicolas",
+      total: 100,
+      delivered: true,
+    },
+    {
+      customerName: "Zulema",
+      total: 120,
+      delivered: false,
+    },
+    {
+      customerName: "Santiago",
+      total: 20,
+      delivered: false,
+    }
+  ];
 
   document.getElementById("app").innerHTML = `
-    <h1>Merge Arrays</h1>
-    <p>Array A: <code>${JSON.stringify(arrayA)}</code></p>
-    <p>Array B: <code>${JSON.stringify(arrayB)}</code></p>
+    <h2>Calc total</h2>
+    <p>Array</p>
+    <p><pre><code>${JSON.stringify(array, null, 1)}</code></pre></p>
     <p><button id="btn">Run Code</button><p/>
     <p><pre><code id="rta"></code></pre></p>
   `;
@@ -18,9 +33,10 @@ import { mergeArrays } from "./exercise";
 
   runBtn.addEventListener('click', () => {
     try {
-      rtaElement.innerHTML = mergeArrays(arrayA, arrayB);
+      const rta = calcTotal(array);
+      rtaElement.innerHTML = JSON.stringify(rta);
     } catch (error) {
-      rtaElement.innerHTML = error;
+      rtaElement.innerHTML = JSON.stringify(error, null, 1);
     }
   });
 })();
