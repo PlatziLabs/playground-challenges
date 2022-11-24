@@ -21,7 +21,8 @@ import { checkInString } from "./exercise";
     try {
       const text = textElement.value;
       const term = termElement.value;
-      rtaElement.innerHTML = JSON.stringify(checkInString(text, term), null, 1);
+      const rta = checkInString(text, term);
+      rtaElement.innerHTML = JSON.stringify(rta);
     } catch (error) {
       rtaElement.innerHTML = JSON.stringify(error, null, 1);
     }

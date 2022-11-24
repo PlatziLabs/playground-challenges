@@ -7,7 +7,7 @@ import { filterByLength } from "./exercise";
   document.getElementById("app").innerHTML = `
     <h2>Filter by Length</h2>
     <p>Words:</p>
-    <p><pre><code>${JSON.stringify(array, null, 1)}</code></pre></p>
+    <p><pre><code>${JSON.stringify(array)}</code></pre></p>
     <p><button id="btn">Run Code</button><p/>
     <p><pre><code id="rta"></code></pre></p>
   `;
@@ -17,9 +17,10 @@ import { filterByLength } from "./exercise";
 
   runBtn.addEventListener('click', () => {
     try {
-      rtaElement.innerHTML = JSON.stringify(filterByLength(array), null, 1);
+      const rta = filterByLength(array);
+      rtaElement.innerHTML = JSON.stringify(rta);
     } catch (error) {
-      rtaElement.innerHTML = error;
+      rtaElement.innerHTML = JSON.stringify(rta, null, 1);
     }
   });
 })();

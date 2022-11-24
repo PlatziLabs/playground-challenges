@@ -7,7 +7,7 @@ import { filterByTerm } from "./exercise";
   document.getElementById("app").innerHTML = `
     <h2>Filter By Term</h2>
     <p>Array</p>
-    <p><pre><code>${JSON.stringify(array, null, 1)}</code></pre></p>
+    <p><pre><code>${JSON.stringify(array)}</code></pre></p>
     <p>Term</p>
     <p><input id="term" value="ana" /></p>
     <p><button id="btn">Run Code</button><p/>
@@ -21,7 +21,8 @@ import { filterByTerm } from "./exercise";
   runBtn.addEventListener('click', () => {
     try {
       const term = termInput.value;
-      rtaElement.innerHTML = JSON.stringify(filterByTerm(array, term), null, 1);
+      const rta = filterByTerm(array, term);
+      rtaElement.innerHTML = JSON.stringify(rta);
     } catch (error) {
       rtaElement.innerHTML = JSON.stringify(error, null, 1);
     }

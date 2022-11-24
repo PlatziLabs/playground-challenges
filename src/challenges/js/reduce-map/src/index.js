@@ -33,7 +33,8 @@ import { calcTotal } from "./exercise";
 
   runBtn.addEventListener('click', () => {
     try {
-      rtaElement.innerHTML = JSON.stringify(calcTotal(array), null, 1);
+      const rta = calcTotal(array);
+      rtaElement.innerHTML = JSON.stringify(rta);
     } catch (error) {
       rtaElement.innerHTML = JSON.stringify(error, null, 1);
     }
