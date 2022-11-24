@@ -1,3 +1,3 @@
-export function mergeArrays(arrayA, arrayB) {
+export function findMyKey(array) {
   // Tu código aquí 👈
 }

@@ -1,17 +1,27 @@
-Dado un array de strings existe la palabra clave "myKey" y debes retornar la posición dentro del array en donde se encuentra este string y si no está debes retornan un false.
+Dado un array de strings tu reto es retornar la posición dentro del array en donde existe la palabra clave "myKey" y si no existe deberás retornar `false`, para solucionarlo vas a encontrar una función llamada `findMyKey` que recibe un parámetro de entrada:
 
-La solución debería tener un input y output como los siguientes:
+- array: Un array de strigs.
+
+Dentro del cuerpo de la función `findMyKey` debes escribir tu solución.
+
+Ejemplo 1:
 
 ```js
-solution(["diamonds", "myKey", "spades", "AS"]);
-solution(["diamonds", "hearts", "spades"]);
-solution(["myKey", "hearts", "spades"]);
+Input: ["diamonds", "myKey", "spades", "AS"]
+Output: 1
 ```
 
-Output
+Ejemplo 2:
 
 ```js
-1
-false
-0
+Input: ["diamonds", "hearts", "spades"]
+Output: false
+solution();
+```
+
+Ejemplo 3:
+
+```js
+Input: ["myKey", "hearts", "spades"]
+Output: 0
 ```

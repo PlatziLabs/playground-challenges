@@ -1,15 +1,20 @@
-En este desafío vas a recibir un array de string y debes retornar un string en donde cada elemento del array esté separado por comas.
+Dado un array de strings tu reto es retornar un string en donde cada elemento del array esté separado por comas, para solucionarlo vas a encontrar una función llamada `joinString` que recibe un parámetro de entrada:
 
-La solución debería tener un input y output como los siguientes:
+- words: Un array de strigs.
+
+Dentro del cuerpo de la función `joinString` debes escribir tu solución.
+
+Ejemplo 1:
 
 ```js
-solution(["amor", "sol", "piedra", "día"]);
-solution(["diamonds", "hearts", "spades"]);
+Input: ["amor", "sol", "piedra", "día"]
+Output: "amor,sol,piedra,día"
+solution();
 ```
 
-Output
+Ejemplo 2:
 
 ```js
-"amor,sol,piedra,día"
-"diamonds,hearts,spades"
+Input: ["diamonds", "hearts", "spades"]
+Output: "diamonds,hearts,spades"
 ```

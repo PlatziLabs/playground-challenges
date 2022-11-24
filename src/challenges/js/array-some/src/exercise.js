@@ -1,3 +1,3 @@
-export function checkArray(array) {
+export function checkArray(numbers) {
   // Tu código aquí 👈
 }
