@@ -1,8 +1,7 @@
 {
   "title": "Multiplica todos los elementos por dos",
   "showFileExplorer": false,
-  "showNavigator": false,
-  "showConsole": true,
+  "showPreview": false,
   "template": "vanilla-js",
   "runner": "sandpack"
 }
