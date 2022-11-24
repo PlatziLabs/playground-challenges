@@ -11,7 +11,6 @@ Tu solución debería tener un input y output como los siguientes:
 Ejemplo 1
 
 ```py
-
 Input: ["Pepe", "Luis"]
 
 Output: {
@@ -21,7 +20,6 @@ Output: {
   'last_student': "Luis",
   'count': 2
 }
-
 ```
 
 Ejemplo 2
@@ -36,5 +34,4 @@ Output: {
   'last_student': "Saul",
   'count': 6
 }
-
 ```
