@@ -3,5 +3,9 @@ def remove_repeated_countries(am, northAm, centralAm, southAm):
     return {}
 
 
-response = remove_repeated_countries({"MX", "COL", "ARG", "USA"}, {"USA", "CANADA"}, {"MX", "GT", "BZ"}, {"COL", "BZ", "ARG"})
+response = remove_repeated_countries(
+    {"MX", "COL", "ARG", "USA"}, 
+    {"USA", "CANADA"}, {"MX", "GT", "BZ"}, 
+    {"COL", "BZ", "ARG"}
+)
 print(response)
