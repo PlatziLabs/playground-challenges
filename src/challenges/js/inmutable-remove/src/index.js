@@ -5,7 +5,7 @@ import { removeFromArray } from "./exercise";
   const array = [1, 2, 3];
 
   document.getElementById("app").innerHTML = `
-    <h1>Update Array</h1>
+    <h2>Update Array</h2>
     <p>Array: <code>${JSON.stringify(array)}</code></p>
     <p><input id="index" value="0" /></p>
     <p><button id="btn">Run Code</button><p/>

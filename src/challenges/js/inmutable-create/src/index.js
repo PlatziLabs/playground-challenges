@@ -5,7 +5,7 @@ import { addNumber } from "./exercise";
   const array = [1, 2, 3, 4];
 
   document.getElementById("app").innerHTML = `
-    <h1>Add Element</h1>
+    <h2>Add Element</h2>
     <p>Array: <code>${JSON.stringify(array)}</code></p>
     <p><input id="newValue" value="change" /></p>
     <p><button id="btn">Run Code</button><p/>

@@ -21,7 +21,7 @@ import { deepFreeze } from "./exercise";
   };
 
   document.getElementById("app").innerHTML = `
-    <h1>Merge Arrays</h1>
+    <h2>Merge Arrays</h2>
     <p>Objeto original: <code>${JSON.stringify(juan)}</code></p>
     <p><button id="btn">Run Code</button><p/>
     <p><pre><code id="rta"></code></pre></p>

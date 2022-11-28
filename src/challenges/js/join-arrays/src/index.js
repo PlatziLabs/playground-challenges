@@ -6,7 +6,7 @@ import { mergeArrays } from "./exercise";
   const arrayB = [5, 6, 7, 8];
 
   document.getElementById("app").innerHTML = `
-    <h1>Merge Arrays</h1>
+    <h2>Merge Arrays</h2>
     <p>Array A: <code>${JSON.stringify(arrayA)}</code></p>
     <p>Array B: <code>${JSON.stringify(arrayB)}</code></p>
     <p><button id="btn">Run Code</button><p/>

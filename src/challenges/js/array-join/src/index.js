@@ -5,7 +5,7 @@ import { joinString } from "./exercise";
   const array = ["amor", "sol", "piedra", "día"]
 
   document.getElementById("app").innerHTML = `
-    <h1>Merge Arrays</h1>
+    <h2>Merge Arrays</h2>
     <p>Array: <code>${JSON.stringify(array)}</code></p>
     <p><button id="btn">Run Code</button><p/>
     <p><pre><code id="rta"></code></pre></p>

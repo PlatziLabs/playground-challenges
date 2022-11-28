@@ -3,7 +3,7 @@ import { delay } from "./exercise";
 
 (async () => {
   document.getElementById("app").innerHTML = `
-    <h1>Delay function</h1>
+    <h2>Delay function</h2>
     <p><input id="time" value="2000" type="number" /></p>
     <p><input id="message" value="Hello after 2s" type="text" /></p>
     <p><button type="button" id="btn">Run Delay</button></p>

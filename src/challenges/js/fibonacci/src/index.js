@@ -3,7 +3,7 @@ import { fibonacci } from "./exercise";
 
 (() => {
   document.getElementById("app").innerHTML = `
-  <h1>Fibonacci</h1>
+  <h2>Fibonacci</h2>
   <p>Number: </p>
   <p><input id="number" value="0" placeholder="Type value" /></p>
   <p><button id="btn" type="button">Run</button></p>

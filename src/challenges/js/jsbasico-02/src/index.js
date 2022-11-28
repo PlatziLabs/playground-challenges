@@ -7,7 +7,7 @@ import { solution } from "./exercise";
   const secreto3 = 10;
 
   document.getElementById("app").innerHTML = `
-    <h1>Compara un número secreto</h1>
+    <h2>Compara un número secreto</h2>
     <p>Secreto 1: <code>${JSON.stringify(secreto1)}</code></p>
     <p>Secreto 2: <code>${JSON.stringify(secreto2)}</code></p>
     <p>Secreto 3: <code>${JSON.stringify(secreto3)}</code></p>

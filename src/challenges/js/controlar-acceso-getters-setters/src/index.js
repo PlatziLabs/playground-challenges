@@ -13,7 +13,7 @@ import { Course } from "./exercise";
   }
 
   document.getElementById("app").innerHTML = `
-    <h1>Validar nombre de curso antes de guardar</h1>
+    <h2>Validar nombre de curso antes de guardar</h2>
     <p>Escribe aquí el nombre del curso:</p>
     <p><input placeholder="Nombre de un curso" id="courseName" /></p>
     <p>Te mostramos cómo queda almacenado el valor de la propiedad name</p>

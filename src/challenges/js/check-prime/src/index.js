@@ -3,7 +3,7 @@ import { trialDivision } from "./exercise";
 
 (() => {
   document.getElementById("app").innerHTML = `
-  <h1>Prueba de primalidad</h1>
+  <h2>Prueba de primalidad</h2>
   <p>Number: </p>
   <p><input id="number" value="0" placeholder="Type value" /></p>
   <p><button id="btn" type="button">Run</button></p>

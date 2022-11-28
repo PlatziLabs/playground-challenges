@@ -9,7 +9,7 @@ import { Solution } from "./exercise";
   hashTable.set("Cat", 2010)
 
   document.getElementById("app").innerHTML = `
-    <h1>Get all keys</h1>
+    <h2>Get all keys</h2>
     <p>Tu hashTable: <code>${JSON.stringify(hashTable)}</code></p>
     <p><button id="btn">Get all keys</button><p/>
     <p><pre><code id="rta"></code></pre></p>

@@ -6,7 +6,7 @@ import { findMyKey } from "./exercise";
   const arrayB = ["diamonds", "AS"];
 
   document.getElementById("app").innerHTML = `
-    <h1>Find Index</h1>
+    <h2>Find Index</h2>
     <p>Array A: <code>${JSON.stringify(arrayA)}</code></p>
     <p>Array B: <code>${JSON.stringify(arrayB)}</code></p>
     <p><button id="btn">Run Code</button><p/>

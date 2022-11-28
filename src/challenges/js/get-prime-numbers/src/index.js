@@ -3,7 +3,7 @@ import { solution } from "./exercise";
 
 (() => {
   document.getElementById("app").innerHTML = `
-    <h1>Imprime los números primos</h1>
+    <h2>Imprime los números primos</h2>
     <input id="inputNumber" value="5" type="number" />
     <p><button id="btn">Run Code</button><p/>
     <p><pre><code id="rta"></code></pre></p>

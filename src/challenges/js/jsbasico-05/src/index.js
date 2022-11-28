@@ -13,7 +13,7 @@ import { solution } from "./exercise";
   const nuevoC = "Cami";
 
   document.getElementById("app").innerHTML = `
-    <h1>Rescata al estudiante</h1>
+    <h2>Rescata al estudiante</h2>
     <p>Argumentos de prueba A:
       <code>
         ${JSON.stringify(arrayA)}
