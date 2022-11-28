@@ -1,6 +1,8 @@
 {
   "title": "Retorna solo palabras de 4 letras y más",
-  "showFiles": false,
+  "showFileExplorer": false,
+  "showPreview": false,
+  "runner": "pyodide",
   "template": "python",
-  "packages": []
+  "packages": ["pytest"]
 }

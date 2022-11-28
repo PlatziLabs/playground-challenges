@@ -1,15 +1,13 @@
-En este desafío tienes un código base el cual se aplica una mala práctica de programación que conocemos como el callback hell y tu tarea es evitarlo usando `async/await`.
+En este desafío tienes un código base el cual se aplica una mala práctica de programación que conocemos como el **callback hell** y tu reto es evitarlo usando `async/await`.
 
-La solución debería tener un input y output como los siguientes:
+Para solucionarlo vas a encontrar una función llamada `runCode` que no recibe parámetros de entrada y tiene el código base que tienes que refactorizar, dentro del cuerpo de la función `runCode` debes escribir tu solución.
 
-Input
+Ejemplo:
 
 ```js
+Input:
 await runCode();
-```
 
-Output
-
-```sh
+Output:
 ["Task 1", "Task 2", "Task 3"]
 ```

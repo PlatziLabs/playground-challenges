@@ -1,3 +1,3 @@
-export function mergeArrays(arrayA, arrayB) {
-  // Tu código aquí 👈
+export function removeFromArray(array) {
+  return array.filter((item, i) =>  i !== index)
 }

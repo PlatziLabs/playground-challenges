@@ -1,5 +1,7 @@
 {
   "title": "Resuelve si dentro de una lista de cartas tienes el AS",
-  "showFiles": false,
-  "template": "vanilla-js"
+  "showFileExplorer": false,
+  "showPreview": true,
+  "template": "vanilla-js",
+  "runner": "sandpack"
 }

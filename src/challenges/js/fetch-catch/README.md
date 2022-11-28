@@ -1,15 +1,19 @@
 En este desafío vas a conectarte a una API que no existe, por ende debes capturar el error haciendo uso de `try/catch` y lanzar un error con el mensaje `API Not Found`.
 
-La solución debería tener un input y output como los siguientes:
-
-Input
+Para lanzar el error debes usar el siguiente bloque de código:
 
 ```js
-await runCode();
+throw new Error('API Not Found');
 ```
 
-Output
+Para solucionarlo vas a encontrar una función llamada `runCode` que no recibe parámetros de entrada, dentro del cuerpo de la función `runCode` debes escribir tu solución.
 
-```sh
+Ejemplo:
+
+```js
+Input:
+await runCode();
+
+Output:
 Error: API Not Found
 ```

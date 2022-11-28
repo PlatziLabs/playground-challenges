@@ -1,31 +1,41 @@
-import { mergeArrays } from "./exercise";
+import { sortByLastName } from "./exercise";
 
 describe("tests", () => {
-  it("should return [1,2,3,4]", () => {
-    const arrayA = [1, 2];
-    const arrayB = [3, 4];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([1, 2, 3, 4]);
+  it("should return an array sorted by lastName", () => {
+    const array = [
+      "Nicolas Molina",
+      "Andrea Perez",
+      "Zulema Vicente",
+      "Juan Amador",
+    ];
+    const rta = sortByLastName(array);
+    expect(rta).toEqual([
+      "Juan Amador",
+      "Nicolas Molina",
+      "Andrea Perez",
+      "Zulema Vicente",
+    ]);
   });
 
-  it("should return [1,2,3,4,5]", () => {
-    const arrayA = [1, 2];
-    const arrayB = [3, 4, 5];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([1, 2, 3, 4, 5]);
-  });
-
-  it("should return [3,4,5]", () => {
-    const arrayA = [];
-    const arrayB = [3, 4, 5];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([3, 4, 5]);
+  it("should return an array sorted by lastName", () => {
+    const array = [
+      "Nicolas c",
+      "Andrea a",
+      "Zulema b",
+      "Juan d",
+    ];
+    const rta = sortByLastName(array);
+    expect(rta).toEqual([
+      "Andrea a",
+      "Zulema b",
+      "Nicolas c",
+      "Juan d",
+    ]);
   });
 
   it("should return []", () => {
-    const arrayA = [];
-    const arrayB = [];
-    const rta = mergeArrays(arrayA, arrayB);
+    const array = [];
+    const rta = sortByLastName(array);
     expect(rta).toEqual([]);
   });
 });

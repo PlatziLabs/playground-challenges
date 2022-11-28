@@ -1,5 +1,7 @@
 {
   "title": "Busca dentro de un string y descubre si ¿Tiene la clave?",
-  "showFiles": false,
-  "template": "vanilla-js"
+  "showFileExplorer": false,
+  "showPreview": true,
+  "template": "vanilla-js",
+  "runner": "sandpack"
 }

@@ -1,5 +1,7 @@
 {
   "title": "Crea un buscador que retorne palabras de acuerdo parámetro de búsqueda",
-  "showFiles": false,
-  "template": "vanilla-js"
+  "showFileExplorer": false,
+  "showPreview": true,
+  "template": "vanilla-js",
+  "runner": "sandpack"
 }

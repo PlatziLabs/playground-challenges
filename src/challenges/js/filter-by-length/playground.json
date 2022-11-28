@@ -1,5 +1,7 @@
 {
   "title": "Retorna solo palabras de 4 letras y más",
-  "showFiles": false,
-  "template": "vanilla-js"
+  "showFileExplorer": false,
+  "showPreview": true,
+  "template": "vanilla-js",
+  "runner": "sandpack"
 }

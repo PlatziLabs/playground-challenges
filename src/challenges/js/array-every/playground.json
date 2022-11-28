@@ -1,5 +1,7 @@
 {
   "title": "Retorna un booleano si todos los elementos son pares",
-  "showFiles": false,
-  "template": "vanilla-js"
+  "showFileExplorer": false,
+  "showPreview": true,
+  "template": "vanilla-js",
+  "runner": "sandpack"
 }

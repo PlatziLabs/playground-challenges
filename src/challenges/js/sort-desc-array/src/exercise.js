@@ -1,3 +1,3 @@
-export function sortDesc(array) {
-  return array.sort((a, b) => b - a);
+export function sortDesc(numbers) {
+  return numbers.sort((a, b) => b - a);
 }

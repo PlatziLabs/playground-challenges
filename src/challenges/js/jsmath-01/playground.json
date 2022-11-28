@@ -1,5 +1,7 @@
 {
   "title": "Calcula la Altura de un Triángulo Escaleno",
-  "showFiles": false,
-  "template": "vanilla-js"
+  "showFileExplorer": false,
+  "showPreview": true,
+  "template": "vanilla-js",
+  "runner": "sandpack"
 }

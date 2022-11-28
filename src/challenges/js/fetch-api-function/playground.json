@@ -1,5 +1,7 @@
 {
   "title": "Crea una utilidad para hacer peticiones",
-  "showFiles": false,
-  "template": "vanilla-js"
+  "showFileExplorer": false,
+  "showPreview": true,
+  "template": "vanilla-js",
+  "runner": "sandpack"
 }

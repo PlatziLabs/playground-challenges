@@ -1,5 +1,7 @@
 {
   "title": "Ordena un array de objetos por fecha",
-  "showFiles": false,
-  "template": "vanilla-js"
+  "showFileExplorer": false,
+  "showPreview": true,
+  "template": "vanilla-js",
+  "runner": "sandpack"
 }
