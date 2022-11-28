@@ -20,7 +20,7 @@ import { mergeArrays } from "./exercise";
     try {
       rtaElement.innerHTML = mergeArrays(arrayA, arrayB);
     } catch (error) {
-      rtaElement.innerHTML = error;
+      rtaElement.innerHTML = JSON.stringify(error, null, 1);
     }
   });
 })();

@@ -1,18 +1,21 @@
 Tienes un array de objetos que representan personas con los siguientes atributos:
 
-- name: `string`
-- dateOfBirth: `Date`
+- name: string
+- dateOfBirth: Date
 
+Tu reto es retornar una lista con los nombres de las personas ordenadas por la fecha de nacimiento de la más reciente a la más antigua.
 
-El reto es retornar una lista de los nombres de las personas ordenadas por la fecha de nacimiento de la más reciente a la más antigua.
+Para solucionarlo vas a encontrar una función llamada `sortByDate` que tiene un parámetro de entrada:
 
-La solución debería tener un input y output como los siguientes:
+- array: Un array de objetos.
 
-Input
+Dentro del cuerpo de la función `sortByDate` debes escribir tu solución.
 
+Ejemplo:
 
 ```js
-solution([
+Input:
+[
   {
     name: "Nicolas",
     dateOfBirth: new Date(1993, 6, 9),
@@ -25,12 +28,8 @@ solution([
     name: "Zulema",
     dateOfBirth: new Date(1994, 10, 7),
   },
-  ...
-]);
-```
+]
 
-Output
-
-```js
+Output:
 ["Santiago", "Zulema", "Nicolas"]
 ```

@@ -1,31 +1,21 @@
-import { mergeArrays } from "./exercise";
+import { sortByLength } from "./exercise";
 
 describe("tests", () => {
-  it("should return [1,2,3,4]", () => {
-    const arrayA = [1, 2];
-    const arrayB = [3, 4];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([1, 2, 3, 4]);
+  it("should return sorted", () => {
+    const array = ["Hola","Viajar","Sol","Aprender"];
+    const rta = sortByLength(array);
+    expect(rta).toEqual(["Sol","Hola","Viajar", "Aprender"]);
   });
 
-  it("should return [1,2,3,4,5]", () => {
-    const arrayA = [1, 2];
-    const arrayB = [3, 4, 5];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([1, 2, 3, 4, 5]);
-  });
-
-  it("should return [3,4,5]", () => {
-    const arrayA = [];
-    const arrayB = [3, 4, 5];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([3, 4, 5]);
+  it("should return sorted", () => {
+    const array = ["22","333","1","4444"];
+    const rta = sortByLength(array);
+    expect(rta).toEqual(["1","22","333", "4444"]);
   });
 
   it("should return []", () => {
-    const arrayA = [];
-    const arrayB = [];
-    const rta = mergeArrays(arrayA, arrayB);
+    const array = [];
+    const rta = sortByLength(array);
     expect(rta).toEqual([]);
   });
 });

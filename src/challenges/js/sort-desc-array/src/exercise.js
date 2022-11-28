@@ -1,3 +1,3 @@
-export function sortDesc(array) {
+export function sortDesc(numbers) {
    // Tu código aquí 👈
 }

@@ -1,31 +1,43 @@
-import { mergeArrays } from "./exercise";
+import { sortByDate } from "./exercise";
 
 describe("tests", () => {
-  it("should return [1,2,3,4]", () => {
-    const arrayA = [1, 2];
-    const arrayB = [3, 4];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([1, 2, 3, 4]);
+  it("should return array names sorted by date", () => {
+    const array = [
+      {
+        name: "Nicolas",
+        dateOfBirth: new Date(1993, 6, 9),
+      },
+      {
+        name: "Santiago",
+        dateOfBirth: new Date(2018, 6, 11),
+      },
+      {
+        name: "Zulema",
+        dateOfBirth: new Date(1994, 10, 7),
+      },
+    ];
+    const rta = sortByDate(array);
+    expect(rta).toEqual(["Santiago", "Zulema", "Nicolas"]);
   });
 
-  it("should return [1,2,3,4,5]", () => {
-    const arrayA = [1, 2];
-    const arrayB = [3, 4, 5];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([1, 2, 3, 4, 5]);
-  });
-
-  it("should return [3,4,5]", () => {
-    const arrayA = [];
-    const arrayB = [3, 4, 5];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([3, 4, 5]);
+  it("should return array names sorted by date", () => {
+    const array = [
+      {
+        name: "Pepe",
+        dateOfBirth: new Date(1993, 6, 9),
+      },
+      {
+        name: "Juan",
+        dateOfBirth: new Date(2018, 6, 11),
+      },
+    ];
+    const rta = sortByDate(array);
+    expect(rta).toEqual(["Santiago", "Pepe"]);
   });
 
   it("should return []", () => {
-    const arrayA = [];
-    const arrayB = [];
-    const rta = mergeArrays(arrayA, arrayB);
+    const array = [];
+    const rta = sortByDate(array);
     expect(rta).toEqual([]);
   });
 });

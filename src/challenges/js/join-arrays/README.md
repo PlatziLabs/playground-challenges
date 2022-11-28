@@ -1,17 +1,20 @@
-En este desafío recibirás dos arrays de números como parámetros de entrada y debes retornar un array que tenga los dos arrays unidos.
+En este desafío recibirás dos arrays de números como parámetros de entrada y debes retornar un array que tenga los dos arrays unidos, para solucionarlo vas a encontrar una función llamada `mergeArrays` que recibe dos parámetros de entrada:
 
-La solución debería tener un input y output como los siguientes:
+- arrayA: Un array
+- arrayB: Un array
 
-Input
+Dentro del cuerpo de la función `mergeArrays` debes escribir tu solución.
+
+Ejemplo 1:
 
 ```js
-solution([1, 2, 3], [4, 5, 6]);
-solution(["A", "B", "C"], ["D", "E", "H"]);
+Input: [1, 2, 3], [4, 5, 6]
+Output: [1, 2, 3, 4, 5 , 6]
 ```
 
-Output
+Ejemplo 2:
 
 ```js
-[1, 2, 3, 4, 5 , 6]
-["A", "B", "C", "D", "E", "H"]
+Input: ["A", "B", "C"], ["D", "E", "H"]
+Output: ["A", "B", "C", "D", "E", "H"]
 ```

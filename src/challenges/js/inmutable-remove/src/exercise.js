@@ -1,3 +1,3 @@
-export function mergeArrays(arrayA, arrayB) {
+export function removeFromArray(array) {
   // Tu código aquí 👈
 }

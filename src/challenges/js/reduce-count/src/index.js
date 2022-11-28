@@ -1,14 +1,12 @@
 import "./styles.css";
-import { mergeArrays } from "./exercise";
+import { counterNumbers } from "./exercise";
 
 (() => {
-  const arrayA = [1, 2, 3, 4];
-  const arrayB = [5, 6, 7, 8];
+  const array = [1, 2, 2, 3, 3, 3];
 
   document.getElementById("app").innerHTML = `
-    <h1>Merge Arrays</h1>
-    <p>Array A: <code>${JSON.stringify(arrayA)}</code></p>
-    <p>Array B: <code>${JSON.stringify(arrayB)}</code></p>
+    <h1>Counter Numbers</h1>
+    <p>Array: <code>${JSON.stringify(array)}</code></p>
     <p><button id="btn">Run Code</button><p/>
     <p><pre><code id="rta"></code></pre></p>
   `;
@@ -18,9 +16,9 @@ import { mergeArrays } from "./exercise";
 
   runBtn.addEventListener('click', () => {
     try {
-      rtaElement.innerHTML = mergeArrays(arrayA, arrayB);
+      rtaElement.innerHTML = counterNumbers(array);
     } catch (error) {
-      rtaElement.innerHTML = error;
+      rtaElement.innerHTML = JSON.stringify(error, null, 1);
     }
   });
 })();

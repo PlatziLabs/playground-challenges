@@ -1,3 +1,3 @@
-export function mergeArrays(arrayA, arrayB) {
+export function sortByLength(words) {
   // Tu código aquí 👈
 }

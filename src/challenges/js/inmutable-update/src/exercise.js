@@ -1,3 +1,3 @@
-export function mergeArrays(arrayA, arrayB) {
+export function updateArray(array, index, newValue) {
   // Tu código aquí 👈
 }
