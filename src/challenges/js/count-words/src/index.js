@@ -8,7 +8,7 @@ import { countWords } from "./exercise";
   ];
 
   document.getElementById("app").innerHTML = `
-    <h1>Count Words</h1>
+    <h2>Count Words</h2>
     <p>Array: <code>${JSON.stringify(array)}</code></p>
     <p><button id="btn">Run Code</button><p/>
     <p><pre><code id="rta"></code></pre></p>

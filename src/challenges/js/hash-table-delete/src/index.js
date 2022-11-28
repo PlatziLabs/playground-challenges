@@ -8,7 +8,7 @@ import { Solution } from "./exercise";
   hashTable.set("Adriana", 2000)
 
   document.getElementById("app").innerHTML = `
-    <h1>Delete in hash tables</h1>
+    <h2>Delete in hash tables</h2>
     <p>Hash table: <code id="data" >${JSON.stringify(hashTable.data)}</code></p>
     <input type="text" placeholder="Write a key to delete" id="input" value="Diego" />
     <button id="btn">Delete</button>

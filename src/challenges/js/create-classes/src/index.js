@@ -8,7 +8,7 @@ import { Banda, Integrante, } from "./exercise";
   }
   const banda = new Banda(data)
   document.getElementById("app").innerHTML = `
-    <h1>Prototipos y Clases</h1>
+    <h2>Prototipos y Clases</h2>
     <p>Banda: <code>${JSON.stringify(banda)}</code></p>
     <p><button id="btn">Run Code</button><p/>
     <p><pre><code id="rta"></code></pre></p>

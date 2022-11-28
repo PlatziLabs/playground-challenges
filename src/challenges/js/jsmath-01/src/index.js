@@ -6,7 +6,7 @@ import { solution } from "./exercise";
   const arrayB = [6,8,8];
 
   document.getElementById("app").innerHTML = `
-    <h1>Triángulo Escaleno</h1>
+    <h2>Triángulo Escaleno</h2>
     <p>Lista 1: <code>${JSON.stringify(arrayA)}</code></p>
     <p>Lista 2: <code>${JSON.stringify(arrayB)}</code></p>
     <p><button id="btn">Run Code</button><p/>

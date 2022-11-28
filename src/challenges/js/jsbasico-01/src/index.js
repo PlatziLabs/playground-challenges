@@ -7,7 +7,7 @@ import { solution } from "./exercise";
   const b = true;
 
   document.getElementById("app").innerHTML = `
-    <h1>Retorna el tipo</h1>
+    <h2>Retorna el tipo</h2>
     <p>Argumento de prueba 1: <code>${JSON.stringify(n)}</code></p>
     <p>Argumento de prueba 2: <code>${JSON.stringify(s)}</code></p>
     <p>Argumento de prueba 3: <code>${JSON.stringify(b)}</code></p>

@@ -8,7 +8,7 @@ import { solution } from "./exercise";
   const elemD = 'gato';
 
   document.getElementById("app").innerHTML = `
-    <h1>Tienda de Tecnología</h1>
+    <h2>Tienda de Tecnología</h2>
     <p>Eleemento de prueba A: <code>${JSON.stringify(elemA)}</code></p>
     <p>Eleemento de prueba B: <code>${JSON.stringify(elemB)}</code></p>
     <p>Eleemento de prueba C: <code>${JSON.stringify(elemC)}</code></p>

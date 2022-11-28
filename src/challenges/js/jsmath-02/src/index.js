@@ -11,7 +11,7 @@ import { solution } from "./exercise";
 
 
   document.getElementById("app").innerHTML = `
-    <h1>Encuentra el ID</h1>
+    <h2>Encuentra el ID</h2>
     <p>Lista de usuarios: <code>${JSON.stringify(users)}</code></p>
     <p>ID en búsqueda 1: <code>${JSON.stringify(id1)}</code></p>
     <p>ID en búsqueda 2: <code>${JSON.stringify(id2)}</code></p>

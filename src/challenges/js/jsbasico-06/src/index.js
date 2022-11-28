@@ -7,7 +7,7 @@ import { solution } from "./exercise";
   const car3 = { licensePlate: 'RGB255' };
 
   document.getElementById("app").innerHTML = `
-    <h1>Permiso para conducir</h1>
+    <h2>Permiso para conducir</h2>
     <p>Carro 1: <code>${JSON.stringify(car1)}</code></p>
     <p>Carro 2: <code>${JSON.stringify(car2)}</code></p>
     <p>Carro 3: <code>${JSON.stringify(car3)}</code></p>

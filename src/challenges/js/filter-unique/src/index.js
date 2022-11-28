@@ -5,7 +5,7 @@ import { filterUnique } from "./exercise";
   const array = [3, 3, 2, 2, 1, 1];
 
   document.getElementById("app").innerHTML = `
-    <h1>Filter Unique</h1>
+    <h2>Filter Unique</h2>
     <p>Array: <code>${JSON.stringify(array)}</code></p>
     <p><button id="btn">Run Code</button><p/>
     <p><pre><code id="rta"></code></pre></p>

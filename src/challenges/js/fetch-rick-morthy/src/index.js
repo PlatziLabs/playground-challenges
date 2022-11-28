@@ -1,16 +1,22 @@
 import "./styles.css";
 import { runCode } from "./exercise";
 
-(async () => {
-  const rta = await runCode();
-
+(() => {
   document.getElementById("app").innerHTML = `
-  <h1>Rick and Morty API</h1>
-  <p>Response from runCode()</p>
-  <p>
-    <pre>
-      <code>${rta}</code>
-    </pre>
-  </p>
+    <h2>Rick and Morty API</h2>
+    <p><button id="btn">Run Code</button><p/>
+    <p><pre><code id="rta"></code></pre></p>
   `;
+
+  const runBtn = document.getElementById('btn');
+  const rtaElement = document.getElementById('rta');
+
+  runBtn.addEventListener('click', async() => {
+    try {
+      const rta = await runCode();
+      rtaElement.innerHTML = JSON.stringify(rta, null, 1);
+    } catch (error) {
+      rtaElement.innerHTML = JSON.stringify(error, null, 1);
+    }
+  });
 })();

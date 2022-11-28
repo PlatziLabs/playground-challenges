@@ -9,7 +9,7 @@ import { solution } from "./exercise";
   ];
 
   document.getElementById("app").innerHTML = `
-    <h1>Arregla el bug</h1>
+    <h2>Arregla el bug</h2>
     <p>Array con carros de prueba:</p>
     <pre><code>${JSON.stringify(cars, null, 1)}</code></pre>
     <p><button id="btn">Run Code</button><p/>

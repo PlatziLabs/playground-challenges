@@ -5,7 +5,7 @@ import { MyArray } from "./exercise";
   const myArray = new MyArray();
 
   document.getElementById("app").innerHTML = `
-    <h1>Test your unshift implementation</h1>
+    <h2>Test your unshift implementation</h2>
     <p>myArray: <code id="rta" >${JSON.stringify(myArray.data)}</code></p>
     <input type="text" placeholder="Write something" id="input" >
     <button id="btn">Add to array</button>

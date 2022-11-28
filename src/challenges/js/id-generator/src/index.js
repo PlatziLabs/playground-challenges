@@ -4,7 +4,7 @@ import { getId } from "./exercise";
 (() => {
 
   document.getElementById("app").innerHTML = `
-    <h1>Generador de ID</h1>
+    <h2>Generador de ID</h2>
     <p><button id="btn">Generate 10 ID</button><p/>
     <p><pre><code id="rta"></code></pre></p>
   `;
