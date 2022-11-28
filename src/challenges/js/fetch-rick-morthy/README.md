@@ -1,18 +1,16 @@
-En este desafío tienes que consumir la <a href="https://rickandmortyapi.com/" target="_blank">API de Rick And Morthy</a>  y en un array retornar solo los nombres de los personajes.
+En este desafío tienes que consumir la <a href="https://rickandmortyapi.com/" target="_blank">API de Rick And Morthy</a> y en un array retornar solo los nombres de los personajes.
 
-Específicamente debes consumir el endpoint `[GET] https://rickandmortyapi.com/api/character` la cual te retorna información de los personajes, pero tú debes retornar un array con los nombres.
+Específicamente debes consumir el endpoint `[GET] https://rickandmortyapi.com/api/character` el cual retorna toda la información de los personajes, pero tú debes retornar un array con los nombres.
 
-La solución debería tener un input y output como los siguientes:
+Para solucionarlo vas a encontrar una función llamada `runCode` que no recibe parámetros de entrada, dentro del cuerpo de la función `runCode` debes escribir tu solución.
 
-Input
+Ejemplo:
 
 ```js
+Input:
 await runCode();
-```
 
-Output
-
-```bash
+Output:
 [
   "Rick Sanchez",
   "Morty Smith",
