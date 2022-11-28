@@ -1,5 +1,7 @@
 {
   "title": "Retornar si al menos alguno de los números es par",
-  "showFiles": false,
-  "template": "vanilla-js"
+  "showFileExplorer": false,
+  "showPreview": true,
+  "template": "vanilla-js",
+  "runner": "sandpack"
 }

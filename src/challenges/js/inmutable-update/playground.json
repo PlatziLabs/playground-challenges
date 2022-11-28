@@ -1,5 +1,7 @@
 {
   "title": "Edita un elemento sin modificar el array original",
-  "showFiles": false,
-  "template": "vanilla-js"
+  "showFileExplorer": false,
+  "showPreview": true,
+  "template": "vanilla-js",
+  "runner": "sandpack"
 }

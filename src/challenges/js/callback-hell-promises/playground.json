@@ -1,5 +1,7 @@
 {
   "title": "Evita el callback hell haciendo uso de Promises",
-  "showFiles": false,
-  "template": "vanilla-js"
+  "showFileExplorer": false,
+  "showPreview": true,
+  "template": "vanilla-js",
+  "runner": "sandpack"
 }

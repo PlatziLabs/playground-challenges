@@ -1,6 +1,8 @@
 {
   "title": "Te doy la bienvenida a los ejercicios interactivos",
-  "showFiles": false,
+  "showFileExplorer": false,
+  "showPreview": false,
+  "runner": "pyodide",
   "template": "python",
-  "packages": []
+  "packages": ["pytest"]
 }

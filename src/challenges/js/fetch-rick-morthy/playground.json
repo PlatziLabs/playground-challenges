@@ -1,5 +1,7 @@
 {
   "title": "Conéctate a una API usando asincronismo",
-  "showFiles": false,
-  "template": "vanilla-js"
+  "showFileExplorer": false,
+  "showPreview": true,
+  "template": "vanilla-js",
+  "runner": "sandpack"
 }

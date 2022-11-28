@@ -1,6 +1,8 @@
 {
   "title": "Elimina elementos duplicados usando conjuntos",
-  "showFiles": false,
+  "showFileExplorer": false,
+  "showPreview": false,
+  "runner": "pyodide",
   "template": "python",
-  "packages": []
+  "packages": ["pytest"]
 }

@@ -1,5 +1,7 @@
 {
   "title": "Ordena por número de caracteres de mayor a menor",
-  "showFiles": false,
-  "template": "vanilla-js"
+  "showFileExplorer": false,
+  "showPreview": true,
+  "template": "vanilla-js",
+  "runner": "sandpack"
 }

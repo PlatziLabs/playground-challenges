@@ -1,6 +1,8 @@
 {
   "title": "Captura variables con la función input",
-  "showFiles": false,
+  "showFileExplorer": false,
+  "showPreview": false,
+  "runner": "pyodide",
   "template": "python",
-  "packages": []
+  "packages": ["pytest"]
 }

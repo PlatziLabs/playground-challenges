@@ -1,5 +1,7 @@
 {
   "title": "Retorna los valores únicos de una lista",
-  "showFiles": false,
-  "template": "vanilla-js"
+  "showFileExplorer": false,
+  "showPreview": true,
+  "template": "vanilla-js",
+  "runner": "sandpack"
 }

@@ -1,5 +1,7 @@
 {
   "title": "Calcula la suma total de los elementos",
-  "showFiles": false,
-  "template": "vanilla-js"
+  "showFileExplorer": false,
+  "showPreview": true,
+  "template": "vanilla-js",
+  "runner": "sandpack"
 }
