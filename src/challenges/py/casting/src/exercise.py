@@ -1,6 +1,6 @@
-name = input('¿Cuál es tu nombre? => ')
-last_name = input('¿Cuál es tu apellido? => ')
-age = input('¿Cuál es tu edad? => ')
+name = 'Juana'
+last_name = 'Perez'
+age = '10'
 
 template = f"---"
 print(template)
