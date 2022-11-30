@@ -7,6 +7,6 @@ print(my_var)
 
 Teniendo lo anterior en cuenta en este reto debes que crear dos variables.
 
-La primera variable debe ser declarada como `name` y debes asignar el valor haciendo uso de la función `input` con la pregunta **'Digita tu nombre => '**, luego que obtengas el valor debes hacer uso de la función `print` para mostrarlo en la **Terminal.**
+La primera variable debe ser declarada como `name` y debes asignar el valor haciendo uso de la función `input('Digita tu nombre => ')`, luego que obtengas el valor debes hacer uso de la función `print` para mostrarlo en la **Terminal.**
 
-La segunda variable debe ser declarada como `age` e igualmente debes asignar el valor haciendo uso de la función `input` con la pregunta **'Digita tu edad => '**, luego que tengas el valor debes hacer uso de la función `print` para mostrarlo en la **Terminal.**
+La segunda variable debe ser declarada como `age` e igualmente debes asignar el valor haciendo uso de la función `input('Digita tu edad => ')`, luego que tengas el valor debes hacer uso de la función `print` para mostrarlo en la **Terminal.**
