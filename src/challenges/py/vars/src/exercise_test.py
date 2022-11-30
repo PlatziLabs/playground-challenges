@@ -11,9 +11,9 @@ def reload_module(name):
 def side_effect(value):
     if value == 'Digita un texto => ':
         return 'Texto'
-    if value == '¿Cuál es tu nombre? => ':
+    if value == 'Digita tu nombre => ':
         return 'Juana'
-    if value == '¿Cuál es tu edad? => ':
+    if value == 'Digita tu edad => ':
         return '20'
     return None
 
@@ -22,6 +22,6 @@ def test_name(capfd):
         module = reload_module('exercise')
         assert module.name == 'Juana'
         assert module.age == '20'
-        expected_str = "Texto\nJuana\n20\n"
+        expected_str = "Texto\nJuana\n20\nTexto\nJuana\n20\n"
         out, error = capfd.readouterr()
         assert out  == expected_str
