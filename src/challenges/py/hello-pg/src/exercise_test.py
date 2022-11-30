@@ -1,6 +1,5 @@
 from importlib import reload, import_module
 import shutil
-import exercise
 
 def reload_module(name):
   module = import_module(name)
