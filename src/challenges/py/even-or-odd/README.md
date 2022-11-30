@@ -8,14 +8,14 @@ Dentro del cuerpo de la función `is_even_or_odd` debes escribir tu solución.
 
 Ejemplo 1:
 
-```
+```txt
 Input: 2
 Output: "Es par"
 ```
 
 Ejemplo 2:
 
-```
+```txt
 Input: 3
 Output: "Es impar"
 ```

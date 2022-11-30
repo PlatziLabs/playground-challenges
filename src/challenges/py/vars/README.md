@@ -1,7 +1,7 @@
 En este desafío vas a poner practicar lo aprendido acerca de variables en Python, ¿Recuerdas como es el uso de la función input?, aquí un pequeño ejemplo:
 
 ```py
-my_var  = input('Digita un texto => ')
+my_var = input('Digita un texto => ')
 print(my_var)
 ```
 
