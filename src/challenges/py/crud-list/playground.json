@@ -1,5 +1,5 @@
 {
-  "title": "Identifica si un número es par o impar",
+  "title": "Agrega, modifica y elimina elementos de una lista",
   "showFileExplorer": false,
   "showPreview": false,
   "runner": "pyodide",

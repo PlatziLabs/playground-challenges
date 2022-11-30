@@ -9,6 +9,6 @@ def reload_module(name):
 
 def test_array(capfd):
     reload_module('exercise')
-    expected_str = "['G', 'F', 'E', 'D', 'B', 'Z']"
+    expected_str = "['G', 'F', 'E', 'D', 'B', 'Z']\n"
     out, error = capfd.readouterr()
     assert out  == expected_str
