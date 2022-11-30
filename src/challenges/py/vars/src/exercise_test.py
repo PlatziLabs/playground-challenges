@@ -19,8 +19,9 @@ def side_effect(value):
 
 def test_name(capfd):
     with unittest.mock.patch('builtins.input', side_effect):
-        reload_module('exercise')
-        
-        expected_str = "Texto\nJuana\n20\nTexto\nJuana\n20\n"
+        module = reload_module('exercise')
+        assert module.name == 'Juana'
+        assert module.age == '20'
+        expected_str = "Texto\nJuana\n20\n"
         out, error = capfd.readouterr()
         assert out  == expected_str
