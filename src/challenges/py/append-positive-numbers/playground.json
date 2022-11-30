@@ -1,5 +1,5 @@
 {
-  "title": "Agrega solo los números positivos de la lista",
+  "title": "Agrega solo los números positivos de una lista",
   "showFileExplorer": false,
   "showPreview": false,
   "runner": "pyodide",

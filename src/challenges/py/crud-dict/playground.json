@@ -1,5 +1,5 @@
 {
-  "title": "Agrega, modifica y elimina elementos de una lista",
+  "title": "Agrega, modifica y elimina elementos de un diccionario",
   "showFileExplorer": false,
   "showPreview": false,
   "runner": "pyodide",
