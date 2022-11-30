@@ -1,12 +1,12 @@
-En este desafío vas a repasar la asignación el concepto de variables, vas a encontrar un código base y debes crear 
+En este desafío vas a poner practicar lo aprendido acerca de variables en Python, ¿Recuerdas como es el uso de la función input?, aquí un pequeño ejemplo:
 
 ```py
-my_var  = 'Un String'
+my_var  = input('Digita un texto => ')
 print(my_var)
 ```
 
-Teniendo lo anterior en cuenta tu reto será crear dos variables.
+Teniendo lo anterior en cuenta en este reto debes que crear dos variables.
 
-La primera variable será `name` y debes asignar el valor de tipo `string` y luego que tengas el valor debes hacer uso de la función `print` para mostrarlo en la **Terminal.**
+La primera variable será `name` y debes asignar el valor haciendo uso de la función `input` con la pregunta *'¿Cuál es tu nombre? => '*, luego que obtengas el valor debes hacer uso de la función `print` para mostrarlo en la **Terminal.**
 
-La segunda variable será `age` e igualmente debes asignar el valor de tipo `number`, luego que tengas el valor debes hacer uso de la función `print` para mostrarlo en la **Terminal.**
+La segunda variable será `age` e igualmente debes asignar el valor haciendo uso de la función `input` con la pregunta *'¿Cuál es tu edad? => '*, luego que tengas el valor debes hacer uso de la función `print` para mostrarlo en la **Terminal.**
