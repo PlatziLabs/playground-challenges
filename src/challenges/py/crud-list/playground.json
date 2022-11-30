@@ -1,0 +1,8 @@
+{
+  "title": "Identifica si un número es par o impar",
+  "showFileExplorer": false,
+  "showPreview": false,
+  "runner": "pyodide",
+  "template": "python",
+  "packages": ["pytest"]
+}
