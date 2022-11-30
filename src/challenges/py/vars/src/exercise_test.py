@@ -17,7 +17,7 @@ def side_effect(value):
         return '20'
     return None
 
-def test_name(capfd):
+def test_vars(capfd):
     with unittest.mock.patch('builtins.input', side_effect):
         module = reload_module('exercise')
         assert module.name == 'Juana'
