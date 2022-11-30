@@ -8,6 +8,6 @@ En este desafío tienes una lista con letras en una lista que está declarada co
 Ejemplo:
 
 ```txt
-Input: ['A', 'B', 'C', 'D', 'E', 'F']
-Output: ['G', 'F', 'E', 'D', 'B', 'Z']
+Input: ["A", "B", "C", "D", "E", "F"]
+Output: ["G", "F", "E", "D", "B", "Z"]
 ```

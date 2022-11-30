@@ -2,14 +2,9 @@ En este desafío tendrás la función `multiply_numbers` la cual recibe una list
 
 La solución debería tener un input y output como los siguientes:
 
-Input
+Ejemplo 1:
 
-```py
-multiply_numbers([2,4,5,6,8])
-```
-
-Output
-
-```py
-[4,8,10,12, 16]
+```txt
+Input: [2,4,5,6,8]
+Input: [4,8,10,12,16]
 ```

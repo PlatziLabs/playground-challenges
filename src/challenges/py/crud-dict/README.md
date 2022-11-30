@@ -11,12 +11,12 @@ Ejemplo:
 ```txt
 Input:
 person = {
-    'name': 'Nicolas',
-    'lastName': 'Molina',
-    'age': 29
+    "name": "Nicolas",
+    "lastName": "Molina",
+    "age": 29
 }
 
 Output:
-['name', 'lastName', 'twitter']
-['Felipe', 'Molina', '@nicobytes']
+["name", "lastName", "twitter"]
+["Felipe", "Molina", "@nicobytes"]
 ```
