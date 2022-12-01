@@ -1,4 +1,5 @@
-Hola, te doy la bienvenida a tu primer ejercicio interactivo en donde vas a poner practicar lo aprendido con ejercicios prácticos, es como un replit dentro de Platzi 🤯, pero vas a ir descubriendo como validar tus conocimientos con este tipo de ejercicios, por ahora empecemos. 💪
+Hola, te doy la bienvenida a tu primer ejercicio interactivo de Python en donde vas a poder practicar lo aprendido con ejercicios, es como un Replit dentro de Platzi 🤯, con el que vas a ir descubriendo como validar tus conocimientos. Por ahora empecemos. 💪
+
 
 ¿Recuerdas como es el uso de la función `print`?, aquí un ejemplo:
 
