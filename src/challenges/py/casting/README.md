@@ -1,4 +1,4 @@
-En este desafío vas a tener un código base el cual usa la función `input` para solicitar tu nombre, apellido y edad, tu reto es crear un formato usando un `string` que como resultado realice un print en la **Terminal** con el siguiente mensaje:
+En este desafío vas a tener un código base el cual usa la función `input` para solicitar tu nombre, apellido y edad, tu reto es crear un formato usando un `string` que como resultado realice un print en la sección **Console** con el siguiente mensaje:
 
 ```txt
 Hola mi nombre es Nicolas Molina, tengo 29 años y en 10 años tendré 39 años

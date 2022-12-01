@@ -7,7 +7,7 @@ Hola, te doy la bienvenida a tu primer ejercicio interactivo de Python en donde 
 print('Hello, world!!')
 ``` 
 
-La función `print` nos permite imprimir texto en la **Terminal**, teniendo esto en cuenta, tu desafío es ejecutar **3 veces** la función `print` en el siguiente orden con los siguientes mensajes:
+La función `print` nos permite imprimir texto en la sección **Console**, teniendo esto en cuenta, tu desafío es ejecutar **3 veces** la función `print` en el siguiente orden con los siguientes mensajes:
 
 - Te doy la bienvenida al Coding Playground
 - Mi primer print
