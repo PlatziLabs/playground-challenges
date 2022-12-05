@@ -1,10 +1,6 @@
-En este desafío vas a recibir un número como parámetro y  tu reto es identificar si ese número es par o impar y según eso retornar un mensaje de "Es par" en el caso de los pares y "Es impar" en el caso de los impares.
+En este desafío vas a capturar un número usando la función `input` y tu reto es identificar si ese número es par o impar.
 
-Para solucionarlo vas a encontrar una función llamada `is_even_or_odd` que recibe un parámetro de entrada:
-
-- number: Un número que puede ser positivo o negativo
-
-Dentro del cuerpo de la función `is_even_or_odd` debes escribir tu solución.
+Para solucionarlo vas a encontrar debes escribir una condicional que haga esta validación del número y según eso debes imprimir el mensaje de `Es par` en el caso de los pares y `Es impar` en el caso de los impares.
 
 Ejemplo 1:
 
