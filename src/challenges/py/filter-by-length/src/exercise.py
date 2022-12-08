@@ -2,5 +2,6 @@ def filter_by_length(words):
    # Tu código aquí
    return []
 
-response = filter_by_length(['amor', 'sol', 'piedra', 'día'])
+words = ['amor', 'sol', 'piedra', 'día']
+response = filter_by_length(words)
 print(response)

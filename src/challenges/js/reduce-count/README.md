@@ -8,7 +8,7 @@ Dentro del cuerpo de la función `counterNumbers` debes escribir tu solución.
 
 Ejemplo 1:
 
-```js
+```txt
 Input:
 [1, 2, 2, 3, 3, 3]
 
@@ -22,7 +22,7 @@ Output:
 
 Ejemplo 2:
 
-```js
+```txt
 Input:
 [1, 2, -3, -1, 2, 4, 4, 1, 45, -1]
 
