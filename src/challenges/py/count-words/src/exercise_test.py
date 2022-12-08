@@ -37,7 +37,7 @@ def test_case_3():
     assert rta == 0
 
 def test_case_4():
-    reload_module('exercise')
+    module = reload_module('exercise')
     tests_list = ['hola']
-    rta = count_words(tests_list)
+    rta = module.count_words(tests_list)
     assert rta == 1
