@@ -8,9 +8,8 @@ def reload_module(name):
   reload(module)
   return module
 
-reload_module('exercise')
-
 def test_case_1():
+    reload_module('exercise')
     tests_list = [1, 2, 2, 3, 3, 3]
     rta = counter_numbers(tests_list)
     assert rta == {
@@ -20,6 +19,7 @@ def test_case_1():
     }
 
 def test_case_2():
+    reload_module('exercise')
     tests_list = [1, 2, -3, -1, 2, 4, 4, 1, 45, -1]
     rta = counter_numbers(tests_list)
     assert rta == {
@@ -32,6 +32,7 @@ def test_case_2():
     }
 
 def test_case_3():
+    reload_module('exercise')
     tests_list = []
     rta = counter_numbers(tests_list)
     assert rta == {}
