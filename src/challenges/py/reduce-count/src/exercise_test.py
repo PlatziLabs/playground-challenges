@@ -36,3 +36,4 @@ def test_case_3():
     tests_list = []
     rta = counter_numbers(tests_list)
     assert rta == {}
+  
