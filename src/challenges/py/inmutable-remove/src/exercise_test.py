@@ -1,4 +1,14 @@
 from exercise import multiply_numbers
+from importlib import reload, import_module
+import shutil
+
+def reload_module(name):
+  module = import_module(name)
+  shutil.rmtree("__pycache__", ignore_errors=True)
+  reload(module)
+  return module
+
+reload_module('exercise')
 
 def test_numbers():
     tests_list = [1, 2, 3]
