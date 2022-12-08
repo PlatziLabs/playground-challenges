@@ -1,5 +1,5 @@
 {
-  "title": "",
+  "title": "Calcula la frecuencia con la que aparece un número",
   "showFileExplorer": false,
   "showPreview": false,
   "runner": "pyodide",
