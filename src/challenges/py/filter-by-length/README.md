@@ -1,15 +1,22 @@
-Tienes un array con palabras, tu desafío es retornar un lista solo con las que cumplan con la condición de tener **4 o más letras**, recuerda usar la función `filter` de Python y aplicar una `lambda function`.
+En este desafío tienes que filtrar una lista de números, tu reto es retornar una lista solo con las que cumplan con la condición de tener 4 o más letras, recuerda usar la función `filter` de Python y aplicar una `lambda function`.
 
-La solución debería tener un input y output como los siguientes:
+Para solucionarlo vas a encontrar una función llamada `filter_by_length` que recibe un parámetro de entrada:
 
-Input
+- words: Una lista de palabras
 
-```py
-filter_by_length(['amor', 'sol', 'piedra', 'día'])
+Dentro del cuerpo de la función `filter_by_length` debes escribir tu solución.
+
+
+Ejemplo 1:
+
+```js
+Input: ['amor', 'sol', 'piedra', 'día']
+Output: [ 'amor', 'piedra' ]
 ```
 
-Output
+Ejemplo 2:
 
-```py
-[ 'amor', 'piedra' ]
+```js
+Input: ['rosa', 'gol', 'pez', 'día', 'gafas']
+Output: [ 'rosa', 'gafas' ]
 ```

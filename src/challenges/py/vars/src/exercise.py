@@ -1,5 +1,5 @@
-my_var = input('Digita un texto => ')
-print(my_var)
+text = input('Digita un texto => ')
+print(text)
 
 # Ahora puedes crear tus variables 👇
 name = input('Digita tu nombre => ')

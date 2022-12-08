@@ -1,0 +1,8 @@
+{
+  "title": "",
+  "showFileExplorer": false,
+  "showPreview": false,
+  "runner": "pyodide",
+  "template": "python",
+  "packages": ["pytest"]
+}
