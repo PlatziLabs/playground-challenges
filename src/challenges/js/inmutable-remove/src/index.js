@@ -14,12 +14,11 @@ import { removeFromArray } from "./exercise";
 
   const runBtn = document.getElementById('btn');
   const rtaElement = document.getElementById('rta');
-  const indexInput = document.getElementById('#index');
+  const indexInput = document.getElementById('index');
 
   runBtn.addEventListener('click', () => {
     try {
       const index = parseInt(indexInput.value, 10);
-      const newValue = newValueInput.value;
       rtaElement.innerHTML = `<pre><code>${removeFromArray(array, index)}</code></pre>`;
       rtaElement.innerHTML += '</br>';
       rtaElement.innerHTML += `<p>Original: ${JSON.stringify(array)}</p>`;
