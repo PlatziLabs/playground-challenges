@@ -9,31 +9,31 @@ def reload_module(name):
   return module
 
 def test_case_1():
-    reload_module('exercise')
+    module = reload_module('exercise')
     tests_list = [
       "Beautiful is better than ugly",
       "Explicit is better than implicit",
       "Simple is better than complex",
       "Complex is better than complicated"
     ]
-    rta = count_words(tests_list)
+    rta = module.count_words(tests_list)
     assert rta == 20
 
 def test_case_2():
-    reload_module('exercise')
+    module = reload_module('exercise')
     tests_list = [
       "Hola hola hola",
       "hola",
       "hola hola",
       "hola"
     ]
-    rta = count_words(tests_list)
+    rta = module.count_words(tests_list)
     assert rta == 7
 
 def test_case_3():
-    reload_module('exercise')
+    module = reload_module('exercise')
     tests_list = []
-    rta = count_words(tests_list)
+    rta = module.count_words(tests_list)
     assert rta == 0
 
 def test_case_4():
