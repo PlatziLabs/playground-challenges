@@ -1,18 +1,13 @@
-Hola, te doy la bienvenida a tu primer ejercicio interactivo de Python en donde vas a poder practicar lo aprendido con ejercicios, es como un Replit dentro de Platzi 🤯, con el que vas a ir descubriendo como validar tus conocimientos. Por ahora empecemos. 💪
+Hola, te doy la bienvenida al Coding Playground, un lugar donde podrás practicar tus conocimientos de Python de manera interactiva 🤯. En este ejercicio, tu desafío es utilizar la función `print` para imprimir tres mensajes en la sección **Console**. Para ello, debes utilizar la función `print` tres veces en el siguiente orden con los siguientes mensajes:
 
+- "Te doy la bienvenida al Coding Playground"
+- "Mi primer print"
+- "30"
 
-¿Recuerdas como es el uso de la función `print`?, aquí un ejemplo:
+Recuerda prestar atención a los espacios y mayúsculas en los mensajes, ya que son importantes para que tu respuesta sea correcta. Un ejemplo de cómo utilizar la función `print` se encuentra a continuación:
 
 ```py
 print('Hello, world!!')
 ``` 
 
-La función `print` nos permite imprimir texto en la sección **Console**, teniendo esto en cuenta, tu desafío es ejecutar **3 veces** la función `print` en el siguiente orden con los siguientes mensajes:
-
-- Te doy la bienvenida al Coding Playground
-- Mi primer print
-- 30
-
-Recuerda tener cuidado con los espacios y las mayúsculas, para este ejercicio el primer `print` ya está hecho, así que tienes que hacer los que falten.
-
-Una vez tengas la solución al reto puedes validar tu respuesta dando clic en el botón **Correr pruebas**.
+Una vez que hayas completado el ejercicio, puedes validar tu respuesta dando clic en el botón **Correr pruebas**.
