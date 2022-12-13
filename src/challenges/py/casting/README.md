@@ -1,10 +1,12 @@
-En este desafío vas a tener un código base el cual usa la función `input` para solicitar tu nombre, apellido y edad, tu reto es crear un formato usando un `string` que como resultado realice un print en la sección **Console** con el siguiente mensaje:
+En este desafío, se te proporcionará un código base que utiliza la función `input` para solicitar tu nombre, apellido y edad. Tu tarea es crear un formato de string que, como resultado, muestre un mensaje en la sección **Console**. El mensaje deberá tener la siguiente forma:
 
 ```txt
-Hola mi nombre es Nicolas Molina, tengo 29 años y en 10 años tendré 39 años
+Hola mi nombre es {name} {last_name}, tengo {age} años y en 10 años tendré {total} años
 ```
 
-Fíjate que debes hacer un cálculo para la edad y calcular cuál será la edad en 10 años según el valor ingresado.
+Ten en cuenta que debes calcular la edad que tendrás en 10 años a partir de la edad ingresada. Por ejemplo, si ingresas 29 años, el mensaje mostrado deberá decir "tengo 29 años y en 10 años tendré 39 años"
+
+Aquí tienes otros ejemplos:
 
 Ejemplo 1:
 
@@ -29,3 +31,5 @@ Input:
 Output:
 Hola mi nombre es Andrea Casas, tengo 22 años y en 10 años tendré 32 años
 ```
+
+Recuerda prestar atención a los espacios y mayúsculas, ya que son importantes para que tu respuesta sea correcta.

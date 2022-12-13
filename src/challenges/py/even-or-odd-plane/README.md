@@ -1,6 +1,6 @@
-En este desafío vas a capturar un número usando la función `input` y tu reto es identificar si ese número es par o impar.
+En este desafío, se te pedirá que ingreses un número usando la función `input`. Tu reto es determinar si el número ingresado es par o impar. Para hacer esta validación, debes utilizar una condicional que compruebe si el número es divisible por dos. Si lo es, significa que el número es par y debes imprimir el mensaje `Es par`. Si no lo es, significa que el número es impar y debes imprimir el mensaje `Es impar`.
 
-Para solucionarlo debes escribir una condicional que haga esta validación del número y según eso debes imprimir el mensaje de `Es par` en el caso de los pares y `Es impar` en el caso de los impares.
+A continuación se muestran ejemplos de cómo debería funcionar tu solución:
 
 Ejemplo 1:
 
@@ -15,3 +15,5 @@ Ejemplo 2:
 Input: 3
 Output: "Es impar"
 ```
+
+Recuerda que un número es par si es divisible por dos, y un número es impar si no lo es.

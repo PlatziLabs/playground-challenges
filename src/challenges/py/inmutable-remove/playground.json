@@ -1,5 +1,5 @@
 {
-  "title": "",
+  "title": "Elimina un elemento sin modificar el array original",
   "showFileExplorer": false,
   "showPreview": false,
   "runner": "pyodide",

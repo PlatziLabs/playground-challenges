@@ -1,8 +1,8 @@
-En este desafío tienes un diccionario que representa los datos de una persona y está declarada como `person` y tu reto es realizar las siguientes tareas en orden:
+En este desafío, se te proporcionará un diccionario llamado `person` que contiene información sobre una persona. Tu reto es realizar las siguientes operaciones en orden:
 
-1. Agregar un nuevo atributo llamado `twitter` con el valor `@nicobytes`
-1. Actualizar el atributo `name` con el valor `Felipe`
-1. Eliminar el atributo `age`.
+1. Agregar un nuevo elemento al diccionario con la llave "twitter" y el valor "@nicobytes".
+1. Actualizar el valor del elemento con la llave "name" con el valor "Felipe".
+1. Eliminar el elemento del diccionario con la llave "age".
 1. Imprimir una lista con las llaves del diccionario.
 1. Imprimir una lista con los valores del diccionario.
 
@@ -20,3 +20,5 @@ Output:
 ["name", "lastName", "twitter"]
 ["Felipe", "Molina", "@nicobytes"]
 ```
+
+Recuerda que debes realizar las operaciones en el orden indicado y utilizar las funciones y métodos de los diccionarios de Python apropiados para cada tarea.

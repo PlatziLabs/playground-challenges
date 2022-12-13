@@ -1,5 +1,5 @@
 {
-  "title": "",
+  "title": "Calcula el total de palabras de un texto",
   "showFileExplorer": false,
   "showPreview": false,
   "runner": "pyodide",

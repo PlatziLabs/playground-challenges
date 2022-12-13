@@ -1,8 +1,6 @@
-En este desafío tienes una lista de números positivos y negativos, declarada como `my_list`, tu reto es aplicar un ciclo para seleccionar los números positivos de `my_list` y agregarlos a `new_list`.
+En este desafío, se te proporcionará una lista de números llamada `my_list`. Tu tarea es recorrer esta lista y utilizar un ciclo para seleccionar solo los números positivos. Luego, debes agregar estos números a una nueva lista llamada `new_list`. Al final del ciclo, debes imprimir los valores contenidos en `new_list` utilizando la función `print`.
 
-Recuerda usar al final usar la función `print` para imprimir los valores de `new_list`.
-
-Ejemplo:
+Por ejemplo, si la lista es `[1, -1, 2, -2, 3, -3, 4, -4]`, después de realizar las operaciones descritas, la lista `new_list` debería contener solo los números positivos, es decir, `[1, 2, 3, 4]`.
 
 ```txt
 Input: [1, -1, 2, -2, 3, -3, 4, -4]

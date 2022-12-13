@@ -1,10 +1,37 @@
-Vas a encontrar un código base y encontrarás una lista llamada `numbers` con números pares e impares y el algoritmo usado selecciona los números pares y crea una nueva lista con solo los números pares.
+Para resolver este desafío, debe escribir un algoritmo que elimine los elementos repetidos de los cuatro conjuntos de países del continente americano, para obtener un conjunto único llamado `new_set`.
 
-Tu reto es refactorizar el código base usando `List Comprehension`.
+Este algoritmo recibirá como entrada cuatro conjuntos de países, estos países serán de todo el continente americano divididos de la siguiente manera:
 
-Ejemplo:
+- countries - Países del continente en general
+- northAmerica - Países del norte de América
+- centralAmerica - Países del centro de América
+- southAmerica -  Países del sur de América
+
+En resumen, el algoritmo deberá eliminar los elementos repetidos de los cuatro conjuntos de países del continente americano, para obtener un conjunto único llamado `new_set`.
+
+Ejemplo 1:
 
 ```txt
-Input: [35, 16, 10, 34, 37, 25]
-Output: [16, 10, 34]
+Input: 
+{"MX", "COL", "ARG", "USA"},
+{"USA", "CA"},
+{"MX", "GT", "BZ"},
+{"COL", "BZ", "ARG"}
+
+Output:
+{'ARG', 'USA', 'CANADA', 'GT', 'COL', 'MX', 'BZ'}
+```
+
+Ejemplo 2:
+
+```txt
+Input:
+{"BOL"},
+{"CA"},
+{"MX"},
+{"COL"}
+
+Output:
+
+{'COL', 'CA', 'BOL', 'MX'}
 ```
