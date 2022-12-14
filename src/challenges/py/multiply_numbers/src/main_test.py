@@ -1,4 +1,4 @@
-from exercise import multiply_numbers
+from main import multiply_numbers
 from importlib import reload, import_module
 import shutil
 
@@ -9,19 +9,19 @@ def reload_module(name):
   return module
 
 def test_numbers():
-    module = reload_module('exercise')
+    module = reload_module('main')
     tests_list = [1, 2, 3]
     rta = module.multiply_numbers(tests_list)
     assert rta == [2, 4, 6]
 
 def test_negative_numbers():
-    module = reload_module('exercise')
+    module = reload_module('main')
     tests_list = [0, -1, 2]
     rta = module.multiply_numbers(tests_list)
     assert rta == [0, -2, 4]
 
 def test_empty_list():
-    module = reload_module('exercise')
+    module = reload_module('main')
     tests_list = []
     rta = module.multiply_numbers(tests_list)
     assert rta == []

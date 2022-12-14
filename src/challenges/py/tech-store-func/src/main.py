@@ -1,5 +1,5 @@
 def message_creator(text):
-   # Tu código aquí
+   # Escribe tu solución 👇
    return ''
 
 text = 'computadora'

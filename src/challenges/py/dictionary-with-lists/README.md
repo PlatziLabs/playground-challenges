@@ -1,16 +1,17 @@
-Tienes un diccionario con diferentes keys y values, tu desafío es modificar el diccionario según las listas de nombres que recibas y retornarlo con los values actualizados.
+En este desafío, se te ha dado un diccionario con diferentes keys y values. Tu reto es implementar una función llamada `dictionary_with_lists` que modifique el diccionario según las listas de nombres que reciba y retorne el diccionario con los values actualizados de acuerdo a lo siguiente:
 
-- 'school' Este valor siempre debe ser **"Platzi"**
-- 'names' Aquí pondrás la **lista de nombres** que recibas
-- 'first_student' Aquí retornarás el **primer** nombre de la lista
-- 'last_student' Aquí retornarás el **último** nombre de la lista
-- 'count' Aquí retornarás el **número total** de nombres de la lista
+- 'school' debe siempre tener el valor de "Platzi".
+- 'names' debe contener la lista de nombres que recibas.
+- 'first_student' debe contener el primer nombre de la lista.
+- 'last_student' debe contener el último nombre de la lista.
+- 'count' debe contener el número total de nombres en la lista.
 
-Tu solución debería tener un input y output como los siguientes:
+Tu solución debe cumplir con estos requerimientos y retornar el diccionario con los values actualizados de acuerdo a la lista de nombres que recibas.
 
-Ejemplo 1
+Ejemplo 1:
 
-```py
+```txt
+
 Input: ["Pepe", "Luis"]
 
 Output: {
@@ -22,9 +23,9 @@ Output: {
 }
 ```
 
-Ejemplo 2
+Ejemplo 2:
 
-```py
+```txt
 Input: ["Pedro", "Pepe", "Luis", "Enrique", "Juan", "Saul"]
 
 Output: {
@@ -34,4 +35,21 @@ Output: {
   'last_student': "Saul",
   'count': 6
 }
+
+```
+
+Ejemplo 3:
+
+```txt
+
+Input: ["Pepe"]
+
+Output: {
+  'school': "Platzi",
+  'names': ["Pepe"],
+  'first_student': "Pepe",
+  'last_student': "Pepe",
+  'count': 1
+}
+
 ```

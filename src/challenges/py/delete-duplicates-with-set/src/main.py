@@ -4,6 +4,6 @@ centralAm = {"MX", "GT", "BZ"}
 southAm = {"COL", "BZ", "ARG"}
 
 new_set = set()
-# Tu código solución 👇
+# Escribe tu solución 👇
 
 print(new_set)

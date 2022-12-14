@@ -1,4 +1,4 @@
-from exercise import filter_by_length
+from main import filter_by_length
 from importlib import reload, import_module
 import shutil
 
@@ -9,13 +9,13 @@ def reload_module(name):
   return module
 
 def test_words():
-    module = reload_module('exercise')
+    module = reload_module('main')
     tests_list = ['amor', 'sol', 'piedra', 'día']
     rta = module.filter_by_length(tests_list)
     assert rta == ['amor', 'piedra']
 
 def test_empty():
-    module = reload_module('exercise')
+    module = reload_module('main')
     tests_list = ['aa', 'a', 'bb', 'cc']
     rta = module.filter_by_length(tests_list)
     assert rta == []

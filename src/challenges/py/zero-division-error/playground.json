@@ -7,5 +7,5 @@
   "packages": ["pytest"],
   "hideFiles": [],
   "ignoreFiles": ["^tests.py$"],
-  "entryFile": "exercise.py"
+  "entryFile": "main.py"
 }

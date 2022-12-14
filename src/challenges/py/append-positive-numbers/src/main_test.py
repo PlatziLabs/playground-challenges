@@ -7,8 +7,8 @@ def reload_module(name):
   reload(module)
   return module
 
-def test_many_countries(capfd):
-    reload_module('exercise')
-    expected_str = "{'ARG', 'USA', 'CANADA', 'GT', 'COL', 'MX', 'BZ'}\n"
+def test_array(capfd):
+    reload_module('main')
+    expected_str = "[1, 2, 3, 4]\n"
     out, error = capfd.readouterr()
     assert out  == expected_str

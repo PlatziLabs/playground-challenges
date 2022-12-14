@@ -1,7 +1,15 @@
-from exercise import dictionary_with_lists
+from main import dictionary_with_lists
+from importlib import reload, import_module
+import shutil
 
+def reload_module(name):
+  module = import_module(name)
+  shutil.rmtree("__pycache__", ignore_errors=True)
+  reload(module)
+  return module
 
 def test_names_dictionary():
+    module = reload_module('main')
     solution = {
         'school': "Platzi",
         'names': ["Pepe", "Luis"],
@@ -10,11 +18,12 @@ def test_names_dictionary():
         'count': 2
     }
     tests_names = ["Pepe", "Luis"]
-    rta = dictionary_with_lists(tests_names)
+    rta = module.dictionary_with_lists(tests_names)
     assert rta == solution
 
 
 def test_with_one_name():
+    module = reload_module('main')
     solution = {
         'school': "Platzi",
         'names': ["Pedro"],
@@ -23,11 +32,12 @@ def test_with_one_name():
         'count': 1
     }
     tests_names = ["Pedro"]
-    rta = dictionary_with_lists(tests_names)
+    rta = module.dictionary_with_lists(tests_names)
     assert rta == solution
 
 
 def test_with_many_names():
+    module = reload_module('main')
     solution = {
         'school': "Platzi",
         'names': ["Pedro", "Pepe", "Luis", "Enrique", "Juan", "Saul"],
@@ -36,5 +46,5 @@ def test_with_many_names():
         'count': 6
     }
     tests_names = ["Pedro", "Pepe", "Luis", "Enrique", "Juan", "Saul"]
-    rta = dictionary_with_lists(tests_names)
+    rta = module.dictionary_with_lists(tests_names)
     assert rta == solution

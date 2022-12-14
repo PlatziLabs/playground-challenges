@@ -19,7 +19,7 @@ def side_effect(value):
 
 def test_vars(capfd):
     with unittest.mock.patch('builtins.input', side_effect):
-        module = reload_module('exercise')
+        module = reload_module('main')
         assert module.name == 'Juana'
         assert module.age == '20'
         expected_str = "Texto\nJuana\n20\n"

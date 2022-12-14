@@ -8,7 +8,7 @@ def reload_module(name):
   return module
 
 def test_array(capfd):
-    reload_module('exercise')
-    expected_str = "[1, 2, 3, 4]\n"
+    reload_module('main')
+    expected_str = "['G', 'F', 'E', 'D', 'B', 'Z']\n"
     out, error = capfd.readouterr()
     assert out  == expected_str
