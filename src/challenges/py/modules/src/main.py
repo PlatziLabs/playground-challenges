@@ -1,5 +1,8 @@
+from my_functions import get_totals, calc_total
+
 def get_total(orders):
-  return 0
+  totals = get_totals(orders)
+  return calc_total(totals)
 
 orders = [
   {
