@@ -1,6 +1,8 @@
 def my_divide(a, b):
-   # Tu código aquí 👇
-   result = a / b
+   try:
+      result = a / b
+   except ZeroDivisionError:
+      result = "No se puede dividir por 0"
    return result
     
 response = my_divide(10, 2)
