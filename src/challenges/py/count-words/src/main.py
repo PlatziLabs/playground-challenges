@@ -1,5 +1,5 @@
 def count_words(text):
-   # Tu código aquí
+   # Escribe tu solución 👇
    return 0
 
 text = [

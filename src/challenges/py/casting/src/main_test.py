@@ -18,7 +18,7 @@ def test_template(capfd):
             return '20'
         return None
     with unittest.mock.patch('builtins.input', side_effect):
-        reload_module('exercise')
+        reload_module('main')
         expected_str = "Juan\nPerez\n20\nHola mi nombre es Juan Perez, tengo 20 años y en 10 años tendré 30 años\n"
         out, error = capfd.readouterr()
         assert out  == expected_str

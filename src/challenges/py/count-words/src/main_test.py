@@ -1,4 +1,4 @@
-from exercise import count_words
+from main import count_words
 from importlib import reload, import_module
 import shutil
 
@@ -9,7 +9,7 @@ def reload_module(name):
   return module
 
 def test_case_1():
-    module = reload_module('exercise')
+    module = reload_module('main')
     tests_list = [
       "Beautiful is better than ugly",
       "Explicit is better than implicit",
@@ -20,7 +20,7 @@ def test_case_1():
     assert rta == 20
 
 def test_case_2():
-    module = reload_module('exercise')
+    module = reload_module('main')
     tests_list = [
       "Hola hola hola",
       "hola",
@@ -31,13 +31,13 @@ def test_case_2():
     assert rta == 7
 
 def test_case_3():
-    module = reload_module('exercise')
+    module = reload_module('main')
     tests_list = []
     rta = module.count_words(tests_list)
     assert rta == 0
 
 def test_case_4():
-    module = reload_module('exercise')
+    module = reload_module('main')
     tests_list = ['hola']
     rta = module.count_words(tests_list)
     assert rta == 1

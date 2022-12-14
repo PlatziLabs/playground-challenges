@@ -1,5 +1,5 @@
 def counter_numbers(numbers):
-   # Tu código aquí
+   # Escribe tu solución 👇
    return []
 
 numbers = [1, 2, 2, 3, 3, 3]

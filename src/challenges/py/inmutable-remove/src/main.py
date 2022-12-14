@@ -1,5 +1,5 @@
 def remove_from_list(numbers, index):
-   # Tu código aquí
+   # Escribe tu solución 👇
    return []
 
 numbers = [1, 2, 3]

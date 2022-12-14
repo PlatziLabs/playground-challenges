@@ -1,5 +1,5 @@
 def multiply_numbers(numbers):
-    # Tu código aquí 👇
+    # Escribe tu solución 👇
     return []
 
 numbers = [1, 2, 3, 4]

@@ -1,5 +1,5 @@
 def my_divide(a, b):
-   # Tu código aquí 👇
+   # Escribe tu solución 👇
    result = a / b
    return result
     
