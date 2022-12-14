@@ -5,6 +5,6 @@
   "runner": "pyodide",
   "template": "python",
   "packages": ["pytest"],
-  "hideFiles": ["*_test.py"],
-  "ignoreFiles": ["tests.py"]
+  "hideFiles": ["\\.*_test.py$"],
+  "ignoreFiles": ["^test\\.py$"]
 }
