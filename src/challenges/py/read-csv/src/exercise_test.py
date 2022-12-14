@@ -1,16 +1,26 @@
-from exercise import multiply_numbers
+from exercise import read_csv
+from importlib import reload, import_module
+import shutil
+from unittest.mock import patch, mock_open
 
-def test_numbers():
-    tests_list = [1, 2, 3]
-    rta = multiply_numbers(tests_list)
-    assert rta == [2, 4, 6]
+def reload_module(name):
+  module = import_module(name)
+  shutil.rmtree("__pycache__", ignore_errors=True)
+  reload(module)
+  return module
 
-def test_negative_numbers():
-    tests_list = [0, -1, 2]
-    rta = multiply_numbers(tests_list)
-    assert rta == [0, -2, 4]
+def test_case_1():
+    in_mem_csv = "A,10\nB,20\nC,30\nD,40\n"
+    with patch("builtins.open", mock_open(read_data=in_mem_csv)):
+        module = reload_module('exercise')
+        rta = module.read_csv('./data.csv')
+        assert rta == 100
 
-def test_empty_list():
-    tests_list = []
-    rta = multiply_numbers(tests_list)
-    assert rta == []
+def test_case_2():
+    in_mem_csv = "A,10\nB,10\nC,10\nD,10\n"
+    with patch("builtins.open", mock_open(read_data=in_mem_csv)):
+        module = reload_module('exercise')
+        rta = module.read_csv('./data.csv')
+        assert rta == 40
+        
+   

@@ -1,10 +1,13 @@
-def my_divide(a, b):
-   # Tu código aquí 👇
-   result = a / b
-   return result
-    
-response = my_divide(10, 2)
-print(response) # 5.0
+import csv
 
-response = my_divide(10, 0)
-print(response) # No se puede dividir por 0
+def read_csv(path):
+   # Tu código aquí 👇
+   total = 0
+   with open(path, 'r') as csvfile:
+      reader = csv.reader(csvfile, delimiter=',')
+      for row in reader:
+         total += int(row[1])
+   return total
+
+response = read_csv('./data.csv')
+print(response)
