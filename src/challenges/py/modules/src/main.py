@@ -1,4 +1,5 @@
 def get_total(orders):
+  # Tu código aquí 👇
   return 0
 
 orders = [

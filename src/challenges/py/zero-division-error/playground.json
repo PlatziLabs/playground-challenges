@@ -1,5 +1,5 @@
 {
-  "title": "",
+  "title": "Captura la excepción: ZeroDivisionError",
   "showFileExplorer": false,
   "showPreview": false,
   "runner": "pyodide",
