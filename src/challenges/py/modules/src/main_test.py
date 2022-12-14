@@ -1,4 +1,4 @@
-from main import calc_total
+from main import get_total
 from importlib import reload, import_module
 import shutil
 
@@ -27,7 +27,7 @@ def test_case_1():
             "delivered": False,
         }
     ]
-    rta = module.calc_total(tests_list)
+    rta = module.get_total(tests_list)
     assert rta == 240
 
 def test_case_2():
@@ -49,11 +49,11 @@ def test_case_2():
             "delivered": False,
         }
     ]
-    rta = module.calc_total(tests_list)
+    rta = module.get_total(tests_list)
     assert rta == 11
 
 def test_empty_list():
     module = reload_module('main')
     tests_list = []
-    rta = module.calc_total(tests_list)
+    rta = module.get_total(tests_list)
     assert rta == 0
