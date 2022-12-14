@@ -1,10 +1,11 @@
 {
-  "title": "",
+  "title": "Calcular la suma de todas las compras",
   "showFileExplorer": false,
   "showPreview": false,
   "runner": "pyodide",
   "template": "python",
   "packages": ["pytest"],
-  "hideFiles": ["*_test.py"],
-  "ignoreFiles": ["tests.py"]
+  "hideFiles": [],
+  "ignoreFiles": ["^tests.py$"],
+  "entryFile": "main.py"
 }
