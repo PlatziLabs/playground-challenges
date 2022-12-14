@@ -6,5 +6,5 @@
   "template": "python",
   "packages": ["pytest"],
   "hideFiles": [".*_test.py$"],
-  "ignoreFiles": ["^test.py$"]
+  "ignoreFiles": ["^tests.py$"]
 }
