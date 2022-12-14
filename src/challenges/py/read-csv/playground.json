@@ -4,8 +4,5 @@
   "showPreview": false,
   "runner": "pyodide",
   "template": "python",
-  "packages": ["pytest"],
-  "hideFiles": [],
-  "ignoreFiles": ["^tests.py$"],
-  "entryFile": "exercise.py"
+  "packages": ["pytest"]
 }
