@@ -1,5 +1,5 @@
-def calc_total(orders):
-   return 0
+def get_total(orders):
+  return 0
 
 orders = [
   {
@@ -19,5 +19,5 @@ orders = [
   }
 ]
 
-total = calc_total(orders)
+total = get_total(orders)
 print(total)
