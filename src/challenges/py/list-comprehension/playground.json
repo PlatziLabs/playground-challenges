@@ -1,5 +1,5 @@
 {
-  "title": "Refactoriza usando List Comprehension",
+  "title": "Crea una lista usando List Comprehension",
   "showFileExplorer": false,
   "showPreview": false,
   "runner": "pyodide",
