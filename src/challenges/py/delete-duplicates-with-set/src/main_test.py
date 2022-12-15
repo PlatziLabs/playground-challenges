@@ -9,6 +9,16 @@ def reload_module(name):
 
 def test_many_countries(capfd):
     reload_module('main')
-    expected_str = "{'ARG', 'USA', 'CANADA', 'GT', 'COL', 'MX', 'BZ'}\n"
+    # "{'ARG', 'USA', 'CANADA', 'GT', 'COL', 'MX', 'BZ'}\n"
+    expected_list = ['ARG', 'BZ', 'CANADA', 'COL', 'GT', 'MX', 'USA']
     out, error = capfd.readouterr()
-    assert out  == expected_str
+
+    out = out.replace('\n', '')
+    out = out.replace('{', '')
+    out = out.replace('}', '')
+    out = out.replace("'", '')
+    out = out.replace(" ", '')
+
+    lists = out.split(',')
+    lists.sort()
+    assert lists == expected_list
