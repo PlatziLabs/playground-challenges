@@ -24,7 +24,7 @@ def test_cable():
     module = reload_module('main')
     article = "cable"
     rta = module.message_creator(article)
-    assert rta == "should return message with cable"
+    assert rta == "¡Hay un cable en mi bota!"
 
 def test_default():
     module = reload_module('main')
