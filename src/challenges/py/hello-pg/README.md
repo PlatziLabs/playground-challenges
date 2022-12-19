@@ -1,4 +1,6 @@
-Hola, te doy la bienvenida al Coding Playground, un lugar donde podrás practicar tus conocimientos de Python de manera interactiva 🤯. En este ejercicio, tu desafío es utilizar la función `print` para imprimir tres mensajes en la sección **Console**. Para ello, debes utilizar la función `print` tres veces en el siguiente orden con los siguientes mensajes:
+Hola, te doy la bienvenida al Coding Playground, un lugar donde podrás practicar tus conocimientos de Python de manera interactiva 🤯. 
+
+En este ejercicio, tu desafío es utilizar la función `print` para imprimir tres mensajes en la sección **Console**. Para ello, debes utilizar la función `print` tres veces en el siguiente orden con los siguientes mensajes:
 
 - "Te doy la bienvenida al Coding Playground"
 - "Mi primer print"
