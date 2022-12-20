@@ -12,4 +12,4 @@ def test_many_countries(capfd):
     str_v1 = "v1 => [16, 10, 34]"
     str_v2 = "v2 => [16, 10, 34]"
     out, error = capfd.readouterr()
-    assert out in str_v1 and out in str_v2
+    assert str_v1 in out and str_v2 in out
