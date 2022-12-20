@@ -9,6 +9,7 @@ def reload_module(name):
 
 def test_many_countries(capfd):
     reload_module('main')
-    expected_str = "v1 => [16, 10, 34]\nv2 => [16, 10, 34]\n"
+    str_v1 = "v1 => [16, 10, 34]"
+    str_v2 = "v2 => [16, 10, 34]"
     out, error = capfd.readouterr()
-    assert out  == expected_str
+    assert out in str_v1 and out in str_v2
