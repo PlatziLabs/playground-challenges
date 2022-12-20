@@ -1,6 +1,6 @@
-Para resolver este desafío, tu reto es utilizar la función `map` de Python y una función `lambda` para transformar una lista de números, retornando cada número de la lista multiplicado por dos.
+Para resolver este desafío, tu reto es utilizar la función `map` de Python y una función `lambda` para transformar una lista de números. Debes retornar una lista en la que cada número de la lista original sea multiplicado por dos.
 
-La función `multiply_numbers` recibirá como entrada una lista con números. Luego, deberás utilizar la función `map` para aplicar una función lambda a cada elemento de la lista, multiplicándolo por dos. Finalmente, la función retornará la lista transformada.
+La función `multiply_numbers` recibirá como entrada una lista con números. Finalmente, la función retornará la lista transformada.
 
 Ejemplo 1:
 
