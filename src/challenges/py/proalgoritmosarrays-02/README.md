@@ -8,26 +8,30 @@ En este desafío vas a recibir 4 elementos:
 
 La función `merge_lists` debe retornar 1 único array con la combinación de `nums1` y `nums2` ordenado de forma ascendente.
 
-Input:
+Ejemplo 1:
 
 ```py
+# Input
 nums1 = [1,2,3,0,0,0]
 m = 3
 nums2 = [2,5,6]
 n = 3
 merge_lists(nums1, m, nums2, n)
 
+# Output
+[1,2,2,3,5,6]
+```
+
+Ejemplo 2:
+
+```py
+# Input
 nums1 = [1,2,3,0,0,0,0]
 m = 3
 nums2 = [-4,2,3,9]
 n = 4
 merge_lists(nums1, m, nums2, n)
-```
 
-Output:
-
-```py
-[1,2,2,3,5,6]
-
+# Output
 [-4,1,2,2,3,3,9]
 ```
