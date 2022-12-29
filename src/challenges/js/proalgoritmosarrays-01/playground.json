@@ -1,7 +1,7 @@
 {
   "title": "Verifying Alien Dictionary",
   "showFileExplorer": false,
-  "showPreview": false,
+  "showPreview": true,
   "template": "vanilla-js",
   "runner": "sandpack"
 }
