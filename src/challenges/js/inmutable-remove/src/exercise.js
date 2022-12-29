@@ -1,3 +1,3 @@
 export function removeFromArray(array, index) {
-  // Tu código aquí 👈
+  return array.filter((item, i) =>  i !== index);
 }
