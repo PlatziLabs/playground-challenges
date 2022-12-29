@@ -1,0 +1,11 @@
+{
+  "title": "Merge Two Sorted Lists",
+  "showFileExplorer": false,
+  "showPreview": false,
+  "runner": "pyodide",
+  "template": "python",
+  "packages": ["pytest"],
+  "hideFiles": [],
+  "ignoreFiles": ["^tests.py$"],
+  "entryFile": "main.py"
+}
