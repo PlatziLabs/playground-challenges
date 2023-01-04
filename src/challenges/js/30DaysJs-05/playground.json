@@ -1,0 +1,7 @@
+{
+  "title": "Encuentra a los gatitos más famosos",
+  "showFileExplorer": false,
+  "showPreview": true,
+  "template": "vanilla-js",
+  "runner": "sandpack"
+}
