@@ -1,8 +1,9 @@
 En este desafío recibirás una serie de tipos de mascotas junto con su edad.
 
-Dependiendo estos 2 factores tendrás que construir la función llamada `getPetExerciseInfo` la cual retornará una cadena de texto con la información necesaria acerca de cuanto ejercicio necesita hacer cada tipo de mascota.
+Dependiendo de estos 2 factores tendrás que construir la función llamada `getPetExerciseInfo` la cual retornará una cadena de texto con la información necesaria acerca de cuanto ejercicio necesita hacer cada tipo de mascota.
 
 La función recibirá las siguientes mascotas:
+
 - perro
 - gato
 - ave
@@ -10,6 +11,7 @@ La función recibirá las siguientes mascotas:
 En caso de pasar una mascota la cual no sea de la lista deberá retornar "Tipo de mascota inválida"
 
 Para cada tipo de mascota, la función retornará diferente información basada en la edad.
+
 - Perros
   - Si la edad es menor al año, deberá retornar "Los cachorros necesitan pequeñas y frecuentes sesiones de juego"
   - Si la edad es entre 1 y 7 años, deberá retornar "Los perros a esta edad necesitan caminatas diarias y sesiones de juego"
@@ -27,21 +29,21 @@ Tendrás inputs y outputs como los siguientes 👇
 
 Ejemplo 1:
 
-```js
+```txt
 Input: getPetExerciseInfo("perro", 3)
 Output: "Los perros a esta edad necesitan caminatas diarias y sesiones de juego"
 ```
 
 Ejemplo 2:
 
-```js
+```txt
 Input: getPetExerciseInfo("gato", 8)
 Output: "Los gatos viejos necesitan sesiones de juego más cortas"
 ```
 
 Ejemplo 3:
 
-```js
+```txt
 Input: getPetExerciseInfo("Mamut", 25)
 Output: "Tipo de mascota invalida"
 ```
