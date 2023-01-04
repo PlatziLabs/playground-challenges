@@ -1,3 +1,10 @@
 export function createPetList() {
-  // Tu código aquí 👈
+  const petList = []
+  return function(pet){
+      if(pet){
+        petList.push(pet)
+        return petList
+      }
+      return petList
+  }
 }

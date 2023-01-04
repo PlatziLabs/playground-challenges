@@ -1,3 +1,3 @@
-export function addNumber(numbers, item) {
-  // Tu código aquí 👈
+export function addNumber(numbers, newElement) {
+  return [...numbers, newElement];
 }
