@@ -9,21 +9,21 @@ Toma en cuenta que la función debe ser capaz de manejar valores no enteros o ne
 
 Ejemplo 1:
 
-```js
+```txt
 Input: 2000;
 Output: true;
 ```
 
 Ejemplo 2:
 
-```js
+```txt
 Input: -2024;
 Output: false;
 ```
 
 Ejemplo 3:
 
-```js
+```txt
 Input: 1984.25;
 Output: false;
 ```
