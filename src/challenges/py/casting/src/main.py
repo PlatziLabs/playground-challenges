@@ -1,10 +1,8 @@
-name = input('¿Cuál es tu nombre? => ')
+name = 'Juana'
 print(name)
-last_name = input('¿Cuál es tu apellido? => ')
-print(last_name)
-age = int(input('¿Cuál es tu edad? => '))
+age = '10'
 print(age)
 
 
-template = f"Hola mi nombre es {name} {last_name}, tengo {age} años y en 10 años tendré {age + 10} años"
+template = f"Hola mi nombre es {name}, tengo {age} años y en 10 años tendré {age + 10} años"
 print(template)
