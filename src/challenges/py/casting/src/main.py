@@ -1,8 +1,6 @@
-name = input('¿Cuál es tu nombre? => ')
+name = 'Juana'
 print(name)
-last_name = input('¿Cuál es tu apellido? => ')
-print(last_name)
-age = input('¿Cuál es tu edad? => ')
+age = '10'
 print(age)
 
 

@@ -1,4 +1,4 @@
-text = input('Digita un texto => ')
+text = 'My text'
 print(text)
 
-# Ahora puedes crear tus variables 👇
+# Modifica la variable text por un número y luego imprímelo 👇
