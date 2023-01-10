@@ -1,4 +1,4 @@
-En este desafío, debes encontrar al gatito más famoso en base a su número de seguidores.
+En este desafío, debes encontrar al gatito más famoso con base en su número de seguidores.
 
 Recibirás un array de objetos que incluirán las siguientes propiedades:
 
