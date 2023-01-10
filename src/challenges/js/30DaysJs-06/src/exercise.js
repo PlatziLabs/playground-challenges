@@ -1,32 +1,22 @@
 export function getStudentAverage(students) {
-  let classAverage = 0;
-
-  for (const student of students) {
-    classAverage +=
-      student.grades.reduce(
-        (studentAverage, currentGrade) => studentAverage + currentGrade,
-        0
-      ) / student.grades.length;
-  }
-
-  classAverage = classAverage / students.length;
-  classAverage = Number(classAverage.toFixed(2));
-
   const studentsWithAverage = students.map((student) => {
-    let average =
-      student.grades.reduce(
-        (studentAverage, currentGrade) => studentAverage + currentGrade,
-        0
-      ) / student.grades.length;
-    average = Number(average.toFixed(2));
+    const grades = student.grades;
+    const average =
+      grades.reduce((total, item) => total + item, 0) / grades.length;
     return {
       name: student.name,
-      average,
+      average: Number(average.toFixed(2)),
     };
   });
 
-  return {
-    classAverage,
+  const classAverage =
+    studentsWithAverage.reduce((total, student) => total + student.average, 0) /
+    studentsWithAverage.length;
+
+  const rta = {
+    classAverage: Number(classAverage.toFixed(2)),
     students: studentsWithAverage,
   };
+
+  return rta;
 }
