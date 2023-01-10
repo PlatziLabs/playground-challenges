@@ -27,7 +27,14 @@ import { getStudentAverage } from "./exercise";
       </div>
     </div>
     <p><button id="btn">Run Code</button><p/>
-    <div id="rta"></div>
+    <div id="rta">
+      <p>Class average</p>
+      <p id="class-average"></p>
+      <div id="std-name">
+      </div>
+      <div id="std-average">
+      </div>
+    </div>
   `;
 
   const runBtn = document.getElementById("btn");
@@ -35,6 +42,10 @@ import { getStudentAverage } from "./exercise";
 
   const names = document.getElementById("names");
   const notes = document.getElementById("grades");
+
+  const stdName = document.getElementById("std-name");
+  const stdAverage = document.getElementById("std-average");
+  const classAverage = document.getElementById("class-average");
 
   students.map((student) => {
     names.innerHTML += `<p>${student.name}</p>`;
@@ -44,17 +55,20 @@ import { getStudentAverage } from "./exercise";
   runBtn.addEventListener("click", () => {
     try {
       const rta = getStudentAverage(students);
-      console.log(rta.students);
-      rtaElement.innerHTML = `
-        <p>Class average</p>
-        <p>${rta.classAverage}</p>
-        <div>
-         ${rta.students.map((student) => `<p>${student.name}</p>`)} 
-         </div>
-         <div>
-           ${rta.students.map((student) => `<p>${student.average}</p>`)} 
-        </div>
-      `;
+
+      stdName.innerHTML = "";
+      stdAverage.innerHTML = "";
+      classAverage.innerHTML = "";
+
+      classAverage.textContent = rta.classAverage;
+
+      rta.students.map((student) => {
+        stdName.innerHTML += `<p>${student.name}</p>`;
+      });
+
+      rta.students.map((student) => {
+        stdAverage.innerHTML += `<p>${student.average}</p>`;
+      });
     } catch (error) {
       rtaElement.innerHTML = JSON.stringify(error, null, 1);
     }
