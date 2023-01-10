@@ -1,9 +1,7 @@
-text = input('Digita un texto => ')
+text = 'My text'
 print(text)
 
-# Ahora puedes crear tus variables 👇
-name = input('Digita tu nombre => ')
-print(name)
+# Modifica la variable text por un número y luego imprímelo 👇
 
-age = input('Digita tu edad => ')
-print(age)
+text = 123
+print(text)

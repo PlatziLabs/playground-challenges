@@ -1,9 +1,9 @@
-number = int(input('Digita un número => '))
+number = '10'
 print(number)
 
 # Escribe tu solución 👇
 
-if number % 2 == 0:
+if int(number) % 2 == 0:
     print('Es par')
 else:
     print('Es impar')
