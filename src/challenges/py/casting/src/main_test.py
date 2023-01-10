@@ -1,6 +1,6 @@
 from importlib import reload, import_module
 import shutil
-import unittest.mock
+import re
 
 def reload_module(name):
   module = import_module(name)
@@ -9,16 +9,14 @@ def reload_module(name):
   return module
 
 def test_template(capfd):
-    def side_effect(value):
-        if value == '¿Cuál es tu nombre? => ':
-            return 'Juan'
-        if value == '¿Cuál es tu apellido? => ':
-            return 'Perez'
-        if value == '¿Cuál es tu edad? => ':
-            return '20'
-        return None
-    with unittest.mock.patch('builtins.input', side_effect):
-        reload_module('main')
-        expected_str = "Hola mi nombre es Juan Perez, tengo 20 años y en 10 años tendré 30 años"
-        out, error = capfd.readouterr()
-        assert expected_str in out
+    module = reload_module('main')
+    out, error = capfd.readouterr()
+    regex = r"Hola mi nombre es .*, tengo (\d{1,4}) años y en 10 años tendré (\d{1,4}) años"
+
+    match = re.search(regex, out, re.MULTILINE)
+    if match and len(match.groups()) == 2:
+        age = int(match.group(1))
+        total = int(match.group(2))
+        assert total == (age + 10)
+    else:
+        assert False
