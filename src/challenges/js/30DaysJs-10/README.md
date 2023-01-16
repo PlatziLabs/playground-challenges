@@ -1,8 +1,8 @@
 En este desafío debes implementar la lógica de un planificador de tareas.
 
-El planificador de tareas nos debe permitir agregar, eliminar y marcar como completadas tareas, así como también mostrar un registros de las mismas. Para ello, se debe crear una función `createTaskPlanner` que devuelva un objeto con las siguientes propiedades y métodos:
+El planificador de tareas nos debe permitir agregar, eliminar y marcar como completadas tareas, así como también mostrar unos registros de las mismas. Para ello, se debe crear una función `createTaskPlanner` que devuelva un objeto con las siguientes propiedades y métodos:
 
-- `tasks`: un array vacío que almacenará las tareas pendientes con un formato especifico como un objeto con propiedades `id`, `name`, `priority`, `tags` y `completed`. El estado completed debe ser agregado automáticamente como false al momento de agregar una tarea.
+- `tasks`: un array vacío que almacenará las tareas pendientes con un formato específico como un objeto con propiedades `id`, `name`, `priority`, `tags` y `completed`. El estado completed debe ser agregado automáticamente como false al momento de agregar una tarea.
 - `addTask(task)`: recibe un objeto con la tarea y la agregue al array de tareas.
 - `removeTask(value)`: recibe el id o nombre de la tarea y la elimina del array de tareas.
 - `getTasks()`: Devuelve el array de tareas.
