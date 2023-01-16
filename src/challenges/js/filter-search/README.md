@@ -11,17 +11,19 @@ Ejemplo 1:
 
 ```js
 Input:
-["ana", "santi", "nico", "anastasia"], "ana"
+array: ["ana", "santi", "nico", "anastasia"]
+term: "ana"
 
 Ouput:
-["ana", "santi", "anastasia"]
+["ana", "anastasia"]
 ```
 
 Ejemplo 2:
 
 ```js
 Input:
-["ana", "santi", "nico", "anastasia"], "xyz"
+array: ["ana", "santi", "nico", "anastasia"]
+term: "xyz"
 
 Output:
 []
