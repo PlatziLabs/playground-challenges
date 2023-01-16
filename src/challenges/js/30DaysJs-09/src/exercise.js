@@ -4,6 +4,5 @@ export function myMap(array, func) {
     const element = array[i];
     rta.push(func(element));
   }
-
   return rta;
 }
