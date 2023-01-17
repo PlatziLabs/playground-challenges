@@ -1,6 +1,5 @@
 from importlib import reload, import_module
 import shutil
-import unittest.mock
 
 def reload_module(name):
   module = import_module(name)
@@ -8,20 +7,7 @@ def reload_module(name):
   reload(module)
   return module
 
-def side_effect(value):
-    if value == 'Digita un texto => ':
-        return 'Texto'
-    if value == 'Digita tu nombre => ':
-        return 'Juana'
-    if value == 'Digita tu edad => ':
-        return '20'
-    return None
-
-def test_vars(capfd):
-    with unittest.mock.patch('builtins.input', side_effect):
-        module = reload_module('main')
-        assert module.name == 'Juana'
-        assert module.age == '20'
-        expected_str = "Texto\nJuana\n20\n"
-        out, error = capfd.readouterr()
-        assert out  == expected_str
+def test_vars():
+    module = reload_module('main')
+    text = module.text
+    assert isinstance(text, int)

@@ -1,4 +1,4 @@
-number = int(input('Digita un número => '))
+number = '10'
 print(number)
 
 # Escribe tu solución 👇

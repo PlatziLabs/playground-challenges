@@ -1,0 +1,44 @@
+body {
+  font-family: sans-serif;
+}
+pre {
+  max-width: 100%;
+  white-space: pre-wrap;
+}
+
+.table{
+  display: flex;
+  border: 1px solid black;
+  justify-content: space-around; 
+  border-radius: 10px;
+}
+
+div:first-child{
+  border-right: 1px solid black; 
+}
+
+.table div{
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+}
+
+#rta{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+
+#rta > p{
+  grid-column: 1 / 3;
+  font-weight: 700;
+  border: 1px solid black;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+#rta div{
+  border: 1px solid black;
+  border-top: 0;
+  border-bottom: 0;
+}
