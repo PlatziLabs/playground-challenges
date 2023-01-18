@@ -38,12 +38,12 @@ export class Satelite {
     this.name = name;
     this.messages = [];
   }
-  
+
   send({ from, to, text }) {
     const isAstronaut = from instanceof Astronaut;
     const isSpaceStation = to instanceof SpaceStation;
     const isTeamMember = to.isTeamMember?.(from);
-    
+
     if (isAstronaut && isSpaceStation && isTeamMember) {
       this.messages.push({
         from: from.name,

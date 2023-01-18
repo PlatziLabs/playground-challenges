@@ -1,0 +1,7 @@
+{
+  "title": "Sistema de Navegación de la Nave Espacial",
+  "showFileExplorer": false,
+  "showPreview": false,
+  "template": "vanilla-js",
+  "runner": "sandpack"
+}
