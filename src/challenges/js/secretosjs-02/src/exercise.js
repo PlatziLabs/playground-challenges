@@ -5,7 +5,7 @@ export function simulador(astronaut, spaceShip, direction) {
 
 export class Astronaut {
   #_spaceShipKey;
-  
+
   constructor({ name }) {
     this.name = name;
     this.#_spaceShipKey = undefined;
@@ -22,12 +22,12 @@ export class Astronaut {
 
 export class SpaceShip {
   #_key;
-  
+
   constructor({ key }) {
     this.#_key = key;
     this._movements = [];
   }
-  
+
   getAccessKey(astronaut) {
     const isAstronaut = astronaut instanceof Astronaut;
 
