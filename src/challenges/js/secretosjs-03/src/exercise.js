@@ -39,11 +39,11 @@ export class History {
   get state() {
     return this.#history[this.#history.length - 1];
   }
-  
+
   set state(newState) {
     const stateStr = JSON.stringify(this.state);
     const newStateStr = JSON.stringify(newState);
-    
+
     if (stateStr != newStateStr) {
       this.#history.push(newState);
     }
