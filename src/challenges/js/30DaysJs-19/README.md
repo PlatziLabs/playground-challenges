@@ -6,7 +6,7 @@ La función debe proteger el objeto y todos sus objetos anidados de ser modifica
 
 Ejemplo 1:
 
-```
+```txt
 Input: protectDog({
   name: "Romeo",
   age: 3,
@@ -22,7 +22,7 @@ protectedDog.name // "Romeo"
 
 Ejemplo 2:
 
-```
+```txt
 Input: protectDog({
   name: "Romeo",
   age: 3,
