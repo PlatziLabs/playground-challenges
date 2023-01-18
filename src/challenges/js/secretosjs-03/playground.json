@@ -1,8 +1,7 @@
 {
-
-  "title": "Protege los datos del perro",
+  "title": "Manejo del Motor",
   "showFileExplorer": false,
-  "showPreview": true,
+  "showPreview": false,
   "template": "vanilla-js",
   "runner": "sandpack"
 }
