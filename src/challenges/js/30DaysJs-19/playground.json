@@ -1,0 +1,7 @@
+{
+  "title": "Congela el objeto recursivamente",
+  "showFileExplorer": false,
+  "showPreview": false,
+  "template": "vanilla-js",
+  "runner": "sandpack"
+}
