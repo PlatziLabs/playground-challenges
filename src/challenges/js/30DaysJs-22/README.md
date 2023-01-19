@@ -28,7 +28,7 @@ cart.calculateTotal();
 
 Output:
 
-Agregando 2 unidades del articulo Libro al carrito
+Agregando 2 unidades del artículo Libro al carrito
 Agregando el servicio Curso al carrito
 320
 
@@ -52,7 +52,7 @@ cart.calculateTotal();
 
 Output:
 
-Agregando 2 unidades del articulo Libro al carrito
+Agregando 2 unidades del artículo Libro al carrito
 Agregando el servicio Curso al carrito
 120
 
