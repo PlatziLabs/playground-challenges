@@ -14,7 +14,7 @@ describe("tests", () => {
     motorUp.turnOn(); // Repetido
     motorDown.turnOff();
 
-    const rta = history.fullState;
+    const rta = history.getFullState();
     expect(rta).toEqual([
       { "propulsionTo": "up", "status": "on" },
       { "propulsionTo": "down", "status": "on" },
