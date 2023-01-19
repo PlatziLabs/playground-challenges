@@ -1,38 +1,24 @@
 export class Motor {
-  #propulsionTo;
-  #status = "off";
-  #history;
+  constructor(propulsionTo, historyInstance) {
+    let status = "off"
+    let history = historyInstance;
 
-  constructor(propulsionTo, history) {
-    this.#propulsionTo = propulsionTo;
-    this.#history = history;
-  }
+    this.getStatus = () => status;
+    let setStatus = (newStatus) => {
+      status = newStatus;
+    };
 
-  get status() {
-    return this.#status;
-  }
-
-  #setStatus(newStatus) {
-    this.#status = newStatus;
-  }
-
-  turnOn() {
-    this.#setStatus("on");
-  }
-
-  turnOff() {
-    this.#setStatus("off");
-  }
-
-  get history() {
-    return this.#history.fullState;
+    this.turnOn = () => setStatus("on");
+    this.turnOff = () => setStatus("off");
+    
+    this.getHistory = () => history.getFullState();
   }
 }
 
 export class History {
-  #history = [];
+  constructor() {
+    let history = [];
 
-  get fullState() {
-    return this.#history;
+    this.getFullState = () => history;
   }
 }
