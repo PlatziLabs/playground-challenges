@@ -40,7 +40,7 @@ import { Motor, History } from "./exercise";
   const rtaElement = document.getElementById('rta');
 
   const showHistory = () => {
-    const rta = history.fullState;
+    const rta = history.getFullState();
     rtaElement.innerHTML = JSON.stringify(rta, null, 1);
   };
   
