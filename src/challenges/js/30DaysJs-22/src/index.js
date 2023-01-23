@@ -2,12 +2,6 @@ import "./styles.css";
 import { Article, Service, Cart } from "./exercise";
 
 (() => {
-  const cart = new Cart();
-  const book = new Article("Libro", 120, 2);
-  const course = new Service("Curso", 100, 1);
-  cart.addProduct(book);
-  cart.addProduct(course);
-
   document.getElementById("app").innerHTML = `
     <h2>Cart products</h2>
     <div id="products">
@@ -26,12 +20,27 @@ import { Article, Service, Cart } from "./exercise";
     <p><pre><code id="rta"></code></pre></p>
   `;
 
+  let cart;
+  let book;
+  let course;
+
   const deleteButton = document.getElementById("btn-delete");
   const form = document.getElementById("form");
   const rtaElement = document.getElementById("rta");
 
   const products = document.getElementById("products");
   const select = document.getElementById("select");
+
+  try {
+    cart = new Cart();
+    book = new Article("Libro", 120, 2);
+    course = new Service("Curso", 100, 1);
+    cart.addProduct(book);
+    cart.addProduct(course);
+  } catch (error) {
+    rtaElement.innerHTML =
+      "Los productos aparecerán una vez implementes la lógica de las clases 💪";
+  }
 
   const printProducts = (cart) => {
     products.innerHTML = "";
@@ -41,8 +50,6 @@ import { Article, Service, Cart } from "./exercise";
       select.innerHTML += `<option value=${id}>${item.name}</option>`;
     });
   };
-
-  printProducts(cart);
 
   form.addEventListener("submit", (e) => {
     try {
