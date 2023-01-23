@@ -33,4 +33,6 @@ export class Cart {
     );
     return total;
   }
+  
 }
+

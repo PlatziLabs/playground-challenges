@@ -20,7 +20,7 @@ motorUp.turnOff(); // Repetido
 motorUp.turnOn();
 motorUp.turnOn(); // Repetido
 motorDown.turnOff();
-console.log(history.fullState);
+console.log(history.getFullState());
 
 // Output
 [
