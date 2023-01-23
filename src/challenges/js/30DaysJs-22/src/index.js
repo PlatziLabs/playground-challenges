@@ -31,17 +31,6 @@ import { Article, Service, Cart } from "./exercise";
   const products = document.getElementById("products");
   const select = document.getElementById("select");
 
-  try {
-    cart = new Cart();
-    book = new Article("Libro", 120, 2);
-    course = new Service("Curso", 100, 1);
-    cart.addProduct(book);
-    cart.addProduct(course);
-  } catch (error) {
-    rtaElement.innerHTML =
-      "Los productos aparecerán una vez implementes la lógica de las clases 💪";
-  }
-
   const printProducts = (cart) => {
     products.innerHTML = "";
     select.innerHTML = "";
@@ -50,6 +39,18 @@ import { Article, Service, Cart } from "./exercise";
       select.innerHTML += `<option value=${id}>${item.name}</option>`;
     });
   };
+
+  try {
+    cart = new Cart();
+    book = new Article("Libro", 120, 2);
+    course = new Service("Curso", 100, 1);
+    cart.addProduct(book);
+    cart.addProduct(course);
+    printProducts(cart);
+  } catch (error) {
+    rtaElement.innerHTML =
+      "Los productos aparecerán una vez implementes la lógica de las clases 💪";
+  }
 
   form.addEventListener("submit", (e) => {
     try {
