@@ -2,6 +2,9 @@ import "./styles.css";
 import { User } from "./exercise";
 
 (() => {
+  let user1;
+  let user2;
+
   document.getElementById("app").innerHTML = `
     <h2>Usuarios</h2>
     <div>
@@ -15,17 +18,14 @@ import { User } from "./exercise";
     <p><code id="rta"></code></p>
   `;
 
-  const runBtn = document.getElementById("btn");
-  const rtaElement = document.getElementById("rta");
-  const messagesUser1 = document.querySelector("#messages1");
-  const messagesUser2 = document.querySelector("#messages2");
-  const input = document.getElementById("message");
   const user1Container = document.getElementById("user1");
   const user2Container = document.getElementById("user2");
+  const runBtn = document.getElementById("btn");
+  const rtaElement = document.getElementById("rta");
 
   try {
-    const user1 = new User("Juan", 20);
-    const user2 = new User("Maria", 25);
+    user1 = new User("Juan", 20);
+    user2 = new User("Maria", 25);
     user1.addFriend(user2);
     user1Container.innerHTML = `
       <h2>name: ${user1.name}</h2>
@@ -43,6 +43,10 @@ import { User } from "./exercise";
     rtaElement.innerHTML =
       "En cuanto soluciones el reto, la vista debería cargar datos de usuarios 🔥";
   }
+
+  const messagesUser1 = document.querySelector("#messages1");
+  const messagesUser2 = document.querySelector("#messages2");
+  const input = document.getElementById("message");
 
   runBtn.addEventListener("click", () => {
     try {
