@@ -1,0 +1,7 @@
+{
+  "title": "Encapsula los datos de los usuarios",
+  "showFileExplorer": false,
+  "showPreview": true,
+  "template": "vanilla-js",
+  "runner": "sandpack"
+}
