@@ -20,11 +20,11 @@ export class Card extends Pay {
       throw new Error("Tarjeta invalida");
     }
 
-    const lastNumbers = this.cardNumber.toString().slice(-4);
+    const lastCardNumbers = this.cardNumber.toString().slice(-4);
 
     return {
       ...super.makePay(quantity),
-      lastNumbers,
+      lastCardNumbers,
     };
   }
 }
@@ -50,6 +50,6 @@ export class Cash extends Pay {
   }
 }
 
-export function processPay(method) {
-  return method.makePay();
+export function processPay(method, quantity) {
+  return method.makePay(quantity);
 }

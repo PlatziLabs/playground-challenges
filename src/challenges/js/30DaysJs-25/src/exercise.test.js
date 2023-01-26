@@ -1,31 +1,72 @@
-import { mergeArrays } from "./exercise";
+import { Pay, PayPal, Card, Cash, processPay } from "./exercise";
 
 describe("tests", () => {
-  it("should return [1,2,3,4]", () => {
-    const arrayA = [1, 2];
-    const arrayB = [3, 4];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([1, 2, 3, 4]);
+  it("PayPal should extends from pay", () => {
+    const rta = PayPal.prototype instanceof Pay;
+    expect(rta).toBe(true);
   });
 
-  it("should return [1,2,3,4,5]", () => {
-    const arrayA = [1, 2];
-    const arrayB = [3, 4, 5];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([1, 2, 3, 4, 5]);
+  it("Card should extends from pay", () => {
+    const rta = Card.prototype instanceof Pay;
+    expect(rta).toBe(true);
   });
 
-  it("should return [3,4,5]", () => {
-    const arrayA = [];
-    const arrayB = [3, 4, 5];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([3, 4, 5]);
+  it("Cash should extends from pay", () => {
+    const rta = Cash.prototype instanceof Pay;
+    expect(rta).toBe(true);
   });
 
-  it("should return []", () => {
-    const arrayA = [];
-    const arrayB = [];
-    const rta = mergeArrays(arrayA, arrayB);
-    expect(rta).toEqual([]);
+  it("Pay method should return a correct object", () => {
+    const rta = new Pay().makePay(100);
+    expect(rta).toEqual({
+      realized: true,
+      quantity: 100,
+    });
+  });
+
+  it("PayPal makePay method should return a correct object", () => {
+    const rta = new PayPal("test@mail.com").makePay(135);
+    expect(rta).toEqual({
+      realized: true,
+      quantity: 135,
+      platform: "PayPal",
+      email: "test@mail.com",
+    });
+  });
+
+  it("Card makePay method should return a correct object", () => {
+    const rta = new Card("4913478952471122").makePay(255);
+    expect(rta).toEqual({
+      realized: true,
+      quantity: 255,
+      lastCardNumbers: "1122",
+    });
+  });
+
+  it("Card makePay method should throw an error", () => {
+    const rta = new Card(4913952471122);
+    expect(() => rta.makePay(122)).toThrow();
+  });
+
+  it("processPay should call to makePay method", () => {
+    const cash = new Cash();
+    const card = new Card("4913478952471122");
+    const paypal = new PayPal("test@mail.com");
+
+    expect(processPay(cash, 200)).toEqual({
+      realized: true,
+      quantity: 200,
+    });
+    expect(processPay(card, 100)).toEqual({
+      realized: true,
+      quantity: 100,
+      lastCardNumbers: "1122",
+    });
+    expect(processPay(paypal, 300)).toEqual({
+      realized: true,
+      quantity: 300,
+      platform: "PayPal",
+      email: "test@mail.com",
+    });
   });
 });
