@@ -1,0 +1,7 @@
+{
+  "title": "Valida un formulario de registro",
+  "showFileExplorer": false,
+  "showPreview": true,
+  "template": "vanilla-js",
+  "runner": "sandpack"
+}
