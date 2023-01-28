@@ -9,7 +9,7 @@ import { searchValue } from "./exercise";
   ];
 
   document.getElementById("app").innerHTML = `
-    <h2>Merge Arrays</h2>
+    <h2>Search value</h2>
     <p>Array </p>
     <p><pre><code>[</code></pre></p>
     <p><pre><code>  ${JSON.stringify(array[0])}</code></pre></p>
