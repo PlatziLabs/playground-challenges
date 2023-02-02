@@ -1,0 +1,7 @@
+{
+  "title": "Sistema de reservaciones de un hotel",
+  "showFileExplorer": false,
+  "showPreview": true,
+  "template": "vanilla-js",
+  "runner": "sandpack"
+}
