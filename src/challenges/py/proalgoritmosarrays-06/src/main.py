@@ -5,7 +5,7 @@ def searchInMatrix(matriz: List[List[int]], objetivo: int) -> bool:
   derecha = len(matriz[0]) - 1
 
   while izquierda < derecha:
-    mitad = (izquierda + derecha) // 2 + 1
+    mitad = (izquierda + derecha)
     if matriz[mitad][0] == objetivo:
       return True
     if matriz[mitad][0] < objetivo:
@@ -18,7 +18,7 @@ def searchInMatrix(matriz: List[List[int]], objetivo: int) -> bool:
   derecha = len(fila) - 1
 
   while izquierda <= derecha:
-    mitad = izquierda + (derecha - izquierda) // 2
+    mitad = izquierda + (derecha - izquierda)
     if fila[mitad] == objetivo:
       return True
     if fila[mitad] < objetivo:
