@@ -1,0 +1,7 @@
+{
+  "title": "Agenda de vuelos",
+  "showFileExplorer": false,
+  "showPreview": true,
+  "template": "vanilla-js",
+  "runner": "sandpack"
+}
