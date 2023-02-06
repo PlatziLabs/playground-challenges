@@ -1,3 +1,5 @@
+import { User } from "./user";
+
 export class Chat {
   constructor() {
     if (!Chat.instance) {
@@ -18,20 +20,12 @@ export class Chat {
   }
 
   addUser(user) {
-    this.users.push(user);
+    if (user instanceof User) {
+      this.users.push(user);
+    }
   }
 
   removeUser(user) {
-    this.users = this.users.filter((u) => u !== user);
-  }
-}
-
-export class User {
-  constructor(name) {
-    this.name = name;
-  }
-
-  receiveMessage(message) {
-    return `${this.name} recibiste un mensaje: ${message}`;
+    this.users = this.users.filter((u) => u.name !== user);
   }
 }
