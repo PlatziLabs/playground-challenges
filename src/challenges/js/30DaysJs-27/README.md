@@ -6,7 +6,7 @@ Además, la clase Chat deberá contener los siguientes métodos:
 
 - `sendMessage(message)`: Este método debe permitir enviar un mensaje a todos los usuarios en la lista, accediendo al método `receiveMessage` de cada instancia de usuario.
 
-- `addUser(user)`: Este método debe agregar un nuevo usuario a la lista, verificando que sea una instancia de la clase `User`.
+- `addUser(user)`: Este método debe agregar un nuevo usuario a la lista, verificando que sea una instancia de la clase `User` (el código de esta clase la puedes ver dentro del sistema de archivos del playground).
 
 - `removeUser(name)`: Este método te permitirá eliminar un usuario de la lista por su nombre.
 
