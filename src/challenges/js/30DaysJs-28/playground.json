@@ -1,0 +1,7 @@
+{
+  "title": "Mejora el código con el builder pattern",
+  "showFileExplorer": false,
+  "showPreview": true,
+  "template": "vanilla-js",
+  "runner": "sandpack"
+}
