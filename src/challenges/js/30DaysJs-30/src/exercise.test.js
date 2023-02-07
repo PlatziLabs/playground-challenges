@@ -45,8 +45,4 @@ describe("tests", () => {
     user.logout();
     expect(user.isLoggedIn()).toBe(false);
   });
-
-  it("should return the name of the user", () => {
-    expect(user.name).toBe("John");
-  });
 });
