@@ -1,5 +1,5 @@
 export class CarBuilder {
-  // Tú código aquí 👇
+  // Tu código aquí 👇
   constructor(year, model, brand, color, price, isAvailable) {
     this.year = year;
     this.model = model;
