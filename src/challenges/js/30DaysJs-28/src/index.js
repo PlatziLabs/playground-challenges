@@ -2,9 +2,6 @@ import "./styles.css";
 import { CarBuilder } from "./exercise";
 
 (() => {
-  const arrayA = [1, 2, 3, 4];
-  const arrayB = [5, 6, 7, 8];
-
   document.getElementById("app").innerHTML = `
     <form>
       <p><label for="year">Año:</label></p>
@@ -55,7 +52,7 @@ import { CarBuilder } from "./exercise";
       const car = carBuilder.build();
       rta.innerText = JSON.stringify(car, null, 2);
     } catch (error) {
-      rtaElement.innerHTML = JSON.stringify(error, null, 1);
+      rta.innerHTML = JSON.stringify(error, null, 1);
     }
   });
 })();
