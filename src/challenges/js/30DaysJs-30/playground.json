@@ -1,0 +1,7 @@
+{
+  "title": "Proxy en servicio de mensajería",
+  "showFileExplorer": false,
+  "showPreview": true,
+  "template": "vanilla-js",
+  "runner": "sandpack"
+}
