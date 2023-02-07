@@ -1,4 +1,4 @@
-En este desafío, te proponemos utilizar el patrón builder para construir un objeto "auto". Actualmente
+En este desafío, te proponemos utilizar el patrón builder para construir un objeto "auto".
 
 Actualmente, la construcción de un auto en el código es confusa y difícil de leer.
 
