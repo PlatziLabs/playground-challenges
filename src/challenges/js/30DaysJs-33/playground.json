@@ -1,0 +1,7 @@
+{
+  "title": "Crea tu propia implementación de un array",
+  "showFileExplorer": false,
+  "showPreview": true,
+  "template": "vanilla-js",
+  "runner": "sandpack"
+}
