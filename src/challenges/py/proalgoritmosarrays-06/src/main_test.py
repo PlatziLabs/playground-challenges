@@ -29,7 +29,6 @@ def test_number_is_at_end_of_matrix():
     rta = module.searchInMatrix(matriz, 24)
     assert rta == True
 
-
 def test_number_not_in_matrix():
     module = reload_module('main')
     matriz = [
