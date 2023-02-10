@@ -15,7 +15,7 @@ describe("tests", () => {
     expect(rta).toEqual(3);
   });
 
-  it("should return 5 (rotated)", () => {
+  it("should return 4 (rotated)", () => {
     const arrayB = [38,45,89,111,11];
     const objetivoB = 11;
     const rta = searchInRotatedArray(arrayB, objetivoB);
