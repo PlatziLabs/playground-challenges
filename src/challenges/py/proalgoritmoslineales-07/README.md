@@ -1,4 +1,4 @@
-Dado un string `s`, debes reordenar sus carácteres para que dos carácteres adyacentes cualesquiera NO sean iguales.
+Dado un string `text`, debes reordenar sus carácteres para que dos carácteres adyacentes cualesquiera NO sean iguales.
 
 Si es posible reordenar, retorna el nuevo orden de `s`. Si no es posible, retorna `""`.
 

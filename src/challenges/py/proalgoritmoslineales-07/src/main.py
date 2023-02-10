@@ -1,12 +1,12 @@
 import heapq
 from collections import defaultdict
 
-def reorganizeString(S: str) -> str:
+def reorganizeString(text: str) -> str:
   ocurrenciasPorCaracter = defaultdict(int)
 
-  for caracter in S:
+  for caracter in text:
     ocurrenciasPorCaracter[caracter] += 1
-    if ocurrenciasPorCaracter[caracter] > (len(S)+1) / 2: return ""
+    if ocurrenciasPorCaracter[caracter] > (len(text)+1) / 2: return ""
   
   colaPrioridad = []
 
