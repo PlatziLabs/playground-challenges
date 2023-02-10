@@ -3,11 +3,10 @@ import { hotelSystem } from "./exercise";
 
 (() => {
   document.getElementById("app").innerHTML = `
-    <h1>Sistema de reservación de hoteles</h1>
-    <h2>Reservaciones actuales</h2>
+    <h3>Reservaciones actuales</h3>
     <ul id="reservations-list">
     </ul>
-    <h2>Agregar reservación</h2>
+    <h3>Agregar reservación</h3>
     <form id="add-reservation-form">
       <div>
         <label for="name">Nombre:</label>
@@ -27,7 +26,7 @@ import { hotelSystem } from "./exercise";
       </div>
       <button type="submit">Agregar reservación</button>
     </form>
-    <h2>Eliminar reservación</h2>
+    <h3>Eliminar reservación</h3>
     <form id="remove-reservation-form">
       <div>
         <label for="reservation-id">ID de reservación:</label>
@@ -35,7 +34,7 @@ import { hotelSystem } from "./exercise";
       </div>
       <button type="submit">Eliminar reservación</button>
     </form>
-    <h2>Habitaciones disponibles</h2>
+    <h3>Habitaciones disponibles</h3>
     <form id="available-rooms-form">
       <div>
         <label for="available-rooms-check-in">Fecha de llegada:</label>
