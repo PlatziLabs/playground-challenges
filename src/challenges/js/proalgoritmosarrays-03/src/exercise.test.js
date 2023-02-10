@@ -12,4 +12,10 @@ describe("tests", () => {
     const rta = maxArea(alturas);
     expect(rta).toEqual(56);
   });
+
+  it("should return number of jumps", () => {
+    const alturas = [1,1,1,1,1,1,1,1];
+    const rta = maxArea(alturas);
+    expect(rta).toEqual(7);
+  });
 });
