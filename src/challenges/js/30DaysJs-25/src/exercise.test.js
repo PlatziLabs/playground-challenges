@@ -1,7 +1,8 @@
 import { processPay } from "./exercise";
 import { Pay } from "./Pay.class.js";
 import { PayPal } from "./PayPal.class.js";
-import { Cash } from "./Card.class.js";
+import { Cash } from "./Cash.class.js";
+import { Card } from "./Card.class.js";
 
 describe("tests", () => {
   it("PayPal should extends from pay", () => {
