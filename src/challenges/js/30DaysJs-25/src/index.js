@@ -1,5 +1,8 @@
 import "./styles.css";
-import { PayPal, Card, Cash, processPay } from "./exercise";
+import { processPay } from "./exercise";
+import { PayPal } from "./PayPal.class.js";
+import { Card } from "./Card.class.js";
+import { Cash } from "./Cash.class.js";
 
 (() => {
   const paypal = new PayPal("test@mail.com");
