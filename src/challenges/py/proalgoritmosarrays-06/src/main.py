@@ -2,7 +2,7 @@ from typing import List
 
 def searchInMatrix(matriz: List[List[int]], objetivo: int) -> bool:
   izquierda = 0
-  derecha = len(matriz[0]) - 1
+  derecha = len(matriz) - 1
 
   while izquierda < derecha:
     mitad = (izquierda + derecha) // 2 + 1
