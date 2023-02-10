@@ -1,3 +1,8 @@
 export function filterByTerm(array, term) {
-  // Tu código aquí 👈
+  return array
+    .filter((word) => {
+      return word
+        .toLowerCase()
+        .includes(term.toLowerCase())
+    });
 }
