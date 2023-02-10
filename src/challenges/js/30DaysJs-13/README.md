@@ -2,7 +2,13 @@ En este desafío deberás validar un formulario de registro de usuario.
 
 Tu tarea es implementar la lógica de la función `validateForm` la cual recibirá como parámetro un objeto con los datos del formulario al igual que una lista de usurios registrados.
 
-La función debe verificar que todos los campos requeridos del formulario (`name`, `lastname`, `email` y `password`) estén completos, si falta algún campo, debe retornar un error especificando los campos faltantes.
+La función debe verificar que todos los campos requeridos del formulario (`name`, `lastname`, `email` y `password`) estén completos, si falta algún campo, debe lanzar un error especificando los campos faltantes.
+
+Para lanzar dicho error debes usar la siguiente sintaxis
+
+```js
+throw new Error("Faltan los siguientes campos: name, email, etc...");
+```
 
 Además, la función debe verificar si el email ingresado ya existe en la lista de usuarios registrados. Si el email ya está en uso, debe retornar un error especificando el email duplicado.
 
