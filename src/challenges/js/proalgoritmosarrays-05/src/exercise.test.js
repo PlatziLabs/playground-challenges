@@ -15,6 +15,13 @@ describe("tests", () => {
     expect(rta).toEqual(3);
   });
 
+  it("should return 4 (rotated)", () => {
+    const arrayB = [38,45,89,111,11];
+    const objetivoB = 11;
+    const rta = searchInRotatedArray(arrayB, objetivoB);
+    expect(rta).toEqual(4);
+  });
+
   it("should return 2 (no rotated)", () => {
     const arrayC = [1,2,3,4,5,6,7,8];
     const objetivoC = 3;
