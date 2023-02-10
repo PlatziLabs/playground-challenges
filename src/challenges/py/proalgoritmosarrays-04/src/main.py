@@ -1,6 +1,6 @@
 def lengthOfLongestSubstring(s):
    # Tu código aquí 👇
-   return leen(s)
+   return len(s)
 
 
 response = lengthOfLongestSubstring("abcabcbb")
