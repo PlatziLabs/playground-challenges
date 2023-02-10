@@ -18,6 +18,3 @@ print(response)
 
 response2 = lengthOfLongestSubstring("jdkafnlcdsalkxcmpoiuytfccv")
 print(response2)
-
-response3 = lengthOfLongestSubstring("lavacalolatienecabezapeloycola")
-print(response3)
