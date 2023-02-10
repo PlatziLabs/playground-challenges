@@ -4,6 +4,7 @@ class Nodo:
       self.siguiente = None
 
 def hasCycle(cabeza: Nodo) -> bool:
+
    if not cabeza: return False
 
    lento = cabeza
@@ -13,7 +14,6 @@ def hasCycle(cabeza: Nodo) -> bool:
       if rapido == lento: return True
       lento = lento.siguiente
       rapido = rapido.siguiente.siguiente
-
    return False
 
 nodo1 = Nodo(1)
