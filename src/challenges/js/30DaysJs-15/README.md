@@ -2,7 +2,11 @@ En este desafío, tu objetivo es encontrar un valor específico en un array de d
 
 La función `searchValue` recibirá dos parámetros: un array bidimensional y un valor a buscar. Tu tarea será implementar la lógica necesaria para encontrar el valor y retornar un objeto con las propiedades row y column que indicarán la posición del valor dentro del array bidimensional.
 
-Si el valor no se encuentra en la matriz, la función deberá retornar un error con el mensaje "Valor no encontrado".
+Si el valor no se encuentra en la matriz, la función deberá lanzar un error con el mensaje "Valor no encontrado". Recuerda que la sintaxis para lanzar errores es la siguiente
+
+```js
+throw new Error("Valor no encontrado");
+```
 
 Ejemplo 1:
 
