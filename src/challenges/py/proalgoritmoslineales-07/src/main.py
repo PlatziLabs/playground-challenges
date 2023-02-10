@@ -1,8 +1,8 @@
 import heapq
 from collections import defaultdict
 
-def reorganizeString(S: str) -> str:
-  return S
+def reorganizeString(text: str) -> str:
+  return text
 
 response = reorganizeString("aacab")
 print(response)
