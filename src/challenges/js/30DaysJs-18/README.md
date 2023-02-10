@@ -82,14 +82,13 @@ hotel.addReservation({
 hotel.searchReservation(2);
 
 Output:
-[
-  {
-    id: 2,
-    name: "Pepe Doe",
-    checkIn: "01/01",
-    checkOut: "02/01",
-    roomNumber: 7,
-  }
-]
+{
+  id: 2,
+  name: "Pepe Doe",
+  checkIn: "01/01",
+  checkOut: "02/01",
+  roomNumber: 7,
+}
+
 
 ```
