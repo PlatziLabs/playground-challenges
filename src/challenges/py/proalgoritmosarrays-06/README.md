@@ -2,7 +2,7 @@ Debes escribir un algoritmo eficiente que busque un valor `objetivo` en una matr
 
 La matriz tiene las siguientes propiedades:
 
-- Los enteros de cada fila están ordnados de izquierda a derecha.
+- Los enteros de cada fila están ordenados de izquierda a derecha.
 
 - El primer entero de cada fila es mayor al último entero de la fila anterior.
 
