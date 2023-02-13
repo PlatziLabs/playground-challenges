@@ -4,6 +4,7 @@ import { Card } from "./Card.class.js";
 import { Pay } from "./Pay.class.js";
 import { PayPal } from "./PayPal.class.js";
 
+
 describe("tests", () => {
   it("PayPal should extends from pay", () => {
     const rta = PayPal.prototype instanceof Pay;

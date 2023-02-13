@@ -1,4 +1,5 @@
 export class Pay {
+
   constructor() {}
 
   makePay(quantity) {
