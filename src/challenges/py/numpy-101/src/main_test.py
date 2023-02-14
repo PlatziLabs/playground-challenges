@@ -1,4 +1,3 @@
-from main import multiply_numbers
 from importlib import reload, import_module
 import shutil
 

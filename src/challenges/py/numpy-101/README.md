@@ -16,4 +16,4 @@ Once you're comfortable with NumPy, you'll find yourself converting Python lists
  [0, 4, 2, 9, 1, 0, 3, 0, 0]]
 ```
 
-You're going to change `sudoku_list` into a NumPy array so you can practice with it in later lessons, for example by creating a 4D array of sudoku games along with their solutions!
+> You're going to change `sudoku_list` into a NumPy array so you can practice with it in later lessons, for example by creating a 4D array of sudoku games along with their solutions!
