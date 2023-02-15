@@ -34,9 +34,12 @@ def reorganizeString(text: str) -> str:
     return "".join(stringOrdenada) + colaPrioridad[0][1]
   
   return "".join(stringOrdenada)
+  return text
+
 
 response = reorganizeString("aacab")
 print(response)
 
 response = reorganizeString("aaab")
 print(response)
+
