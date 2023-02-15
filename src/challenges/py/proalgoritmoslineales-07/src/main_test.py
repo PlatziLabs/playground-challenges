@@ -19,7 +19,7 @@ def test_string_without_repeted_letters():
     module = reload_module('main')
     tests_str = "zebra"
     rta = module.reorganizeString(tests_str)
-    assert rta == "zebra" or rta == "zebra"
+    assert rta == "zebra" or rta == "aberz"
 
 def test_small_string():
     module = reload_module('main')
