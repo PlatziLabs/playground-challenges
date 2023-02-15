@@ -25,6 +25,10 @@ export class SpaceStation {
       this.team.push(newMember.name);
     }
   }
+
+  isTeamMember(supposedMember) {
+    return this.team.includes(supposedMember.name);
+  }
 }
 
 export class Satelite {
@@ -34,12 +38,18 @@ export class Satelite {
     this.name = name;
     this.messages = [];
   }
-  
+
   send({ from, to, text }) {
-    this.messages.push({
-      from: from.name,
-      to: to.name,
-      text,
-    });
+    const isAstronaut = from instanceof Astronaut;
+    const isSpaceStation = to instanceof SpaceStation;
+    const isTeamMember = to.isTeamMember?.(from);
+
+    if (isAstronaut && isSpaceStation && isTeamMember) {
+      this.messages.push({
+        from: from.name,
+        to: to.name,
+        text,
+      });
+    }
   }
 }

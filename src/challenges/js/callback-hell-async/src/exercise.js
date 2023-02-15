@@ -1,17 +1,10 @@
 import { doTask1, doTask2, doTask3 } from './tasks';
 
-export function runCode() {
-  const strings = [];
-  return new Promise((resolve) => {
-    doTask1((rta1) => {
-      strings.push(rta1);
-      doTask2((rta2) => {
-        strings.push(rta2);
-        doTask3((rta3) => {
-          strings.push(rta3);
-          resolve(strings);
-        })
-      })
-    })
-  })
+// Nota que las funciones doTask1, doTask2, doTask3 cambiaron 👆🏻
+
+export async function runCode() {
+  const rta1 = await doTask1();
+  const rta2 = await doTask2();
+  const rta3 = await doTask3();
+  return [rta1, rta2, rta3];
 }
