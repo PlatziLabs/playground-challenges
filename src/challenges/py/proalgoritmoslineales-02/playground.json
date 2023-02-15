@@ -1,8 +1,7 @@
 {
-  "title": "Agrega solo los números positivos de una lista",
-  "titlePT": "Adicionar apenas os números positivos de uma lista",
+  "title": "Linked List Cycle",
   "showFileExplorer": false,
-  "showPreview": false,
+  "showPreview": true,
   "runner": "pyodide",
   "template": "python",
   "packages": ["pytest"],
