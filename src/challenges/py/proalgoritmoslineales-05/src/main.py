@@ -1,17 +1,17 @@
 def isValid(s):
-   open = 0
-   close = 0
+   openParenthesis = 0
+   closedParenthesis = 0
 
    for x in s:
       if x == '(':
-         open += 1
+         openParenthesis += 1
       if x == ')':
-         if close < open:
-            close += 1
+         if closedParenthesis < openParenthesis:
+            closedParenthesis += 1
          else:
             return False
    
-   return open == close
+   return openParenthesis == closedParenthesis
    
 
 response = isValid('()()()')
