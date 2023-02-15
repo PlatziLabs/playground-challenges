@@ -1,0 +1,12 @@
+{
+  "title": "Agrega solo los números positivos de una lista",
+  "titlePT": "Adicionar apenas os números positivos de uma lista",
+  "showFileExplorer": false,
+  "showPreview": false,
+  "runner": "pyodide",
+  "template": "python",
+  "packages": ["pytest"],
+  "hideFiles": [],
+  "ignoreFiles": ["^tests.py$"],
+  "entryFile": "main.py"
+}
