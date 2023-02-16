@@ -1,39 +1,49 @@
-import { countNumbers } from "./exercise";
+import { sendEmail } from "./exercise";
 
 describe("tests", () => {
-  let callback;
+  it("should call setTimeout with 2s", async () => {
+    const spy = jest.spyOn(global, "setTimeout");
 
-  beforeEach(() => {
-    callback = jest.fn();
-    jest.useFakeTimers();
+    const email = "user@example.com";
+    const subject = "Test Subject";
+    const body = "Test Body";
+    const rta = await sendEmail(email, subject, body);
+
+    expect(spy).toHaveBeenCalledTimes(1);
+    expect(spy).toHaveBeenLastCalledWith(expect.any(Function), 2000);
+    expect(rta).toEqual({ email, subject, body });
   });
 
-  afterEach(() => {
-    jest.clearAllTimers();
+  it("should resolve with email information after 2 seconds", async () => {
+    const email = "user@example.com";
+    const subject = "Test Subject";
+    const body = "Test Body";
+    const emailInfo = await sendEmail(email, subject, body);
+
+    expect(emailInfo).toEqual({ email, subject, body });
   });
 
-  it("should count from 1 to 3 and call the callback with each number", () => {
-    countNumbers(3, callback);
+  it("should reject if email is missing", async () => {
+    const email = "";
+    const subject = "Test Subject";
+    const body = "Test Body";
 
-    expect(callback).not.toBeCalled();
-
-    jest.runOnlyPendingTimers();
-    expect(callback).toBeCalledWith(1);
-
-    jest.runOnlyPendingTimers();
-    expect(callback).toBeCalledWith(2);
-
-    jest.runOnlyPendingTimers();
-    expect(callback).toBeCalledWith(3);
-
-    jest.runOnlyPendingTimers();
-    expect(callback).toHaveBeenCalledTimes(3);
+    await expect(sendEmail(email, subject, body)).rejects.toThrow();
   });
 
-  it("should stop counting when n is 0", () => {
-    countNumbers(0, callback);
+  it("should reject if subject is missing", async () => {
+    const email = "user@example.com";
+    const subject = "";
+    const body = "Test Body";
 
-    jest.runOnlyPendingTimers();
-    expect(callback).not.toBeCalled();
+    await expect(sendEmail(email, subject, body)).rejects.toThrow();
+  });
+
+  it("should reject if body is missing", async () => {
+    const email = "user@example.com";
+    const subject = "Test Subject";
+    const body = "";
+
+    await expect(sendEmail(email, subject, body)).rejects.toThrow();
   });
 });

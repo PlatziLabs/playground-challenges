@@ -1,32 +1,36 @@
-La función `countNumbers` acepta dos parámetros: un número hasta el cual debe contar y una función `callback` que se ejecuta con cada valor del contador. El objetivo es implementar la lógica necesaria para que la función envíe el valor actual del contador al callback cada segundo utilizando setInterval.
+En este desafío debes utilizar promesas para enviar un correo electrónico.
 
-Para hacer uso de `setInterval` o `setTimeout` debes ejecutarle mediante el namespace de `window` para poder monitorear su uso en la ejecución de pruebas, ejemplo:
+La función `sendEmail` recibe tres parámetros: `email`, `subject` y `body`, los cuales son necesarios para enviar un correo. Deberás implementar la lógica necesaria para usar promesas y enviar el correo después de 2 segundos.
+
+En caso de faltar algún dato, deberás lanzar un error con el mensaje indicando que faltan campos para enviar el correo. Recuerda utilizar la siguiente sintaxis:
 
 ```js
-window.setInterval(() => {
-  // code
-});
+reject(new Error(message));
 ```
-
-La función terminada deberá retornar unos resultados como los siguiente.
 
 Ejemplo 1:
 
 ```txt
 Input:
 
-function showSeconds(seconds){
-  console.log(`Han pasado ${seconds} segundos`)
-}
+sendEmail(
+  "test@mail.com",
+  "Nuevo reto",
+  "Únete a los 30 días de JS"
+)
+.then(result => console.log(result))
 
-countNumbers(3, showSeconds)
 
 Output:
 
-"Han pasado 1 segundos"
-"Han pasado 2 segundos"
-"Han pasado 3 segundos"
-// Debe ejecutarse con 1 segundo de diferencia cada uno
+// Después de 2 segundos
+
+{
+  email: "test@mail.com"
+  subject: "Nuevo reto",
+  body:  "Únete a los 30 días de JS",
+}
+
 ```
 
 Ejemplo 2:
@@ -34,21 +38,17 @@ Ejemplo 2:
 ```txt
 Input:
 
-function showEvenNumbers(seconds){
-  if(seconds % 2 === 0){
-    console.log(seconds)
-  }
-}
-
-countNumbers(10, showEvenNumbers)
+sendEmail(
+  "test@mail.com",
+  "",
+  "Únete a los 30 días de JS"
+)
+.then(result => console.log(result))
+.catch(error => console.log(error))
 
 Output:
 
-"2"
-"4"
-"6"
-"8"
-"10"
-// Debe ejecutarse con 2 segundos de diferencia cada uno
+// Después de 2 segundos
 
+"Error: Hacen falta campos para enviar el email"
 ```

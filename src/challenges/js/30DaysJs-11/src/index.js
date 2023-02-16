@@ -1,38 +1,40 @@
 import "./styles.css";
-import { countNumbers } from "./exercise";
+import { sendEmail } from "./exercise";
 
 (() => {
   document.getElementById("app").innerHTML = `
-    <h3>Contador de números</h3>
-    <form id="count-form">
-      <p><label for="count">Contar hasta:</label></p>
-      <p><input type="number" id="count" name="count" min=1 ></p>
-      <p><button type="submit">Iniciar conteo</button></p>
+    <h3>Enviar email</h3>
+    <form id="emailForm">
+      <p><label for="email">Correo electrónico:</label></p>
+      <p><input type="email" id="email" name="email" ></p>
+
+      <p><label for="subject">Asunto:</label></p>
+      <p><input type="text" id="subject" name="subject" ></p>
+
+      <p><label for="body">Cuerpo:</label></p>
+      <p><textarea id="body" name="body" rows="5" ></textarea></p>
+
+      <p><button type="submit">Enviar</button></p>
     </form>
-    <ul id= "number-list"></ul>
     <p><pre><code id="rta"></code></pre></p>
   `;
 
+  const emailForm = document.getElementById("emailForm");
+
   const rtaElement = document.getElementById("rta");
 
-  const form = document.getElementById("count-form");
-  const numberList = document.getElementById("number-list");
+  emailForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
 
-  form.addEventListener("submit", (event) => {
+    const email = event.target.elements.email.value;
+    const subject = event.target.elements.subject.value;
+    const body = event.target.elements.body.value;
+
     try {
-      event.preventDefault();
-
-      const count = parseInt(document.getElementById("count").value);
-
-      numberList.innerHTML = "";
-
-      countNumbers(count, (number) => {
-        const listItem = document.createElement("li");
-        listItem.innerText = number;
-        numberList.appendChild(listItem);
-      });
-    } catch (err) {
-      rtaElement.innerHTML = JSON.stringify(error, null, 1);
+      const emailInfo = await sendEmail(email, subject, body);
+      rtaElement.innerHTML = `Correo electrónico enviado a ${emailInfo.email}`;
+    } catch (error) {
+      rtaElement.innerHTML = `Error: ${error.message}`;
     }
   });
 })();
