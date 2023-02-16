@@ -8,6 +8,14 @@ En caso de faltar algún dato, deberás lanzar un error con el mensaje indicando
 reject(new Error(message));
 ```
 
+También recuerda que para usar `setInterval` o `setTimeout` debes usar el namespace de `window` de la siguiente manera para que las pruebas pasen correctamente.
+
+```js
+window.setTimeout(() => {
+  // Código aquí
+}, 1000);
+```
+
 Ejemplo 1:
 
 ```txt
