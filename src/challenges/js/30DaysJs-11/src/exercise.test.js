@@ -17,23 +17,23 @@ describe("tests", () => {
 
     expect(callback).not.toBeCalled();
 
-    jest.advanceTimersByTime(1000);
+    jest.runOnlyPendingTimers();
     expect(callback).toBeCalledWith(1);
 
-    jest.advanceTimersByTime(1000);
+    jest.runOnlyPendingTimers();
     expect(callback).toBeCalledWith(2);
 
-    jest.advanceTimersByTime(1000);
+    jest.runOnlyPendingTimers();
     expect(callback).toBeCalledWith(3);
 
-    jest.advanceTimersByTime(1000);
+    jest.runOnlyPendingTimers();
     expect(callback).toHaveBeenCalledTimes(3);
   });
 
   it("should stop counting when n is 0", () => {
     countNumbers(0, callback);
 
-    jest.advanceTimersByTime(1000);
+    jest.runOnlyPendingTimers();
     expect(callback).not.toBeCalled();
   });
 });
