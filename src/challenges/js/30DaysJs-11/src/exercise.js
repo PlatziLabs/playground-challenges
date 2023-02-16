@@ -1,3 +1,3 @@
-export function countNumbers(count, callback) {
+export function sendEmail(email, subject, body) {
   // Tu código aquí 👈
 }
