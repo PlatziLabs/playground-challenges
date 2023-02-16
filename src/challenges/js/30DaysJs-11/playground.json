@@ -1,5 +1,5 @@
 {
-  "title": "Crea un contador real",
+  "title": "Implementando un contador con callbacks ",
   "showFileExplorer": false,
   "showPreview": true,
   "template": "vanilla-js",
