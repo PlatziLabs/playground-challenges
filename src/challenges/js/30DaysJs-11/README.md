@@ -8,7 +8,7 @@ window.setInterval(() => {
 });
 ```
 
-La función terminada deberá retornar unos resultados como los siguientes 👇
+La función terminada deberá retornar unos resultados como los siguiente.
 
 Ejemplo 1:
 
@@ -40,7 +40,7 @@ function showEvenNumbers(seconds){
   }
 }
 
-countNumbers(10, showSeconds)
+countNumbers(10, showEvenNumbers)
 
 Output:
 
