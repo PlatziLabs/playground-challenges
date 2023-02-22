@@ -1,3 +1,8 @@
 export function myMap(array, func) {
-  // Tu código aquí 👈
+  const rta = [];
+  for (let i = 0; i < array.length; i++) {
+    const element = array[i];
+    rta.push(func(element));
+  }
+  return rta;
 }
