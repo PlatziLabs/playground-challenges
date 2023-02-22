@@ -1,3 +1,7 @@
 export function addNewAttr(array) {
-  // Tu código aquí 👈
+  return array.map((item) => {
+    const copyItem = {...item};
+    copyItem.taxes = Math.trunc(copyItem.price * 0.19)
+    return copyItem;
+  });
 }

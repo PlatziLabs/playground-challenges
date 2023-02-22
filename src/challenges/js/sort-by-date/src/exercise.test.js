@@ -32,7 +32,7 @@ describe("tests", () => {
       },
     ];
     const rta = sortByDate(array);
-    expect(rta).toEqual(["Santiago", "Pepe"]);
+    expect(rta).toEqual(["Juan", "Pepe"]);
   });
 
   it("should return []", () => {

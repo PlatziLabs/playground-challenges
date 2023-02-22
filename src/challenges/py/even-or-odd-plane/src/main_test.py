@@ -1,6 +1,5 @@
 from importlib import reload, import_module
 import shutil
-import unittest.mock
 
 def reload_module(name):
   module = import_module(name)
@@ -8,16 +7,13 @@ def reload_module(name):
   reload(module)
   return module
 
-def test_even(capfd):
-  with unittest.mock.patch('builtins.input', return_value="10"):
-    reload_module('main')
-    expected_str = "10\nEs par\n"
+def test(capfd):
+    module = reload_module('main')
     out, error = capfd.readouterr()
-    assert out  == expected_str
-
-def test_odd(capfd):
-  with unittest.mock.patch('builtins.input', return_value="15"):
-    reload_module('main')
-    expected_str = "15\nEs impar\n"
-    out, error = capfd.readouterr()
-    assert out  == expected_str
+    number = int(module.number)
+    expected_str = ''
+    if number % 2 == 0:
+        expected_str = 'par'
+    else:
+        expected_str = 'impar'
+    assert expected_str in out

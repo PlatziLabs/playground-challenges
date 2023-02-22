@@ -1,0 +1,19 @@
+body {
+  font-family: sans-serif;
+}
+pre {
+  max-width: 100%;
+  white-space: pre-wrap;
+}
+
+#table--header, .table--row, .options{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: center;
+}
+
+.options{
+  border-top: 1px solid black;
+  margin: 5px;
+  padding: 5px;
+}

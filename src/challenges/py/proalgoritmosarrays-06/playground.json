@@ -1,0 +1,11 @@
+{
+  "title": "Search 2D Array Matrix",
+  "showFileExplorer": false,
+  "showPreview": true,
+  "runner": "pyodide",
+  "template": "python",
+  "packages": ["pytest"],
+  "hideFiles": [],
+  "ignoreFiles": ["^tests.py$"],
+  "entryFile": "main.py"
+}

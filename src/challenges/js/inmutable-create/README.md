@@ -5,7 +5,7 @@ Un ejemplo sería enviar el array `[1, 2, 3]` y agregar el número 4, esto me de
 Para solucionarlo vas a encontrar una función llamada `addNumber` que tiene dos parámetros de entrada:
 
 - numbers: Un array de números.
-- item: El número que se va a agregar.
+- newElement: El número que se va a agregar.
 
 Dentro del cuerpo de la función `addNumber` debes escribir tu solución.
 
