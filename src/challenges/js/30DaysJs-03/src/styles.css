@@ -1,0 +1,12 @@
+body {
+  font-family: sans-serif;
+}
+pre {
+  max-width: 100%;
+  white-space: pre-wrap;
+}
+
+input, select{
+  display: block;
+  margin: 10px 0;
+}

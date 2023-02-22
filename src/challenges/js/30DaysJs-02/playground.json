@@ -1,0 +1,7 @@
+{
+  "title": "Averigua si un año es bisiesto",
+  "showFileExplorer": false,
+  "showPreview": true,
+  "template": "vanilla-js",
+  "runner": "sandpack"
+}
