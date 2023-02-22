@@ -4,7 +4,7 @@ export function maxArea(alturas) {
   let areaMaxima = 0;
 
   while (izquierda < derecha) {
-    let areaActual = (derecha - izquierda) * Math.min(alturas[izquierda], alturas[derecha]);
+    const areaActual = (derecha - izquierda) * Math.min(alturas[izquierda], alturas[derecha]);
     areaMaxima = Math.max(areaMaxima, areaActual);
 
     if (alturas[izquierda] < alturas[derecha]) {
