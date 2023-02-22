@@ -1,4 +1,4 @@
-Tu reto es retornar `true` si dentro de array de números al menos uno es un número, para solucionarlo vas a encontrar una función llamada `checkArray` que recibe un parámetro de entrada:
+Tu reto es retornar `true` si dentro de array de números al menos uno es un número par, para solucionarlo vas a encontrar una función llamada `checkArray` que recibe un parámetro de entrada:
 
 - numbers: Un array de números
 

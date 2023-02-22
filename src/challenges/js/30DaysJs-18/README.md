@@ -82,7 +82,6 @@ hotel.addReservation({
 hotel.searchReservation(2);
 
 Output:
-
 {
   id: 2,
   name: "Pepe Doe",
