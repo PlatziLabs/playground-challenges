@@ -10,7 +10,7 @@ Ejemplo 1:
 
 ```txt
 Input:
-const products = products = [
+const products = [
   { name: "Smartphone", category: "Electronics", price: 800 },
   { name: "Laptop", category: "Electronics", price: 1200 },
   { name: "Shirt", category: "Clothing", price: 50 },
@@ -30,7 +30,7 @@ Ejemplo 2:
 
 ```txt
 Input:
-const products = products = [
+const products = [
   { name: "Smartphone", category: "Electronics", price: 800 },
   { name: "Laptop", category: "Electronics", price: 1200 },
   { name: "Shirt", category: "Clothing", price: 50 },
