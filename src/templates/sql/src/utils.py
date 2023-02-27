@@ -3,6 +3,7 @@ import shutil
 import sqlite3
 import sqlparse
 
+connection = sqlite3.connect(":memory:")
 
 def reload_module(name):
   module = import_module(name)
@@ -11,15 +12,17 @@ def reload_module(name):
   return module
 
 def setup():
-    connection = sqlite3.connect(":memory:")
     cur = connection.cursor()
-    content = open('./setup.sql', 'r').read()
-    cur.executescript(content)
+    try:
+        content = open('./src/setup.sql', 'r').read()
+        cur.executescript(content)
+        connection.commit()
+    except sqlite3.OperationalError:
+        None
 
 def get_output():
-    connection = sqlite3.connect(":memory:")
     cur = connection.cursor()
-    exercise = open('./exercise.sql', 'r').read()
+    exercise = open('./src/exercise.sql', 'r').read()
     queries = sqlparse.parse(exercise)
     output = []
     for query in queries:
