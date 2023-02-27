@@ -1,2 +1,0 @@
--- INSERT INTO persons (id, name) VALUES (4, "Nath");
--- SELECT id FROM persons;

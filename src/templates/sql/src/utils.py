@@ -14,7 +14,7 @@ def reload_module(name):
 def setup():
     cur = connection.cursor()
     try:
-        content = open('./src/setup.sql', 'r').read()
+        content = open('./setup.sql', 'r').read()
         cur.executescript(content)
         connection.commit()
     except sqlite3.OperationalError:
@@ -22,7 +22,7 @@ def setup():
 
 def get_output():
     cur = connection.cursor()
-    exercise = open('./src/exercise.sql', 'r').read()
+    exercise = open('./exercise.sql', 'r').read()
     queries = sqlparse.parse(exercise)
     output = []
     for query in queries:
