@@ -4,8 +4,8 @@
   "showPreview": false,
   "runner": "pyodide",
   "template": "sql",
-  "packages": ["pytest", "sqlite3"],
-  "hideFiles": ["^setup.sql$", "^*.py$"],
-  "ignoreFiles": ["^tests.py$"],
+  "packages": ["sqlite3"],
+  "hideFiles": ["^setup.sql$", "*.py$"],
+  "excludeFiles": ["^tests.py$"],
   "entryFile": "exercise.sql"
 }

@@ -6,17 +6,11 @@
   "template": "vanilla-js",
   "runner": "sandpack",
   "entryFile": "exercise.js",
-  "excludeFiles": [
-    ".babelrc$",
-    ".gitignore$",
-    ".parcelrc$",
-    "package-lock.json$"
-  ],
+  "excludeFiles": [],
   "hideFiles": [
     ".*.test.js$",
     "styles.css$",
     "index.js$",
-    "index.html$",
-    "package.json$"
+    "index.html$"
   ]
 }
