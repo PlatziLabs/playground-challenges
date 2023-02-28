@@ -1,3 +1,4 @@
 export function findMyKey(array) {
-  // Tu código aquí 👈
+  const index = array.findIndex((item) => item === 'myKey');
+  return index !== -1 ? index : false;
 }

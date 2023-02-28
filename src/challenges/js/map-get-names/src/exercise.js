@@ -1,3 +1,3 @@
 export function getNames(array) {
-  // Tu código aquí 👈
+  return array.map(item => item.name);
 }
