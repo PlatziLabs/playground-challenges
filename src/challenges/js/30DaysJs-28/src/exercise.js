@@ -47,6 +47,5 @@ export class CarBuilder {
       isNew: this.isNew,
       price: this.price,
       isAvailable: this.isAvailable,
-    };
-  }
+   };
 }

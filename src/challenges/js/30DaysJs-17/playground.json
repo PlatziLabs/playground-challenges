@@ -1,0 +1,7 @@
+{
+  "title": "Ordena los productos por precio y disponibilidad",
+  "showFileExplorer": false,
+  "showPreview": true,
+  "template": "vanilla-js",
+  "runner": "sandpack"
+}
