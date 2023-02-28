@@ -7,6 +7,6 @@
   "template": "python",
   "packages": ["pytest"],
   "hideFiles": [],
-  "ignoreFiles": ["^tests.py$"],
+  "excludeFiles": ["^tests.py$"],
   "entryFile": "main.py"
 }
