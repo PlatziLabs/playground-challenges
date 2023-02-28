@@ -1,0 +1,7 @@
+{
+  "title": "Implementa singleton en un chat",
+  "showFileExplorer": false,
+  "showPreview": true,
+  "template": "vanilla-js",
+  "runner": "sandpack"
+}

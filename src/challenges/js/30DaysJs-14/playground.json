@@ -1,0 +1,7 @@
+{
+  "title": "Agrupa los productos",
+  "showFileExplorer": false,
+  "showPreview": true,
+  "template": "vanilla-js",
+  "runner": "sandpack"
+}
