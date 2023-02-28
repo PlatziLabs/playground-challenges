@@ -4,5 +4,19 @@
   "showFileExplorer": false,
   "showPreview": true,
   "template": "vanilla-js",
-  "runner": "sandpack"
+  "runner": "sandpack",
+  "entryFile": "exercise.js",
+  "excludeFiles": [
+    ".babelrc$",
+    ".gitignore$",
+    ".parcelrc$",
+    "package-lock.json$"
+  ],
+  "hideFiles": [
+    ".*.test.js$",
+    "styles.css$",
+    "index.js$",
+    "index.html$",
+    "package.json$"
+  ]
 }
