@@ -1,3 +1,3 @@
 export function calcSum(numbers) {
-  // Tu código aquí 👈
+  return numbers.reduce((count, item) => count + item, 0);
 }
