@@ -1,3 +1,4 @@
 export function findAs(deck) {
-  // Tu código aquí 👈
+  const rta = deck.find((item) => item === 'AS');
+  return rta ? 'Tienes el AS' : 'No, tienes el AS';
 }

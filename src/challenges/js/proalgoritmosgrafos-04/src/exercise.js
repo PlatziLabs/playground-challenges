@@ -1,5 +1,4 @@
 export function orangesRotting(cultivo) {
-  // Tu código aquí 👈
   if (!cultivo || !cultivo.length) return 0;
   
   const cola = [];
@@ -55,3 +54,4 @@ export function orangesRotting(cultivo) {
  * LinkedLists con JavaScript en esta clase:
  * https://platzi.com/clases/2156-estructuras-datos/33730-linked-list/
  */
+
