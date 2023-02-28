@@ -1,0 +1,11 @@
+{
+  "title": "Sum Root to Leaf Numbers",
+  "showFileExplorer": false,
+  "showPreview": true,
+  "runner": "pyodide",
+  "template": "python",
+  "packages": ["pytest"],
+  "hideFiles": [],
+  "ignoreFiles": ["^tests.py$"],
+  "entryFile": "main.py"
+}
