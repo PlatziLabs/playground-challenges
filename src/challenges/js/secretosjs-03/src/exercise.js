@@ -6,6 +6,10 @@ export class Motor {
     this.getStatus = () => status;
     let setStatus = (newStatus) => {
       status = newStatus;
+      history.setState({
+        status: newStatus,
+        propulsionTo,
+      });
     };
 
     this.turnOn = () => setStatus("on");
@@ -19,6 +23,16 @@ export class History {
   constructor() {
     let history = [];
 
+    this.getState = () => history[history.length - 1];
     this.getFullState = () => history;
+
+    this.setState = (newState) => {
+      const stateStr = JSON.stringify(this.getState());
+      const newStateStr = JSON.stringify(newState);
+
+      if (stateStr != newStateStr) {
+        history.push(newState);
+      }
+    };
   }
 }

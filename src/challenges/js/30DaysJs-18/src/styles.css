@@ -1,0 +1,7 @@
+body {
+  font-family: sans-serif;
+}
+pre {
+  max-width: 100%;
+  white-space: pre-wrap;
+}

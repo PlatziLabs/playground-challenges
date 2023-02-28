@@ -1,3 +1,3 @@
 export function sortDesc(numbers) {
-   // Tu código aquí 👈
+  return numbers.sort((a, b) => b - a);
 }
