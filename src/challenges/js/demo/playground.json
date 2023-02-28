@@ -1,0 +1,16 @@
+{
+  "title": "Retornar si al menos alguno de los números es par",
+  "titlePT": "Retornar se pelo menos algum dos números é par",
+  "showFileExplorer": false,
+  "showPreview": true,
+  "template": "vanilla-js",
+  "runner": "sandpack",
+  "entryFile": "exercise.js",
+  "excludeFiles": [],
+  "hideFiles": [
+    ".*.test.js$",
+    "styles.css$",
+    "index.js$",
+    "index.html$"
+  ]
+}
