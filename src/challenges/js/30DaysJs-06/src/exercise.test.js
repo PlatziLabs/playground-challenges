@@ -1,42 +1,47 @@
 import { getStudentAverage } from "./exercise";
 
 describe("tests", () => {
-  const studentsA = [
-    {
-      name: "Pedro",
-      grades: [90, 87, 88, 90],
-    },
-    {
-      name: "Jose",
-      grades: [99, 71, 88, 96],
-    },
-    {
-      name: "Maria",
-      grades: [92, 81, 80, 96],
-    },
-  ];
-  const studentsB = [
-    {
-      name: "Pepe",
-      grades: [90, 87, 78],
-    },
-    {
-      name: "Jose",
-      grades: [78, 65, 92],
-    },
-    {
-      name: "Tanya",
-      grades: [71, 95, 75],
-    },
-    {
-      name: "Saul",
-      grades: [90, 93, 80],
-    },
-    {
-      name: "Diego",
-      grades: [96, 60, 89],
-    },
-  ];
+  let studentsA, studentsB;
+
+  beforeEach(() => {
+    studentsA = [
+      {
+        name: "Pedro",
+        grades: [90, 87, 88, 90],
+      },
+      {
+        name: "Jose",
+        grades: [99, 71, 88, 96],
+      },
+      {
+        name: "Maria",
+        grades: [92, 81, 80, 96],
+      },
+    ];
+
+    studentsB = [
+      {
+        name: "Pepe",
+        grades: [90, 87, 78],
+      },
+      {
+        name: "Jose",
+        grades: [78, 65, 92],
+      },
+      {
+        name: "Tanya",
+        grades: [71, 95, 75],
+      },
+      {
+        name: "Saul",
+        grades: [90, 93, 80],
+      },
+      {
+        name: "Diego",
+        grades: [96, 60, 89],
+      },
+    ];
+  });
 
   it("should return 88.17 as class average", () => {
     const rta = getStudentAverage(studentsA);
