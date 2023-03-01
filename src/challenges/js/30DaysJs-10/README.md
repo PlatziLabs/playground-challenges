@@ -1,4 +1,4 @@
-En este desafío, debes implementar la lógica de un planificador de tareas que permita agregar, eliminar y marcar como completadas las tareas, así como también mostrar un registro de las mismas. Para ello, se debe crear una función closure llamada `createTaskPlanner` que devuelva los siguientes métodos:
+En este desafío, debes implementar la lógica de un planificador de tareas que permita agregar, eliminar y marcar como completadas las tareas, así como también mostrar un registro de las mismas. Para ello, debes construir la lógica de la función closure llamada `createTaskPlanner` para que devuelva los siguientes métodos:
 
 - `addTask(task)`: recibe un objeto que contiene la tarea y la agrega al array de tareas. La tarea debe estar conformada por las siguientes propiedades: `id`, `name`, `priority`, `tags` y `completed`, donde el estado `completed` se agrega automáticamente como falso al momento de agregar una tarea.
 - `removeTask(value)`: recibe el id o nombre de la tarea y la elimina del array de tareas.
