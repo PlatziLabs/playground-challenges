@@ -9,7 +9,7 @@ El planificador de tareas nos debe permitir agregar, eliminar y marcar como comp
 - `getPendingTasks()`: Devuelve solo las tareas pendientes.
 - `getCompletedTasks()`: Devuelve solo las tareas completadas.
 - `markTaskAsCompleted(value)`: Recibe el id o nombre de la tarea y la marca como completada.
-- `sortTasksByPriority()`: Devuelve una copia de las tareas ordenadas según su prioridad (3: poco urgente, 2: urgente, 1: muy urgente), sin modificar la lista de tareas original.
+- `getSortedTasksByPriority()`: Devuelve una copia de las tareas ordenadas según su prioridad (3: poco urgente, 2: urgente, 1: muy urgente), sin modificar la lista de tareas original.
 - `filterTasksByTag(tag)`: Filtra las tareas por una etiqueta específica.
 - `updateTask(taskId, updates)`: Buscar la tarea correspondiente con el id especificado y actualizar sus propiedades con las especificadas en el objeto updates.
 
