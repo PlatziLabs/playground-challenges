@@ -32,7 +32,7 @@ npm run dev
 
 ### 3. Reconcer la estructura
 
-Cuando crees el proyecto, el código del reto que verás una estructura de carpetas, como la siguiente.
+Cuando crees el proyecto encontrarás una estructura de carpetas como la siguiente:
 
 ```sh
 .
@@ -437,9 +437,9 @@ SELECT * FROM users;
 
 El reto debe estar dentro de la carpeta `/src` en los archivos `exercise.sql`, `setup.sql` y `main_test.py`.
 
-- `src/exercise.sql`: es el único archivo visiblee y editable por estudiantes con código SQL para ejecutar y testear con el playground, puede empezar vacío o con algún contenido según lo requiera tu desafío.
+- `src/exercise.sql`: es el único archivo visible y editable por estudiantes con código SQL para ejecutar y testear con el playground, puede empezar vacío o con algún contenido según lo requiera tu desafío.
 
-- `src/setup.sql`: es opcional, no es editable ni visible por estudiantes, ee ejecuta antes de `src/exercise.sql`, así que puedes usarlo para guardar información base que requieran estudiantes para resolver el reto.
+- `src/setup.sql`: es opcional, no es editable ni visible por estudiantes, se ejecuta antes de `src/exercise.sql`, así que puedes usarlo para guardar información base que requieran estudiantes para resolver el reto.
 
 - `src/main_test.py`: es obligatorio, no es visible ni editable por estudiantes, debes escribir pruebas en Python para garantizar que el código de `src/exercise.sql` soluciona el desafío.
 
