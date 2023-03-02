@@ -395,9 +395,9 @@ No debes cambiar la estructura, ya que el **Coding Playground** asume que maneja
 
 ### 4. Agregar descripción
 
-La descripción se agrega en el archivo `README.md` y es lo que aparece en el Tab: Guiá.
+La descripción se agrega en el archivo `README.md` y es lo que aparece en el Tab: Guía.
 
-![TODO: SQL Playground Guide Screenshot]()
+![SQL Playground Guide](https://static.platzi.com/media/user_upload/C362903A-D904-44EA-9365-E6FA6ACF3A11-f71589e3-ae80-47eb-b691-968c6f0d6be5.jpg)
 
 Aquí tienes un ejemplo en donde se usa Markdown para el formato.
 
@@ -477,7 +477,7 @@ def test_insert_new_user():
     assert rta[0][1] == 'Nath'
 ```
 
-![TODO: SQL PLayground Tests Screenshot]()
+![SQL PLayground Tests](https://static.platzi.com/media/user_upload/7FDB66F3-B2AE-47F4-BC7E-FDBD95581BDA-c6ba8310-5a00-47a4-9ca7-b3f6c85592d9.jpg)
 
 ### 7. Elige el título de tu reto
 
@@ -507,6 +507,6 @@ SELECT id FROM users WHERE id <= 2;
 INSERT INTO users (id, name) VALUES (4, "Nath");
 ```
 
-![TODO: SQL Playground Solution Screenshot]()
+![SQL Playground Solution](https://static.platzi.com/media/user_upload/BD229C3F-078C-4556-B1B8-848ED2E888AC-853bba7b-aad6-494a-8fc5-d695e51460fb.jpg)
 
 ### 11. Enviar PR de la solución al reto
