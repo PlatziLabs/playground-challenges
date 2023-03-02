@@ -13,6 +13,7 @@ Una de las características más importantes es el feedback automático, es deci
 # ¿Como agregar ejercicios?
 - [Agregar ejercicios de Vanilla JS](#agregar-ejercicios-de-vanilla-js)
 - [Agregar ejercicios de Python](#agregar-ejercicios-de-python)
+- [Agregar ejercicios de SQL](#agregar-ejercicios-de-sql)
 
 ## Agregar ejercicios de Vanilla JS
 
@@ -346,5 +347,166 @@ print(response)
 ```
 
 ![Playground](https://i.imgur.com/2LuOZWF.png)
+
+### 11. Enviar PR de la solución al reto
+
+## Agregar ejercicios de SQL
+
+### 1. Hacer Fork del proyecto
+
+### 2. Crear nuevo reto a partir del template
+
+Primero debes verificar el nombre que vayas a elegir para tu proyecto, no este creado.
+
+```sh
+make create-sql name=pascal
+cd ./src/challenges/sql/pascal/
+python3 -m venv env
+source env/bin/activate
+pip3 install -r requirements.txt
+```
+
+Nota: Recuerda cada vez que cambies de ejercicio desactivar en pyenv
+
+```sh
+deactivate
+```
+
+### 3. Reconcer la estructura
+
+Cuando crees el proyecto, el código del reto que verás una estructura de carpetas, como la siguiente.
+
+```sh
+.
+├── README.md
+├── env
+├── playground.json
+├── requirements.txt
+└── src
+  ├── __pycache__
+  ├── exercise.sql
+  ├── main_test.py
+  ├── setup.sql
+  ├── tests.py
+  └── utils.py
+```
+
+No debes cambiar la estructura, ya que el **Coding Playground** asume que manejas este orden para leer los archivos.
+
+### 4. Agregar descripción
+
+La descripción se agrega en el archivo `README.md` y es lo que aparece en el Tab: Guiá.
+
+![TODO: SQL Playground Guide Screenshot]()
+
+Aquí tienes un ejemplo en donde se usa Markdown para el formato.
+
+````md
+En este desafío debes escribir el código SQL necesario para:
+
+- Imprimir los IDs de los usuarios con ID menor o igual a 2 en la tabla `users`.
+
+- Agregar un nuevo usuario a la tabla `users`, su `name` debe ser `Nath` y su `id` igual al ID `4`.
+
+Ejemplo de código SQL para el README que solo imprime 1 valor:
+
+```sql
+-- Input
+SELECT name FROM users WHERE id=1;
+
+-- Output
+-- Fernando
+```
+
+Ejemplo de código SQL para el README que imprime variso valores:
+
+```sql
+-- Input
+SELECT * FROM users;
+
+-- Output
+-- | ID |   NAME   |
+-- | -- | -------- |
+-- |  1 | Fernando |
+-- |  2 | David    |
+-- |  3 | Luisa    |
+```
+````
+
+### 5. Crear el código base
+
+El reto debe estar dentro de la carpeta `/src` en los archivos `exercise.sql`, `setup.sql` y `main_test.py`.
+
+- `src/exercise.sql`: es el único archivo visiblee y editable por estudiantes con código SQL para ejecutar y testear con el playground, puede empezar vacío o con algún contenido según lo requiera tu desafío.
+
+- `src/setup.sql`: es opcional, no es editable ni visible por estudiantes, ee ejecuta antes de `src/exercise.sql`, así que puedes usarlo para guardar información base que requieran estudiantes para resolver el reto.
+
+- `src/main_test.py`: es obligatorio, no es visible ni editable por estudiantes, debes escribir pruebas en Python para garantizar que el código de `src/exercise.sql` soluciona el desafío.
+
+Los demás archivos de la carpeta `src` NO los debes modificar.
+
+
+### 6. Crear las pruebas del reto
+
+Para tus tests en el archivo `src/main_test.py` puedes escribir 2 tipos de pruebas:
+
+- **Pruebas de output**: si tu ejercicio requiere leer contenido con un SELECT, puedes usar la variable `output` para leer el log de impresiones de `src/exercise.sql`.
+- **Pruebas de query**: si tu ejercicio requiere agregar, editar o eliminar contenido, puedes ejecutar nuevas sentencias SQL para validar si el contenido de `src/exercise.sql` se modificó correctamente.
+
+> :bulb: Importante: Tanto la lectura de outputs como la ejecución de queries devuelve tuplas y tuplas de tuplas. Dependiendo del ejercicio puedes recibir tanto con nombres de columnas como valores de cada fila de una columna.
+
+```py
+# src/main_test.py
+from utils import get_output, setup, connection
+
+setup()
+outputs = get_output()
+
+def test_select_first_two_ids():
+    query1 = outputs[0]
+    assert query1[0][0] == 1
+    assert query1[1][0] == 2
+    assert len(query1) == 2
+
+def test_insert_new_user():
+    cursor = connection.cursor()
+    query = "SELECT * FROM users WHERE id = 4"
+    rta = cursor.execute(query).fetchall()
+    assert len(rta) == 1
+    assert rta[0][0] == 4
+    assert rta[0][1] == 'Nath'
+```
+
+![TODO: SQL PLayground Tests Screenshot]()
+
+### 7. Elige el título de tu reto
+
+Llega el momento de elegir el nombre y esto está en el archivo `playground.json` en el atributo de `title`.
+
+```json
+{
+  "title": "", // 👈
+  "showFiles": false,
+  "template": "sql"
+}
+```
+
+### 9. Enviar PR del reto
+
+Aquí puedes enviar el primer PR hacia la rama `master` en donde ya está el reto sin la solución.
+
+### 10. Crear la solución al reto
+
+Una parte impórtate es mostrarle al estudiante la solución al reto después de 3 intentos en caso de que no lo logré.
+
+Por eso la solución debe estar en una nueva rama llamada `solution` en esta rama puedes hacer todos los ajustes para dar solución al reto, ejemplo:
+
+```sql
+-- src/exercise.sql en la rama solution
+SELECT id FROM users WHERE id <= 2;
+INSERT INTO users (id, name) VALUES (4, "Nath");
+```
+
+![TODO: SQL Playground Solution Screenshot]()
 
 ### 11. Enviar PR de la solución al reto
