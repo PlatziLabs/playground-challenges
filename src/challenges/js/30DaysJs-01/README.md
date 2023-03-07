@@ -1,12 +1,6 @@
 En este desafío tendrás que calcular la propina que deben dejar los clientes de un restaurante en función de su consumo.
 
-Recibirás 2 parámetros:
-
-- billAmount: El costo total de lo que hayan consumido.
-- tipPercentage: El porcentaje de propina que deban dejar.
-- Ambos valores serán de tipo `Number`.
-- Los valores serán siempre positivos incluyendo el 0.
-- deberá devolver el valor de la propina como un número.
+La función `calculateTip` recibirá dos parámetros, `billAmount` que representa el costo total de lo que se haya consumido y `tipPercentage` que representa el porcentaje de propina a dejar. Ambos valores serán de tipo `Number` y siempre serán positivos, incluyendo el 0. La función deberá devolver el valor de la propina como un número.
 
 Tendrás inputs y outputs como los siguientes 👇
 
