@@ -30,4 +30,20 @@ describe("tests", () => {
     const rta = isLeapYear(year);
     expect(rta).toEqual(false);
   });
+
+  it("should return true for leap years", () => {
+    expect(isLeapYear(2000)).toBe(true);
+    expect(isLeapYear(2004)).toBe(true);
+    expect(isLeapYear(2020)).toBe(true);
+    expect(isLeapYear(2024)).toBe(true);
+  });
+
+  it("should return false for non-leap years", () => {
+    expect(isLeapYear(1700)).toBe(false);
+    expect(isLeapYear(1800)).toBe(false);
+    expect(isLeapYear(1900)).toBe(false);
+    expect(isLeapYear(2001)).toBe(false);
+    expect(isLeapYear(2019)).toBe(false);
+    expect(isLeapYear(2022)).toBe(false);
+  });
 });
