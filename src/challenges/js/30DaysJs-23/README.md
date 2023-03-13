@@ -11,7 +11,7 @@ Además, debes proporcionar los siguientes métodos públicos:
 
 - `addFriend(friend)`: agrega un usuario a la lista de amigos del usuario actual.
 - `sendMessage(message, friend)`: agrega un mensaje a la lista de mensajes del usuario actual y al amigo especificado.
-- `showMEssages()`: devuelve la lista de mensajes del usuario actual.
+- `showMessages()`: devuelve la lista de mensajes del usuario actual.
 
 También debes tener definidos los getters y setters para acceder a los datos privados como el nombre y la edad, los cuales pueden ser modificados mediante su propio setter.
 
