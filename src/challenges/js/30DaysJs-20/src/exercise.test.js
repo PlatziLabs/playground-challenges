@@ -74,4 +74,11 @@ describe("tests", () => {
       },
     ]);
   });
+
+  it("should not use array methods", () => {
+    const arr = [1, 2, 3, 4, 5, 6];
+    const filterSpy = jest.spyOn(Array.prototype, 'filter');
+    const rta = arr.myFilter((num) => num % 2 === 0);
+    expect(filterSpy).not.toHaveBeenCalled();
+  });
 });
