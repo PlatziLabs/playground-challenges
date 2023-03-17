@@ -445,6 +445,8 @@ El reto debe estar dentro de la carpeta `/src` en los archivos `exercise.sql`, `
 
 Los demás archivos de la carpeta `src` NO los debes modificar.
 
+> :bulb: Importante: Para ejecutar tus pruebas en local debes ejecutar el archivo tests.js ubicándote en tu terminal desde la carpeta src dentro de tu reto (es decir, ejecutas con el comando `python3 tests.py`). Si ejecutas el archivo desde otra carpeta (por ejemplo, con el comando `python3 src/tests.py`), las pruebas fallarán.
+
 
 ### 6. Crear las pruebas del reto
 
@@ -457,24 +459,39 @@ Para tus tests en el archivo `src/main_test.py` puedes escribir 2 tipos de prueb
 
 ```py
 # src/main_test.py
-from utils import get_output, setup, connection
+from importlib import reload, import_module
+import sqlite3
+import shutil
 
-setup()
-outputs = get_output()
+def reload_module(name):
+  module = import_module(name)
+  shutil.rmtree("__pycache__", ignore_errors=True)
+  reload(module)
+  return module
 
-def test_select_first_two_ids():
-    query1 = outputs[0]
-    assert query1[0][0] == 1
-    assert query1[1][0] == 2
-    assert len(query1) == 2
+def test_select_all_outputs():
+  connection = sqlite3.connect(":memory:")
+  utils = reload_module("utils")
+  outputs = utils.run_sql(connection) # ejemplo de run_sql leyendo los outputs
+  query1 = outputs[0]
 
-def test_insert_new_user():
-    cursor = connection.cursor()
-    query = "SELECT * FROM users WHERE id = 4"
-    rta = cursor.execute(query).fetchall()
-    assert len(rta) == 1
-    assert rta[0][0] == 4
-    assert rta[0][1] == 'Nath'
+  assert query1[0][0] == 1
+  assert query1[1][0] == 2
+  assert query1[2][0] == 3
+  assert query1[3][0] == 4
+  assert len(query1) == 4
+
+def test_insert_id():
+  connection = sqlite3.connect(":memory:")
+  utils = reload_module("utils")
+  utils.run_sql(connection) # ejemplo de run_sql sin leer outputs
+
+  cursor = connection.cursor()
+  query = "SELECT * FROM persons WHERE id = 4"
+  rta = cursor.execute(query).fetchall()
+
+  assert len(rta) == 1
+  assert rta[0][0] == 4
 ```
 
 ![SQL PLayground Tests](https://static.platzi.com/media/user_upload/7FDB66F3-B2AE-47F4-BC7E-FDBD95581BDA-c6ba8310-5a00-47a4-9ca7-b3f6c85592d9.jpg)
