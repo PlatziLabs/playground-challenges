@@ -10,6 +10,7 @@ Además, debes crear la clase Cart que será el carrito de compras y tendrá los
 - `addProduct(product)` este método agregará un producto al final de la lista de compras y deberá llamar al método addToCart() de cada producto o servicio.
 - `deleteProduct(product)` este método recibirá un producto y lo eliminará de la lista de productos
 - `calculateTotal()` este método calculará el total de los productos agregados y lo devolverá.
+- `getProducts()` este método devolverá el array de los productos que contiene el carrito.
 
 Ejemplo 1
 
