@@ -1,2 +1,3 @@
--- INSERT INTO persons (id, name) VALUES (4, "Nath");
--- SELECT id FROM persons;
+-- INSERT INTO persons VALUES (4, "Nath");
+-- SELECT * FROM persons;
+-- SELECT * FROM persons WHERE id = 4;
