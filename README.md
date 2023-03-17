@@ -445,7 +445,7 @@ El reto debe estar dentro de la carpeta `/src` en los archivos `exercise.sql`, `
 
 Los demás archivos de la carpeta `src` NO los debes modificar.
 
-> :bulb: Importante: Para ejecutar tus pruebas en local debes ejecutar el archivo tests.js ubicándote en tu terminal desde la carpeta src dentro de tu reto (es decir, ejecutas con el comando `python3 tests.py`). Si ejecutas el archivo desde otra carpeta (por ejemplo, con el comando `python3 src/tests.py`), las pruebas fallarán.
+> :bulb: Importante: Para ejecutar tus pruebas en local debes ejecutar el archivo tests.py ubicándote en tu terminal desde la carpeta src dentro de tu reto (es decir, ejecutas con el comando `python3 tests.py`). Si ejecutas el archivo desde otra carpeta (por ejemplo, con el comando `python3 src/tests.py`), las pruebas fallarán.
 
 
 ### 6. Crear las pruebas del reto
