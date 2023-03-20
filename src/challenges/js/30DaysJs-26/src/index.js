@@ -1,11 +1,10 @@
 import "./styles.css";
-import {
-  Flight,
-  Passenger,
-  Reservation,
-  EconomicFlight,
-  PremiumFlight,
-} from "./exercise";
+
+import { Flight } from "./Flight";
+import { EconomicFlight } from "./EconomicFlight";
+import { Passenger } from "./Passenger";
+import { PremiumFlight } from "./PremiumFlight";
+import { Reservation } from "./Reservation";
 
 (() => {
   document.getElementById("app").innerHTML = `
@@ -136,7 +135,7 @@ import {
   });
 
   function printFlight() {
-    flightDataList = "";
+    flightDataList.innerHTML = "";
     for (const item of flights) {
       flightDataList.innerHTML += `<li>${JSON.stringify(item)}<li>`;
     }

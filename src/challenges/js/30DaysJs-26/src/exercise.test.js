@@ -1,10 +1,8 @@
-import {
-  Flight,
-  Passenger,
-  PremiumFlight,
-  EconomicFlight,
-  Reservation,
-} from "./exercise";
+import { Flight } from "./Flight";
+import { EconomicFlight } from "./EconomicFlight";
+import { Passenger } from "./Passenger";
+import { PremiumFlight } from "./PremiumFlight";
+import { Reservation } from "./Reservation";
 
 describe("tests", () => {
   it("should sell a ticket and decrease the capacity", () => {
