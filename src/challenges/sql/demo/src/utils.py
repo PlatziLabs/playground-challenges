@@ -1,22 +1,41 @@
 import sqlite3
 import sqlparse
 
+def get_headers(desc):
+  headers = []
+  for item in desc:
+    headers.append(item[0])
+  return headers
+
+def get_values(data):
+  body = []
+  for item in data:
+    body.append(list(item))
+  return body
+
 def run_sql(connection):
-  cur = connection.cursor()
+  cursor = connection.cursor()
+  outputs = []
 
   try:
     setup = open("./setup.sql", "r").read()
-    cur.executescript(setup)
-  except sqlite3.OperationalError:
-    None
+    cursor.executescript(setup)
+  except sqlite3.OperationalError as error:
+    print("Error en setup.sql")
+    print(error)
 
-  exercise = open("./exercise.sql", "r").read()
-  queries = sqlparse.parse(exercise)
-  output = []
-  for query in queries:
-    if query.get_type() == "SELECT":
-      rta = cur.execute(str(query)).fetchall()
-      output.append(rta)
-    else:
-      cur.execute(str(query))
-  return output
+  try:
+    exercise = open("./exercise.sql", "r").read()
+    formated = sqlparse.format(exercise, strip_comments=True).strip()
+    for query in sqlparse.split(formated):
+      execute = cursor.execute(query)
+      if query.upper().startswith('SELECT'):
+        headers = get_headers(execute.description)
+        body = get_values(execute.fetchall())
+        output_dict = { 'headers': headers, 'body': body }
+        outputs.append(output_dict)
+  except Exception as error:
+    print("Error en exercise.sql")
+    print(error)
+  
+  return outputs

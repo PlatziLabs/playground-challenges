@@ -14,22 +14,24 @@ def test_select_all_outputs():
   utils = reload_module("utils")
   outputs = utils.run_sql(connection)
   query1 = outputs[0]
+  body = query1["body"]
 
-  assert query1[0][0] == 1
-  assert query1[1][0] == 2
-  assert query1[2][0] == 3
-  assert query1[3][0] == 4
-  assert len(query1) == 4
+  assert body[0][0] == 1
+  assert body[1][0] == 2
+  assert body[2][0] == 3
+  assert body[3][0] == 4
+  assert len(body) == 4
 
 def test_select_new_insert():
   connection = sqlite3.connect(":memory:")
   utils = reload_module("utils")
   outputs = utils.run_sql(connection)
   query2 = outputs[1]
+  body = query2["body"]
 
-  assert query2[0][0] == 4
-  assert query2[0][1] == "Nath"
-  assert len(query2) == 1
+  assert body[0][0] == 4
+  assert body[0][1] == "Nath"
+  assert len(body) == 1
 
 def test_insert_id():
   connection = sqlite3.connect(":memory:")
