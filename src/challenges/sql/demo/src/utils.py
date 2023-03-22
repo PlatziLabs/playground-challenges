@@ -13,6 +13,15 @@ def get_results(data):
     body.append(list(item))
   return body
 
+def get_json(headers, data):
+  array = []
+  for x in data:
+      iterable = zip(headers, x)
+      data_dict = {key: value for key, value in iterable}
+      array.append(data_dict)
+  return array
+
+
 def run_sql(connection):
   cursor = connection.cursor()
   outputs = []
@@ -31,7 +40,7 @@ def run_sql(connection):
       execute = cursor.execute(str(query))
       if query.get_type() == "SELECT":
         headers = get_headers(execute.description)
-        results = get_results(execute.fetchall())
+        results = get_json(headers, execute.fetchall())
         output_dict = { 'headers': headers, 'results': results }
         outputs.append(output_dict)
   except Exception as error:

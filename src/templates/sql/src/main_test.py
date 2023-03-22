@@ -16,10 +16,10 @@ def test_select_all_outputs():
   query1 = outputs[0]
   results = query1["results"]
 
-  assert results[0][0] == 1
-  assert results[1][0] == 2
-  assert results[2][0] == 3
-  assert results[3][0] == 4
+  assert results[0]["id"] == 1
+  assert results[1]["id"] == 2
+  assert results[2]["id"] == 3
+  assert results[3]["id"] == 4
   assert len(results) == 4
 
 def test_select_new_insert():
@@ -29,8 +29,8 @@ def test_select_new_insert():
   query2 = outputs[1]
   results = query2["results"]
 
-  assert results[0][0] == 4
-  assert results[0][1] == "Nath"
+  assert results[0]["id"] == 4
+  assert results[0]["name"] == "Nath"
   assert len(results) == 1
 
 def test_insert_id():
