@@ -12,7 +12,7 @@ def reload_module(name):
 def test_select_all_outputs():
   connection = sqlite3.connect(":memory:")
   utils = reload_module("utils")
-  outputs = utils.run_sql(connection)
+  outputs = utils.run_sql(connection) # ejemplo con prueba de output
   query1 = outputs[0]
   results = query1["results"]
 
@@ -39,7 +39,7 @@ def test_insert_id():
   utils.run_sql(connection)
 
   query = "SELECT * FROM persons WHERE id = 4"
-  output = utils.run_test_sql(connection, query)
+  output = utils.run_test_sql(connection, query) # ejemplo con prueba de query
   headers = output["headers"]
   results = output["results"]
 
