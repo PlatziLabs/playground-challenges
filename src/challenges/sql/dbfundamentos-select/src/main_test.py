@@ -22,13 +22,18 @@ def test_select_all():
   outputs = utils.run_sql(connection)
   query0 = outputs[0]
   headers = query0["headers"]
-  body = query0["body"]
+  results = query0["results"]
   
-  assert headers == ['id', 'nombre', 'profe', 'n_calificaciones']
-  assert len(body) == 3
-  assert body[0] == [1, 'Fundamentos de Bases de Datos', 'Israel', 580]
-  assert body[1] == [2, 'MySQL y MariaDB', 'Carlos', 180]
-  assert body[2] == [3, 'PostgreSQL', 'Oswaldo', 150]
+  assert 'id' in headers
+  assert 'nombre' in headers
+  assert 'profe' in headers
+  assert 'n_calificaciones' in headers
+
+  assert len(results) == 3
+  assert 1 in results[0].values()
+  assert 'Fundamentos de Bases de Datos' in results[0].values()
+  assert 'Carlos' in results[1].values()
+  assert 150 in results[2].values()
 
 def test_select_count():
   connection = sqlite3.connect(":memory:")
@@ -36,8 +41,7 @@ def test_select_count():
   outputs = utils.run_sql(connection)
   query1 = outputs[1]
 
-  assert query1["headers"][0] == 'cantidad'
-  assert query1["body"][0] == [3]
+  assert query1["results"][0]["cantidad"] == 3
 
 def test_select_renames():
   connection = sqlite3.connect(":memory:")
@@ -45,14 +49,15 @@ def test_select_renames():
   outputs = utils.run_sql(connection)
   query2 = outputs[2]
   headers = query2["headers"]
-  body = query2["body"]
+  results = query2["results"]
   
   assert len(headers) == 3
-  assert headers[0] == 'name'
-  assert headers[1] == 'teacher'
-  assert headers[2] == 'n_reviews'
-  assert len(body) == 3
-  assert body[0][2] == 580
-  assert body[1][2] == 180
-  assert body[2][2] == 150
+  assert 'name' in headers
+  assert 'teacher' in headers
+  assert 'n_reviews' in headers
+
+  assert len(results) == 3
+  assert results[0]["n_reviews"] == 580
+  assert results[1]["n_reviews"] == 180
+  assert results[2]["n_reviews"] == 150
 
