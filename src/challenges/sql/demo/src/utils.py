@@ -48,3 +48,21 @@ def run_sql(connection):
     print(error)
   
   return outputs
+
+def run_test_sql(connection, query_str):
+  cursor = connection.cursor()
+  output = {}
+
+  try:
+    query = sqlparse.parse(query_str)[0]
+    execute = cursor.execute(query_str)
+    if query.get_type() == "SELECT":
+      headers = get_headers(execute.description)
+      results = get_json(headers, execute.fetchall())
+      output['headers'] = headers
+      output['results'] = results
+  except Exception as error:
+    print("Error en el SQL de los tests")
+    print(error)
+  
+  return output

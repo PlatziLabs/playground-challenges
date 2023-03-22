@@ -38,20 +38,22 @@ def test_insert_id():
   utils = reload_module("utils")
   utils.run_sql(connection)
 
-  cursor = connection.cursor()
   query = "SELECT * FROM persons WHERE id = 4"
-  rta = cursor.execute(query).fetchall()
+  output = utils.run_test_sql(connection, query)
+  headers = output["headers"]
+  results = output["results"]
 
-  assert len(rta) == 1
-  assert rta[0][0] == 4
+  assert len(results) == 1
+  assert results[0]["id"] == 4
 
 def test_insert_name():
   connection = sqlite3.connect(":memory:")
   utils = reload_module("utils")
   utils.run_sql(connection)
 
-  cursor = connection.cursor()
   query = "SELECT name FROM persons WHERE id = 4"
-  rta = cursor.execute(query).fetchall()
+  output = utils.run_test_sql(connection, query)
+  headers = output["headers"]
+  results = output["results"]
 
-  assert rta[0][0] == "Nath"
+  assert results[0]["name"] == "Nath"
