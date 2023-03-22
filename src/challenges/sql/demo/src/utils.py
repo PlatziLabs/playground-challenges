@@ -27,9 +27,9 @@ def run_sql(connection):
   try:
     exercise = open("./exercise.sql", "r").read()
     formated = sqlparse.format(exercise, strip_comments=True).strip()
-    for query in sqlparse.split(formated):
-      execute = cursor.execute(query)
-      if query.upper().startswith('SELECT'):
+    for query in sqlparse.parse(formated):
+      execute = cursor.execute(str(query))
+      if query.get_type() == "SELECT":
         headers = get_headers(execute.description)
         body = get_values(execute.fetchall())
         output_dict = { 'headers': headers, 'body': body }
