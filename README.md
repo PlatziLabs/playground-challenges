@@ -445,7 +445,7 @@ El reto debe estar dentro de la carpeta `/src` en los archivos `exercise.sql`, `
 
 Los demás archivos de la carpeta `src` NO los debes modificar.
 
-> :bulb: Importante: Para ejecutar tus pruebas en local debes ejecutar el archivo tests.js ubicándote en tu terminal desde la carpeta src dentro de tu reto (es decir, ejecutas con el comando `python3 tests.py`). Si ejecutas el archivo desde otra carpeta (por ejemplo, con el comando `python3 src/tests.py`), las pruebas fallarán.
+> :bulb: Importante: Para ejecutar tus pruebas en local debes ejecutar el archivo tests.py ubicándote en tu terminal desde la carpeta src dentro de tu reto (es decir, ejecutas con el comando `python3 tests.py`). Si ejecutas el archivo desde otra carpeta (por ejemplo, con el comando `python3 src/tests.py`), las pruebas fallarán.
 
 
 ### 6. Crear las pruebas del reto
@@ -469,29 +469,32 @@ def reload_module(name):
   reload(module)
   return module
 
+
 def test_select_all_outputs():
   connection = sqlite3.connect(":memory:")
   utils = reload_module("utils")
-  outputs = utils.run_sql(connection) # ejemplo de run_sql leyendo los outputs
+  outputs = utils.run_sql(connection) # ejemplo con prueba de output
   query1 = outputs[0]
+  results = query1["results"]
 
-  assert query1[0][0] == 1
-  assert query1[1][0] == 2
-  assert query1[2][0] == 3
-  assert query1[3][0] == 4
-  assert len(query1) == 4
+  assert results[0]["id"] == 1
+  assert results[1]["id"] == 2
+  assert results[2]["id"] == 3
+  assert results[3]["id"] == 4
+  assert len(results) == 4
 
 def test_insert_id():
   connection = sqlite3.connect(":memory:")
   utils = reload_module("utils")
-  utils.run_sql(connection) # ejemplo de run_sql sin leer outputs
+  utils.run_sql(connection)
 
-  cursor = connection.cursor()
   query = "SELECT * FROM persons WHERE id = 4"
-  rta = cursor.execute(query).fetchall()
+  output = utils.run_test_sql(connection, query) # ejemplo con prueba de query
+  headers = output["headers"]
+  results = output["results"]
 
-  assert len(rta) == 1
-  assert rta[0][0] == 4
+  assert len(results) == 1
+  assert results[0]["id"] == 4
 ```
 
 ![SQL PLayground Tests](https://static.platzi.com/media/user_upload/7FDB66F3-B2AE-47F4-BC7E-FDBD95581BDA-c6ba8310-5a00-47a4-9ca7-b3f6c85592d9.jpg)

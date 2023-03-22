@@ -74,7 +74,6 @@ describe("tests", () => {
       },
     ]);
   });
-
   it("should not use array methods", () => {
     const arr = [1, 2, 3, 4, 5, 6];
     const filterSpy = jest.spyOn(Array.prototype, 'filter');
