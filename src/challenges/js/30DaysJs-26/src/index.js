@@ -67,7 +67,6 @@ import { Reservation } from "./Reservation";
       const passenger = new Passenger(name, lastName, age);
       passengers.push(passenger);
 
-      console.log(passengers);
       selectPassenger.innerHTML += `<option value="${passengers.indexOf(
         passenger
       )}">${passenger.name} ${passenger.lastName}</option>`;
