@@ -1,3 +1,5 @@
 export function checkInString(text, term) {
-  // Tu código aquí 👈
+  return text
+    .toLowerCase()
+    .includes(term.toLowerCase());
 }
