@@ -12,44 +12,48 @@ def reload_module(name):
 def test_select_all_outputs():
   connection = sqlite3.connect(":memory:")
   utils = reload_module("utils")
-  outputs = utils.run_sql(connection) # ejemplo de run_sql leyendo los outputs
+  outputs = utils.run_sql(connection) # ejemplo con prueba de output
   query1 = outputs[0]
+  results = query1["results"]
 
-  assert query1[0][0] == 1
-  assert query1[1][0] == 2
-  assert query1[2][0] == 3
-  assert query1[3][0] == 4
-  assert len(query1) == 4
+  assert results[0]["id"] == 1
+  assert results[1]["id"] == 2
+  assert results[2]["id"] == 3
+  assert results[3]["id"] == 4
+  assert len(results) == 4
 
 def test_select_new_insert():
   connection = sqlite3.connect(":memory:")
   utils = reload_module("utils")
   outputs = utils.run_sql(connection)
   query2 = outputs[1]
+  results = query2["results"]
 
-  assert query2[0][0] == 4
-  assert query2[0][1] == "Nath"
-  assert len(query2) == 1
+  assert results[0]["id"] == 4
+  assert results[0]["name"] == "Nath"
+  assert len(results) == 1
 
 def test_insert_id():
   connection = sqlite3.connect(":memory:")
   utils = reload_module("utils")
-  utils.run_sql(connection) # ejemplo de run_sql sin leer outputs
+  utils.run_sql(connection)
 
-  cursor = connection.cursor()
   query = "SELECT * FROM persons WHERE id = 4"
-  rta = cursor.execute(query).fetchall()
+  output = utils.run_test_sql(connection, query) # ejemplo con prueba de query
+  headers = output["headers"]
+  results = output["results"]
 
-  assert len(rta) == 1
-  assert rta[0][0] == 4
+  assert len(results) == 1
+  assert results[0]["id"] == 4
 
 def test_insert_name():
   connection = sqlite3.connect(":memory:")
   utils = reload_module("utils")
   utils.run_sql(connection)
 
-  cursor = connection.cursor()
   query = "SELECT name FROM persons WHERE id = 4"
-  rta = cursor.execute(query).fetchall()
+  output = utils.run_test_sql(connection, query)
+  headers = output["headers"]
+  results = output["results"]
 
-  assert rta[0][0] == "Nath"
+  assert results[0]["name"] == "Nath"
