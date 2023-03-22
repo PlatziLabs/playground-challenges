@@ -7,7 +7,7 @@ def get_headers(desc):
     headers.append(item[0])
   return headers
 
-def get_values(data):
+def get_results(data):
   body = []
   for item in data:
     body.append(list(item))
@@ -31,8 +31,8 @@ def run_sql(connection):
       execute = cursor.execute(str(query))
       if query.get_type() == "SELECT":
         headers = get_headers(execute.description)
-        body = get_values(execute.fetchall())
-        output_dict = { 'headers': headers, 'body': body }
+        results = get_results(execute.fetchall())
+        output_dict = { 'headers': headers, 'results': results }
         outputs.append(output_dict)
   except Exception as error:
     print("Error en exercise.sql")
