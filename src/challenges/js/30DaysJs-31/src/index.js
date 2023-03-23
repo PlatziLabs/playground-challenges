@@ -1,5 +1,6 @@
 import "./styles.css";
-import { Newsletter, Subscriber } from "./exercise";
+import { Newsletter } from "./exercise";
+import { Subscriber } from "./Subscriber";
 
 (() => {
   document.getElementById("app").innerHTML = `
@@ -37,6 +38,7 @@ import { Newsletter, Subscriber } from "./exercise";
       subscriberList.appendChild(li);
       emailInput.value = "";
     } catch (error) {
+      console.log(error)
       rtaElement.innerHTML = JSON.stringify(error, null, 1);
     }
   });
@@ -54,13 +56,4 @@ import { Newsletter, Subscriber } from "./exercise";
       rtaElement.innerHTML = JSON.stringify(error, null, 1);
     }
   });
-
-  // runBtn.addEventListener("click", () => {
-  //   try {
-  //     const rta = mergeArrays(arrayA, arrayB);
-  //     rtaElement.innerHTML = JSON.stringify(rta);
-  //   } catch (error) {
-  //     rtaElement.innerHTML = JSON.stringify(error, null, 1);
-  //   }
-  // });
 })();
