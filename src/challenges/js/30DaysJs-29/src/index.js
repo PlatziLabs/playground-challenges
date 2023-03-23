@@ -1,13 +1,12 @@
 import "./styles.css";
-import {
-  BasicProduct,
-  WarrantyDecorator,
-  ShippingInsuranceDecorator,
-} from "./exercise";
+import { BasicProduct } from "./exercise";
+import { WarrantyDecorator } from "./WarrantyDecorator";
+import { ShippingInsuranceDecorator } from "./ShippingInsurance";
+
 
 (() => {
   document.getElementById("app").innerHTML = `
-    <h2>Agrega seguros a tus productos</h2>
+    <h3>Agrega seguros a tus productos</h3>
 
     <label for="price">Precio:</label>
     <input type="number" id="price" value="100"><br><br>
