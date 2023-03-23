@@ -1,5 +1,6 @@
 import "./styles.css";
-import { User, MessagesProxy } from "./exercise";
+import { MessagesProxy } from "./exercise";
+import { User } from "./User";
 import { Messages } from "./messages";
 
 (() => {
