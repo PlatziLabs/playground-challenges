@@ -1,3 +1,3 @@
-export class Newsletter {
+export class Subscriber {
   // Tu código aquí 👈
 }

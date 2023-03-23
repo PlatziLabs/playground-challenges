@@ -1,5 +1,6 @@
 import "./styles.css";
-import { Newsletter, Subscriber } from "./exercise";
+import { Newsletter } from "./exercise";
+import { Subscriber } from "./Subscriber";
 
 (() => {
   document.getElementById("app").innerHTML = `

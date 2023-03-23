@@ -1,4 +1,5 @@
-import { Newsletter, Subscriber } from "./exercise";
+import { Newsletter } from "./exercise";
+import { Subscriber } from "./Subscriber";
 
 describe("tests", () => {
   let newsletter;
