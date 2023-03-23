@@ -1,9 +1,7 @@
 import "./styles.css";
-import {
-  BasicProduct,
-  WarrantyDecorator,
-  ShippingInsuranceDecorator,
-} from "./exercise";
+import { BasicProduct } from "./exercise";
+import { WarrantyDecorator } from "./WarrantyDecorator";
+import { ShippingInsuranceDecorator } from "./ShippingInsurance";
 
 (() => {
   document.getElementById("app").innerHTML = `

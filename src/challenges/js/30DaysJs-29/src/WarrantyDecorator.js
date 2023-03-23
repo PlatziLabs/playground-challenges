@@ -1,7 +1,11 @@
 import { Product } from "./product";
 
-export class BasicProduct extends Product {
-  constructor(price, description) {
+export class WarrantyDecorator extends Product {
+  constructor(product) {
+    // Tu código aquí 👈
+  }
+
+  getPrice() {
     // Tu código aquí 👈
   }
 

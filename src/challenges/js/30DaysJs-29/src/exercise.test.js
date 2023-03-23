@@ -1,9 +1,7 @@
-import {
-  BasicProduct,
-  WarrantyDecorator,
-  ShippingInsuranceDecorator,
-} from "./exercise";
+import { BasicProduct } from "./exercise";
 import { Product } from "./product";
+import { WarrantyDecorator } from "./WarrantyDecorator";
+import { ShippingInsuranceDecorator } from "./ShippingInsurance";
 
 describe("tests", () => {
   it("Should not modify the product base class", () => {
