@@ -1,7 +1,13 @@
 export class MessagesProxy {
-  // Tu código aquí
-}
+  constructor(messages, user) {
+    // Tu código aquí 👈
+  }
 
-export class User {
-  // Tu código aquí
+  sendMessage(text) {
+    // Tu código aquí 👈
+  }
+
+  getHistory() { 
+    // Tu código aquí 👈
+   }
 }
