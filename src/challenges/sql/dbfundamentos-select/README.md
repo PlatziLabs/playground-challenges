@@ -4,4 +4,4 @@ Debes imprimir los siguientes 3 bloques de información con el contenido de la t
 - La cantidad total de cursos con el nombre `cantidad`.
 - Las columnas `nombre`, `profe` y `n_calificaciones` (es decir, exluyendo la columna `id`) de todos los cursos renombradas en inglés (`name`, `teacher` y `n_reviews`).
 
-> :bulb: La tabla `cursos` ya tiene información cargada. No debes agregar nueva información, solo imprimirla.
+> La tabla `cursos` ya tiene información cargada. No debes agregar nueva información, solo imprimirla.
