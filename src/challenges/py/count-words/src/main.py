@@ -1,6 +1,9 @@
+from functools import reduce
+
 def count_words(text):
-   # Escribe tu solución 👇
-   return 0
+   def counter(total, item):
+      return total + len(item.split(' '))
+   return reduce(counter, text, 0)
 
 text = [
    "Beautiful is better than ugly",

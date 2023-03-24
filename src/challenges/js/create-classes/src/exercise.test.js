@@ -32,7 +32,7 @@ describe("tests", () => {
   it("No debe dejar agregar más de un baterista", () => {
     banda.agregarIntegrante(new Integrante({ nombre: "Paul", instrumento: "Bateria" }))
     let segundoBaterista = banda.agregarIntegrante(new Integrante({ nombre: "Roger", instrumento: "Bateria" }))
-    expect(banda.integrantes).toEqual([{ nombre: "Paul", instrumento: "Bateria" }]);
     expect(segundoBaterista).toBeFalsy();
+    expect(banda.integrantes).toEqual([{ nombre: "Paul", instrumento: "Bateria" }]);
   });
 });
