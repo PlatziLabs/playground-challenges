@@ -1,13 +1,15 @@
 {
-<<<<<<< HEAD
-  "title": "",
-  "showFileExplorer": false,
-  "showPreview": false,
-=======
   "title": "Jerarquía de animales",
   "showFileExplorer": false,
   "showPreview": true,
->>>>>>> bc384de658fbd46933f134f53202560dda32cdb4
   "template": "vanilla-js",
-  "runner": "sandpack"
+ "runner": "sandpack",
+  "entryFile": "exercise.js",
+  "excludeFiles": [],
+  "hideFiles": [
+    ".*.test.js$",
+    "styles.css$",
+    "index.js$",
+    "index.html$"
+  ]
 }

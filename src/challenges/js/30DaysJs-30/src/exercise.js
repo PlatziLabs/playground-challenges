@@ -1,5 +1,6 @@
 export class MessagesProxy {
   constructor(messages, user) {
+
     this.messages = messages;
     this.user = user;
   }
