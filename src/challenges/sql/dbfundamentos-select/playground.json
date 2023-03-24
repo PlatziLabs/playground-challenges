@@ -1,0 +1,11 @@
+{
+  "title": "SELECT the courses",
+  "showFileExplorer": false,
+  "showPreview": true,
+  "runner": "pyodide",
+  "template": "sql",
+  "packages": ["sqlite3"],
+  "packages": ["pytest", "sqlite3"],
+  "hideFiles": ["^setup.sql$", ".*.py$"],
+  "entryFile": "exercise.sql"
+}

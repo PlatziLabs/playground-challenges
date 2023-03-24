@@ -1,4 +1,5 @@
 export function wordExist(board, word) {
+
     
   let row = board.length;
   let column = board[0].length;
@@ -45,3 +46,4 @@ export function wordExist(board, word) {
 
   return resp;
 };
+
