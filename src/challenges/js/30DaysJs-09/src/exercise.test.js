@@ -39,4 +39,12 @@ describe("tests", () => {
     const rta = myMap(array, double);
     expect(rta).toEqual([]);
   });
+
+  it("should not use array methods", () => {
+    const originalArray = [1, 2, 3];
+    const double = (el) => el * 2;
+    const mapSpy = jest.spyOn(Array.prototype, 'map');
+    const doubledArray = myMap(originalArray, double);
+    expect(mapSpy).not.toHaveBeenCalled();
+  });
 });

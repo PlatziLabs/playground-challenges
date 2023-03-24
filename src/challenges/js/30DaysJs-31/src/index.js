@@ -38,7 +38,6 @@ import { Subscriber } from "./Subscriber";
       subscriberList.appendChild(li);
       emailInput.value = "";
     } catch (error) {
-      console.log(error)
       rtaElement.innerHTML = JSON.stringify(error, null, 1);
     }
   });

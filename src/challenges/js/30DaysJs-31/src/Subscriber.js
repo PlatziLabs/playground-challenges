@@ -1,4 +1,5 @@
 export class Subscriber {
+
   constructor(email) {
     this.articles = [];
     this.email = email;
