@@ -64,4 +64,39 @@ describe("tests", () => {
 
     expect(myArray.length).toBe(3);
   });
+
+  it("should not use array methods", () => {
+    const double = (el) => el * 2;
+    const isEven = (el) => el % 2 === 0;
+    const joinArray = (arr) => arr.join("-");
+    const pushSpy = jest.spyOn(Array.prototype, "push");
+    const popSpy = jest.spyOn(Array.prototype, "pop");
+    const shiftSpy = jest.spyOn(Array.prototype, "shift");
+    const unshiftSpy = jest.spyOn(Array.prototype, "unshift");
+    const mapSpy = jest.spyOn(Array.prototype, "map");
+    const filterSpy = jest.spyOn(Array.prototype, "filter");
+    const joinSpy = jest.spyOn(Array.prototype, "join");
+    
+    
+    const doubledArray = myArray.map(double);
+    expect(mapSpy).not.toHaveBeenCalled();
+    
+    const filteredArray = myArray.filter(isEven);
+    expect(filterSpy).not.toHaveBeenCalled();
+    
+    myArray.push(4);
+    expect(pushSpy).not.toHaveBeenCalled();
+    
+    myArray.pop();
+    expect(popSpy).not.toHaveBeenCalled();
+    
+    const joinedArray = joinArray(myArray);
+    expect(joinSpy).not.toHaveBeenCalled();
+    
+    myArray.shift();
+    expect(shiftSpy).not.toHaveBeenCalled();
+    
+    myArray.unshift(0);
+    expect(unshiftSpy).not.toHaveBeenCalled();
+    });
 });

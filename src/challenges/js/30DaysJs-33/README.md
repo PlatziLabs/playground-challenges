@@ -4,6 +4,8 @@ Tu objetivo es crear una clase que sea similar a un array nativo del lenguaje, p
 
 Entre los métodos disponibles en los arrays nativos, solo deberás implementar la lógica de los siguientes: `map`, `filter`, `join`, `push`, `pop`, `shift`, y `unshift`.
 
+No podrás usar los corchetes `[]`, aquí entenderás porque los arrays se consideran objetos ¡Buena suerte!
+
 Ejemplo 1:
 
 ```txt
