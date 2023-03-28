@@ -8,6 +8,7 @@ Debes imprimir los siguientes 3 bloques de información con el contenido de la t
 
 Tabla inicial:
 
+
 | id  |    nombre    | profe  | n_calificaciones |
 |-----|--------------|--------|-----------------:|
 |  1  | Curso de SQL | Israel |             1150 |
