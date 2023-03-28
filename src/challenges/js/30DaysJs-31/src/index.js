@@ -55,13 +55,4 @@ import { Subscriber } from "./Subscriber";
       rtaElement.innerHTML = JSON.stringify(error, null, 1);
     }
   });
-
-  // runBtn.addEventListener("click", () => {
-  //   try {
-  //     const rta = mergeArrays(arrayA, arrayB);
-  //     rtaElement.innerHTML = JSON.stringify(rta);
-  //   } catch (error) {
-  //     rtaElement.innerHTML = JSON.stringify(error, null, 1);
-  //   }
-  // });
 })();

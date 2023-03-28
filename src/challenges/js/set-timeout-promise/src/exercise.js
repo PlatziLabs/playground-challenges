@@ -1,5 +1,7 @@
 export function runCode() {
-  // Tu código aquí 👈
-  // Recuerda si usas setTimeout debes usarlo ejecutando window
-  // Ejemplo window.setTimeout(...)
+  return new Promise((resolve) => {
+    window.setTimeout(() => {
+      resolve('Hello, World!');
+    }, 2000);
+  });
 }
