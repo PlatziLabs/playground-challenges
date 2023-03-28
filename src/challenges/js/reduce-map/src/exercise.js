@@ -1,3 +1,5 @@
 export function calcTotal(orders) {
-  // Tu código aquí 👈
+  return orders
+    .map((item) => item.total)
+    .reduce((count, item) => count + item, 0);
 }

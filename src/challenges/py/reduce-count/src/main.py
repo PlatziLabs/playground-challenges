@@ -1,6 +1,7 @@
+from collections import Counter
+
 def counter_numbers(numbers):
-   # Escribe tu solución 👇
-   return []
+   return dict(Counter(numbers))
 
 numbers = [1, 2, 2, 3, 3, 3]
 response = counter_numbers(numbers)
