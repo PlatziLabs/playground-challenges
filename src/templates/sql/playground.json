@@ -5,7 +5,7 @@
   "runner": "pyodide",
   "template": "sql",
   "packages": ["sqlite3"],
-  "hideFiles": ["^setup.sql$", "*.py$"],
+  "hideFiles": ["^setup.sql$", ".*.py$"],
   "excludeFiles": ["^tests.py$"],
   "entryFile": "exercise.sql"
 }
