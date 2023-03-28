@@ -46,7 +46,6 @@ def run_sql(connection):
   except Exception as error:
     print("Error en exercise.sql")
     print(error)
-
   return outputs
 
 def run_test_sql(connection, query_str):
@@ -64,5 +63,4 @@ def run_test_sql(connection, query_str):
   except Exception as error:
     print("Error en el SQL de los tests")
     print(error)
-
   return output
