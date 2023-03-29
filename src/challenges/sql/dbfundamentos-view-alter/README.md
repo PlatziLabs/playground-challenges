@@ -1,5 +1,7 @@
 Debes imprimir los siguientes 4 bloques de información:
 
+> La tabla `people` ya tiene información cargada. No debes agregar nueva información, solo imprimirla.
+
 1.- Crear una vista en SQL basado en la tabla de `people` con los campos `person_id`, `last_name`, `first_name`:
 
 Crea una vista llamada `v_madrid_customers` que muestre únicamente el person_id, last_name, y first_name de todas las personas que vivan en la ciudad de "Madrid".
