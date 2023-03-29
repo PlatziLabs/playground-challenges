@@ -20,4 +20,3 @@ Nombres de las columnas en inglés:
 |--------------|----------|----------:|
 | Curso de SQL | Israel   |      1150 |
 | ...          | ...      |       ... |
-

@@ -13,16 +13,22 @@ const crearCombinaciones = (ip, index, ipActual, ipValidas) => {
   let ipPorValidar = '';
   for (let i = index; i < ip.length; i++) {
       ipPorValidar += ip[i];
-      if (!esValido(ipPorValidar)) continue;
+      if (!esValido(ip, index, ipPorValidar, ipActual)) continue;
       ipActual.push(ipPorValidar);
       crearCombinaciones(ip, i + 1, ipActual, ipValidas);
       ipActual.pop();
   }
 }
 
-const esValido = (ipPorValidar) => {
+const esValido = (ip, index, ipPorValidar, ipActual) => {
+  if (ipPorValidar == '0') return false;
   if (Number(ipPorValidar) > 255) return false;
   if (ipPorValidar.length > 1 && ipPorValidar[0] == '0') return false;
+
+  const remainingLength = ip.length - index;
+  if (ipActual.length == 3 && ipPorValidar.length < remainingLength) {
+      return false;
+  }
 
   return true;
 }
