@@ -14,7 +14,7 @@ VALUES
 (2,'monica','Moni','monica@platziblog.com'),
 (3,'laura','Lau','laura@platziblog.com'),
 (4,'edgar','Ed','edgar@platziblog.com'),
-(5,'perezoso','Oso Pérez','perezoso@platziblog.com');
+(5,'perezoso','Oso Perez','perezoso@platziblog.com');
 
 -- Categorías
 CREATE TABLE categorias (
