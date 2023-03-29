@@ -1,5 +1,5 @@
 {
-  "title": "Aprende a crear tu primera tabla en SQL",
+  "title": "Aprende a crear vistas y hacer modificaciones a tablas",
   "showFileExplorer": false,
   "showPreview": false,
   "runner": "pyodide",
