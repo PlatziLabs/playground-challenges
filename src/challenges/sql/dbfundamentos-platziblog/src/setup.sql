@@ -8,21 +8,13 @@ CREATE TABLE usuarios (
   PRIMARY KEY (id),
   UNIQUE(email)
 );
-  INSERT INTO usuarios
-  (id,login,password,nickname,email) 
-  VALUES (1,'israel','jc8209*(^GCHN_(hcLA','Israel','israel@com');
-  INSERT INTO usuarios
-  (id,login,password,nickname,email) 
-  VALUES (2,'monica','(*&^LKJDHC_(*#YDLKJHODG','Moni','monica@com');
-  INSERT INTO usuarios
-  (id,login,password,nickname,email) 
-  VALUES (3,'laura','LKDJ)_*(-c.M:\"[pOwHDˆåßƒ∂','Lau','laura@com');
-  INSERT INTO usuarios
-  (id,login,password,nickname,email) 
-  VALUES (4,'edgar','LLiy)CX*Y:M<A<SC_(*N>O','Ed','edgar@com');
-  INSERT INTO usuarios
-  (id,login,password,nickname,email) 
-  VALUES (5,'perezoso','&N_*JS)_Y)*(&TGOKS','Oso Pérez','perezoso@com');
+INSERT INTO usuarios (id,login,nickname,email) 
+VALUES
+(1,'israel','Israel','israel@platziblog.com'),
+(2,'monica','Moni','monica@platziblog.com'),
+(3,'laura','Lau','laura@platziblog.com'),
+(4,'edgar','Ed','edgar@platziblog.com'),
+(5,'perezoso','Oso Pérez','perezoso@platziblog.com');
 
 -- Categorías
 CREATE TABLE categorias (
