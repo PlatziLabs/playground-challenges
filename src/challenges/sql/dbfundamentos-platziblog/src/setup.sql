@@ -115,7 +115,6 @@ CREATE TABLE posts (
   INSERT INTO posts (id,titulo,fecha_publicacion,contenido,estatus,usuario_id,categoria_id) VALUES (61,'Escándalo en el mundo de la moda','2022-04-11 00:00:00','Publicación 61','activo',4,4);
   INSERT INTO posts (id,titulo,fecha_publicacion,contenido,estatus,usuario_id,categoria_id) VALUES (62,'Tenemos campeona del mundial de volleiball','2024-09-09 00:00:00','Publicación 62','inactivo',2,3);
   INSERT INTO posts (id,titulo,fecha_publicacion,contenido,estatus,usuario_id,categoria_id) VALUES (63,'Se descubre la unión entre astrofísica y fisica cuántica','2022-05-03 00:00:00','Publicación 63','inactivo',3,1);
-  INSERT INTO posts (id,titulo,fecha_publicacion,contenido,estatus,usuario_id,categoria_id) VALUES (64,'El post que se quedó huérfano','2029-08-08 00:00:00','Publicación 64','activo',NULL,NULL);
 
 -- Posts Etiquetas
 CREATE TABLE posts_etiquetas (
