@@ -13,7 +13,6 @@ def test_3_outputs():
   connection = sqlite3.connect(":memory:")
   utils = reload_module("utils")
   outputs = utils.run_sql(connection)
-  
   assert len(outputs) == 3
 
 def test_select_all():
@@ -23,7 +22,6 @@ def test_select_all():
   query0 = outputs[0]
   headers = query0["headers"]
   results = query0["results"]
-  
   assert 'id' in headers
   assert 'nombre' in headers
   assert 'profe' in headers
@@ -50,7 +48,6 @@ def test_select_renames():
   query2 = outputs[2]
   headers = query2["headers"]
   results = query2["results"]
-  
   assert len(headers) == 3
   assert 'name' in headers
   assert 'teacher' in headers
@@ -60,4 +57,3 @@ def test_select_renames():
   assert results[0]["n_reviews"] == 580
   assert results[1]["n_reviews"] == 180
   assert results[2]["n_reviews"] == 150
-

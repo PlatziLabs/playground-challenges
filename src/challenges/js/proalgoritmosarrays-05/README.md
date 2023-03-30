@@ -29,4 +29,3 @@ searchInRotatedArray(lista, objetivo);
 // Output
 3
 ```
-
