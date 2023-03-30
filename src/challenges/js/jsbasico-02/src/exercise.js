@@ -1,3 +1,3 @@
 export function solution(secreto) {
-  // Tu código aquí 👈
+  return 5 < secreto;
 }
