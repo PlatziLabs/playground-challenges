@@ -1,3 +1,5 @@
+import { getData } from "./api";
+
 export function solution() {
-  // Tu código aquí 👈
+  return getData().then(movies => movies);
 }
