@@ -1,10 +1,11 @@
 {
-  "title": "WHERE are the courses?",
+  "title": "Associated courses and teachers",
   "showFileExplorer": false,
-  "showPreview": true,
+  "showPreview": false,
   "runner": "pyodide",
   "template": "sql",
   "packages": ["sqlite3"],
   "hideFiles": ["^setup.sql$", ".*.py$"],
+  "excludeFiles": ["^tests.py$"],
   "entryFile": "exercise.sql"
 }
