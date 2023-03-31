@@ -2,27 +2,18 @@
 CREATE TABLE usuarios (
   id int(11) NOT NULL,
   login varchar(30) NOT NULL,
-  password varchar(32) NOT NULL,
   nickname varchar(40) NOT NULL,
   email varchar(40) NOT NULL,
   PRIMARY KEY (id),
   UNIQUE(email)
 );
-  INSERT INTO usuarios
-  (id,login,password,nickname,email) 
-  VALUES (1,'israel','jc8209*(^GCHN_(hcLA','Israel','israel@com');
-  INSERT INTO usuarios
-  (id,login,password,nickname,email) 
-  VALUES (2,'monica','(*&^LKJDHC_(*#YDLKJHODG','Moni','monica@com');
-  INSERT INTO usuarios
-  (id,login,password,nickname,email) 
-  VALUES (3,'laura','LKDJ)_*(-c.M:\"[pOwHDˆåßƒ∂','Lau','laura@com');
-  INSERT INTO usuarios
-  (id,login,password,nickname,email) 
-  VALUES (4,'edgar','LLiy)CX*Y:M<A<SC_(*N>O','Ed','edgar@com');
-  INSERT INTO usuarios
-  (id,login,password,nickname,email) 
-  VALUES (5,'perezoso','&N_*JS)_Y)*(&TGOKS','Oso Pérez','perezoso@com');
+INSERT INTO usuarios (id,login,nickname,email) 
+VALUES
+(1,'israel','Israel','israel@platziblog.com'),
+(2,'monica','Moni','monica@platziblog.com'),
+(3,'laura','Lau','laura@platziblog.com'),
+(4,'edgar','Ed','edgar@platziblog.com'),
+(5,'perezoso','Oso Perez','perezoso@platziblog.com');
 
 -- Categorías
 CREATE TABLE categorias (
@@ -124,7 +115,6 @@ CREATE TABLE posts (
   INSERT INTO posts (id,titulo,fecha_publicacion,contenido,estatus,usuario_id,categoria_id) VALUES (61,'Escándalo en el mundo de la moda','2022-04-11 00:00:00','Publicación 61','activo',4,4);
   INSERT INTO posts (id,titulo,fecha_publicacion,contenido,estatus,usuario_id,categoria_id) VALUES (62,'Tenemos campeona del mundial de volleiball','2024-09-09 00:00:00','Publicación 62','inactivo',2,3);
   INSERT INTO posts (id,titulo,fecha_publicacion,contenido,estatus,usuario_id,categoria_id) VALUES (63,'Se descubre la unión entre astrofísica y fisica cuántica','2022-05-03 00:00:00','Publicación 63','inactivo',3,1);
-  INSERT INTO posts (id,titulo,fecha_publicacion,contenido,estatus,usuario_id,categoria_id) VALUES (64,'El post que se quedó huérfano','2029-08-08 00:00:00','Publicación 64','activo',NULL,NULL);
 
 -- Posts Etiquetas
 CREATE TABLE posts_etiquetas (
@@ -191,5 +181,5 @@ CREATE TABLE posts_etiquetas (
   INSERT INTO posts_etiquetas (id,post_id,etiqueta_id) VALUES (52,63,17);
   INSERT INTO posts_etiquetas (id,post_id,etiqueta_id) VALUES (53,52,19);
 
-  
+
 -- Otras cosas
