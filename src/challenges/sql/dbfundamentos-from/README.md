@@ -15,7 +15,7 @@ Propiedades a imprimir en la consulta:
 - `teacher_id` (con el id del profe)
 - `teacher_name` (con el nombre del profe).
 
-> :bulb: En clases anteriores aprendiste a usar la instrucción `AS` para renombrar columnas en tus queries. Para renombrar columnas en consultas entre varias tablas puedes usar nombre_de_tabla.nombre_de_propidad (e.j. `SELECT courses.id AS id FROM ...`).
+> 💡 En clases anteriores aprendiste a usar la instrucción `AS` para renombrar columnas en tus queries. Para renombrar columnas en consultas entre varias tablas puedes usar nombre_de_tabla.nombre_de_propidad (e.j. `SELECT courses.id AS id FROM ...`).
 
 Validaciones para el query:
 
