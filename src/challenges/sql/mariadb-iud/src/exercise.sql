@@ -8,5 +8,3 @@ WHERE id = 1;
 
 DELETE FROM lines
 WHERE id = 5;
-
-SELECT * FROM lines;
