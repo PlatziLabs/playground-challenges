@@ -26,12 +26,10 @@ def test_check_view_exists():
     connection = sqlite3.connect(":memory:")
     utils = reload_module("utils")
     utils.run_sql(connection)
-    query = (
-        "SELECT * FROM sqlite_master WHERE type='view' AND name='v_madrid_customers'"
-    )
+    query = "SELECT * FROM sqlite_master WHERE type='view' AND name='v_customers'"
     output = utils.run_test_sql(connection, query)
     results = output["results"]
-    assert results[0]["name"] == "v_madrid_customers"
+    assert results[0]["name"] == "v_customers"
 
 
 def test_alter_table_add_column():
