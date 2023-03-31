@@ -1,3 +1,6 @@
 export function deepFreeze(obj) {
-  // Tu código aquí 👈
+  Object.keys(obj).forEach(prop => {
+    if (typeof obj[prop] === 'object') deepFreeze(obj[prop]);
+  });
+  return Object.freeze(obj);
 }

@@ -1,3 +1,11 @@
 export class Pay {
-  // Tu código aquí 👈
+
+  constructor() {}
+
+  makePay(quantity) {
+    return {
+      realized: true,
+      quantity,
+    };
+  }
 }

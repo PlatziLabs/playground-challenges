@@ -1,5 +1,20 @@
 export function oddEvenList(cabeza) {
-  // Escribe tu código aquí 👇
+  if (!cabeza || !cabeza.siguiente) {
+    return cabeza;
+  }
+
+  let impar = cabeza;
+  let par = cabeza.siguiente;
+  let cabezaPar = par;
+
+  while (par && par.siguiente) {
+      impar.siguiente = par.siguiente;
+      impar = impar.siguiente;
+      par.siguiente = impar.siguiente;
+      par = par.siguiente;
+  }
+
+  impar.siguiente = cabezaPar;
   return cabeza;
 }
 
