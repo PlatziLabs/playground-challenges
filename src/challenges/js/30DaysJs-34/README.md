@@ -12,7 +12,7 @@ La hashTable (`ContactList`) deberá tener los siguientes métodos:
 
 - `delete(name)`: este método recibirá el nombre de un contacto y eliminará dicho contacto de la hashTable, en caso de no encontrar el name debe retornar null.
 
-> Tienes la libertad de cambiar el método hash si así lo deseas, pero el código original ya tiene una implementación.
+> El código original ya tiene una implementación del método hash por lo que no te tienes que preocuparte por ello.
 
 Ejemplo 1:
 
