@@ -3,5 +3,11 @@
   "showFileExplorer": false,
   "showPreview": true,
   "template": "vanilla-js",
-  "runner": "sandpack"
+  "runner": "sandpack",
+  "hideFiles": [
+    ".*.test.js$",
+    "styles.css$",
+    "index.js$",
+    "index.html$"
+  ]
 }
