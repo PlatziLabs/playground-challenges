@@ -181,5 +181,4 @@ CREATE TABLE posts_etiquetas (
   INSERT INTO posts_etiquetas (id,post_id,etiqueta_id) VALUES (52,63,17);
   INSERT INTO posts_etiquetas (id,post_id,etiqueta_id) VALUES (53,52,19);
 
-  
--- Otras cosas
+
