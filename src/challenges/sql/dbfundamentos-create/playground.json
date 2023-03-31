@@ -7,7 +7,10 @@
   "packages": [
     "sqlite3"
   ],
-  "hideFiles": ["^setup.sql$", ".*.py$"],
+  "hideFiles": [
+    "^setup.sql$",
+    ".*.py$"
+  ],
   "excludeFiles": [
     "^tests.py$"
   ],

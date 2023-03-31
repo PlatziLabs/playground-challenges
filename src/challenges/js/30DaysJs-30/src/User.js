@@ -1,17 +1,20 @@
 export class User {
   constructor(name) {
-    // Tu código aquí 👈
+    this.name = name;
+    this.loggedIn = false;
   }
 
   login() {
-    // Tu código aquí 👈
+    this.loggedIn = true;
   }
 
   logout() {
-    // Tu código aquí 👈
+    this.loggedIn = false;
   }
 
   isLoggedIn() {
-    // Tu código aquí 👈
+    return this.loggedIn;
   }
 }
+
+

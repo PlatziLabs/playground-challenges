@@ -4,6 +4,7 @@ Los datos pueden venir de distintas maneras, pueden ser objetos, strings o array
 
 Si en algún momento llamamos a la función sin pasarle ningún parámetro esta nos devolverá el array con los datos de todos las mascotas introducidas.
 
+
 Input:
 
 ```js

@@ -1,3 +1,3 @@
 export function processPay(method, quantity) {
-  // Tu código aquí 👈
+  return method.makePay(quantity);
 }
