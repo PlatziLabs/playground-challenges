@@ -1,6 +1,16 @@
 def sum_numbers(raiz):
-   # Tu código aquí 👇
-   return raiz.valor
+   if not raiz: return 0
+   sumaTotal = dfs(raiz, "", 0)
+   return sumaTotal
+
+def dfs(raiz, caminoActual, sumaTotal):
+   if not raiz.izquierda and not raiz.derecha:
+      sumaTotal += int(caminoActual + str(raiz.valor))
+   if raiz.izquierda:
+      sumaTotal = dfs(raiz.izquierda, caminoActual + str(raiz.valor), sumaTotal)
+   if raiz.derecha:
+      sumaTotal = dfs(raiz.derecha, caminoActual + str(raiz.valor), sumaTotal)
+   return sumaTotal
 
 class Nodo:
    def __init__(self, x):
