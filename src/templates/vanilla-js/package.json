@@ -1,7 +1,7 @@
 {
   "name": "pg-js-template",
   "version": "1.0.0",
-  "source": "index.html",
+  "source": "./src/index.html",
   "main": "./src/index.js",
   "scripts": {
     "dev": "parcel",
