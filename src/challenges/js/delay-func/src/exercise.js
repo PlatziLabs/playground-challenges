@@ -1,3 +1,7 @@
 export function delay(time, message) {
-  // Tu código aquí 👈
+  return new Promise((resolve) => {
+    window.setTimeout(() => {
+      resolve(message);
+    }, time)
+  })
 }

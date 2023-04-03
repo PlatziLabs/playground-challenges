@@ -1,3 +1,3 @@
-export function filterOrders(arrays) {
-  // Tu código aquí 👈
+export function filterOrders(array) {
+  return array.filter((item) => item?.total >= 100 && item?.delivered)
 }

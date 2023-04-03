@@ -1,3 +1,8 @@
 export function updateArray(array, index, newValue) {
-  // Tu código aquí 👈
+  return array.map((item, i) => {
+    if (i === index) {
+      return newValue;
+    }
+    return item;
+  });
 }

@@ -1,3 +1,5 @@
 export function sortByDate(array) {
-  // Tu código aquí 👈
+  return array
+    .sort((a, b) => b.dateOfBirth.getTime() - a.dateOfBirth.getTime())
+    .map((item) => item.name);
 }
