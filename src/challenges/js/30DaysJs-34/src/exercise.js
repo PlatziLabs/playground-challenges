@@ -59,4 +59,5 @@ export class ContactList {
         return;
       }
     }
+  }
 }
