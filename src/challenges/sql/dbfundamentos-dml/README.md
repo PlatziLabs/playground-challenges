@@ -43,7 +43,8 @@ WHERE condition;
 
 4.- Tu reto será escribir una consulta `UPDATE` que actualice el registro con el `id` "2" en la tabla `students`, el registro a actualizar debe incluir los siguientes valores.
 
-- `correo_electronico`: "nuevo_correo@gmail.com"
+
+- `edad`: 55
 
 Con esta consulta, podrás ver cómo se utiliza la sintaxis UPDATE para actualizar un registro en una tabla.
 
