@@ -10,15 +10,15 @@ Crea una tabla `comentarios` con las columnas `id`, `cuerpo_comentario`, `usuari
 
 - Reto 2: agrega registros
 
-Inserta al menos 3 comentarios en la tabla. Puedes escribir tantos comentarios como quieras, pero asegúrate de que en solo 2 el `usuario_id` sea `43`.
+Inserta al menos 3 comentarios en la tabla. Puedes escribir tantos comentarios como quieras. Asegúrate de que solo en 2 el `usuario_id` sea `1`.
 
 - Reto 3: imprime registros
 
 Imprime todas las columnas de todos los registros de la tabla `comentarios`.
 
-- Reto 4: imprime registros del usuario `43`
+- Reto 4: imprime registros del usuario `1`
 
-Selecciona los 2 comentarios del usuario `43`. Haz un `JOIN` para conseguir la información del post relacionado con la propiedad `post_id` y el usuario rerlacionado con la propiedad `usuario_id`. Imprime la propiedad `comentarios.cuerpo_comentario` como `comentario`, `usuarios.login` como `usuario` y `posts.titulo` como `post`.
+Selecciona los 2 comentarios del usuario `1`. Haz un `JOIN` para conseguir la información del post relacionado con la propiedad `post_id` y el usuario rerlacionado con la propiedad `usuario_id`. Imprime la propiedad `comentarios.cuerpo_comentario` como `comentario`, `usuarios.login` como `usuario` y `posts.titulo` como `post`.
 
 | comentario | usuario | post |
 |:----------:|:-------:|:----:|
