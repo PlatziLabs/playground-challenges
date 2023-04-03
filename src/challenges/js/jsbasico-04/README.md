@@ -1,4 +1,4 @@
-En eeste desafío vas a recibir un parámetro `arraySecreto` en la función `solution`. Debes retornar `true` si el primer elemento del `arraySecreto` es de tipo `string` y debes retornar `false` si es de cualquier otro tipo.
+En este desafío vas a recibir un parámetro `arraySecreto` en la función `solution`. Debes retornar `true` si el primer elemento del `arraySecreto` es de tipo `string` y debes retornar `false` si es de cualquier otro tipo.
 
 Input
 
