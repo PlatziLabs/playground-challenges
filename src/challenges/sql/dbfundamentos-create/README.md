@@ -9,10 +9,11 @@ Debes crear una tabla de datos que permita almacenar información sobre personas
 > Cualquier tabla puedes crearla de la siguiente manera:
 
 ```sql
-CREATE TABLE IF NOT EXISTS "albums"
-(
-    [AlbumId] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-    [Title] NVARCHAR(160)  NOT NULL,
-    [ArtistId] INTEGER  NOT NULL
+CREATE TABLE COMPANY(
+   ID INT PRIMARY KEY AUTOINCREMENT NOT NULL,
+   NAME           TEXT    NOT NULL,
+   AGE            INT     NOT NULL,
+   ADDRESS        CHAR(50),
+   SALARY         REAL
 );
 ```
