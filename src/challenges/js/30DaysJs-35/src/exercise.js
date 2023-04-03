@@ -1,3 +1,3 @@
 export function removeDuplicates(values) {
-  // Tu código aquí 👈
+  return Array.from(new Set(values));
 }
