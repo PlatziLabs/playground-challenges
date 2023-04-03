@@ -49,10 +49,18 @@ def run_sql(connection):
                     results = get_json(headers, execute.fetchall())
                     output_dict = {"headers": headers, "results": results}
                     outputs.append(output_dict)
-                elif re.findall(r"delete.*from.*students.*where.*id.*=.*1;", str(query), re.IGNORECASE | re.DOTALL):
+                elif re.findall(
+                    r"delete.*from.*students.*where.*id.*=.*1;",
+                    str(query),
+                    re.IGNORECASE | re.DOTALL,
+                ):
                     output_dict = {"deleted": "true"}
                     outputs.append(output_dict)
-                elif re.findall(r"update.*students.*SET.*edad.*=.*55.*WHERE.*id.*=.*2;",str(query),re.IGNORECASE | re.DOTALL):
+                elif re.findall(
+                    r"update.*students.*set.*edad.*=.*55.*where.*id.*=.*2;",
+                    str(query),
+                    re.IGNORECASE | re.DOTALL,
+                ):
                     output_dict = {"updated": "true"}
                     outputs.append(output_dict)
             except sqlite3.OperationalError as error:
