@@ -4,8 +4,8 @@
   "showPreview": false,
   "runner": "pyodide",
   "template": "python",
-  "packages": ["pytest"],
-  "hideFiles": [],
-  "ignoreFiles": ["^tests.py$"],
+  "packages": [],
+  "hideFiles": [".*_test.py$"],
+  "excludeFiles": ["^tests.py$"],
   "entryFile": "main.py"
 }

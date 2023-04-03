@@ -1,15 +1,12 @@
-En este desafío debes implementar la lógica de un planificador de tareas.
+En este desafío, debes implementar la lógica de un planificador de tareas que permita agregar, eliminar y marcar como completadas las tareas, así como también mostrar un registro de las mismas. Para ello, debes construir la lógica de la función closure llamada `createTaskPlanner` para que devuelva los siguientes métodos:
 
-El planificador de tareas nos debe permitir agregar, eliminar y marcar como completadas tareas, así como también mostrar unos registros de las mismas. Para ello, se debe crear una función `createTaskPlanner` que devuelva un objeto con las siguientes propiedades y métodos:
-
-- `tasks`: un array vacío que almacenará las tareas pendientes con un formato específico como un objeto con propiedades `id`, `name`, `priority`, `tags` y `completed`. El estado completed debe ser agregado automáticamente como false al momento de agregar una tarea.
-- `addTask(task)`: recibe un objeto con la tarea y la agregue al array de tareas.
+- `addTask(task)`: recibe un objeto que contiene la tarea y la agrega al array de tareas. La tarea debe estar conformada por las siguientes propiedades: `id`, `name`, `priority`, `tags` y `completed`, donde el estado `completed` se agrega automáticamente como falso al momento de agregar una tarea.
 - `removeTask(value)`: recibe el id o nombre de la tarea y la elimina del array de tareas.
 - `getTasks()`: Devuelve el array de tareas.
 - `getPendingTasks()`: Devuelve solo las tareas pendientes.
 - `getCompletedTasks()`: Devuelve solo las tareas completadas.
 - `markTaskAsCompleted(value)`: Recibe el id o nombre de la tarea y la marca como completada.
-- `sortTasksByPriority()`: Devuelve una copia de las tareas ordenadas según su prioridad (3: poco urgente, 2: urgente, 1: muy urgente), sin modificar la lista de tareas original.
+- `getSortedTasksByPriority()`: Devuelve una copia de las tareas ordenadas según su prioridad (3: poco urgente, 2: urgente, 1: muy urgente), sin modificar la lista de tareas original.
 - `filterTasksByTag(tag)`: Filtra las tareas por una etiqueta específica.
 - `updateTask(taskId, updates)`: Buscar la tarea correspondiente con el id especificado y actualizar sus propiedades con las especificadas en el objeto updates.
 

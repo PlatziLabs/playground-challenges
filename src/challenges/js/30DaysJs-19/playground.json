@@ -1,8 +1,15 @@
 {
-
-  "title": "Protege los datos del perro",
+  "title": "Congela el objeto recursivamente",
   "showFileExplorer": false,
   "showPreview": true,
   "template": "vanilla-js",
-  "runner": "sandpack"
+ "runner": "sandpack",
+  "entryFile": "exercise.js",
+  "excludeFiles": [],
+  "hideFiles": [
+    ".*.test.js$",
+    "styles.css$",
+    "index.js$",
+    "index.html$"
+  ]
 }
