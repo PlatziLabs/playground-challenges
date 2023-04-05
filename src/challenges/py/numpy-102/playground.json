@@ -5,7 +5,7 @@
   "runner": "pyodide",
   "template": "python",
   "packages": ["pytest", "numpy"],
-  "hideFiles": [".*_test.py$"],
+  "hideFiles": [],
   "excludeFiles": ["^tests.py$"],
   "entryFile": "main.py"
 }
