@@ -12,6 +12,8 @@ Los métodos que deberás implementar son los siguientes
 
 - removeAt(index): este método elimina el nodo en el index especificado y retorna el valor.
 
+> Las pruebas harán uso del método toArray() para comparar resultados.
+
 Ejemplo 1:
 
 ```txt
@@ -59,6 +61,8 @@ linkedList.append(2);
 linkedList.append(3);
 
 linkedList.removeAt(1);
+
+linkedList.toArray()
 
 Output:
 [1, 3]
