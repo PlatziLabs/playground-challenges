@@ -26,7 +26,7 @@ Deberás implementar la lógica de las siguientes claseslas siguientes propiedad
 `Authorization` (`Authorization.js`)
 - checkAuthorization(): un método el cual verificará si un ususario está autorizado para completar una tarea.
 
-- `TaskDecorator` (`TaskDecorator.js`)
+`TaskDecorator` (`TaskDecorator.js`)
 - task: recibirá una tarea ya hecha con la clase de `Task`
 - deadline: fecha limite para completar la tarea en el siguiente formato (AAAA-MM-DD)
 - priority: prioridad para completar la tarea (high, medium o low)
@@ -48,6 +48,7 @@ Deberás implementar la lógica de las siguientes claseslas siguientes propiedad
 Ejemplo 1:
 
 ```txt
+
 Input:
 const taskManager1 = TaskManager.getInstance();
 const taskManager2 = TaskManager.getInstance();
@@ -55,10 +56,13 @@ const taskManager2 = TaskManager.getInstance();
 taskManager1 === taskManager2
 
 Output: true
+
 ```
 
 Ejemplo 2
+
 ```txt
+
 Input:
 const taskManager = TaskManager.getInstance();
 const mockTask = new Task(1, "Mock task")
@@ -75,6 +79,7 @@ Output:
 
 Ejemplo 3:
 ```txt
+
 Input:
 const authorization = new Authorization()
 const user1 = new User("Juan")
@@ -91,6 +96,7 @@ Error("No autorizado")
 
 Ejemplo 4:
 ```txt
+
 Input:
 const task = new Task('5', 'Pasear al perro')
 const taskDecorator = new TaskDecorator(task, { deadline: '2023-03-31', priority: 'alta' })
