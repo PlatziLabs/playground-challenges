@@ -48,6 +48,7 @@ Deberás implementar la lógica de las siguientes claseslas siguientes propiedad
 Ejemplo 1:
 
 ```txt
+
 Input:
 const taskManager1 = TaskManager.getInstance();
 const taskManager2 = TaskManager.getInstance();
@@ -55,10 +56,13 @@ const taskManager2 = TaskManager.getInstance();
 taskManager1 === taskManager2
 
 Output: true
+
 ```
 
 Ejemplo 2
+
 ```txt
+
 Input:
 const taskManager = TaskManager.getInstance();
 const mockTask = new Task(1, "Mock task")
@@ -74,7 +78,9 @@ Output:
 ```
 
 Ejemplo 3:
+
 ```txt
+
 Input:
 const authorization = new Authorization()
 const user1 = new User("Juan")
@@ -90,7 +96,9 @@ Error("No autorizado")
 ```
 
 Ejemplo 4:
+
 ```txt
+
 Input:
 const task = new Task('5', 'Pasear al perro')
 const taskDecorator = new TaskDecorator(task, { deadline: '2023-03-31', priority: 'alta' })
