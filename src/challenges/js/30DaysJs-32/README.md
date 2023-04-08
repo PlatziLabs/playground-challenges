@@ -78,6 +78,7 @@ Output:
 ```
 
 Ejemplo 3:
+
 ```txt
 
 Input:
@@ -95,6 +96,7 @@ Error("No autorizado")
 ```
 
 Ejemplo 4:
+
 ```txt
 
 Input:
