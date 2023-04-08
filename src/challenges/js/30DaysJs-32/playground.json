@@ -1,0 +1,15 @@
+{
+  "title": "Crea un task manager con patrones de diseño",
+  "showFileExplorer": false,
+  "showPreview": false,
+  "template": "vanilla-js",
+  "runner": "sandpack",
+  "entryFile": "exercise.js",
+  "excludeFiles": [],
+  "hideFiles": [
+    ".*.test.js$",
+    "styles.css$",
+    "index.js$",
+    "index.html$"
+  ]
+}
