@@ -7,7 +7,7 @@ describe("Playlist", () => {
     playlist = new Playlist();
   });
 
-  test("adds a song to an empty playlist", () => {
+  it("adds a song to an empty playlist", () => {
     playlist.addSong("Bohemian Rhapsody");
 
     expect(playlist.top.value).toBe("Bohemian Rhapsody");
@@ -15,7 +15,7 @@ describe("Playlist", () => {
     expect(playlist.length).toBe(1);
   });
 
-  test("adds a song to a non-empty playlist", () => {
+  it("adds a song to a non-empty playlist", () => {
     playlist.addSong("Bohemian Rhapsody");
     playlist.addSong("Stairway to Heaven");
 
@@ -24,13 +24,13 @@ describe("Playlist", () => {
     expect(playlist.length).toBe(2);
   });
 
-  test("throws an error if the playlist is empty", () => {
+  it("throws an error if the playlist is empty", () => {
     expect(() => {
       playlist.playSong();
     }).toThrow("No hay canciones en la playlist");
   });
 
-  test("plays and removes the top song from the playlist", () => {
+  it("should plays and removes the top song from the playlist", () => {
     playlist.addSong("Bohemian Rhapsody");
     playlist.addSong("Stairway to Heaven");
 
@@ -47,13 +47,27 @@ describe("Playlist", () => {
     expect(playlist.length).toBe(0);
   });
 
-  test("returns an empty array for an empty playlist", () => {
+  it("should returns an empty array for an empty playlist", () => {
     const songs = playlist.getPlaylist();
 
     expect(songs).toEqual([]);
   });
 
-  test("returns an array of songs in reverse order of addition", () => {
+  it("should return an array of songs in reverse order of addition", () => {
+    playlist.addSong("Bohemian Rhapsody");
+    playlist.addSong("Stairway to Heaven");
+    playlist.addSong("Hotel California");
+
+    const songs = playlist.getPlaylist();
+
+    expect(songs).toEqual([
+      "Hotel California",
+      "Stairway to Heaven",
+      "Bohemian Rhapsody",
+    ]);
+  });
+
+  it("returns an array of songs in reverse order of addition", () => {
     playlist.addSong("Bohemian Rhapsody");
     playlist.addSong("Stairway to Heaven");
     playlist.addSong("Hotel California");

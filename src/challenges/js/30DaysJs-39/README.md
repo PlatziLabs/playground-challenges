@@ -1,8 +1,8 @@
-En este ejercicio, el objetivo es implementar una playlist de un servicio de música utilizando un stack en JavaScript.
+En este ejercicio, el objetivo es implementar una playlist de un servicio de música utilizando un stack.
 
-Crea una clase Playlist que tenga como propiedad un stack vacío.
+Deberás implementar la lógica de la clase `Playlist` la cual deberá tener las siguientes 3 propiedades `top`, `bottom` y `length` para poder desarrollar el stack.
 
-- addSong(song): este método debe permitir agregar una canción a la pila.
+- addSong(song): este método debe permitir agregar una canción al stack.
 
 - playSong(): este método debe permitir reproducir la canción que está en el tope del stack y luego eliminarla. Si el stack está vacío, deberá lanzar un error con el mensaje "No hay canciones en la lista".
 
@@ -26,8 +26,6 @@ playlist.playSong();
 Output: "Hotel California"
 playlist.playSong();
 Output: Error: No hay canciones en la lista
-
-playlist.getPlaylist(); // ["Hotel California", "Stairway to Heaven", "Bohemian Rhapsody"]
 ```
 
 Ejemplo 2:
