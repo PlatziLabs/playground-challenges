@@ -60,7 +60,6 @@ import { PatientList } from "./exercise";
     patientList.addPatient("Maria", 25);
     reloadTable(patientList);
   } catch (err) {
-    console.log(err);
     error.textContent = err.message;
   }
 
@@ -117,16 +116,4 @@ import { PatientList } from "./exercise";
       `;
     });
   }
-
-  const runBtn = document.getElementById("btn");
-  const rtaElement = document.getElementById("rta");
-
-  runBtn.addEventListener("click", () => {
-    try {
-      const rta = mergeArrays(arrayA, arrayB);
-      rtaElement.innerHTML = JSON.stringify(rta);
-    } catch (error) {
-      rtaElement.innerHTML = JSON.stringify(error, null, 1);
-    }
-  });
 })();
