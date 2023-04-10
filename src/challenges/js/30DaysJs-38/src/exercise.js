@@ -1,32 +1,35 @@
 import { Node } from "./Node";
 
-export class patientList {
-  constructor(beds){
-    this.head = null
-    this.tail = null
-    this.bedsAvailable = beds
-  }
-
-  addPatient(name, age){
-    if(this.bedsAvailable === 0){
-      throw new Error("No hay camas disponibles")
-    }
-
-    const newPatient = new Node(name, age, beds - this.bedsAvailable + 1)
-    this.bedsAvailable--
-
-    if(!this.head){
-      this.head = newPatient
-      this.tail = newPatient
-    }else{
-      this.tail.next = newPatient
-      this.tail = newPatient
+export class PatientList {
+  constructor(beds) {
+    this.head = null;
+    this.tail = null;
+    this.bedsAvailable = Array.from({ length: beds });
+    for (let i = 0; i < beds; i++) {
+      this.bedsAvailable[i] = i + 1;
     }
   }
 
-  removePatient(name){
-    if(!this.head){
-      throw new Error("Paciente no encontrado")
+  addPatient(name, age) {
+    if (this.bedsAvailable.length === 0) {
+      throw new Error("No hay camas disponibles");
+    }
+
+    const newPatient = new Node(name, age, this.bedsAvailable[0]);
+    this.bedsAvailable.shift();
+
+    if (!this.head) {
+      this.head = newPatient;
+      this.tail = newPatient;
+    } else {
+      this.tail.next = newPatient;
+      this.tail = newPatient;
+    }
+  }
+
+  removePatient(name) {
+    if (!this.head) {
+      throw new Error("Paciente no encontrado");
     }
     let current = this.head;
     let prev = null;
@@ -39,7 +42,7 @@ export class patientList {
           prev.next = current.next;
         }
 
-        this.bedsAvailable++;
+        this.bedsAvailable.push(current.bedNumber);
         return;
       }
 
@@ -50,8 +53,8 @@ export class patientList {
     throw new Error("Paciente no encontrado");
   }
 
-  getPatient(name){
-    let current = this.head
+  getPatient(name) {
+    let current = this.head;
 
     while (current) {
       if (current.name === name) {
@@ -61,14 +64,14 @@ export class patientList {
           bedNumber: current.bedNumber,
         };
       }
-    
+
       current = current.next;
     }
-    
+
     throw new Error("Paciente no encontrado");
   }
 
-  getPatientList(){
+  getPatientList() {
     const patients = [];
     let current = this.head;
 
@@ -83,5 +86,9 @@ export class patientList {
     }
 
     return patients;
+  }
+
+  getAvailableBeds() {
+    return this.bedsAvailable.length;
   }
 }
