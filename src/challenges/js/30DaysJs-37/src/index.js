@@ -6,7 +6,7 @@ import { LinkedListRecharged } from "./exercise";
   linkedList.append(1);
   linkedList.append(2);
   linkedList.append(3);
-  console.log(linkedList)
+
   document.getElementById("app").innerHTML = `
     <h3>Singly linked list</h3>
     <form id="form-first" >
