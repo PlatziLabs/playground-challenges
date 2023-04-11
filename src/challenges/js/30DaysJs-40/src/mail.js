@@ -1,9 +1,9 @@
 export class Mail {
-  constructor(from, to, subject, body) {
+  constructor(from, to, body, subject) {
     this.from = from;
     this.to = to;
-    this.subject = subject;
     this.body = body;
+    this.subject = subject;
     this.next = null;
   }
 }
