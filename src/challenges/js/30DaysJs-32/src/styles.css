@@ -5,3 +5,13 @@ pre {
   max-width: 100%;
   white-space: pre-wrap;
 }
+
+table, tr, th, td{
+  display: block;
+  text-align: center;
+  margin: 4px;
+}
+
+tr{
+  border: 1px solid black;
+}
