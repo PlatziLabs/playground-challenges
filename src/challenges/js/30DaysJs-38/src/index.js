@@ -117,16 +117,4 @@ import { PatientList } from "./exercise";
       `;
     });
   }
-
-  const runBtn = document.getElementById("btn");
-  const rtaElement = document.getElementById("rta");
-
-  runBtn.addEventListener("click", () => {
-    try {
-      const rta = mergeArrays(arrayA, arrayB);
-      rtaElement.innerHTML = JSON.stringify(rta);
-    } catch (error) {
-      rtaElement.innerHTML = JSON.stringify(error, null, 1);
-    }
-  });
 })();
