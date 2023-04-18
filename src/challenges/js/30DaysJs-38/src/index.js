@@ -60,7 +60,6 @@ import { PatientList } from "./exercise";
     patientList.addPatient("Maria", 25);
     reloadTable(patientList);
   } catch (err) {
-    console.log(err);
     error.textContent = err.message;
   }
 

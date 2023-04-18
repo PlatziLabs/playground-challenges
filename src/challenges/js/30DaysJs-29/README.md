@@ -17,8 +17,10 @@ Input:
 const basicProduct = new BasicProduct(100, "Camisa de algodón");
 const withWarranty = new WarrantyDecorator(basicProduct);
 const withShippingInsurance = new ShippingInsuranceDecorator(withWarranty);
+
 console.log(withShippingInsurance.getPrice());
 console.log(withShippingInsurance.getDescription());
+
 Output:
 140
 "Camisa de algodón con garantía con seguro de envío"
@@ -30,8 +32,10 @@ Ejemplo 2:
 Input:
 const basicProduct = new BasicProduct(5000, "Refrigerador");
 const withWarranty = new WarrantyDecorator(basicProduct);
+
 console.log(withWarranty.getPrice());
 console.log(withWarranty.getDescription());
+
 Output:
 5020
 "Refrigerador con garantía"
@@ -43,8 +47,10 @@ Ejemplo 3:
 Input:
 const basicProduct = new BasicProduct(5000, "Refrigerador");
 const withShippingInsurance = new ShippingInsuranceDecorator(basicProduct);
+
 console.log(withShippingInsurance.getPrice());
 console.log(withShippingInsurance.getDescription());
+
 Output:
 5020
 "Refrigerador con seguro de envío"
