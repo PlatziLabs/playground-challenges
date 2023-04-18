@@ -34,5 +34,8 @@ export class Cart {
     return total;
   }
   
+  getProducts(){
+    return this.products
+  }
 }
 

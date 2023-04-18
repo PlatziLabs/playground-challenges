@@ -26,6 +26,7 @@ Deberás implementar la lógica de las siguientes claseslas siguientes propiedad
 `Authorization` (`Authorization.js`)
 - checkAuthorization(): un método el cual verificará si un ususario está autorizado para completar una tarea.
 
+
 - `TaskDecorator` (`TaskDecorator.js`)
 - task: recibirá una tarea ya hecha con la clase de `Task`
 - deadline: fecha limite para completar la tarea en el siguiente formato (AAAA-MM-DD)

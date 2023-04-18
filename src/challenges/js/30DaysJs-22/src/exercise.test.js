@@ -26,16 +26,18 @@ describe("tests", () => {
 
   it("Should add a product to cart", () => {
     cart.addProduct(book);
-    expect(cart.products.length).toEqual(1);
-    expect(cart.products[0]).toEqual(book);
+    const currentProducts = cart.getProducts()
+    expect(currentProducts.length).toEqual(1);
+    expect(currentProducts[0]).toEqual(book);
   });
 
   it("should delete a product from the cart", () => {
     cart.addProduct(book);
     cart.addProduct(course);
     cart.deleteProduct(book);
-    expect(cart.products.length).toEqual(1);
-    expect(cart.products[0]).toEqual(course);
+    const currentProducts = cart.getProducts()
+    expect(currentProducts.length).toEqual(1);
+    expect(currentProducts[0]).toEqual(course);
   });
 
   it("should calculate the cart total", () => {
