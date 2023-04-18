@@ -2,22 +2,31 @@ import { Task } from "./exercise";
 
 export class TaskManager {
   constructor() {
-     // Tu código aquí 👈
+    this.tasks = []
   }
 
   static getInstance() {
-     // Tu código aquí 👈
+    if (!TaskManager.instance) {
+      TaskManager.instance = new TaskManager();
+    }
+    return TaskManager.instance;
   }
 
   addTask(task){
-     // Tu código aquí 👈
+    this.tasks.push(task)
   }
 
   getTasks(){
-     // Tu código aquí 👈
+    return this.tasks
   }
 
   getTaskById(id){
-     // Tu código aquí 👈
+    const task = this.tasks.filter(task => task.id === id)[0]
+    if(task){
+      return task
+    }
+
+    return null
   }
+
 }
