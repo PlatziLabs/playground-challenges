@@ -2,34 +2,42 @@ import { Task } from "./exercise";
 
 export class TaskBuilder {
   constructor() {
-     // Tu código aquí 👈
+    this.task = new Task();
   }
 
   setId(id) {
-     // Tu código aquí 👈
+    this.task.id = id;
+    return this;
   }
 
   setDescription(description) {
-     // Tu código aquí 👈
+    this.task.description = description;
+    return this;
   }
 
   setCompleted(completed) {
-     // Tu código aquí 👈
+    this.task.completed = completed;
+    return this;
   }
 
   setUsers(users) {
-     // Tu código aquí 👈
+    for (const user of users) {
+      this.task.assignUser(user);
+    }
+    return this;
   }
 
   setDeadline(deadline) {
-     // Tu código aquí 👈
+    this.task.deadline = deadline;
+    return this;
   }
 
   setPriority(priority) {
-     // Tu código aquí 👈
+    this.task.priority = priority;
+    return this;
   }
 
   build() {
-     // Tu código aquí 👈
+    return this.task;
   }
 }

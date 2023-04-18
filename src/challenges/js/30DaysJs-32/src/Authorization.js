@@ -1,5 +1,7 @@
 export class Authorization {
   checkAuthorization(user, task) {
-    // Tu código aquí 👈
+    if (!task.users.includes(user)) {
+      throw new Error("No autorizado");
+    }
   }
 }

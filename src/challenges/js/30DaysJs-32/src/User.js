@@ -1,9 +1,9 @@
 export class User {
   constructor(name) {
-     // Tu código aquí 👈
+    this.name = name;
   }
 
   notify(task) {
-     // Tu código aquí 👈
+    console.log(`Usuario ${this.name}: La tarea "${task.description}" ha sido completada.`);
   }
 }
