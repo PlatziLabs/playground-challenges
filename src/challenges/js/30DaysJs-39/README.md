@@ -19,11 +19,11 @@ playlist.addSong("Stairway to Heaven");
 playlist.addSong("Hotel California");
 
 playlist.playSong();
-Output: "Bohemian Rhapsody"
+Output: "Hotel California"
 playlist.playSong();
 Output: "Stairway to Heaven"
 playlist.playSong();
-Output: "Hotel California"
+Output: "Bohemian Rhapsody"
 playlist.playSong();
 Output: Error: No hay canciones en la lista
 ```

@@ -12,7 +12,7 @@ La clase PayPal debe recibir un email en el constructor y el método makePay deb
 - `platform: "PayPal"`
 - `email: $EmailRecibido`.
 
-La clase Card recibirá un número de tarjeta de 16 dígitos. Al momento de acceder al método makePay, se validará si la tarjeta en cuestión tiene esa longitud. En caso de no tener los 16 dígitos, se debe retornar un error. En caso contrario, al método que proviene de Pay, se le agregará la propiedad de lastCardNumber: donde se devolverán los últimos 4 dígitos de la tarjeta.
+La clase Card recibirá un número de tarjeta de 16 dígitos. Al momento de acceder al método makePay, se validará si la tarjeta en cuestión tiene esa longitud. En caso de no tener los 16 dígitos, se debe retornar un error. En caso contrario, al método que proviene de Pay, se le agregará la propiedad de `lastCardNumbers`: donde se devolverán los últimos 4 dígitos de la tarjeta.
 
 La clase `Cash` simplemente nos devolverá lo mismo que la clase base.
 
