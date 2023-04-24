@@ -10,6 +10,8 @@ Además, la clase Chat deberá contener los siguientes métodos:
 
 - `removeUser(name)`: Este método te permitirá eliminar un usuario de la lista por su nombre.
 
+Y deberás almacenar los usuarios en una propiedad llamada `users`.
+
 Ejemplo 1:
 
 ```txt
