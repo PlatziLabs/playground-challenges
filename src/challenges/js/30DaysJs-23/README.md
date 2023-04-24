@@ -21,8 +21,8 @@ Ejemplo 1:
 
 Input:
 
-const usuario1 = new Usuario("Juan", 20);
-const usuario2 = new Usuario("Maria", 25);
+const usuario1 = new User("Juan", 20);
+const usuario2 = new User("Maria", 25);
 usuario1.addFriend(usuario2);
 usuario1.sendMessage("Hola Maria!", usuario2);
 
@@ -40,7 +40,7 @@ Ejemplo 2:
 
 Input:
 
-const usuario1 = new Usuario("Juan", 20);
+const usuario1 = new User("Juan", 20);
 usuario1.name = "Pepito"
 console.log(usuario1.name)
 

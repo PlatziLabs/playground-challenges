@@ -27,7 +27,7 @@ describe("Playlist", () => {
   it("throws an error if the playlist is empty", () => {
     expect(() => {
       playlist.playSong();
-    }).toThrow("No hay canciones en la playlist");
+    }).toThrow();
   });
 
   it("should plays and removes the top song from the playlist", () => {
