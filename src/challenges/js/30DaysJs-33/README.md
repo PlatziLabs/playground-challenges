@@ -18,7 +18,7 @@ Ejemplo 1:
 
 ```txt
 
-Input:
+Input:  
 
 const myArray = new MyArray()
 
@@ -27,9 +27,11 @@ myArray.push(2);
 myArray.push(3);
 
 console.log(myArray.data)
+console.log(myArray.length)
 
-Output: { 0: 1, 1: 2, 2: 3 }
-
+Output: 
+{ 0: 1, 1: 2, 2: 3 }
+3
 ```
 
 Ejemplo 2:
