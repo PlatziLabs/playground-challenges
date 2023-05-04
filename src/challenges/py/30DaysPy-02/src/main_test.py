@@ -1,4 +1,12 @@
 from main import is_leap_year
+from importlib import reload, import_module
+import shutil
+
+def reload_module(name):
+  module = import_module(name)
+  shutil.rmtree("__pycache__", ignore_errors=True)
+  reload(module)
+  return module
 
 def test_leap_years():
     assert is_leap_year(2000) == True
