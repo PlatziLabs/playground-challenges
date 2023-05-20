@@ -17,3 +17,18 @@ Output:
 {5: 2, 6: 2, 7: 1, 10: 1}
 
 ```
+
+Ejemplo 2:
+
+```txt
+Input:
+count_words_by_length([
+  "apple",
+  "banana",
+  "orange"
+])
+
+Output:
+{5: 1, 6: 2}
+
+```
