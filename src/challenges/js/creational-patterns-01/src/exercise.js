@@ -1,27 +1,33 @@
-export function runSimulation({
-  liquidFuelRocketFactory,
-  solidFuelRocketFactory,
-}) {
-  // Liquid fuel rocket
-  const liquidFuelRocket = liquidFuelRocketFactory.createRocket();
+/**
+ * Note: we encourage check the tests file first before you go
+ * with the solution to the challange.
+ *
+ * This will help you to determine which work must be done, this
+ * could be an initial approach to TDD (Test Driven Development).
+ */
 
-  // Solid fuel rocket
-  const solidFuelRocket = solidFuelRocketFactory.createRocket();
-
-  return { liquid: liquidFuelRocket, solid: solidFuelRocket };
-}
-
-export class Rocket {
+class Rocket {
   constructor({ model, engine, category, nozzle }) {
-    this.model = model;
-    this.engine = engine;
-    this.category = category;
-    this.nozzle = nozzle;
+    // Your code goes here...
+  }
+
+  get model() {
+    // Your code goes here...
+  }
+
+  get engine() {
+    // Your code goes here...
+  }
+
+  get category() {
+    // Your code goes here...
+  }
+
+  get nozzle() {
+    // Your code goes here...
   }
 }
 
-export class RocketFactory {
-  createRocket() {
-    return new Error('Not available at this moment!');
-  }
+class RocketFactory {
+  // Your code goes here...
 }
