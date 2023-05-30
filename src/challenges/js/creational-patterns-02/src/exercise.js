@@ -12,7 +12,6 @@ export function runAssembleSimulation({
 }) {
   const assemblyLine = new AssemblyLine();
 
-  // Odissey rocket
   const engine = rocketPartsFactory.createEngine();
   const nozzle = rocketPartsFactory.createNozzle();
 
@@ -54,7 +53,7 @@ class AssemblyLine {
     this.nozzle = null;
   }
 
-  assemble(rocket) {
+  assemble() {
     // Your code goes here...
 
     this.reset();
