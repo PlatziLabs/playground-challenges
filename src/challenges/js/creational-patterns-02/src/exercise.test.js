@@ -1,9 +1,9 @@
-const {
+import {
   GalaxyPartsFactory,
   OdisseyPartsFactory,
   Rocket,
   runAssembleSimulation,
-} = require('./exercise');
+} from './exercise';
 
 describe('Exercise 2. New parts, new models, new families!', () => {
   it('verify if galaxy parts factory return correct parts', () => {
