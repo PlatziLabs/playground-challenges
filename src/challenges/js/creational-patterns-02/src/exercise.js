@@ -1,36 +1,26 @@
-export function runSimulation({
-  odisseyPartsFactory,
-  galaxyPartsFactory,
+/**
+ * Note: we encourage check the tests file first before you go
+ * with the solution to the challange.
+ *
+ * This will help you to determine which work must be done, this
+ * could be an initial approach to TDD (Test Driven Development).
+ */
+
+export function runAssembleSimulation({
+  rocketPartsFactory,
+  rocketToBeAssembled,
 }) {
   const assemblyLine = new AssemblyLine();
 
   // Odissey rocket
-  const odisseyRocket = new Rocket({
-    model: 'Odissey001',
-    category: 'hermes',
-  });
+  const engine = rocketPartsFactory.createEngine();
+  const nozzle = rocketPartsFactory.createNozzle();
 
-  const odisseyEngine = odisseyPartsFactory.createEngine();
-  const odisseyNozzle = odisseyPartsFactory.createNozzle();
+  assemblyLine.setEngine(engine);
+  assemblyLine.setNozzle(nozzle);
+  const assembledRocket = assemblyLine.assemble(rocketToBeAssembled);
 
-  assemblyLine.setEngine(odisseyEngine);
-  assemblyLine.setNozzle(odisseyNozzle);
-  const assembledOdissey = assemblyLine.assemble(odisseyRocket);
-
-  // Galaxy rocket
-  const galaxyRocket = new Rocket({
-    model: 'Galaxy001',
-    type: 'valkyria',
-  });
-
-  const galaxyEngine = galaxyPartsFactory.createEngine();
-  const galaxyNozzle = galaxyPartsFactory.createNozzle();
-
-  assemblyFactory.setEngine(galaxyEngine);
-  assemblyFactory.setNozzle(galaxyNozzle);
-  const assembledGalaxy = assemblyLine.assemble(galaxyRocket);
-
-  return { odissey: assembledOdissey, galaxy: assembledGalaxy };
+  return { assembledRocket };
 }
 
 export class Rocket {
@@ -48,40 +38,41 @@ export class Rocket {
   set nozzle(nozzle) {
     this._nozzle = nozzle;
   }
+
+  get engine() {
+    return this._engine;
+  }
+
+  get nozzle() {
+    return this._nozzle;
+  }
 }
 
-export class AssemblyLine {
+class AssemblyLine {
   constructor() {
     this.engine = null;
     this.nozzle = null;
   }
 
-  // Requires rocket as param
-  assemble() {
+  assemble(rocket) {
+    // Your code goes here...
+
     this.reset();
-    // Verifications are missing
-    // Setting of the properties is missing
+
     return rocket;
   }
 
-  // Missing function
   setEngine(engine) {
-    this.engine = engine;
+    // Your code goes here...
   }
 
   // Missing function
   setNozzle(nozzle) {
-    this.nozzle = nozzle;
+    // Your code goes here...
   }
 
   reset() {
     this.engine = null;
     this.nozzle = null;
   }
-}
-
-// This will not be present
-export class RocketPartsFactory {
-  createEngine() {}
-  createNuzzle() {}
 }

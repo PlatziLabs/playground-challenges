@@ -11,15 +11,16 @@ Currently, the plan is for each rocket family to require its own engine and nozz
 
 The company wants to achieve consistency across all rocket families factories behavior, so the team has agreed to define a common behavior plan to reach this. This behavior should include the creation processes for the engine and the nozzle.
 
-The factories used for the liquid and solid rockets have been consolidated into a **`Single Factory with an Assembly Line`**. The rocket parts will pass through this assembly line **`need to be passed before create the rockets`**.
+The factories used for the liquid and solid rockets have been consolidated into a **`Single Factory with an Assembly Line`**. The rocket parts need to be passed to assembly line **`before rockets assembling`**.
 
 ## Implementation plan
 
 1. Create `RocketPartsFactory` common entity that defines the creation process for each of the rocket parts.
-2. For each rocket family create its own parts factory. These factories must implement the common factory behavior and return valid values for use in rocket assembling. The name of these factories should follow the format: `{Odyssey|Galaxy} + PartsFactory`.
+2. For each rocket family create its own parts factory. These factories must implement the common factory behavior and return valid values for use in rocket assembling. The name of these factories should follow the format: `{Odyssey|Galaxy} + PartsFactory`. Remember export them.
 3. Implement the `createNozzle` and `createEngine` methods in each factory to return the valid values required for the **`Galaxy`** and the **`Odissey`** specifications.
-4. Before the rocket assemble process, it is crucial to ensure that both, the engine and nozzle are present in the assembling line. **`Without these components, the rocket cannot be completed`**. If any of these is not present return a `null` value.
-5. The assemble process receives a rocket as parameter without all the parts, then it will set them and finally return the same rocket but with everything settled.
+4. Complete `assemblingLine` set methods for each one of the parts.
+5. Before the rocket assemble process, it is crucial to ensure that both, the engine and nozzle are present in the assembling line. **`Without these components, the rocket cannot be completed`**. Add verifications to avoid this and return a `null` value if somethinf fails.
+6. The assembly process takes a rocket as a parameter, which will not have all the parts initially. The process then sets the missing parts on the rocket and returns the same rocket with everything properly settled.
 
 ## Code Examples
 
