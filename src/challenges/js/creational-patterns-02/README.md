@@ -19,7 +19,7 @@ The factories used for the liquid and solid rockets have been consolidated into 
 2. For each rocket family create its own parts factory. These factories must implement the common factory behavior and return valid values for use in rocket assembling. The name of these factories should follow the format: `{Odyssey|Galaxy} + PartsFactory`. Remember export them.
 3. Implement the `createNozzle` and `createEngine` methods in each factory to return the valid values required for the **`Galaxy`** and the **`Odissey`** specifications.
 4. Complete `assemblingLine` set methods for each one of the parts.
-5. Before the rocket assemble process, it is crucial to ensure that both, the engine and nozzle are present in the assembling line. **`Without these components, the rocket cannot be completed`**. Add verifications to avoid this and return a `null` value if somethinf fails.
+5. Before the rocket assemble process, it is crucial to ensure that both, the engine and nozzle are present in the assembling line. **`Without these components, the rocket cannot be completed`**.
 6. The assembly process takes a rocket as a parameter, which will not have all the parts initially. The process then sets the missing parts on the rocket and returns the same rocket with everything properly settled.
 
 ## Code Examples
