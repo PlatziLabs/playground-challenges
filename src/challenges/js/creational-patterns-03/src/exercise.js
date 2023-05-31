@@ -1,4 +1,4 @@
-export function runSimulation({
+export function runGalaxyProductsAssembleSimulation({
   rocketAssemblyLine,
   manualAssemblyLine,
 }) {
@@ -7,118 +7,131 @@ export function runSimulation({
   });
 
   rocketDirector.buildGalaxyProduct();
-  const galaxyRocket = rocketAssemblyLine.assemble();
-
-  // Pass a new product to the assembling line
-  rocketDirector.assemblingLine.reset(new Rocket());
-  rocketDirector.buildOdisseyProduct();
-
-  const odisseyRocket = rocketAssemblyLine.assemble();
+  const rocket = rocketAssemblyLine.assemble();
 
   const manualDirector = new Director({
     assemblyLine: manualAssemblyLine,
   });
 
   manualDirector.buildGalaxyProduct();
-  const galaxyManual = manualAssemblyLine.assemble();
-
-  // Pass a new product to the assembling line
-  manualDirector.assemblingLine.reset(new Manual());
-  manualDirector.buildOdisseyProduct();
-
-  const odisseyManual = manualAssemblyLine.assemble();
+  const manual = manualAssemblyLine.assemble();
 
   return {
-    odissey: {
-      rocket: odisseyRocket,
-      manual: odisseyManual,
-    },
-    galaxy: {
-      rocket: galaxyRocket,
-      manual: galaxyManual,
-    },
+    manual,
+    rocket,
+  };
+}
+
+export function runOdisseyProductsAssembleSimulation({
+  rocketAssemblyLine,
+  manualAssemblyLine,
+}) {
+  const rocketDirector = new Director({
+    assemblyLine: rocketAssemblyLine,
+  });
+
+  rocketDirector.buildOdisseyProduct();
+  const rocket = rocketAssemblyLine.assemble();
+
+  const manualDirector = new Director({
+    assemblyLine: manualAssemblyLine,
+  });
+
+  manualDirector.buildOdisseyProduct();
+  const manual = manualAssemblyLine.assemble();
+
+  return {
+    manual,
+    rocket,
   };
 }
 
 class AssemblyLine {
-  constructor({ product }) {
-    this.product = product;
-  }
+  // Your code goes here...
 
-  reset(newProduct) {
-    this.product = newProduct;
+  validateParts() {
+    const allPartsAreValid =
+      this.model && this.engine && this.category && this.nozzle;
+
+    return allPartsAreValid;
   }
 
   aasemble() {
     console.log('Not implemented yet!');
-    return null;
   }
 }
 
-class RocketAssemblyLine extends AssemblyLine {
-  constructor({ product }) {
-    super({ product });
+export class RocketAssemblyLine extends AssemblyLine {
+  constructor() {
+    super();
+  }
+
+  assemble() {
+    // Your code goes here...
   }
 }
 
-class ManuelAssemblyLine extends AssemblyLine {
-  constructor({ product }) {
-    super({ product });
+export class ManualAssemblyLine extends AssemblyLine {
+  constructor() {
+    super();
+  }
+
+  assemble() {
+    // Your code goes here...
   }
 }
 
 class Director {
-  constructor(assemblingLine) {
-    this._assemblingLine = assemblingLine;
-  }
-
-  get assemblingLine() {
-    return this._assemblingLine;
+  constructor({ assemblyLine }) {
+    this.assemblyLine = assemblyLine;
   }
 
   buildGalaxyProduct() {
-    // Immplementation missing
+    // Your code goes here...
   }
 
   buildOdisseyProduct() {
-    // Implementation missing
+    // Your code goes here...
   }
 }
 
-export class Product {
-  constructor({ model = '', engine = '', category = '', nozzle = '' }) {
+class Product {
+  constructor({ model, engine, category, nozzle }) {
     this._model = model;
     this._engine = engine;
     this._category = category;
     this._nozzle = nozzle;
   }
 
-  set model(model) {
-    this._model = model;
+  get model() {
+    return this._model;
   }
 
-  set engine(engine) {
-    this._engine = engine;
+  get engine() {
+    return this._engine;
   }
 
-  set category(category) {
-    this._category = category;
+  get category() {
+    return this._category;
   }
 
-  set nozzle(nozzle) {
-    this._nozzle = nozzle;
+  get nozzle() {
+    return this._nozzle;
   }
 }
 
 export class Rocket extends Product {
-  constructor({ model, engine, category, nozzle }) {
+  constructor() {
     super();
   }
 }
 
 export class Manual extends Product {
-  constructor({ model, engine, category, nozzle }) {
+  constructor() {
     super();
-    this.description = `Rocket Model: ${model}, Category: ${category}, Engine : ${engine}, Nozzle: ${nozzle}`;
+  }
+
+  get description() {
+    return `Rocket Model: ${this._model}, Engine : ${this._engine}, Category: ${this._category}, Nozzle: ${this._nozzle}`;
   }
 }
