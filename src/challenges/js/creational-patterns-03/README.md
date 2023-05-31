@@ -14,7 +14,8 @@ To oversee the production of both the rockets and manuals, there will be two **`
 
 1. Complete the implementation of all the steps in **`Assembling Line`** common entity. The format of the names will be `set + {RocketComponent}`.
 2. Complete the implementation of assembling lines for **`Rockets`** and **`Manuals`**. Assemble process on each line must return the correct product with all the properties settled.
-3. Complete the build steps for each product (**`Galaxy`**, **`Odissey`**) in **`Director`** entity, use the assembling line methods to set the properties values. There must exists two **`Directors`** and each should work with a different **`Assembling Line`**.
+3. Before the assemble process return the product **`we need to verify that all product parts in production line have valid values, without these components the product cannot be completed`**. Use the validation method to reach this.
+4. Complete the build steps for each product (**`Galaxy`**, **`Odissey`**) in **`Director`** entity, use the assembling line methods to set the properties values.
    1. **`Galaxy`**:
       1. Model: Galaxy
       2. Engine: solid
@@ -25,7 +26,7 @@ To oversee the production of both the rockets and manuals, there will be two **`
       2. Engine: liquid
       3. Category: hermes
       4. Nozzle: double
-4. Before the assemble process return the product **`we need to verify that all the rockets components in production line have valid values`**. **`Without these components, the product cannot be completed`**. If any of these is not present return a `null` value.
+5. `Rocket` and `Manual` products have an error that is breaking everything, could you help to fix it?
 
 ## Code Examples
 
