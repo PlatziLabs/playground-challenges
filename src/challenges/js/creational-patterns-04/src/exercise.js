@@ -1,12 +1,15 @@
-export function runSimulation({ galaxyRocket, odisseyRocket }) {
+export function runPrototypesModification({
+  galaxyRocket,
+  odisseyRocket,
+}) {
   const galaxyRocketPrototype = galaxyRocket.clone();
   const odisseyRocketPrototype = odisseyRocket.clone();
 
-  galaxyRocketPrototype.nozzle = 'double';
   galaxyRocketPrototype.engine = 'liquid';
+  galaxyRocketPrototype.nozzle = 'double';
 
-  odisseyRocketPrototype.nozzle = 'single';
   odisseyRocketPrototype.engine = 'solid';
+  odisseyRocketPrototype.nozzle = 'single';
 
   return {
     odisseyRocketPrototype,
@@ -14,7 +17,7 @@ export function runSimulation({ galaxyRocket, odisseyRocket }) {
   };
 }
 
-export class Product {
+class Product {
   constructor({ model = '', engine = '', category = '', nozzle = '' }) {
     this._model = model;
     this._engine = engine;
@@ -37,6 +40,8 @@ export class Product {
   set nozzle(nozzle) {
     this._nozzle = nozzle;
   }
+
+  // Your code goes here...
 }
 
 export class GalaxyRocket extends Product {
