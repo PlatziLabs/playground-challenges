@@ -12,19 +12,19 @@ Do you have any ideas on how to implement this?
 
 ## Implementation plan
 
-1. Make `History` class implements single instance strategy.
+1. Make `HistoryLog` class implements single instance strategy.
 
 ## Code Example
 
 ```js
-const rocketsCreationHistory = History.getInstance();
+const rocketsCreationHistory = HistoryLog.getInstance();
 
 rocketsCreationHistory.addEntry({ msg: 'Galaxy-Rocket-Creation' });
 rocketsCreationHistory.addEntry({ msg: 'Odissey-Rocket-Creation' });
-rocketsCreationHistory.history;
-// ['Galaxy-Rocket-Creation','Odissey-Rocket-Creation']
+const history = newRocketsCreationHistory.history;
+console.log(history); // ['Galaxy-Rocket-Creation','Odissey-Rocket-Creation']
 
-const newRocketsCreationHistory = History.getInstance();
+const newRocketsCreationHistory = HistoryLog.getInstance();
 const history = newRocketsCreationHistory.history;
 console.log(history); // ['Galaxy-Rocket-Creation','Odissey-Rocket-Creation']
 ```
@@ -32,3 +32,5 @@ console.log(history); // ['Galaxy-Rocket-Creation','Odissey-Rocket-Creation']
 ## Resources
 
 In the Resources section, you'll find links to Platzi classes that cover the tools and skills required to complete this task and an image that explains what the challenge tries to solve.
+
+[Link to class](https://platzi.com/clases/6933-patrones-diseno-creacionales/60863-implementacion-de-singleton-en-js/)
