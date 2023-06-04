@@ -22,6 +22,36 @@ export function runAssembleSimulation({
   return { assembledRocket };
 }
 
+class RocketPartsFactory {
+  createEngine() {
+    console.log('Not implemented yet!');
+  }
+
+  createNozzle() {
+    console.log('Not implemented yet!');
+  }
+}
+
+export class GalaxyPartsFactory extends RocketPartsFactory {
+  createEngine() {
+    return 'solid';
+  }
+
+  createNozzle() {
+    return 'single';
+  }
+}
+
+export class OdisseyPartsFactory extends RocketPartsFactory {
+  createEngine() {
+    return 'liquid';
+  }
+
+  createNozzle() {
+    return 'double';
+  }
+}
+
 export class Rocket {
   constructor({ model, category }) {
     this._model = model;
@@ -53,8 +83,14 @@ class AssemblyLine {
     this.nozzle = null;
   }
 
-  assemble() {
+  assemble(rocket) {
     // Your code goes here...
+    if (!this.engine || !this.nozzle) {
+      return null;
+    }
+
+    rocket.engine = this.engine;
+    rocket.nozzle = this.nozzle;
 
     this.reset();
 
@@ -63,11 +99,12 @@ class AssemblyLine {
 
   setEngine(engine) {
     // Your code goes here...
+    this.engine = engine;
   }
 
-  // Missing function
   setNozzle(nozzle) {
     // Your code goes here...
+    this.nozzle = nozzle;
   }
 
   reset() {

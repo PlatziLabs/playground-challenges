@@ -1,3 +1,11 @@
+/**
+ * Note: we encourage check the tests file first before you go
+ * with the solution to the challange.
+ *
+ * This will help you to determine which work must be done, this
+ * could be an initial approach to TDD (Test Driven Development).
+ */
+
 export function runGalaxyProductsAssembleSimulation({
   rocketAssemblyLine,
   manualAssemblyLine,
@@ -48,6 +56,21 @@ export function runOdisseyProductsAssembleSimulation({
 
 class AssemblyLine {
   // Your code goes here...
+  setModel(model) {
+    this.model = model;
+  }
+
+  setEngine(engine) {
+    this.engine = engine;
+  }
+
+  setCategory(category) {
+    this.category = category;
+  }
+
+  setNozzle(nozzle) {
+    this.nozzle = nozzle;
+  }
 
   validateParts() {
     const allPartsAreValid =
@@ -68,6 +91,16 @@ export class RocketAssemblyLine extends AssemblyLine {
 
   assemble() {
     // Your code goes here...
+    if (!this.validateParts()) {
+      return null;
+    }
+
+    return new Rocket({
+      model: this.model,
+      engine: this.engine,
+      category: this.category,
+      nozzle: this.nozzle,
+    });
   }
 }
 
@@ -78,6 +111,16 @@ export class ManualAssemblyLine extends AssemblyLine {
 
   assemble() {
     // Your code goes here...
+    if (!this.validateParts()) {
+      return null;
+    }
+
+    return new Manual({
+      model: this.model,
+      engine: this.engine,
+      category: this.category,
+      nozzle: this.nozzle,
+    });
   }
 }
 
@@ -88,10 +131,18 @@ class Director {
 
   buildGalaxyProduct() {
     // Your code goes here...
+    this.assemblyLine.setModel('Galaxy');
+    this.assemblyLine.setEngine('solid');
+    this.assemblyLine.setCategory('valkyria');
+    this.assemblyLine.setNozzle('single');
   }
 
   buildOdisseyProduct() {
     // Your code goes here...
+    this.assemblyLine.setModel('Odissey');
+    this.assemblyLine.setEngine('liquid');
+    this.assemblyLine.setCategory('hermes');
+    this.assemblyLine.setNozzle('double');
   }
 }
 
@@ -121,14 +172,14 @@ class Product {
 }
 
 export class Rocket extends Product {
-  constructor() {
-    super();
+  constructor(params) {
+    super(params);
   }
 }
 
 export class Manual extends Product {
-  constructor() {
-    super();
+  constructor(params) {
+    super(params);
   }
 
   get description() {
