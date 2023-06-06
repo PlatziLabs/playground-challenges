@@ -40,5 +40,5 @@ nombreMayusculas.name
 Output
 
 ```js
-'Curso de Programación Básica'
+'Curso De Programación Básica'
 ```
