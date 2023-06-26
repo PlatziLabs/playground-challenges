@@ -1,12 +1,4 @@
-/**
- * Note: we encourage check the tests file first before you go
- * with the solution to the challange.
- *
- * This will help you to determine which work must be done, this
- * could be an initial approach to TDD (Test Driven Development).
- */
-
-class Rocket {
+export class Rocket {
   constructor({ model, engine, category, nozzle }) {
     // Your code goes here...
   }
@@ -28,6 +20,25 @@ class Rocket {
   }
 }
 
-class RocketFactory {
+export class LiquidFuelRocket {
+  // Your code goes here...
+}
+
+export class SolidFuelRocket {
+  // Your code goes here...
+}
+
+export class RocketFactory {
+  // Your code goes here...
+  createRocket() {
+    return new Error('Not available at this moment!');
+  }
+}
+
+export class LiquidFuelRocketsFactory {
+  // Your code goes here...
+}
+
+export class SolidFuelRocketsFactory {
   // Your code goes here...
 }
