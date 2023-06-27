@@ -1,11 +1,3 @@
-/**
- * Note: we encourage check the tests file first before you go
- * with the solution to the challange.
- *
- * This will help you to determine which work must be done, this
- * could be an initial approach to TDD (Test Driven Development).
- */
-
 export function runAssembleSimulation({
   rocketPartsFactory,
   rocketToBeAssembled,
@@ -17,9 +9,22 @@ export function runAssembleSimulation({
 
   assemblyLine.setEngine(engine);
   assemblyLine.setNozzle(nozzle);
+
   const assembledRocket = assemblyLine.assemble(rocketToBeAssembled);
 
   return { assembledRocket };
+}
+
+export class RocketPartsFactory {
+  // Your code goes here...
+}
+
+export class GalaxyPartsFactory {
+  // Your code goes here...
+}
+
+export class OdisseyPartsFactory {
+  // Your code goes here...
 }
 
 export class Rocket {
@@ -47,7 +52,7 @@ export class Rocket {
   }
 }
 
-class AssemblyLine {
+export class AssemblyLine {
   constructor() {
     this.engine = null;
     this.nozzle = null;
@@ -65,7 +70,8 @@ class AssemblyLine {
     // Your code goes here...
   }
 
-  // Missing function
+  // Missing function...
+  
   setNozzle(nozzle) {
     // Your code goes here...
   }
