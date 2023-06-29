@@ -1,4 +1,5 @@
 def find_largest_palindrome(words):
+<<<<<<< HEAD
   largest_palindrome = ""
   for word in words:
     reversed_word = ""
@@ -18,3 +19,7 @@ def find_largest_palindrome(words):
 
 response = find_largest_palindrome(["racecar", "level", "world", "hello"])
 print(response)
+=======
+  # Tu código aquí 👈
+  pass
+>>>>>>> creational

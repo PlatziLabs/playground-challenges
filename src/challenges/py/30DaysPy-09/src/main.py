@@ -1,4 +1,5 @@
 def find_set_intersection(sets):
+<<<<<<< HEAD
     if len(sets) == 0:
         return set()
     
@@ -17,3 +18,7 @@ response = find_set_intersection([
 ])
 
 print(response)
+=======
+  # Tu código aquí 👈
+  pass
+>>>>>>> creational

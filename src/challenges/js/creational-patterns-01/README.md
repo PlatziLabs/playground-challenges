@@ -1,7 +1,3 @@
-# Exercise 1. Let’s create some rockets!
-
-## Description
-
 Welcome to **`Platzi-X`** a rockets manufacturing, design and launcher company!
 
 Today is your first day solving the test for ingress the software engineering team in the rockets manufacturing division and guess what?! You already have work to do.
@@ -47,7 +43,3 @@ const solidFuelRocket = solidFuelRocketFactory.createRocket();
 ## Resources
 
 In the Resources section, you'll find links to Platzi classes that cover the tools and skills required to complete this task and an image that explains what the challenge tries to solve.
-
-![](exercise.png)
-
-[Link to class](https://platzi.com/clases/6933-patrones-diseno-creacionales/60868-implementacion-de-factory-en-js/)

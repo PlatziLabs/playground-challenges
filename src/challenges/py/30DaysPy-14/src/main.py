@@ -1,4 +1,5 @@
 def calculate_average(numbers):
+<<<<<<< HEAD
   if len(numbers) == 0:
     raise ValueError("La lista está vacía")
 
@@ -13,3 +14,7 @@ def calculate_average(numbers):
 
 response = calculate_average([1, 2, 3, 4, 5])
 print(response)
+=======
+  # Tu código aquí 👈
+  pass
+>>>>>>> creational

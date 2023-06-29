@@ -1,11 +1,3 @@
-/**
- * Note: we encourage check the tests file first before you go
- * with the solution to the challange.
- *
- * This will help you to determine which work must be done, this
- * could be an initial approach to TDD (Test Driven Development).
- */
-
 export function runPrototypesModification({
   galaxyRocket,
   odisseyRocket,
@@ -49,7 +41,6 @@ class Product {
     this._nozzle = nozzle;
   }
 
-  // Your code goes here...
   get model() {
     return this._model;
   }
@@ -68,7 +59,6 @@ class Product {
 }
 
 export class GalaxyRocket extends Product {
-  // Your code goes here...
   constructor({
     model = 'Galaxy',
     engine = 'solid',
@@ -89,7 +79,6 @@ export class GalaxyRocket extends Product {
 }
 
 export class OdisseyRocket extends Product {
-  // Your code goes here...
   constructor({
     model = 'Odissey',
     engine = 'liquid',

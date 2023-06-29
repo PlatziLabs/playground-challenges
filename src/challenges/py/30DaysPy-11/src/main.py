@@ -1,4 +1,5 @@
 def count_words_by_length(words):
+<<<<<<< HEAD
   return {len(word): sum(1 for w in words if len(w) == len(word)) for word in words}
 
 response = count_words_by_length([
@@ -11,3 +12,8 @@ response = count_words_by_length([
 ])
 
 print(response)
+=======
+  # Tu código aquí 👈
+  pass
+
+>>>>>>> creational

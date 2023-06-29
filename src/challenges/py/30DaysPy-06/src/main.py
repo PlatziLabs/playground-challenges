@@ -1,4 +1,5 @@
 def get_packages_info(packages):
+<<<<<<< HEAD
    rta = {
       "total_weight": 0,
       "destinations": {}
@@ -36,3 +37,7 @@ response = get_packages_info([
 ])
 
 print(response)
+=======
+   # Tu código aquí 👈
+   pass
+>>>>>>> creational

@@ -1,9 +1,11 @@
-const { runSingleInstanceSimulation } = require('./exercise');
+import { runSingleInstanceSimulation } from './exercise';
 
 describe('Exercise 5. Tracking rockets creation', () => {
   it('rockets creation log history instance must be the same', () => {
-    const { rocketsCreationHistory, newRocketsCreationHistory } =
-      runSingleInstanceSimulation();
+    const {
+      rocketsCreationHistory,
+      newRocketsCreationHistory,
+    } = runSingleInstanceSimulation();
 
     /**
      * In both test we are looking equality, both cases are comparing

@@ -1,4 +1,5 @@
 def count_letters(phrase):
+<<<<<<< HEAD
   characters = {}
 
   for character in phrase:
@@ -11,3 +12,7 @@ def count_letters(phrase):
 
 response = count_letters("Lorem ipsum dolor sit amet, consecetur adipiscing eit. Sed euismod mollis est, at dictum lectus auctor vel. Vivamus sit amet sem massa.")
 print(response)
+=======
+  # Tu código aquí 👈
+  pass
+>>>>>>> creational

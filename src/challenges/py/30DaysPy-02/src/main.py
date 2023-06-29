@@ -1,4 +1,5 @@
 def is_leap_year(year):
+<<<<<<< HEAD
     if year % 1 != 0 or year <=0:
       return False
     
@@ -16,3 +17,7 @@ def is_leap_year(year):
 
 response = is_leap_year(2000)
 print(response)
+=======
+    # tu código aquí 👈
+    pass
+>>>>>>> creational

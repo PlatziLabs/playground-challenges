@@ -1,5 +1,6 @@
 class User:
   def __init__(self, name, age):
+<<<<<<< HEAD
     self._name = name
     self._age = age
     self._friends = []
@@ -30,3 +31,7 @@ class User:
   @age.setter
   def age(self, value):
     self._age = value
+=======
+    #Tu código aquí 👇
+    pass
+>>>>>>> creational

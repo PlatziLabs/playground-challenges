@@ -1,4 +1,5 @@
 class Pay:
+<<<<<<< HEAD
   def __init__(self):
     pass
   
@@ -7,3 +8,7 @@ class Pay:
       "realized": True,
       "quantity": amount
     }
+=======
+  #Tu código aquí 👇
+  pass
+>>>>>>> creational

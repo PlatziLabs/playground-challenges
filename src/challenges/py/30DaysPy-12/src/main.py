@@ -1,4 +1,5 @@
 def filter_user_messages(messages, user):
+<<<<<<< HEAD
   filtered_messages = filter(lambda msg: msg['sender'] == user, messages)
   return list(filtered_messages)
 
@@ -11,3 +12,7 @@ response = filter_user_messages([
 ], "alice")
 
 print(response)
+=======
+  # Tu código aquí 👈
+  pass
+>>>>>>> creational

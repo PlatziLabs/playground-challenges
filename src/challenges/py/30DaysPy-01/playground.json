@@ -8,4 +8,8 @@
   "hideFiles": [".*_test.py$"],
   "excludeFiles": ["^tests.py$"],
   "entryFile": "main.py"
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> creational

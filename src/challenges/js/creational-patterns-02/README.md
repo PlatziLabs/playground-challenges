@@ -1,7 +1,3 @@
-# Exercise 2. New parts, new models, new families!
-
-## Description
-
 Great job on completing the first task! However, the work does not stop there, as **`Platzi-X`** has ambitious plans for the future, including the launch of their first two named rocket families:
 
 1. The **`Platzi-X Galaxy (PG001)`**, named in honor of the vast and expansive Platzi community, is a **`Solid-Fuel Rocket`** that uses a **`Single Nozzle`**.
@@ -59,7 +55,3 @@ oddiseyRocket.nozzle = nozzle;
 ## Resources
 
 In the Resources section, you'll find links to Platzi classes that cover the tools and skills required to complete this task and an image that explains what the challenge tries to solve.
-
-![](exercise.png)
-
-[Link to class](https://platzi.com/clases/6933-patrones-diseno-creacionales/60873-implementacion-de-abstract-factory-en-js/)

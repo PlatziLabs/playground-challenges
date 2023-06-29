@@ -1,11 +1,3 @@
-/**
- * Note: we encourage check the tests file first before you go
- * with the solution to the challange.
- *
- * This will help you to determine which work must be done, this
- * could be an initial approach to TDD (Test Driven Development).
- */
-
 export function runGalaxyProductsAssembleSimulation({
   rocketAssemblyLine,
   manualAssemblyLine,
@@ -55,7 +47,6 @@ export function runOdisseyProductsAssembleSimulation({
 }
 
 class AssemblyLine {
-  // Your code goes here...
   setModel(model) {
     this.model = model;
   }
@@ -90,7 +81,6 @@ export class RocketAssemblyLine extends AssemblyLine {
   }
 
   assemble() {
-    // Your code goes here...
     if (!this.validateParts()) {
       return null;
     }
@@ -110,7 +100,6 @@ export class ManualAssemblyLine extends AssemblyLine {
   }
 
   assemble() {
-    // Your code goes here...
     if (!this.validateParts()) {
       return null;
     }
@@ -130,7 +119,6 @@ class Director {
   }
 
   buildGalaxyProduct() {
-    // Your code goes here...
     this.assemblyLine.setModel('Galaxy');
     this.assemblyLine.setEngine('solid');
     this.assemblyLine.setCategory('valkyria');
@@ -138,7 +126,6 @@ class Director {
   }
 
   buildOdisseyProduct() {
-    // Your code goes here...
     this.assemblyLine.setModel('Odissey');
     this.assemblyLine.setEngine('liquid');
     this.assemblyLine.setCategory('hermes');

@@ -1,4 +1,5 @@
 def print_triangle(size, character):
+<<<<<<< HEAD
     triangle = ""
     for i in range(1, size + 1):
         spaces = " " * (size - i)
@@ -10,3 +11,7 @@ def print_triangle(size, character):
     return triangle
 
 print(print_triangle(3, "*"))
+=======
+    # Tu código aquí 👈
+    pass
+>>>>>>> creational

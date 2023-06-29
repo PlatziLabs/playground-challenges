@@ -1,5 +1,6 @@
 class Car:
   def __init__(self, brand, model, year, mileage):
+<<<<<<< HEAD
     self.brand = brand
     self.model = model
     self.year = year
@@ -20,3 +21,7 @@ class Car:
     
 response = Car("Toyota", "Corolla", 2020, 0)
 print(response.brand)
+=======
+    # Tu código aquí 👈
+    pass
+>>>>>>> creational

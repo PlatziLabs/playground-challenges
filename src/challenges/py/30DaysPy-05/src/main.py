@@ -1,4 +1,5 @@
 def get_student_average(students):
+<<<<<<< HEAD
   rta = {
     "class_average": 0,
     "students": []
@@ -40,3 +41,7 @@ response = get_student_average([
 ])
 
 print(response)
+=======
+  # Tu código aquí 👈
+  pass
+>>>>>>> creational

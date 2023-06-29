@@ -1,6 +1,7 @@
 from pay import Pay
 
 class PayPal(Pay):
+<<<<<<< HEAD
   def __init__(self, email):
     self.email = email
 
@@ -9,3 +10,7 @@ class PayPal(Pay):
     payment_info["platform"] = "PayPal"
     payment_info["email"] = self.email
     return payment_info
+=======
+  # Tu código aquí 👇
+  pass
+>>>>>>> creational

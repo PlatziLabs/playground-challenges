@@ -1,4 +1,5 @@
 def calculate_discounted_price(price, discount):
+<<<<<<< HEAD
   if not isinstance(price, (int, float)) or not isinstance(discount, (int, float)):
     raise TypeError("El precio y el descuento deben ser números")
 
@@ -14,3 +15,7 @@ def calculate_discounted_price(price, discount):
 
 response = calculate_discounted_price(100, 0.2)
 print(response)
+=======
+  # Tu código aquí 👈
+  pass
+>>>>>>> creational

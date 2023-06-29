@@ -1,4 +1,5 @@
 class Animal:
+<<<<<<< HEAD
   def __init__(self, name, age, specie):
     self.name = name
     self.age = age
@@ -38,3 +39,18 @@ class Dog(Mammal):
   
 response = Animal("pepe", 1, "bird")
 response.getInfo()
+=======
+  def __init__(self):
+    # Tu código aquí 👇
+    pass
+  
+class Mammal(Animal):
+  def __init__(self):
+    # Tu código aquí 👇
+    pass
+
+class Dog(Mammal):
+  def __init__(self):
+    # Tu código aquí 👇
+    pass
+>>>>>>> creational

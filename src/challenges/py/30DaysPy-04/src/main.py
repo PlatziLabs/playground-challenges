@@ -1,4 +1,5 @@
 def find_famous_cat(cats):
+<<<<<<< HEAD
   famous_stats = {
     "famous_cats": [],
     "max_followers": 0
@@ -30,3 +31,7 @@ response = find_famous_cat([
 ])
 
 print(response)
+=======
+  # Tu código aquí 👈
+  pass
+>>>>>>> creational
