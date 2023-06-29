@@ -1,4 +1,4 @@
-# Exercise 5. Tracking rockets creation.
+# Exercise 5. Tracking rockets creation
 
 ## Description
 
@@ -32,7 +32,3 @@ console.log(history); // ['Galaxy-Rocket-Creation','Odissey-Rocket-Creation']
 ## Resources
 
 In the Resources section, you'll find links to Platzi classes that cover the tools and skills required to complete this task and an image that explains what the challenge tries to solve.
-
-![](exercise.png)
-
-[Link to class](https://platzi.com/clases/6933-patrones-diseno-creacionales/60863-implementacion-de-singleton-en-js/)
