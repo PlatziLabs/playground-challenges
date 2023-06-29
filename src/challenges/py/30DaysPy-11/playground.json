@@ -1,0 +1,11 @@
+{
+  "title": "Calcula la longitud de las palabras",
+  "showFileExplorer": false,
+  "showPreview": false,
+  "runner": "pyodide",
+  "template": "python",
+  "packages": [],
+  "hideFiles": [".*_test.py$"],
+  "excludeFiles": ["^tests.py$"],
+  "entryFile": "main.py"
+}

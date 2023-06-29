@@ -1,0 +1,11 @@
+{
+  "title": "Encapsula los datos de los usuarios",
+  "showFileExplorer": false,
+  "showPreview": false,
+  "runner": "pyodide",
+  "template": "python",
+  "packages": [],
+  "hideFiles": [".*_test.py$"],
+  "excludeFiles": ["^tests.py$"],
+  "entryFile": "main.py"
+}
