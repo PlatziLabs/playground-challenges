@@ -1,7 +1,3 @@
-# Exercise 1. Let’s create some rockets!
-
-## Description
-
 Welcome to **`Platzi-X`** a rockets manufacturing, design and launcher company!
 
 Today is your first day solving the test for ingress the software engineering team in the rockets manufacturing division and guess what?! You already have work to do.

@@ -1,7 +1,3 @@
-# Exercise 5. Tracking rockets creation
-
-## Description
-
 Congratulations! The system implementation has been a success, the engineering team and you have done an amazing job!
 
 Now it’s time from a last requirement: **`A rockets creation history`**. The idea is to have a record of all the rockets that have been created in an ordered list, containing only the names of the rockets.

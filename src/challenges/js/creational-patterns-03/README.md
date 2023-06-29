@@ -1,7 +1,3 @@
-# Exercise 3. Assembling rockets one step at time
-
-## Description
-
 The **`Galaxy`** and **`Odyssey`** rockets were such a success that they are now being sold at a reduced cost to those who want to use them for research or academic purposes. And the best part? Each rocket purchase comes with a **`Manual`**!.
 
 To keep things organized and efficient, the manuals are produced in the same factory as the rockets, **`but on a separate production line`**. This means that each manual will contain all the necessary information for operating the rocket effectively.

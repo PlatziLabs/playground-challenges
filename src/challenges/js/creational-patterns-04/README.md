@@ -1,7 +1,3 @@
-## Exercise 4. Testing Rocket Prototypes
-
-## Description
-
 The rockets production is going so well that plans to build version 2 of the **`Galaxy`** and the **`Odissey`** are on the table. The engineering build team agree want to test a couple of new configurations **`over created rockets before deliver the new versions`**.
 
 For example, some of these configurations consider the use of a **`Double Nozzle`** and a **`Liquid Fuel engine`** in a **`Galaxy`** rocket, the same for the **`Odissey`**.
