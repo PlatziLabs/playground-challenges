@@ -21,6 +21,7 @@ Output: {
   'last_student': "Luis",
   'count': 2
 }
+
 ```
 
 Ejemplo 2:

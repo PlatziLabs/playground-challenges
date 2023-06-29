@@ -1,4 +1,5 @@
 def dictionary_with_lists(names):
+    # Escribe tu solución 👇
     students = {
         'school': "Platzi",
         'names': "",
@@ -6,11 +7,6 @@ def dictionary_with_lists(names):
         'last_student': "",
         'count': 0
     }
-    students["names"] = names
-    students["first_student"] = names[0]
-    students["last_student"] = names[-1]
-    students["count"] = len(names)
-
     return students
 
 

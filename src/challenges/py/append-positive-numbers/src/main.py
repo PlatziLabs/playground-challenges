@@ -3,8 +3,5 @@ new_list = []
 
 # Escribe tu solución 👇
 
-for i in my_list:
-    if i >= 0:
-        new_list.append(i)
 
 print(new_list)

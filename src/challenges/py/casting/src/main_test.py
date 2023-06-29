@@ -11,7 +11,7 @@ def reload_module(name):
 def test_template(capfd):
     module = reload_module('main')
     out, error = capfd.readouterr()
-    regex = r"Hola mi nombre es .*, tengo (\d{1,4}) años y en 10 años tendré (\d{1,4}) años"
+    regex = r"Hola mi nombre es \w+, tengo (\d{1,4}) años y en 10 años tendré (\d{1,4}) años"
 
     match = re.search(regex, out, re.MULTILINE)
     if match and len(match.groups()) == 2:
