@@ -5,8 +5,9 @@ INSERT INTO students
 (nombre, apellido, edad, correo_electronico, telefono)
 VALUES ("Alexis", "Araujo", 33, "alexis@gmail.com", "777-1234");
 
-DELETE FROM students where id = 1;
+
+DELETE FROM students WHERE id = 1;
 
 UPDATE students
-SET correo_electronico = "alexis@gmail.com"
+SET edad = 55
 WHERE id = 2;

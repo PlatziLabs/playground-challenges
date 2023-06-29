@@ -49,12 +49,17 @@ def run_sql(connection):
                     results = get_json(headers, execute.fetchall())
                     output_dict = {"headers": headers, "results": results}
                     outputs.append(output_dict)
-                elif re.search(r"DELETE FROM students where id = 1;", str(query)):
+                elif re.findall(
+                    r"delete.*from.*students.*where.*id.*=.*1;",
+                    str(query),
+                    re.IGNORECASE | re.DOTALL,
+                ):
                     output_dict = {"deleted": "true"}
                     outputs.append(output_dict)
-                elif re.search(
-                    r"UPDATE students SET correo_electronico = 'alexis@gmail.com' WHERE id = 2;",
+                elif re.findall(
+                    r"update.*students.*set.*edad.*=.*55.*where.*id.*=.*2;",
                     str(query),
+                    re.IGNORECASE | re.DOTALL,
                 ):
                     output_dict = {"updated": "true"}
                     outputs.append(output_dict)
