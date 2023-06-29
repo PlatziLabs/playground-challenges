@@ -21,9 +21,7 @@ describe('Exercise 4. Testing Rocket Prototypes', () => {
 
     expect(odisseyRocket.model).toBe(odisseyRocketPrototype.model);
     expect(odisseyRocket.engine).toBe(odisseyRocketPrototype.engine);
-    expect(odisseyRocket.category).toBe(
-      odisseyRocketPrototype.category
-    );
+    expect(odisseyRocket.category).toBe(odisseyRocketPrototype.category);
     expect(odisseyRocket.nozzle).toBe(odisseyRocketPrototype.nozzle);
   });
 
@@ -31,20 +29,19 @@ describe('Exercise 4. Testing Rocket Prototypes', () => {
     const galaxyRocket = new GalaxyRocket();
     const odisseyRocket = new OdisseyRocket();
 
-    const { odisseyRocketPrototype, galaxyRocketPrototype } =
-      runPrototypesModification({
-        galaxyRocket,
-        odisseyRocket,
-      });
-
-    expect(odisseyRocketPrototype.model).toBe('Odissey');
-    expect(odisseyRocketPrototype.engine).toBe('solid');
-    expect(odisseyRocketPrototype.category).toBe('hermes');
-    expect(odisseyRocketPrototype.nozzle).toBe('single');
+    const {
+      galaxyRocketPrototype,
+      odisseyRocketPrototype,
+    } = runPrototypesModification({ galaxyRocket, odisseyRocket });
 
     expect(galaxyRocketPrototype.model).toBe('Galaxy');
     expect(galaxyRocketPrototype.engine).toBe('liquid');
     expect(galaxyRocketPrototype.category).toBe('valkyria');
     expect(galaxyRocketPrototype.nozzle).toBe('double');
+
+    expect(odisseyRocketPrototype.model).toBe('Odissey');
+    expect(odisseyRocketPrototype.engine).toBe('solid');
+    expect(odisseyRocketPrototype.category).toBe('hermes');
+    expect(odisseyRocketPrototype.nozzle).toBe('single');
   });
 });
