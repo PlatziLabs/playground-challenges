@@ -13,5 +13,5 @@ Ejemplo 2:
 
 ```txt
 Input: [1, 1, -2, -3]
-Output: [1, 1, -4, -6]
+Output: [2, 2, -4, -6]
 ```
