@@ -1,0 +1,1 @@
+Utilizando numpy, completa la función 'crear_array' para que reciba una lista, la convierta en un 'numpy array' y retorne el resultado.
