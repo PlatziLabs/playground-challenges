@@ -1,0 +1,11 @@
+{
+  "title": "Identify if a number is even or odd",
+  "showFileExplorer": false,
+  "showPreview": false,
+  "runner": "pyodide",
+  "template": "python",
+  "packages": ["pytest"],
+  "hideFiles": [".*_test.py$"],
+  "excludeFiles": ["^tests.py$"],
+  "entryFile": "main.py"
+}
