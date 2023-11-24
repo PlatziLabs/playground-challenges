@@ -1,8 +1,8 @@
-In this challenge, you are going to practice what you have learned about variables in Python. A variable is a place in memory where you can store a value, for example, a number or a text string. In Python, variables are declared using the variable name, followed by an equal sign and the value you want to assign to the variable. For example:
+Neste desafio, você praticará o que aprendeu sobre variáveis em Python. Uma variável é um local na memória onde você pode armazenar um valor, por exemplo, um número ou uma string de texto. Em Python, as variáveis são declaradas usando o nome da variável, seguido por um sinal de igual e o valor que você deseja atribuir à variável. Por exemplo:
 
 ```py
 text = 'My text
 print(text)
 ```
 
-Remember that variables can be modified throughout a program, your challenge is to modify the value of the variable text to be a number and then print it using the print function.
+Lembre-se de que as variáveis podem ser modificadas em um programa. Seu desafio é modificar o valor da variável text para que seja um número e, em seguida, imprimi-lo usando a função print.

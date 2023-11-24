@@ -1,15 +1,15 @@
-In this challenge, you will be provided with a list of letters called `letters`. Your challenge is to perform the following operations in order:
+Neste desafio, você receberá uma lista de letras chamada "letras". Seu desafio é realizar as seguintes operações em ordem:
 
-1. Add the letter **G** to the end of the list.
-1. Replace the letter in position 0 with the letter **Z**.
-1. Remove the letter **C** from the list.
-1. Print the resulting list upside down.
+1. Adicionar a letra **G** ao final da lista.
+1. Substitua a letra na posição 0 pela letra **Z**.
+1. Remova a letra **C** da lista.
+1. Imprima a lista resultante de cabeça para baixo.
 
-Example:
+Exemplo:
 
 ````txt
 Input: ["A", "B", "C", "D", "E", "F"].
-Output: ["G", "F", "E", "D", "B", "Z"]
+Output: ["G", "F", "E", "D", "B", "Z"].
 ```
 
-Remember to perform the operations in the order given, and use the appropriate Python list functions and methods for each task.
+Lembre-se de executar as operações na ordem indicada e de usar as funções e os métodos de lista Python apropriados para cada tarefa.

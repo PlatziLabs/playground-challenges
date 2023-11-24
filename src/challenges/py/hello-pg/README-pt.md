@@ -1,15 +1,15 @@
-Hello, welcome to Coding Playground, a place where you can practice your Python skills in an interactive way 🤯.
+Olá, bem-vindo ao Coding Playground, um lugar onde você pode praticar suas habilidades em Python de forma interativa 🤯.
 
-In this exercise, your challenge is to use the `print` function to print three messages in the **Console** section. To do this, you must use the `print` function three times in the following order with the following messages:
+Neste exercício, seu desafio é usar a função `print` para imprimir três mensagens na seção **Console**. Para fazer isso, você deve usar a função `print` três vezes na seguinte ordem com as seguintes mensagens:
 
 - "Welcome to the Coding Playground".
-- "My first print"
+- "My first print" (Minha primeira impressão)
 - "30"
 
-Remember to pay attention to spaces and capitalization in the messages, as they are important for your answer to be correct. An example of how to use the `print` function is below:
+Lembre-se de prestar atenção aos espaços e à capitalização nas mensagens, pois eles são importantes para que sua resposta esteja correta. Veja abaixo um exemplo de como usar a função `print`:
 
 ````py
 print('Hello, world!!')
 ```
 
-Once you have completed the exercise, you can validate your answer by clicking the **Run Tests** button.
+Depois de concluir o exercício, você poderá validar sua resposta clicando no botão **Run Tests**.

@@ -1,19 +1,19 @@
-In this challenge, you have a variable called `number` as a string, your challenge is to determine if that string is an odd or even number. To do this validation, you must transform the string to number and then perform a conditional that checks if the number is divisible by two. If it is, it means that the number is even, and you must print the message `It is even`. If it is not, it means that the number is odd, and you should print the message `It is odd`.
+Neste desafio, você tem uma variável chamada `número` como uma cadeia de caracteres, e seu desafio é determinar se essa cadeia é um número par ou ímpar. Para fazer essa validação, você deve transformar a cadeia de caracteres em número e, em seguida, executar uma condicional que verifique se o número é divisível por dois. Se for, significa que o número é par, e você deve imprimir a mensagem `É par`. Se não for, significa que o número é ímpar, e você deve imprimir a mensagem "É ímpar".
 
-Below are examples of how your solution should work:
+Abaixo estão exemplos de como sua solução deve funcionar:
 
-Example 1:
+Exemplo 1:
 
 ```txt
-Input: '2'
-Output: "Is even"
+input: '2'
+output: "É par"
 ```
 
-Example 2:
+Exemplo 2:
 
 ````txt
-Input: '3'
-Output: "Is odd"
+input: '3'
+ouput: "É ímpar"
 ```
 
-Remember to pay attention to the spaces and capitalization of the string as an answer, as they are important for your answer to be correct.
+Lembre-se de prestar atenção aos espaços e à capitalização da string como resposta, pois eles são importantes para que sua resposta esteja correta.

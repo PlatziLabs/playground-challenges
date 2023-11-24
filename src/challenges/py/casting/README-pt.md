@@ -1,33 +1,33 @@
-In this challenge, you will be provided with a code base where you will find the variables `name` and `age` all as strings. Your task is to create a string format that, as a result, displays a message in the **Terminal** section. The message should have the following form:
+Neste desafio, você receberá uma base de código em que encontrará as variáveis `nome` e `idade`, todas como strings. Sua tarefa é criar um formato de string que, como resultado, exiba uma mensagem na seção **Terminal**. A mensagem deve ter o seguinte formato:
 
 ```txt
-Hello my name is {name}, I am {age} years old and in 10 years I will be {total} years old.
+Olá, meu nome é {name}, tenho {age} anos de idade e em 10 anos terei {total} anos de idade.
 ```
 
-Note that you must calculate how old you will be in 10 years from the age. For example, if the age is 29 years, the message displayed should say "I am 29 years old and in 10 years I will be 39 years old."
+Observe que você deve calcular a idade que terá em 10 anos a partir da idade. Por exemplo, se a idade for 29 anos, a mensagem exibida deverá dizer "I am 29 years old and in 10 years I will be 39 years old".
 
-Here are some other examples:
+Aqui estão alguns outros exemplos:
 
-Example 1:
+Exemplo 1:
 
 ```txt
-Input:
+input:
 name: 'John
 age: '10
 
-Output:
-Hello my name is Juan, I am 10 years old and in 10 years I will be 20 years old.
+Saída:
+Hello my name is Juan, I am 10 years old and in 10 years will be 20 years old.
 ```
 
-Example 2:
+Exemplo 2:
 
 ````txt
-Input:
+input:
 name: Andrea
 age: 22
 
-Output:
-Hello my name is Andreaasas, I am 22 years old and in 10 years I will be 32 years old.
+Saída:
+Hello my name is Andreaasas, I am 22 years old and in 10 years will be 32 years old.
 ```
 
-Remember to pay attention to spaces and capital letters, as they are important for your answer to be correct.
+Lembre-se de prestar atenção aos espaços e às letras maiúsculas, pois eles são importantes para que sua resposta esteja correta.

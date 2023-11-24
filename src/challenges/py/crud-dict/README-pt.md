@@ -1,15 +1,15 @@
-In this challenge, you will be provided with a dictionary called `person` that contains information about a person. Your challenge is to perform the following operations in order:
+Neste desafio, você receberá um dicionário chamado `person` que contém informações sobre uma pessoa. Seu desafio é realizar as seguintes operações em ordem:
 
-1. add a new item to the dictionary with the key `twitter` and the value `@nicobytes`.
-1. Update the value of the element with the key `name` with the value `Felipe`.
-1. Delete the element from the dictionary with the key "age".
-1. Print a list with the dictionary keys.
-1. Print a list with the values of the dictionary.
+1. adicionar um novo item ao dicionário com a chave `twitter` e o valor `@nicobytes`.
+1. Atualizar o valor do elemento com a chave `nome` com o valor `Felipe`.
+1. Excluir o elemento do dicionário com a chave "age".
+1. Imprimir uma lista com as chaves do dicionário.
+1. Imprima uma lista com os valores do dicionário.
 
-Example:
+Exemplo:
 
 ```txt
-Input:s
+input:s
 person = {
     "name": "Nicolas",
     "lastName": "Molina",
@@ -21,4 +21,4 @@ Output:
 ["Felipe", "Molina", "@nicobytes"]
 ```
 
-Remember to perform the operations in the order given and use the appropriate Python dictionary functions and methods for each task.
+Lembre-se de executar as operações na ordem indicada e usar as funções e os métodos apropriados do dicionário Python para cada tarefa.
