@@ -1,0 +1,11 @@
+{
+  "title": "Crea tu primer array en numpy",
+  "showFileExplorer": false,
+  "showPreview": true,
+  "runner": "pyodide",
+  "template": "python",
+  "packages": ["pytest", "numpy"],
+  "hideFiles": [],
+  "excludeFiles": ["^tests.py$"],
+  "entryFile": "main.py"
+}
